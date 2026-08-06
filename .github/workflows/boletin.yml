@@ -1,0 +1,83 @@
+# Genera el boletín de audio del día y lo publica en el repositorio.
+#
+# Corre gratis: GitHub Actions no cobra minutos en repositorios públicos.
+# No necesita ninguna clave, cuenta ni tarjeta.
+#
+# Se puede disparar a mano desde la pestaña Actions ("Run workflow") para
+# probarlo sin esperar al horario.
+
+name: Boletín de audio
+
+on:
+  schedule:
+    # 10:00 UTC = 07:00 en Argentina. GitHub usa siempre UTC.
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+    inputs:
+      voz:
+        description: 'Voz de Piper'
+        default: 'es_AR-daniela-high'
+        required: false
+      duracion:
+        description: 'Duración objetivo en segundos'
+        default: '300'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Argentina/Buenos_Aires
+
+    steps:
+      - name: Traer el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Piper y utilidades
+        run: |
+          python -m pip install --upgrade pip
+          pip install piper-tts
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg jq
+
+      - name: Guardar en caché la voz
+        uses: actions/cache@v4
+        with:
+          path: build/voices
+          key: piper-voz-${{ github.event.inputs.voz || 'es_AR-daniela-high' }}
+
+      - name: Armar el guion
+        run: |
+          node tools/build-boletin.js \
+            --seconds "${{ github.event.inputs.duracion || '300' }}" \
+            --out build/plan.json
+
+      - name: Sintetizar con Piper
+        run: |
+          chmod +x tools/tts-boletin.sh
+          tools/tts-boletin.sh "${{ github.event.inputs.voz || 'es_AR-daniela-high' }}"
+
+      - name: Publicar el boletín
+        run: |
+          git config user.name  'Tu Canillita Digital'
+          git config user.email 'actions@users.noreply.github.com'
+          git add assets/audio/boletin.mp3 assets/audio/boletin.ogg assets/audio/boletin.json
+          if git diff --staged --quiet; then
+            echo 'Sin cambios en el boletín.'
+          else
+            git commit -m "Boletín de audio del $(date +%d-%m-%Y)"
+            git push
+          fi

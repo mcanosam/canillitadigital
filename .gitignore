@@ -1,0 +1,6 @@
+# Archivos intermedios de la generación del boletín
+build/
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
