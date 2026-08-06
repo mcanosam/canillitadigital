@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Canillita Digital · canal de demostración</title>
+  <meta name="description" content="Demostración del agente de noticias locales del Alto Valle: conversación por WhatsApp, boletín de radio y edición visual.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Cabecera: identidad del producto, no del canal -->
+  <header class="masthead">
+    <p class="masthead__eyebrow">Alto Valle · Río Negro</p>
+    <h1 class="masthead__title">Tu Canillita Digital</h1>
+    <p class="masthead__line"><span id="today-label">—</span> · demostración</p>
+  </header>
+
+  <main class="stage">
+    <!-- Simulador del canal. No usa marcas ni tipografías de terceros. -->
+    <section class="phone" aria-label="Conversación de demostración con Tu Canillita Digital">
+
+      <div class="phone__bar">
+        <div class="phone__avatar" aria-hidden="true">TC</div>
+        <div class="phone__id">
+          <p class="phone__name">Tu Canillita Digital</p>
+          <p class="phone__status">en línea · responde al instante</p>
+        </div>
+      </div>
+
+      <p class="phone__disclaimer">
+        Vista de demostración del canal WhatsApp. No hay mensajería real conectada.
+      </p>
+
+      <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-label="Mensajes"></div>
+
+      <div id="quick-replies" class="quick-replies" aria-label="Respuestas rápidas" hidden></div>
+
+      <form id="composer" class="composer" autocomplete="off">
+        <label class="visually-hidden" for="composer-input">Escribí tu mensaje</label>
+        <input id="composer-input" class="composer__input" type="text"
+               placeholder="Escribí “hola” para empezar" maxlength="200">
+        <button class="composer__send" type="submit" aria-label="Enviar mensaje">
+          <span aria-hidden="true">➤</span>
+        </button>
+      </form>
+    </section>
+
+    <aside class="notes">
+      <h2 class="notes__title">Qué podés probar</h2>
+      <ul class="notes__list">
+        <li>Escribí <em>hola</em> y elegí una opción del menú.</li>
+        <li>Preguntá <em>¿por qué se frenó la Ruta 22?</em></li>
+        <li>Preguntá por un tramo: <em>sección 3</em>, <em>Allen</em>, <em>Cipolletti</em>.</li>
+        <li>Pedí <em>ver deportes</em> (es contenido ficticio, está avisado).</li>
+        <li>Escribí <em>configurar</em> para cargar tus preferencias.</li>
+      </ul>
+      <p class="notes__links">
+        <a href="pages/edicion.html">Mi edición de hoy ›</a>
+        <a href="pages/ruta22.html">Ruta 22, historia viva ›</a>
+      </p>
+      <p class="notes__foot">
+        Fase 1 de 4 · motor de respuestas por reglas, sin inteligencia artificial.
+        <span id="content-source" class="notes__source"></span>
+      </p>
+    </aside>
+  </main>
+
+  <!-- Copia embebida del contenido: permite abrir el archivo con doble clic -->
+  <script src="content/content.bundle.js"></script>
+
+  <!-- Orden obligatorio: cada módulo usa los anteriores -->
+  <script src="js/router.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/preferences.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/intents.js"></script>
+  <script src="js/responses.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

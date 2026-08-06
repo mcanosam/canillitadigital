@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu edición de hoy · Tu Canillita Digital</title>
+  <meta name="description" content="Edición personalizada de noticias locales del Alto Valle.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="page">
+
+  <header class="edicion-head">
+    <a class="volver" href="../index.html">‹ Volver al chat</a>
+    <p class="masthead__eyebrow">Alto Valle · Río Negro</p>
+    <h1 class="masthead__title">Tu Canillita Digital</h1>
+    <p class="edicion-head__saludo" id="saludo">Preparando tu edición…</p>
+    <p class="edicion-head__meta" id="edicion-meta"></p>
+    <p class="edicion-head__intereses" id="intereses"></p>
+  </header>
+
+  <main class="page__body">
+
+    <!-- Boletín: el guion se ve siempre, la voz es opcional -->
+    <section class="bloque bloque--audio">
+      <h2 class="bloque__titulo">Boletín de hoy</h2>
+      <p class="bloque__bajada" id="audio-duracion"></p>
+
+      <div class="reproductor">
+        <button class="btn btn--primary" id="btn-play" type="button">▶ Escuchar</button>
+        <button class="btn btn--ghost" id="btn-stop" type="button" disabled>■ Detener</button>
+        <button class="btn btn--ghost" id="btn-guion" type="button" aria-expanded="false">Ver el guion</button>
+      </div>
+
+      <div class="velocidad" role="group" aria-label="Velocidad de lectura">
+        <span class="velocidad__label">Velocidad</span>
+        <div class="velocidad__opciones" id="velocidad"></div>
+      </div>
+
+      <p class="reproductor__estado" id="audio-estado" role="status"></p>
+
+      <div class="guion" id="guion" hidden>
+        <p class="guion__aviso" id="guion-aviso"></p>
+        <div class="guion__texto" id="guion-texto"></div>
+      </div>
+    </section>
+
+    <!-- Las tres historias se dibujan desde los JSON -->
+    <div id="historias" class="historias"></div>
+
+    <!-- Ruta 22: cronología y tramos, versión corta -->
+    <section class="bloque" id="bloque-ruta22">
+      <h2 class="bloque__titulo">La Ruta 22, de un vistazo</h2>
+      <h3 class="bloque__sub">Estado por tramo</h3>
+      <div id="tramos"></div>
+      <h3 class="bloque__sub">Cómo se llegó hasta acá</h3>
+      <div id="cronologia"></div>
+      <a class="btn btn--ghost" href="ruta22.html">Ver la historia completa ›</a>
+    </section>
+
+    <!-- Preguntar al agente -->
+    <section class="bloque bloque--preguntar">
+      <h2 class="bloque__titulo">Preguntale al canillita</h2>
+      <p class="bloque__bajada">Tu pregunta se abre en el chat, con la respuesta y las fuentes.</p>
+      <form class="ask" id="ask-form">
+        <label class="visually-hidden" for="ask-input">Escribí tu pregunta</label>
+        <input class="ask__input" id="ask-input" type="text" maxlength="200"
+               placeholder="¿Por qué se frenó la Ruta 22?">
+        <button class="ask__send" type="submit">Preguntar</button>
+      </form>
+      <div class="sugeridas" id="sugeridas"></div>
+    </section>
+
+  </main>
+
+  <footer class="page__foot">
+    <p>Tu Canillita Digital · demostración sin servicios pagos.</p>
+    <p id="preparada"></p>
+  </footer>
+
+  <script src="../content/content.bundle.js"></script>
+  <script src="../js/router.js"></script>
+  <script src="../js/content.js"></script>
+  <script src="../js/preferences.js"></script>
+  <script src="../js/render.js"></script>
+  <script src="../js/radio.js"></script>
+  <script src="../js/edicion.js"></script>
+</body>
+</html>
