@@ -513,8 +513,10 @@
 
     /* Reproduce cualquier archivo generado por Piper: boletín o respuesta. */
     function playFile(url, marks, callbacks) {
-      handlers = callbacks || {};
+      // stop() ANTES de cambiar los handlers: así el reproductor anterior
+      // recibe su aviso de 'idle' y puede volver su botón a estado inicial.
       stop();
+      handlers = callbacks || {};
       mode = 'file';
 
       // 'el' es la referencia local: los eventos que llegan tarde, después de
@@ -562,8 +564,8 @@
         setState('unsupported');
         return false;
       }
-      handlers = callbacks || {};
       stop();
+      handlers = callbacks || {};
 
       voice = pickVoice();
       emit('onVoice', voice);

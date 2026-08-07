@@ -16,6 +16,22 @@
   var busy = false;
   var pending = [];   // mensajes que llegaron mientras el agente escribía
 
+  /*
+   * El reproductor es uno solo para toda la conversación, pero los botones son
+   * muchos. Acá se anota cuál manda: sin esto, tocar play en una respuesta
+   * mientras suena otra se interpretaba como "pausar", y nunca arrancaba.
+   */
+  var reproduciendo = null;   // { id, reset }
+
+  function tomarReproduccion(id, reset) {
+    if (reproduciendo && reproduciendo.id !== id) reproduciendo.reset();
+    reproduciendo = { id: id, reset: reset };
+  }
+
+  function esElQueSuena(id) {
+    return reproduciendo !== null && reproduciendo.id === id;
+  }
+
   /* ------------------------------------------------------------- formato */
 
   function escapeHtml(text) {
@@ -148,12 +164,20 @@
     };
 
     playButton.addEventListener('click', function () {
+      var player = Canillita.radio.player;
       // Respetamos la velocidad elegida en la edición.
-      Canillita.radio.player.setRate(Canillita.preferences.get().speechRate);
-      Canillita.radio.player.toggle(script, callbacks);
+      player.setRate(Canillita.preferences.get().speechRate);
+
+      if (esElQueSuena('boletin')) {
+        player.toggle(script, callbacks);
+        return;
+      }
+      tomarReproduccion('boletin', function () { callbacks.onState('idle'); });
+      player.play(script, callbacks);
     });
     stopButton.addEventListener('click', function () {
       Canillita.radio.player.stop();
+      reproduciendo = null;
       callbacks.onState('idle');
     });
   }
@@ -224,14 +248,20 @@
     };
 
     button.addEventListener('click', function () {
-      Canillita.radio.player.setRate(Canillita.preferences.get().speechRate);
-      if (Canillita.radio.player.state() === 'playing') {
-        Canillita.radio.player.pause();
-      } else if (Canillita.radio.player.state() === 'paused') {
-        Canillita.radio.player.resume();
-      } else {
-        Canillita.radio.player.playAnswer(audioId, callbacks);
+      var player = Canillita.radio.player;
+      player.setRate(Canillita.preferences.get().speechRate);
+
+      // Pausar y retomar solo valen si este clip es el que está sonando.
+      if (esElQueSuena(audioId) && player.state() === 'playing') {
+        player.pause();
+        return;
       }
+      if (esElQueSuena(audioId) && player.state() === 'paused') {
+        player.resume();
+        return;
+      }
+      tomarReproduccion(audioId, function () { callbacks.onState('idle'); });
+      player.playAnswer(audioId, callbacks);
     });
 
     elements.log.appendChild(wrapper);
