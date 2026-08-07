@@ -75,13 +75,32 @@ Los JSON son la fuente de verdad. `content.bundle.js` se genera, no se edita.
 
 ---
 
+## Identidad visual
+
+Diario de provincia, no aplicación de noticias. Lo que produce esa lectura no
+es el color sino la estructura tipográfica: chapa en negativo con el nombre en
+condensada, filete con la fecha, volantas en recuadro ocre, bajadas en cursiva,
+letra capitular en la entrada y todo el texto de lectura en serifa. La sans
+queda para la interfaz: campos, estados, controles.
+
+Paleta: tinta `#1A1A18` sobre papel `#F7F4EE`, con el ocre de las bardas
+`#9A5B1E` como único acento y un rojo `#8C1D18` reservado al aviso de contenido
+ficticio. Nada tiene esquinas redondeadas.
+
+Las tipografías son del sistema —Georgia para leer, Arial Narrow o Roboto
+Condensed para la chapa— así que no se descarga nada y el proyecto sigue
+funcionando sin conexión.
+
+Todo el color sale de variables CSS en `css/styles.css`: cambiar la paleta es
+editar ese bloque.
+
 ## Estructura
 
 ```text
 tu-canillita-digital/
 ├── index.html                  Simulador del canal WhatsApp
 ├── css/
-│   ├── styles.css              Tokens y estilos del chat
+│   ├── styles.css              Tokens de color y tipografía, estilos del chat
 │   └── pages.css               Estilos de las páginas largas
 ├── js/
 │   ├── router.js               Rutas y prefijos relativos

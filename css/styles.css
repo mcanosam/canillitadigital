@@ -1,32 +1,37 @@
 /*
  * styles.css — Tu Canillita Digital
  * ---------------------------------
- * Mobile first. Identidad de kiosco de diarios: papel, tinta y un amarillo de
- * pregón. El canal se sugiere, no se copia: colores y tipografías propias.
+ * Mobile first. Identidad de diario de provincia: chapa en negativo, filetes
+ * horizontales, volantas en recuadro y el ocre de las bardas como acento.
+ * El canal se sugiere, no se copia: colores y tipografías propias.
  *
  * Tokens en :root — cambiar acá cambia todo.
  */
 
 :root {
-  /* Color */
-  --tinta:        #15181B;
-  --tinta-suave:  #4A5157;
-  --papel:        #F0ECE3;
-  --papel-viejo:  #DCD5C7;
-  --burbuja-in:   #FCFAF5;
-  --burbuja-out:  #CFE0D2;
-  --verde:        #235C46;
-  --verde-claro:  #E4EFE6;
-  --amarillo:     #F2C230;
-  --rojo:         #A8352A;
-  --linea:        rgba(21, 24, 27, .14);
+  /* Color — tinta sobre papel, con el ocre de las bardas como único acento */
+  --tinta:        #1A1A18;
+  --tinta-suave:  #6A6357;
+  --papel:        #F7F4EE;
+  --papel-viejo:  #EDE8DC;
+  --burbuja-in:   #FDFCF9;
+  --burbuja-out:  #E7DFCE;
+  --ocre:         #9A5B1E;
+  --ocre-claro:   #F2E7D8;
+  --destacado:    #EBD9B4;
+  --rojo:         #8C1D18;
+  --linea:        rgba(26, 26, 24, .18);
+  --filete:       rgba(26, 26, 24, .55);
 
-  /* Tipografía */
-  --display: Georgia, "Iowan Old Style", "Times New Roman", serif;
-  --texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Tipografía: serifa para leer, condensada para la chapa y las volantas */
+  --display:    Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --condensada: "Arial Narrow", "Roboto Condensed", "Liberation Sans Narrow",
+                "Helvetica Neue", Arial, sans-serif;
+  --texto:      Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --interfaz:   system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
-  /* Espacio y forma */
-  --radio: 14px;
+  /* Un diario no tiene esquinas redondeadas */
+  --radio: 2px;
   --gap: 12px;
   --ancho: 480px;
 }
@@ -41,7 +46,7 @@ html, body {
 body {
   background: var(--papel);
   color: var(--tinta);
-  font-family: var(--texto);
+  font-family: var(--interfaz);
   font-size: 16px;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -57,51 +62,62 @@ body {
 
 /* Foco visible siempre: requisito de accesibilidad básica */
 :focus-visible {
-  outline: 3px solid var(--amarillo);
+  outline: 3px solid var(--destacado);
   outline-offset: 2px;
 }
 
 /* ------------------------------------------------------------- cabecera */
 
+/* La chapa va en negativo, como el cabezal impreso de un diario local */
 .masthead {
-  padding: 20px 16px 14px;
-  text-align: center;
-  border-bottom: 3px double var(--linea);
-  background: var(--papel);
+  padding: 10px 16px 8px;
+  background: var(--tinta);
+  color: var(--papel);
 }
 
 .masthead__eyebrow {
   margin: 0;
+  font-family: var(--condensada);
   font-size: .68rem;
-  letter-spacing: .22em;
+  letter-spacing: .2em;
   text-transform: uppercase;
-  color: var(--tinta-suave);
+  color: #B3AB98;
 }
 
 .masthead__title {
-  margin: 4px 0 2px;
-  font-family: var(--display);
-  font-size: clamp(1.9rem, 8vw, 2.6rem);
-  font-weight: 700;
-  letter-spacing: -.02em;
+  margin: 1px 0 0;
+  font-family: var(--condensada);
+  /* font-stretch ayuda donde la variante estrecha existe pero no tiene nombre */
+  font-stretch: 87.5%;
+  font-size: clamp(1.45rem, 6.4vw, 1.9rem);
+  font-weight: 400;
+  letter-spacing: .02em;
   line-height: 1.05;
-}
-
-/* El subrayado amarillo es el pregón del canillita: el único acento fuerte */
-.masthead__title::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 5px;
-  margin: 8px auto 0;
-  background: var(--amarillo);
+  text-transform: uppercase;
 }
 
 .masthead__line {
-  margin: 8px 0 0;
-  font-size: .8rem;
+  margin: 3px 0 0;
+  font-family: var(--display);
+  font-size: .78rem;
+  font-style: italic;
+  color: #B3AB98;
+}
+
+/* Fecha y edición, entre filetes: el corondel del diario */
+.dateline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 6px 16px;
+  border-bottom: 2px solid var(--tinta);
+  font-family: var(--condensada);
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
-  text-transform: lowercase;
 }
 
 /* --------------------------------------------------------------- página */
@@ -118,152 +134,172 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--papel-viejo);
-  border: 1px solid var(--linea);
-  border-radius: var(--radio);
+  border: 1px solid var(--filete);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(21, 24, 27, .12);
 }
 
 .phone__bar {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 12px;
-  background: var(--verde);
-  color: #fff;
+  padding: 9px 12px;
+  background: var(--tinta);
+  color: var(--papel);
 }
 
 .phone__avatar {
-  width: 40px; height: 40px;
-  flex: 0 0 40px;
+  width: 36px; height: 36px;
+  flex: 0 0 36px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  background: var(--amarillo);
-  color: var(--tinta);
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: .95rem;
+  background: var(--ocre);
+  color: var(--papel);
+  font-family: var(--condensada);
+  font-size: .9rem;
+  letter-spacing: .05em;
 }
 
 .phone__id { min-width: 0; }
 
 .phone__name {
   margin: 0;
-  font-weight: 600;
+  font-family: var(--condensada);
+  font-stretch: 87.5%;
   font-size: .98rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
 .phone__status {
   margin: 0;
+  font-family: var(--display);
   font-size: .72rem;
-  opacity: .85;
+  font-style: italic;
+  color: #B3AB98;
 }
 
+/* Nota del editor, no cartel de advertencia */
 .phone__disclaimer {
   margin: 0;
-  padding: 7px 12px;
-  background: var(--amarillo);
-  color: var(--tinta);
-  font-size: .72rem;
+  padding: 5px 12px;
+  background: var(--papel);
+  border-bottom: 1px solid var(--filete);
+  font-family: var(--condensada);
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
   text-align: center;
+  color: var(--tinta-suave);
 }
 
 /* ----------------------------------------------------------- mensajería */
 
 .chat-log {
-  /* Alto suficiente para leer, sin empujar el redactor fuera de pantalla */
   height: clamp(280px, 46vh, 520px);
   overflow-y: auto;
-  padding: 14px 12px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   scroll-behavior: smooth;
 }
 
 .msg {
   display: flex;
-  max-width: 88%;
+  max-width: 92%;
 }
 
 .msg--in  { align-self: flex-start; }
-.msg--out { align-self: flex-end; }
+.msg--out { align-self: flex-end; max-width: 82%; }
 
+/* El agente habla desde el papel: sin globo de color, con filete */
 .bubble {
   position: relative;
-  padding: 9px 12px 20px;
-  border-radius: var(--radio);
-  font-size: .94rem;
-  word-wrap: break-word;
-  box-shadow: 0 1px 1px rgba(21, 24, 27, .1);
-}
-
-.msg--in .bubble {
+  padding: 10px 12px 22px;
   background: var(--burbuja-in);
-  border-top-left-radius: 4px;
+  border: 1px solid var(--linea);
+  border-top: 2px solid var(--tinta);
+  font-family: var(--display);
+  font-size: .95rem;
+  line-height: 1.55;
+  word-wrap: break-word;
 }
 
+/* El lector, en el margen: recuadro simple sin filete superior */
 .msg--out .bubble {
   background: var(--burbuja-out);
-  border-top-right-radius: 4px;
+  border: 1px solid var(--linea);
+  border-top: 1px solid var(--linea);
+  font-family: var(--interfaz);
+  font-size: .9rem;
 }
 
-.bubble__text strong { font-weight: 700; }
-.bubble__text em { font-style: italic; color: var(--tinta-suave); }
+.bubble__text strong {
+  font-family: var(--condensada);
+  font-weight: 400;
+  font-size: 1.06em;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.bubble__text em {
+  font-style: italic;
+  color: var(--tinta-suave);
+}
 
 .bubble time {
   position: absolute;
   right: 10px;
-  bottom: 5px;
-  font-size: .64rem;
+  bottom: 6px;
+  font-family: var(--condensada);
+  font-size: .68rem;
+  letter-spacing: .06em;
   color: var(--tinta-suave);
 }
 
 /* Guion de radio: se lee como texto aunque no haya voz */
 .msg--script .bubble {
-  background: #FFF9E6;
-  border-left: 4px solid var(--amarillo);
-  font-family: var(--display);
-  line-height: 1.65;
+  background: var(--ocre-claro);
+  border-top-color: var(--ocre);
 }
 
 .bubble__tag {
-  font-family: var(--texto);
-  font-size: .66rem;
-  letter-spacing: .14em;
+  font-family: var(--condensada);
+  font-size: .68rem;
+  letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--tinta-suave);
+  color: var(--ocre);
   margin-bottom: 6px;
 }
 
-/* Enlaces a la edición: botón dentro de la burbuja, no texto suelto */
+/* Enlaces a la edición: pie de nota, no botón de app */
 .bubble__links {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0;
   margin-top: 10px;
+  border-top: 1px solid var(--linea);
 }
 
 .bubble__link {
   display: block;
-  padding: 10px 12px;
-  border: 1px solid var(--verde);
-  border-radius: 10px;
-  background: var(--verde-claro);
-  color: var(--verde);
-  font-size: .86rem;
-  font-weight: 600;
-  text-align: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--linea);
+  color: var(--ocre);
+  font-family: var(--condensada);
+  font-size: .84rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
-.bubble__link:hover { background: #D6E8D9; }
+.bubble__link:last-child { border-bottom: 0; }
+.bubble__link:hover { color: var(--tinta); }
 
 /* Mensaje de audio: reproductor + guion siempre visible */
 .msg--audio .bubble {
-  background: #FFF9E6;
-  border-left: 4px solid var(--amarillo);
+  background: var(--ocre-claro);
+  border-top-color: var(--ocre);
 }
 
 .audio {
@@ -277,11 +313,11 @@ body {
 .audio__play,
 .audio__stop {
   flex: 0 0 auto;
-  width: 44px; height: 44px;
+  width: 42px; height: 42px;
   border: 0;
-  border-radius: 50%;
-  background: var(--verde);
-  color: #fff;
+  border-radius: 0;
+  background: var(--ocre);
+  color: var(--papel);
   font-size: .95rem;
   cursor: pointer;
 }
@@ -301,8 +337,17 @@ body {
   flex-direction: column;
 }
 
-.audio__title { font-size: .88rem; font-weight: 600; }
-.audio__state { font-size: .72rem; color: var(--tinta-suave); }
+.audio__title {
+  font-family: var(--condensada);
+  font-size: .95rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.audio__state {
+  font-family: var(--interfaz);
+  font-size: .72rem;
+  color: var(--tinta-suave);
+}
 
 .msg--audio .guion__texto { padding-top: 10px; }
 
@@ -318,37 +363,42 @@ body {
 
 /* La línea que se está diciendo en voz alta */
 .guion__linea.is-speaking {
-  background: var(--amarillo);
-  font-weight: 600;
+  background: var(--destacado);
+  box-shadow: -4px 0 0 var(--ocre);
 }
 
 /* Fecha del dato y fuentes: parte del contrato de confianza */
 .meta {
-  margin-top: 8px;
-  font-size: .7rem;
+  margin-top: 10px;
+  font-family: var(--condensada);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
 .sources {
-  margin-top: 8px;
+  margin-top: 10px;
   padding-top: 8px;
-  border-top: 1px solid var(--linea);
+  border-top: 1px solid var(--filete);
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
 
 .sources__label {
-  font-size: .64rem;
-  letter-spacing: .14em;
+  font-family: var(--condensada);
+  font-size: .68rem;
+  letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
 .sources a,
 .sources span:not(.sources__label) {
-  font-size: .74rem;
-  color: var(--verde);
+  font-family: var(--interfaz);
+  font-size: .76rem;
+  color: var(--ocre);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -391,23 +441,25 @@ body {
   border-top: 1px solid var(--linea);
 }
 
+/* Botones de sección, como los recuadros de una portada */
 .quick {
   min-height: 44px;
-  padding: 8px 14px;
-  border: 1px solid var(--verde);
-  border-radius: 22px;
-  background: var(--verde-claro);
-  color: var(--verde);
-  font-family: inherit;
-  font-size: .86rem;
-  font-weight: 600;
+  padding: 8px 13px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: var(--burbuja-in);
+  color: var(--tinta);
+  font-family: var(--condensada);
+  font-size: .88rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
 /* display:flex le gana al atributo hidden si no lo decimos explícitamente */
 .quick-replies[hidden] { display: none; }
 
-.quick:hover { background: #D6E8D9; }
+.quick:hover { background: var(--ocre); border-color: var(--ocre); color: var(--papel); }
 .quick:active { transform: translateY(1px); }
 
 /* ------------------------------------------------------------ redactor */
@@ -424,11 +476,11 @@ body {
   flex: 1;
   min-width: 0;
   min-height: 46px;
-  padding: 10px 14px;
-  border: 1px solid var(--linea);
-  border-radius: 23px;
-  background: #fff;
-  font-family: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: var(--burbuja-in);
+  font-family: var(--interfaz);
   font-size: 1rem;
   color: var(--tinta);
 }
@@ -437,14 +489,14 @@ body {
   width: 46px; height: 46px;
   flex: 0 0 46px;
   border: 0;
-  border-radius: 50%;
-  background: var(--verde);
-  color: #fff;
+  border-radius: 0;
+  background: var(--tinta);
+  color: var(--papel);
   font-size: 1.05rem;
   cursor: pointer;
 }
 
-.composer__send:hover { background: #1B4A38; }
+.composer__send:hover { background: #7C4818; }
 
 /* Mientras el agente escribe, el redactor se ve apagado */
 .composer__input:disabled { background: #F2F0EB; color: var(--tinta-suave); }
@@ -454,22 +506,27 @@ body {
 
 .notes {
   margin-top: 20px;
-  padding: 16px;
-  background: #fff;
-  border: 1px solid var(--linea);
-  border-radius: var(--radio);
+  padding: 14px 16px;
+  background: var(--burbuja-in);
+  border: 1px solid var(--filete);
 }
 
 .notes__title {
   margin: 0 0 8px;
-  font-family: var(--display);
-  font-size: 1.05rem;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--filete);
+  font-family: var(--condensada);
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .notes__list {
   margin: 0;
   padding-left: 18px;
-  font-size: .9rem;
+  font-family: var(--display);
+  font-size: .92rem;
+  line-height: 1.5;
   color: var(--tinta-suave);
 }
 
@@ -483,9 +540,11 @@ body {
 }
 
 .notes__links a {
-  font-size: .86rem;
-  font-weight: 600;
-  color: var(--verde);
+  font-family: var(--condensada);
+  font-size: .88rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ocre);
   text-decoration: none;
 }
 
@@ -532,24 +591,33 @@ body {
   align-items: center;
   gap: 10px;
   padding: 8px 12px 8px 8px;
-  border: 1px solid var(--verde);
-  border-radius: 22px;
-  background: var(--verde-claro);
+  border: 1px solid var(--linea);
+  border-left: 4px solid var(--ocre);
+  background: var(--burbuja-in);
 }
 
 .clip__play {
   flex: 0 0 auto;
-  width: 36px; height: 36px;
+  width: 34px; height: 34px;
   border: 0;
-  border-radius: 50%;
-  background: var(--verde);
-  color: #fff;
+  border-radius: 0;
+  background: var(--ocre);
+  color: var(--papel);
   font-size: .8rem;
   cursor: pointer;
 }
 
 .clip__label {
-  font-size: .82rem;
-  font-weight: 600;
-  color: var(--verde);
+  font-family: var(--condensada);
+  font-size: .86rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+
+/* La chapa dentro de las páginas lleva el enlace de vuelta arriba */
+.masthead .volver {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ocre-claro);
 }

@@ -3,9 +3,9 @@
  * -------------------------------------------------
  * Usa los tokens de styles.css. Acá va solo lo propio de las páginas largas.
  *
- * Criterio: esto se lee, no se opera. Medida de línea corta, jerarquía clara
- * entre título y bajada, y el estado de cada tramo legible de un vistazo sin
- * depender únicamente del color.
+ * Criterio de diario de provincia: chapa en negativo, filetes horizontales,
+ * volantas en recuadro ocre y todo el texto de lectura en serifa. El estado de
+ * cada tramo se lee de un vistazo sin depender únicamente del color.
  */
 
 .page {
@@ -34,7 +34,7 @@
   margin-bottom: 12px;
   font-size: .84rem;
   font-weight: 600;
-  color: var(--verde);
+  color: var(--ocre);
   text-decoration: none;
 }
 
@@ -43,41 +43,53 @@
 /* --------------------------------------------------- cabecera de edición */
 
 .edicion-head {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 18px 16px 20px;
-  border-bottom: 3px double var(--linea);
-  text-align: center;
+  padding: 0 0 14px;
+  border-bottom: 2px solid var(--tinta);
 }
 
-.edicion-head .volver { display: block; text-align: left; }
+.edicion-head > * {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.edicion-head .volver { display: block; padding-top: 10px; }
 
 .edicion-head__saludo {
-  margin: 14px 0 4px;
+  margin: 12px auto 4px;
   font-family: var(--display);
-  font-size: 1.3rem;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--tinta-suave);
 }
 
 .edicion-head__meta {
-  margin: 0;
-  font-size: .82rem;
+  margin: 0 auto;
+  font-family: var(--condensada);
+  font-size: .8rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
 .edicion-head__intereses {
-  margin: 12px 0 0;
-  font-size: .8rem;
+  margin: 12px auto 0;
+  font-family: var(--condensada);
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
 .tag {
   display: inline-block;
   margin-left: 6px;
-  padding: 2px 9px;
-  border-radius: 12px;
-  background: var(--verde-claro);
-  color: var(--verde);
-  font-weight: 600;
+  padding: 2px 8px;
+  background: var(--ocre);
+  color: var(--papel);
+  letter-spacing: .1em;
 }
 
 /* ----------------------------------------------- cabecera historia viva */
@@ -94,26 +106,32 @@
   margin-right: auto;
 }
 
-.viva-head .volver { color: var(--amarillo); display: block; }
+.viva-head .volver { color: var(--destacado); display: block; }
 
 .viva-head__eyebrow {
   margin: 10px auto 0;
-  font-size: .68rem;
+  font-family: var(--condensada);
+  font-size: .72rem;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: var(--amarillo);
+  color: var(--ocre-claro);
 }
 
 .viva-head__titulo {
   margin: 4px auto 6px;
-  font-family: var(--display);
-  font-size: clamp(2.2rem, 11vw, 3.2rem);
+  font-family: var(--condensada);
+  font-stretch: 87.5%;
+  font-size: clamp(2rem, 10vw, 2.8rem);
+  letter-spacing: .02em;
+  text-transform: uppercase;
   line-height: 1;
 }
 
 .viva-head__bajada {
   margin: 0 auto;
-  font-size: 1.02rem;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.05rem;
   line-height: 1.45;
   opacity: .92;
 }
@@ -146,16 +164,18 @@
 
 .indice a {
   flex: 0 0 auto;
-  padding: 7px 12px;
-  border-radius: 16px;
-  font-size: .8rem;
-  font-weight: 600;
+  padding: 7px 10px;
+  border-radius: 0;
+  font-family: var(--condensada);
+  font-size: .84rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
   text-decoration: none;
   white-space: nowrap;
 }
 
-.indice a:hover { background: var(--verde-claro); color: var(--verde); }
+.indice a:hover { background: var(--ocre-claro); color: var(--ocre); }
 
 /* -------------------------------------------------------------- bloques */
 
@@ -166,9 +186,13 @@
 }
 
 .bloque__titulo {
-  margin: 0 0 6px;
-  font-family: var(--display);
-  font-size: 1.35rem;
+  margin: 0 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--tinta);
+  font-family: var(--condensada);
+  font-size: 1.05rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
   line-height: 1.2;
 }
 
@@ -195,38 +219,50 @@
 
 .nota--principal .nota__titulo { font-size: 1.75rem; }
 
+/* La volanta va en recuadro ocre, como el rótulo de sección impreso */
 .nota__eyebrow {
-  margin: 0 0 6px;
-  font-size: .68rem;
-  letter-spacing: .18em;
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 3px 8px;
+  background: var(--ocre);
+  color: var(--papel);
+  font-family: var(--condensada);
+  font-size: .72rem;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--verde);
-  font-weight: 700;
 }
 
 .nota__titulo {
   margin: 0 0 6px;
   font-family: var(--display);
-  font-size: 1.4rem;
-  line-height: 1.18;
+  font-size: 1.45rem;
+  line-height: 1.14;
 }
 
 .nota__bajada {
   margin: 0 0 10px;
+  font-family: var(--display);
+  font-style: italic;
   font-size: 1rem;
   color: var(--tinta-suave);
 }
 
 .nota__lectura {
   margin: 0 0 12px;
-  font-size: .74rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--linea);
+  font-family: var(--condensada);
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
 .nota__resumen {
   margin: 0 0 14px;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: var(--display);
+  font-size: 1.02rem;
+  line-height: 1.65;
 }
 
 .nota__acciones {
@@ -240,11 +276,12 @@
 .fiction {
   margin: 0 0 12px;
   padding: 10px 12px;
-  border-left: 4px solid var(--rojo);
-  background: #FBEDEB;
-  color: #7A2018;
-  font-size: .85rem;
-  font-weight: 600;
+  border: 1px solid var(--rojo);
+  background: transparent;
+  color: var(--rojo);
+  font-family: var(--condensada);
+  font-size: .88rem;
+  letter-spacing: .04em;
 }
 
 /* ----------------------------------------------------------- desplegable */
@@ -254,18 +291,20 @@
 .mas__btn {
   display: inline-block;
   padding: 11px 16px;
-  border: 1px solid var(--verde);
-  border-radius: 22px;
-  background: var(--verde-claro);
-  color: var(--verde);
-  font-size: .88rem;
-  font-weight: 600;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: transparent;
+  color: var(--tinta);
+  font-family: var(--condensada);
+  font-size: .9rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   cursor: pointer;
   list-style: none;
 }
 
 .mas__btn::-webkit-details-marker { display: none; }
-.mas[open] .mas__btn { background: var(--verde); color: #fff; }
+.mas[open] .mas__btn { background: var(--tinta); border-color: var(--tinta); color: var(--papel); }
 
 .mas__cuerpo { padding-top: 16px; }
 
@@ -281,38 +320,50 @@
 
 .article p {
   margin: 0 0 14px;
+  font-family: var(--display);
   font-size: 1rem;
-  line-height: 1.68;
+  line-height: 1.7;
 }
 
 .article__heading {
   margin: 24px 0 10px;
-  font-family: var(--display);
-  font-size: 1.15rem;
+  font-family: var(--condensada);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
 
 .destacado {
   margin: 0 0 18px;
-  padding-left: 14px;
-  border-left: 4px solid var(--amarillo);
   font-family: var(--display);
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   line-height: 1.55;
+}
+
+/* Letra capitular: el gesto que dice "esto es una nota", no una pantalla */
+.destacado::first-letter {
+  float: left;
+  margin: 4px 7px 0 0;
+  font-size: 3.1rem;
+  line-height: .8;
+  color: var(--ocre);
 }
 
 .importa {
   margin: 18px 0;
   padding: 14px 16px;
-  background: var(--verde-claro);
-  border-radius: var(--radio);
+  background: var(--ocre-claro);
+  border-left: 4px solid var(--ocre);
+  border-radius: 0;
 }
 
 .importa h3 {
   margin: 0 0 6px;
-  font-size: .72rem;
+  font-family: var(--condensada);
+  font-size: .8rem;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--verde);
+  color: var(--ocre);
 }
 
 .importa p { margin: 0; font-size: .94rem; line-height: 1.6; }
@@ -327,17 +378,19 @@
 
 .saber__col {
   padding: 14px 16px;
-  background: #fff;
+  background: var(--burbuja-in);
   border: 1px solid var(--linea);
-  border-radius: var(--radio);
+  border-top: 3px solid var(--tinta);
+  border-radius: 0;
 }
 
 .saber__col h3 {
   margin: 0 0 10px;
-  font-size: .72rem;
+  font-family: var(--condensada);
+  font-size: .82rem;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--tinta-suave);
+  color: var(--tinta);
 }
 
 .facts {
@@ -361,7 +414,7 @@
   font-size: .95rem;
 }
 
-.facts--confirmed li::before { content: "✔"; color: var(--verde); }
+.facts--confirmed li::before { content: "✔"; color: var(--ocre); }
 .facts--pending li::before { content: "?"; color: var(--rojo); font-weight: 700; }
 
 .fact__date {
@@ -381,15 +434,15 @@
 
 .tramo {
   margin-bottom: 10px;
-  padding: 14px 16px;
-  background: #fff;
+  padding: 13px 15px;
+  background: var(--burbuja-in);
   border: 1px solid var(--linea);
   border-left: 5px solid var(--tinta-suave);
-  border-radius: var(--radio);
+  border-radius: 0;
   scroll-margin-top: 62px;
 }
 
-.tramo--done    { border-left-color: var(--verde); }
+.tramo--done    { border-left-color: var(--ocre); }
 .tramo--partial { border-left-color: #C9922B; }
 .tramo--blocked { border-left-color: var(--rojo); }
 
@@ -403,22 +456,24 @@
 
 .tramo__name {
   margin: 0;
-  font-family: var(--display);
+  font-family: var(--condensada);
   font-size: 1.05rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
 
 /* El texto del chip dice el estado: no depende solo del color */
 .chip {
   flex: 0 0 auto;
-  padding: 3px 10px;
-  border-radius: 12px;
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .04em;
+  padding: 3px 8px;
+  border-radius: 0;
+  font-family: var(--condensada);
+  font-size: .72rem;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
-.chip--done    { background: var(--verde-claro); color: var(--verde); }
+.chip--done    { background: var(--ocre-claro); color: var(--ocre); }
 .chip--partial { background: #FBF0D8; color: #7A5A12; }
 .chip--blocked { background: #FBEDEB; color: #7A2018; }
 
@@ -458,11 +513,10 @@
 .hito::before {
   content: "";
   position: absolute;
-  left: -29px;
-  top: 5px;
-  width: 11px; height: 11px;
-  border-radius: 50%;
-  background: var(--amarillo);
+  left: -28px;
+  top: 6px;
+  width: 9px; height: 9px;
+  background: var(--ocre);
   border: 2px solid var(--papel);
 }
 
@@ -476,8 +530,10 @@
 
 .hito__title {
   margin: 3px 0 4px;
-  font-family: var(--display);
-  font-size: 1.02rem;
+  font-family: var(--condensada);
+  font-size: 1.05rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
 }
 
 .hito__text {
@@ -503,7 +559,8 @@
 .fuente {
   padding: 10px 0;
   border-bottom: 1px solid var(--linea);
-  font-size: .9rem;
+  font-family: var(--display);
+  font-size: .92rem;
 }
 
 .fuente a { color: var(--tinta); text-decoration: none; }
@@ -512,7 +569,10 @@
 .fuente__meta {
   display: block;
   margin-top: 2px;
-  font-size: .76rem;
+  font-family: var(--condensada);
+  font-size: .8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
@@ -546,16 +606,16 @@
 
 /* La frase que se está diciendo en voz alta */
 .guion__linea.is-speaking {
-  background: var(--amarillo);
+  background: var(--destacado);
   font-weight: 600;
 }
 
 .guion {
   margin-top: 16px;
   padding: 16px;
-  background: #FFF9E6;
-  border-left: 4px solid var(--amarillo);
-  border-radius: 0 var(--radio) var(--radio) 0;
+  background: var(--ocre-claro);
+  border-left: 4px solid var(--ocre);
+  border-radius: 0;
 }
 
 .guion__aviso {
@@ -583,24 +643,25 @@
   flex: 1;
   min-width: 0;
   min-height: 46px;
-  padding: 10px 14px;
-  border: 1px solid var(--linea);
-  border-radius: 23px;
-  background: #fff;
-  font-family: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: var(--burbuja-in);
+  font-family: var(--interfaz);
   font-size: 1rem;
 }
 
 .ask__send {
   min-height: 46px;
-  padding: 0 18px;
+  padding: 0 16px;
   border: 0;
-  border-radius: 23px;
-  background: var(--verde);
-  color: #fff;
-  font-family: inherit;
-  font-size: .9rem;
-  font-weight: 600;
+  border-radius: 0;
+  background: var(--tinta);
+  color: var(--papel);
+  font-family: var(--condensada);
+  font-size: .92rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -611,53 +672,56 @@
 }
 
 .sugerida {
-  padding: 9px 14px;
-  border: 1px solid var(--verde);
-  border-radius: 20px;
-  background: var(--verde-claro);
-  color: var(--verde);
-  font-size: .85rem;
-  font-weight: 600;
+  padding: 9px 13px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: var(--burbuja-in);
+  color: var(--tinta);
+  font-family: var(--condensada);
+  font-size: .88rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
-.sugerida:hover { background: #D6E8D9; }
+.sugerida:hover { background: var(--ocre); border-color: var(--ocre); color: var(--papel); }
 
 /* -------------------------------------------------------------- botones */
 
 .btn {
   display: inline-block;
   min-height: 44px;
-  padding: 11px 18px;
-  border-radius: 22px;
-  font-family: inherit;
-  font-size: .9rem;
-  font-weight: 600;
+  padding: 11px 16px;
+  border-radius: 0;
+  font-family: var(--condensada);
+  font-size: .92rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid transparent;
 }
 
 .btn--primary {
-  background: var(--verde);
-  color: #fff;
-  border-color: var(--verde);
+  background: var(--tinta);
+  color: var(--papel);
+  border-color: var(--tinta);
 }
 
-.btn--primary:hover { background: #1B4A38; }
+.btn--primary:hover { background: #7C4818; }
 
 .btn--ghost {
   background: transparent;
-  color: var(--verde);
-  border-color: var(--verde);
+  color: var(--ocre);
+  border-color: var(--ocre);
 }
 
-.btn--ghost:hover { background: var(--verde-claro); }
+.btn--ghost:hover { background: var(--ocre-claro); }
 
 .btn--follow {
-  background: var(--amarillo);
-  color: var(--tinta);
-  border-color: var(--amarillo);
+  background: var(--ocre);
+  color: var(--papel);
+  border-color: var(--ocre);
 }
 
 .btn--follow[aria-pressed="true"] {
@@ -665,8 +729,8 @@
   border-color: var(--tinta);
 }
 
-.viva-head .btn--ghost { color: var(--amarillo); border-color: var(--amarillo); }
-.viva-head .btn--ghost:hover { background: rgba(242, 194, 48, .15); }
+.viva-head .btn--ghost { color: var(--papel); border-color: var(--papel); }
+.viva-head .btn--ghost:hover { background: rgba(247, 244, 238, .15); }
 
 .error {
   padding: 14px 16px;
@@ -706,19 +770,20 @@
 
 .velocidad__btn {
   min-height: 40px;
-  padding: 8px 14px;
-  border: 1px solid var(--linea);
-  border-radius: 20px;
-  background: #fff;
-  font-family: inherit;
-  font-size: .82rem;
-  font-weight: 600;
+  padding: 8px 12px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: var(--burbuja-in);
+  font-family: var(--condensada);
+  font-size: .86rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   color: var(--tinta-suave);
   cursor: pointer;
 }
 
 .velocidad__btn.is-active {
-  background: var(--verde);
-  border-color: var(--verde);
-  color: #fff;
+  background: var(--tinta);
+  border-color: var(--tinta);
+  color: var(--papel);
 }
