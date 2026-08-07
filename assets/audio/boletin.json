@@ -3,9 +3,9 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "generatedAt": "2026-08-07T15:27:32.428Z",
+  "generatedAt": "2026-08-07T19:51:20.598Z",
   "baseRate": 1,
-  "duration": 143.57,
+  "duration": 151.33,
   "segments": [
     {
       "kind": "identificacion",
@@ -13,7 +13,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las doce y veintisiete del mediodía. Buen día."
+      "text": "Son las cuatro y cincuenta y uno de la tarde. Buenas tardes."
     },
     {
       "kind": "fecha",
@@ -25,11 +25,11 @@
     },
     {
       "kind": "titular",
-      "text": "Arrancamos con la Ruta 22, y con un traspaso que todavía no se firma."
+      "text": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias."
     },
     {
       "kind": "desarrollo",
-      "text": "Río Negro sigue negociando con Vialidad Nacional. Quiere quedarse con la administración de las rutas 22 y 151. El permiso ya existe: es el decreto 253, de abril de este año. Nueve provincias quedaron habilitadas a concesionar tramos de rutas nacionales. Lo que no existe todavía es la firma. El convenio se iba a rubricar la última semana de julio. Quedó en suspenso. ¿Por qué? Por tres discusiones. Cuántos papeles se firman. Qué pasa con las obras que quedaron a medias. Y cuánta libertad va a tener la Provincia para decidir los proyectos. Ahora, el dato que explica el enojo. Hay cinco contratos de obra neutralizados. ¿Qué quiere decir eso? Que la obra está frenada, pero el contrato sigue vivo. Nadie trabaja. Y nadie más puede entrar a trabajar."
+      "text": "Las lluvias de los últimos días no rompieron la ruta. Hicieron algo peor: la mostraron. Destaparon los baches que estaban parchados y dejaron el pavimento a la vista, en todo el Alto Valle. El dato que lo resume mejor está en las gomerías. En Cinco Saltos pasaron de atender dos casos por día a once en una sola jornada. Y una cubierta rajada, en general, no se repara: se cambia. Vialidad Nacional está haciendo bacheo en frío. El problema es que el agua se llevó ese material y los pozos volvieron a quedar al descubierto. Los sectores más complicados: el cruce con avenida Roca, la zona del Puente 83, y el tramo entre Cervantes y Roca, que todavía tiene doble mano. Ahora se pide una Mesa Regional de Emergencia, con Nación, Provincia y municipios. Mientras tanto, el traspaso de la ruta a Río Negro sigue sin firmarse, y hay cinco contratos de obra neutralizados. Congelados. Nadie trabaja, y nadie más puede entrar a trabajar."
     },
     {
       "kind": "separador",
@@ -57,7 +57,7 @@
     },
     {
       "kind": "seguimiento",
-      "text": "Durante el día vamos a estar siguiendo esto: cuándo se firma el convenio y si será un documento único o dos."
+      "text": "Durante el día vamos a estar siguiendo esto: si la Mesa Regional de Emergencia llega a conformarse y con qué facultades."
     },
     {
       "kind": "invitacion",
@@ -75,59 +75,59 @@
     },
     {
       "segment": 1,
-      "start": 3.038
+      "start": 3.098
     },
     {
       "segment": 2,
-      "start": 6.016
+      "start": 6.573
     },
     {
       "segment": 3,
-      "start": 8.791
+      "start": 9.34
     },
     {
       "segment": 4,
-      "start": 11.499
+      "start": 11.915
     },
     {
       "segment": 5,
-      "start": 16.028
+      "start": 16.161
     },
     {
       "segment": 6,
-      "start": 55.927
+      "start": 63.099
     },
     {
       "segment": 7,
-      "start": 57.208
+      "start": 64.346
     },
     {
       "segment": 8,
-      "start": 61.468
+      "start": 68.68
     },
     {
       "segment": 9,
-      "start": 98.977
+      "start": 106.05
     },
     {
       "segment": 10,
-      "start": 100.921
+      "start": 108.044
     },
     {
       "segment": 11,
-      "start": 105.534
+      "start": 112.781
     },
     {
       "segment": 12,
-      "start": 129.191
+      "start": 136.279
     },
     {
       "segment": 13,
-      "start": 134.66
+      "start": 142.419
     },
     {
       "segment": 14,
-      "start": 139.875
+      "start": 147.75
     }
   ]
 }
