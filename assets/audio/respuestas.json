@@ -1,0 +1,109 @@
+{
+  "voice": "es_AR-daniela-high",
+  "engine": "Piper TTS",
+  "generatedAt": "2026-08-07T14:52:19.719Z",
+  "answers": {
+    "ruta22-actualidad": {
+      "url": "assets/audio/respuestas/ruta22-actualidad.mp3",
+      "duration": 74.71,
+      "question": "Ruta 22 hoy",
+      "intent": "route22_current"
+    },
+    "ruta22-historia": {
+      "url": "assets/audio/respuestas/ruta22-historia.mp3",
+      "duration": 64.5,
+      "question": "Ver la historia de la Ruta 22",
+      "intent": "route22_history"
+    },
+    "ruta22-por-que": {
+      "url": "assets/audio/respuestas/ruta22-por-que.mp3",
+      "duration": 37.07,
+      "question": "¿Por qué se frenó la Ruta 22?",
+      "intent": "route22_reason_stopped"
+    },
+    "ruta22-tramos": {
+      "url": "assets/audio/respuestas/ruta22-tramos.mp3",
+      "duration": 51.85,
+      "question": "¿Qué tramo está terminado?",
+      "intent": "route22_status"
+    },
+    "ruta22-roca": {
+      "url": "assets/audio/respuestas/ruta22-roca.mp3",
+      "duration": 45.64,
+      "question": "¿Qué pasó en General Roca?",
+      "intent": "route22_roca"
+    },
+    "ruta22-traspaso": {
+      "url": "assets/audio/respuestas/ruta22-traspaso.mp3",
+      "duration": 35.63,
+      "question": "¿Río Negro ya se hizo cargo?",
+      "intent": "route22_province"
+    },
+    "ruta22-neutralizados": {
+      "url": "assets/audio/respuestas/ruta22-neutralizados.mp3",
+      "duration": 29.07,
+      "question": "¿Qué son los contratos neutralizados?",
+      "intent": "route22_neutralized"
+    },
+    "ruta22-peaje": {
+      "url": "assets/audio/respuestas/ruta22-peaje.mp3",
+      "duration": 31.32,
+      "question": "¿Va a haber peaje?",
+      "intent": "route22_toll"
+    },
+    "seccion1": {
+      "url": "assets/audio/respuestas/seccion1.mp3",
+      "duration": 19.44,
+      "question": "Sección 1",
+      "intent": "route22_section:seccion1"
+    },
+    "seccion2": {
+      "url": "assets/audio/respuestas/seccion2.mp3",
+      "duration": 22.36,
+      "question": "Sección 2",
+      "intent": "route22_section:seccion2"
+    },
+    "seccion3": {
+      "url": "assets/audio/respuestas/seccion3.mp3",
+      "duration": 27.27,
+      "question": "Sección 3",
+      "intent": "route22_section:seccion3"
+    },
+    "seccion4": {
+      "url": "assets/audio/respuestas/seccion4.mp3",
+      "duration": 18.16,
+      "question": "Sección 4",
+      "intent": "route22_section:seccion4"
+    },
+    "seccion5": {
+      "url": "assets/audio/respuestas/seccion5.mp3",
+      "duration": 24.71,
+      "question": "Sección 5",
+      "intent": "route22_section:seccion5"
+    },
+    "tramo6": {
+      "url": "assets/audio/respuestas/tramo6.mp3",
+      "duration": 25.34,
+      "question": "¿Qué pasa en Cipolletti?",
+      "intent": "route22_section:tramo6"
+    },
+    "deportes": {
+      "url": "assets/audio/respuestas/deportes.mp3",
+      "duration": 33.65,
+      "question": "Ver deportes",
+      "intent": "sports"
+    },
+    "deportes-proximo": {
+      "url": "assets/audio/respuestas/deportes-proximo.mp3",
+      "duration": 19.54,
+      "question": "¿Cuándo juega Deportivo Roca?",
+      "intent": "sports_next"
+    },
+    "fuera-de-alcance": {
+      "url": "assets/audio/respuestas/fuera-de-alcance.mp3",
+      "duration": 9.67,
+      "question": "¿Qué pasa con el dólar?",
+      "intent": "unknown"
+    }
+  }
+}
