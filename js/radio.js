@@ -128,6 +128,17 @@
    */
   function toSpeech(text) {
     return String(text)
+      // Las horas van antes que las cifras sueltas: 16:00 no es "dieciséis cero"
+      .replace(/\b(\d{1,2}):(\d{2})\b/g, function (match, hora, minutos) {
+        var h = numberToWords(Number(hora));
+        return Number(minutos) === 0
+          ? h + ' horas'
+          : h + ' y ' + numberToWords(Number(minutos));
+      })
+      // Flechas y guiones largos: se dicen, no se leen
+      .replace(/\s*(→|->)\s*/g, ' hasta ')
+      .replace(/\s*·\s*/g, ', ')
+      .replace(/\s*[—–]\s*/g, ', ')
       // Decreto 253/2026 -> "doscientos cincuenta y tres, del año dos mil..."
       .replace(/(\d{1,4})\/(\d{4})/g, function (match, numero, anio) {
         return numberToWords(Number(numero)) + ', del año ' + numberToWords(Number(anio));
@@ -355,6 +366,42 @@
     return grabado;
   }
 
+  /*
+   * Respuestas grabadas. Como el motor es de reglas, el conjunto es finito y
+   * se pueden generar todas de antemano. Cada respuesta del chat tiene su clip.
+   */
+  var respuestas = null;
+
+  function loadAnswers() {
+    var base = (Canillita.router && Canillita.router.base()) || '';
+    return fetch(base + 'assets/audio/respuestas.json')
+      .then(function (res) {
+        if (!res.ok) throw new Error('sin respuestas grabadas');
+        return res.json();
+      })
+      .then(function (indice) {
+        respuestas = indice;
+        return indice;
+      })
+      .catch(function () {
+        respuestas = null;
+        return null;
+      });
+  }
+
+  /** Clip de una respuesta, o null si no está grabada. */
+  function answer(id) {
+    if (!respuestas || !id || !respuestas.answers[id]) return null;
+    var clip = respuestas.answers[id];
+    var base = (Canillita.router && Canillita.router.base()) || '';
+    return {
+      id: id,
+      url: base + clip.url,
+      duration: clip.duration,
+      voice: respuestas.voice
+    };
+  }
+
   /** Antigüedad del boletín grabado, en horas. */
   function recordedAgeHours() {
     if (!grabado || !grabado.generatedAt) return null;
@@ -464,22 +511,22 @@
       global.speechSynthesis.speak(utterance);
     }
 
-    /* Reproduce el archivo generado por Piper. */
-    function playFile(callbacks) {
+    /* Reproduce cualquier archivo generado por Piper: boletín o respuesta. */
+    function playFile(url, marks, callbacks) {
       handlers = callbacks || {};
       stop();
       mode = 'file';
 
       // 'el' es la referencia local: los eventos que llegan tarde, después de
       // un stop(), se descartan comparando contra el elemento actual.
-      var el = new global.Audio(grabado.absoluteUrl);
+      var el = new global.Audio(url);
       audio = el;
       el.playbackRate = baseRate;
 
       el.addEventListener('timeupdate', function () {
         if (audio !== el) return;
         var actual = -1;
-        (grabado.marks || []).forEach(function (mark) {
+        (marks || []).forEach(function (mark) {
           if (el.currentTime >= mark.start) actual = mark.segment;
         });
         emit('onSegment', actual);
@@ -508,7 +555,7 @@
 
     function play(script, callbacks) {
       // Primero el archivo grabado; la voz del navegador es el respaldo.
-      if (grabado) return playFile(callbacks);
+      if (grabado) return playFile(grabado.absoluteUrl, grabado.marks, callbacks);
       mode = 'speech';
       if (!isSupported()) {
         handlers = callbacks || {};
@@ -541,6 +588,13 @@
       setState('playing');
       speakNext();
       return true;
+    }
+
+    /** Reproduce el clip de una respuesta puntual del chat. */
+    function playAnswer(id, callbacks) {
+      var clip = answer(id);
+      if (!clip) return false;
+      return playFile(clip.url, null, callbacks);
     }
 
     function pause() {
@@ -609,6 +663,7 @@
       resume: resume,
       stop: stop,
       toggle: toggle,
+      playAnswer: playAnswer,
       state: current,
       setRate: setRate,
       rate: rate,
@@ -646,6 +701,8 @@
     isSupported: isSupported,
     loadRecorded: loadRecorded,
     recorded: recorded,
+    loadAnswers: loadAnswers,
+    answer: answer,
     recordedAgeHours: recordedAgeHours,
     prosodiaDe: prosodiaDe,
     toSpeech: toSpeech,

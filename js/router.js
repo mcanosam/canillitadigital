@@ -15,9 +15,14 @@
 
   var Canillita = global.Canillita = global.Canillita || {};
 
+  /* En Node (generación de audio) no hay location: se asume la raíz. */
+  function ubicacion() {
+    return global.location || { pathname: '/', search: '' };
+  }
+
   /** ¿Estamos dentro de /pages? */
   function isSubpage() {
-    return /\/pages\//.test(global.location.pathname);
+    return /\/pages\//.test(ubicacion().pathname);
   }
 
   /** Prefijo para llegar a la raíz del proyecto. */
@@ -51,7 +56,7 @@
 
   /** Lee un parámetro de la URL actual. */
   function param(name) {
-    var match = new RegExp('[?&]' + name + '=([^&]*)').exec(global.location.search);
+    var match = new RegExp('[?&]' + name + '=([^&]*)').exec(ubicacion().search);
     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : null;
   }
 
@@ -64,4 +69,7 @@
     chatUrl: chatUrl,
     param: param
   };
-})(window);
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Canillita.router;
+  }
+})(typeof window !== 'undefined' ? window : globalThis);

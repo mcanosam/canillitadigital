@@ -171,4 +171,7 @@
     TOPIC_LABELS: TOPIC_LABELS,
     FORMAT_LABELS: FORMAT_LABELS
   };
-})(window);
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Canillita.preferences;
+  }
+})(typeof window !== 'undefined' ? window : globalThis);

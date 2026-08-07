@@ -76,6 +76,15 @@
     });
   }
 
+  /**
+   * Carga las historias desde un array ya leído, sin fetch.
+   * Lo usan las herramientas que corren en Node para generar audio.
+   */
+  function hydrate(list) {
+    state.loadedFrom = 'hydrate';
+    return indexStories(list);
+  }
+
   /* ------------------------------------------------------------ consultas */
 
   function all() {
@@ -146,6 +155,7 @@
 
   Canillita.content = {
     load: load,
+    hydrate: hydrate,
     all: all,
     get: get,
     byTopic: byTopic,
@@ -156,4 +166,7 @@
     sourcesFor: sourcesFor,
     loadedFrom: loadedFrom
   };
-})(window);
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Canillita.content;
+  }
+})(typeof window !== 'undefined' ? window : globalThis);

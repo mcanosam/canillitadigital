@@ -200,10 +200,35 @@ cualquier otra del catálogo de Piper.
 La velocidad y los silencios entre bloques se aplican con ffmpeg, no con los
 flags de Piper: los flags cambiaron entre versiones y ffmpeg no.
 
+## Las respuestas del chat también se escuchan
+
+El motor conversacional es de reglas, así que el conjunto de respuestas
+posibles es **finito**: diecisiete, contando las seis secciones de la ruta y la
+respuesta de "no tengo ese dato". Se pueden grabar todas de antemano.
+
+`tools/build-respuestas.js` recorre el mismo motor que responde en pantalla y
+arma el texto de cada una; `tools/tts-respuestas.sh` las convierte en clips.
+Cuando en el chat aparece una respuesta que tiene clip, debajo sale un botón
+para escucharla.
+
+Si mañana agregás una intención nueva a `js/intents.js`, sumás la pregunta a la
+lista de `build-respuestas.js` y el clip se genera solo. Si la pregunta no
+matchea ninguna intención, el script falla en vez de generar audio de una
+respuesta equivocada.
+
+Antes de sintetizar, el texto se prepara para ser dicho: los emojis se sacan,
+los números en círculo se convierten en "Primero, Segundo, Tercero", las
+flechas de los tramos se dicen "hasta", y cada salto de línea se cierra con un
+punto para que no se encadenen las frases.
+
 ### Generación automática
 
 `.github/workflows/boletin.yml` corre todos los días a las 07:00 de Argentina,
-genera el audio y lo sube al repositorio. **GitHub Actions no cobra minutos en
+genera el audio y lo sube al repositorio.
+
+**También se dispara al editar el contenido.** Si hacés commit de un cambio en
+`content/*.json`, el audio se regenera en unos minutos: publicar la noticia es
+el disparador, no hay que acordarse de apretar nada. **GitHub Actions no cobra minutos en
 repositorios públicos**, así que no hay costo ni hace falta tarjeta.
 
 También se puede disparar a mano desde la pestaña *Actions* del repositorio,

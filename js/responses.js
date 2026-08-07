@@ -52,10 +52,15 @@
     return Object.assign({ text: text, kind: 'text' }, options || {});
   }
 
-  function reply(messages, quickReplies) {
+  /*
+   * audioId enlaza la respuesta con su clip pregrabado por Piper, si existe.
+   * Los ids son los mismos que enumera tools/build-respuestas.js.
+   */
+  function reply(messages, quickReplies, audioId) {
     return {
       messages: Array.isArray(messages) ? messages : [messages],
-      quickReplies: quickReplies || []
+      quickReplies: quickReplies || [],
+      audioId: audioId || null
     };
   }
 
@@ -194,7 +199,7 @@
         sources: content.sourcesFor(story, ['anroca_demora', 'anroca_neutralizadas', 'rionegro_decreto253']),
         dataDate: story.eventDate
       })
-    ], ['¿Por qué se frenó la Ruta 22?', '¿Va a haber peaje?', 'Ver la historia de la Ruta 22']);
+    ], ['¿Por qué se frenó la Ruta 22?', '¿Va a haber peaje?', 'Ver la historia de la Ruta 22'], 'ruta22-actualidad');
   }
 
   function route22History() {
@@ -212,7 +217,7 @@
       message('Preguntame por cualquier tramo: “sección 3”, “Allen”, “Cipolletti”, “Cervantes”. O abrí la historia completa, con la cronología y las fuentes.', {
         links: [{ label: 'Abrir la historia viva', href: Canillita.router.route22Url() }]
       })
-    ], ['¿Qué pasó en General Roca?', '¿Qué tramo está terminado?', 'Ver edición completa']);
+    ], ['¿Qué pasó en General Roca?', '¿Qué tramo está terminado?', 'Ver edición completa'], 'ruta22-historia');
   }
 
   function statusIcon(status) {
@@ -237,7 +242,7 @@
           dataDate: '2026-07-14'
         }
       )
-    ], ['¿Qué pasó en General Roca?', '¿Qué tramo está terminado?', '¿Río Negro ya se hizo cargo?']);
+    ], ['¿Qué pasó en General Roca?', '¿Qué tramo está terminado?', '¿Río Negro ya se hizo cargo?'], 'ruta22-por-que');
   }
 
   function route22Status() {
@@ -259,7 +264,7 @@
           sources: content.sourcesFor(story, ['rionegro_inauguran', 'mejorinformado_tramos']),
           dataDate: story.lastUpdated
         })
-    ], ['¿Qué pasó en General Roca?', 'Sección 4', 'Ver la historia de la Ruta 22']);
+    ], ['¿Qué pasó en General Roca?', 'Sección 4', 'Ver la historia de la Ruta 22'], 'ruta22-tramos');
   }
 
   function route22Section(section) {
@@ -280,7 +285,7 @@
           }]
         }
       )
-    ], ['¿Qué tramo está terminado?', '¿Por qué se frenó la Ruta 22?', 'Menú']);
+    ], ['¿Qué tramo está terminado?', '¿Por qué se frenó la Ruta 22?', 'Menú'], section.id);
   }
 
   function route22Roca() {
@@ -302,7 +307,7 @@
         }
       ),
       message('Estado actual del tramo: ' + section.statusLabel)
-    ], ['¿Qué pasa en Cipolletti?', '¿Río Negro ya se hizo cargo?', 'Ver la historia de la Ruta 22']);
+    ], ['¿Qué pasa en Cipolletti?', '¿Río Negro ya se hizo cargo?', 'Ver la historia de la Ruta 22'], 'ruta22-roca');
   }
 
   function route22Province() {
@@ -318,7 +323,7 @@
           dataDate: '2026-08-02'
         }
       )
-    ], ['¿Qué son los contratos neutralizados?', '¿Va a haber peaje?', 'Ruta 22 hoy']);
+    ], ['¿Qué son los contratos neutralizados?', '¿Va a haber peaje?', 'Ruta 22 hoy'], 'ruta22-traspaso');
   }
 
   function route22Neutralized() {
@@ -333,7 +338,7 @@
           dataDate: '2026-07-14'
         }
       )
-    ], ['¿Río Negro ya se hizo cargo?', '¿Va a haber peaje?', 'Menú']);
+    ], ['¿Río Negro ya se hizo cargo?', '¿Va a haber peaje?', 'Menú'], 'ruta22-neutralizados');
   }
 
   function route22Toll() {
@@ -349,7 +354,7 @@
           dataDate: '2026-04-22'
         }
       )
-    ], ['¿Río Negro ya se hizo cargo?', 'Ruta 22 hoy', 'Menú']);
+    ], ['¿Río Negro ya se hizo cargo?', 'Ruta 22 hoy', 'Menú'], 'ruta22-peaje');
   }
 
   function sports() {
@@ -366,7 +371,7 @@
         { dataDate: story.eventDate }
       ),
       message('📅 Próxima fecha: ' + story.nextMatch.homeAway + ' ante ' + story.nextMatch.opponent + ', ' + story.nextMatch.dateLabel + '.')
-    ], ['¿Cuándo juega Deportivo Roca?', 'Mi resumen de hoy', 'Menú']);
+    ], ['¿Cuándo juega Deportivo Roca?', 'Mi resumen de hoy', 'Menú'], 'deportes');
   }
 
   function sportsNext() {
@@ -380,7 +385,7 @@
         { dataDate: story.eventDate }
       ),
       message(story.fictionNotice)
-    ], ['Ver deportes', 'Mi resumen de hoy', 'Menú']);
+    ], ['Ver deportes', 'Mi resumen de hoy', 'Menú'], 'deportes-proximo');
   }
 
   function thanks() {
@@ -391,7 +396,7 @@
     return reply([
       message('No tengo información validada sobre ese tema dentro de esta demostración. Por ahora puedo responder sobre la Ruta 22 y la noticia deportiva disponible.'),
       message('Probá con alguna de estas:')
-    ], ['¿Por qué se frenó la Ruta 22?', '¿Qué tramo está terminado?', 'Ver deportes', 'Menú']);
+    ], ['¿Por qué se frenó la Ruta 22?', '¿Qué tramo está terminado?', 'Ver deportes', 'Menú'], 'fuera-de-alcance');
   }
 
   /* ------------------------------------------------- configuración guiada */
@@ -550,4 +555,7 @@
     todayLabel: todayLabel,
     clockLabel: clockLabel
   };
-})(window);
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Canillita.responses;
+  }
+})(typeof window !== 'undefined' ? window : globalThis);

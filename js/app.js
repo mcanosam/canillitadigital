@@ -26,7 +26,8 @@
   function start() {
     Promise.all([
       Canillita.content.load(),
-      Canillita.radio.loadRecorded()
+      Canillita.radio.loadRecorded(),
+      Canillita.radio.loadAnswers()
     ])
       .then(function () {
         paintHeader();

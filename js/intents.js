@@ -160,4 +160,7 @@
     table: INTENTS,
     menu: MENU
   };
-})(window);
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Canillita.intents;
+  }
+})(typeof window !== 'undefined' ? window : globalThis);

@@ -12,6 +12,14 @@ on:
   schedule:
     # 10:00 UTC = 07:00 en Argentina. GitHub usa siempre UTC.
     - cron: '0 10 * * *'
+
+  # Publicar una noticia ES el disparador: al editar el contenido, el audio se
+  # regenera solo. Entre el commit y el audio nuevo pasan unos minutos.
+  push:
+    paths:
+      - 'content/**.json'
+      - 'js/radio.js'
+
   workflow_dispatch:
     inputs:
       voz:
@@ -65,19 +73,29 @@ jobs:
             --seconds "${{ github.event.inputs.duracion || '300' }}" \
             --out build/plan.json
 
-      - name: Sintetizar con Piper
+      - name: Sintetizar el boletín con Piper
         run: |
           chmod +x tools/tts-boletin.sh
           tools/tts-boletin.sh "${{ github.event.inputs.voz || 'es_AR-daniela-high' }}"
 
-      - name: Publicar el boletín
+      - name: Armar las respuestas del chat
+        run: node tools/build-respuestas.js --out build/respuestas.json
+
+      - name: Sintetizar las respuestas con Piper
+        run: |
+          chmod +x tools/tts-respuestas.sh
+          tools/tts-respuestas.sh "${{ github.event.inputs.voz || 'es_AR-daniela-high' }}"
+
+      - name: Publicar el boletín y las respuestas
         run: |
           git config user.name  'Tu Canillita Digital'
           git config user.email 'actions@users.noreply.github.com'
-          git add assets/audio/boletin.mp3 assets/audio/boletin.ogg assets/audio/boletin.json
+          git add assets/audio/
           if git diff --staged --quiet; then
             echo 'Sin cambios en el boletín.'
           else
-            git commit -m "Boletín de audio del $(date +%d-%m-%Y)"
+            git commit -m "Audio del $(date +%d-%m-%Y)"
+            # El push puede chocar con otro commit reciente: reintentamos una vez
+            git pull --rebase --autostash || true
             git push
           fi

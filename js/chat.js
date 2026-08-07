@@ -189,6 +189,56 @@
     return wrapper;
   }
 
+  /**
+   * Barra para escuchar una respuesta puntual, cuando existe su clip grabado.
+   * Aparece debajo del último mensaje de la respuesta.
+   */
+  function appendAnswerPlayer(audioId) {
+    var clip = Canillita.radio.answer(audioId);
+    if (!clip) return null;
+
+    var wrapper = doc.createElement('div');
+    wrapper.className = 'msg msg--in msg--clip';
+    wrapper.innerHTML =
+      '<div class="clip">' +
+        '<button type="button" class="clip__play" aria-label="Escuchar esta respuesta">▶</button>' +
+        '<span class="clip__label">Escuchar esta respuesta · ' +
+          Math.round(clip.duration) + 's</span>' +
+      '</div>';
+
+    var button = wrapper.querySelector('.clip__play');
+    var label = wrapper.querySelector('.clip__label');
+
+    var callbacks = {
+      onState: function (state) {
+        var sonando = state === 'playing';
+        button.textContent = sonando ? '❚❚' : '▶';
+        button.setAttribute('aria-label', sonando ? 'Pausar' : 'Escuchar esta respuesta');
+        label.textContent = sonando
+          ? 'Reproduciendo la respuesta…'
+          : 'Escuchar esta respuesta · ' + Math.round(clip.duration) + 's';
+      },
+      onError: function () {
+        label.textContent = 'No pude reproducir el audio.';
+      }
+    };
+
+    button.addEventListener('click', function () {
+      Canillita.radio.player.setRate(Canillita.preferences.get().speechRate);
+      if (Canillita.radio.player.state() === 'playing') {
+        Canillita.radio.player.pause();
+      } else if (Canillita.radio.player.state() === 'paused') {
+        Canillita.radio.player.resume();
+      } else {
+        Canillita.radio.player.playAnswer(audioId, callbacks);
+      }
+    });
+
+    elements.log.appendChild(wrapper);
+    scrollToEnd();
+    return wrapper;
+  }
+
   function scrollToEnd() {
     elements.log.scrollTop = elements.log.scrollHeight;
   }
@@ -243,6 +293,7 @@
 
     function next() {
       if (!queue.length) {
+        if (reply.audioId) appendAnswerPlayer(reply.audioId);
         renderQuickReplies(reply.quickReplies);
         setBusy(false);
         if (pending.length) {

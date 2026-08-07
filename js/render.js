@@ -203,4 +203,7 @@
     bindFollowButtons: bindFollowButtons,
     bindAskForm: bindAskForm
   };
-})(window);
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Canillita.render;
+  }
+})(typeof window !== 'undefined' ? window : globalThis);
