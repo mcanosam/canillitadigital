@@ -109,12 +109,19 @@ async function enviarTexto(token, chatId, texto, marcado) {
   });
 }
 
-/** Nota de voz. Telegram acepta una URL pública: usamos el OGG del sitio. */
-async function enviarVoz(token, chatId, url, titulo) {
+/**
+ * Nota de voz. Telegram acepta una URL pública: usamos el OGG del sitio.
+ *
+ * Los botones van pegados a la propia nota de voz. Mandarlos en un mensaje
+ * aparte empujaba el audio hacia arriba y agregaba una burbuja de más: el
+ * lector terminaba buscando dónde estaba el audio que acababa de pedir.
+ */
+async function enviarVoz(token, chatId, url, titulo, marcado) {
   return llamar(token, 'sendVoice', {
     chat_id: chatId,
     voice: url,
-    caption: titulo
+    caption: titulo,
+    reply_markup: marcado
   });
 }
 
@@ -142,12 +149,13 @@ async function enviarRespuesta(config, chatId, respuesta, clipUrl) {
     );
   }
 
+  // La nota de voz cierra la respuesta y se lleva los botones con ella
   if (clipUrl) {
-    await enviarVoz(token, chatId, clipUrl, 'Escuchá esta respuesta');
-    // Los botones van después de la voz para que queden al final del hilo
-    if (respuesta.quickReplies && respuesta.quickReplies.length) {
-      await enviarTexto(token, chatId, '¿Seguimos?', teclado(respuesta.quickReplies));
-    }
+    await enviarVoz(
+      token, chatId, clipUrl,
+      'Escuchá esta respuesta',
+      teclado(respuesta.quickReplies)
+    );
   }
 }
 

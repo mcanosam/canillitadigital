@@ -93,8 +93,6 @@ const SIN_PREFERENCIAS =
 async function responder(config, chatId, texto) {
   const { token, sitio } = config;
 
-  await mostrarEscribiendo(token, chatId);
-
   if (texto === '/start' || texto === '/ayuda' || texto === '/help') {
     return enviarTexto(token, chatId, BIENVENIDA, {
       inline_keyboard: OPCIONES_INICIO.map((o) => [{ text: o, callback_data: o }])
@@ -102,6 +100,12 @@ async function responder(config, chatId, texto) {
   }
 
   const deteccion = Canillita.intents.detect(texto);
+
+  // Para el audio no mostramos "escribiendo": Telegram ya avisa que se está
+  // enviando una nota de voz, y el aviso doble solo demora la llegada.
+  if (deteccion.intent !== 'listen_summary') {
+    await mostrarEscribiendo(token, chatId);
+  }
 
   if (deteccion.intent === 'preferences') {
     return enviarTexto(token, chatId, SIN_PREFERENCIAS, {
@@ -130,18 +134,19 @@ async function enviarVozDelBoletin(config, chatId) {
     if (meta.ok) duracion = Math.round((await meta.json()).duration);
   } catch (error) { /* seguimos sin la duración */ }
 
-  await enviarVoz(
+  // Un solo mensaje: la voz llega con los botones puestos
+  return enviarVoz(
     token,
     chatId,
     urlDelBoletin(sitio),
-    'Boletín de hoy' + (duracion ? ' · ' + duracion + ' segundos' : '')
+    'Boletín de hoy' + (duracion ? ' · ' + duracion + ' segundos' : ''),
+    {
+      inline_keyboard: [
+        [{ text: '¿Por qué se frenó la Ruta 22?', callback_data: '¿Por qué se frenó la Ruta 22?' }],
+        [{ text: 'Ver edición completa', callback_data: 'Ver edición completa' }]
+      ]
+    }
   );
-  return enviarTexto(token, chatId, '¿Querés preguntar algo sobre las noticias?', {
-    inline_keyboard: [
-      [{ text: '¿Por qué se frenó la Ruta 22?', callback_data: '¿Por qué se frenó la Ruta 22?' }],
-      [{ text: 'Ver edición completa', callback_data: 'Ver edición completa' }]
-    ]
-  });
 }
 
 /* ----------------------------------------------------------------- worker */

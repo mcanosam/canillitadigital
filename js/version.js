@@ -17,7 +17,7 @@
 
   var Canillita = global.Canillita = global.Canillita || {};
 
-  Canillita.version = '1.8.0';
+  Canillita.version = '1.8.1';
 
   /** Versión corta para mostrar en pantalla: 1.6.0 -> v1.6 */
   Canillita.versionLabel = function () {

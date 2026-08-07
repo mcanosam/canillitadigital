@@ -38,6 +38,15 @@ Criterio de numeración:
   plantillas pagas, cuenta de empresa verificada y un número dedicado.
 
 ---
+## v1.8.1 · 07-08-2026
+
+- Bot: los botones viajan pegados a la nota de voz en vez de ir en un mensaje
+  aparte. El audio queda al final del hilo, que es donde el lector lo busca.
+- Bot: el aviso de "escribiendo" no se muestra antes del boletín. Telegram ya
+  indica que se está enviando una nota de voz, y el aviso doble solo demoraba
+  la llegada.
+
+---
 
 ## v1.6.0 · 07-08-2026
 
