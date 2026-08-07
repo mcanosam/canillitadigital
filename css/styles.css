@@ -621,3 +621,29 @@ body {
   margin-bottom: 6px;
   color: var(--ocre-claro);
 }
+
+/* --------------------------------------------------- barra de secciones */
+
+/* Acceso permanente a la edición y a la historia, como las secciones
+   de la portada de un diario. No depende de ningún botón del chat. */
+.secciones {
+  display: flex;
+  gap: 18px;
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--filete);
+}
+
+.secciones a {
+  font-family: var(--condensada);
+  font-size: .88rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--tinta);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.secciones a:hover { border-bottom-color: var(--ocre); color: var(--ocre); }

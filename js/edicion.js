@@ -122,23 +122,10 @@
       ? 'Recortado para entrar en la duración que elegiste. Cambiala desde el chat, con "configurar".'
       : 'Este es el guion completo, tal como se lee en voz alta.';
 
-    bindGuionToggle();
     bindVelocidad();
     bindPlayer();
   }
 
-  /* El guion se puede leer sin reproducir nada */
-  function bindGuionToggle() {
-    var button = doc.getElementById('btn-guion');
-    var guion = doc.getElementById('guion');
-    button.addEventListener('click', function () {
-      guion.hidden = !guion.hidden;
-      button.setAttribute('aria-expanded', guion.hidden ? 'false' : 'true');
-      button.textContent = guion.hidden ? 'Ver el guion' : 'Ocultar el guion';
-    });
-  }
-
-  /* Velocidad: se guarda en las preferencias y se aplica al reproductor */
   function bindVelocidad() {
     var contenedor = doc.getElementById('velocidad');
     var actual = Canillita.preferences.get().speechRate;
@@ -224,8 +211,9 @@
     };
 
     play.addEventListener('click', function () {
-      // Al reproducir mostramos el guion: se sigue la lectura con la vista.
-      if (guion.hidden) doc.getElementById('btn-guion').click();
+      // El guion aparece solo al reproducir: se sigue la lectura con la vista,
+      // y mientras tanto no ocupa la pantalla con un texto largo.
+      guion.hidden = false;
       Canillita.radio.player.toggle(script, callbacks);
     });
 

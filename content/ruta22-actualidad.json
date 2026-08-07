@@ -4,19 +4,55 @@
   "category": "Región",
   "topic": "ruta22",
   "title": "Ruta 22: qué cambió recientemente",
-  "subtitle": "Río Negro negocia hacerse cargo de la ruta, pero el acuerdo con Nación todavía no se firmó",
+  "subtitle": "Las lluvias dejaron la calzada llena de pozos mientras el traspaso sigue sin firmarse",
   "status": "active",
   "isFiction": false,
-  "lastUpdated": "2026-08-06T07:00:00-03:00",
-  "eventDate": "2026-08-02",
-  "readingTime": 5,
-  "shortSummary": "La Provincia quiere administrar las rutas nacionales 22 y 151, pero el convenio con Vialidad Nacional volvió a postergarse. Mientras tanto, cinco contratos de obra siguen neutralizados: congelados, sin rescindir y sin trabajos.",
-  "whatsappSummary": "🛣️ *Ruta 22: qué cambió recientemente*\nRío Negro negocia con Nación para administrar las rutas 22 y 151, habilitado por el Decreto 253/2026. El convenio se iba a firmar la última semana de julio, pero se postergó por diferencias sobre obras, contratos y facultades.\nMientras tanto siguen neutralizados cinco contratos de obra: no se trabaja, pero tampoco se rescinden.",
-  "radioSummary": "Río Negro sigue negociando con Vialidad Nacional. Quiere quedarse con la administración de las rutas 22 y 151. El permiso ya existe: es el decreto 253, de abril de este año. Nueve provincias quedaron habilitadas a concesionar tramos de rutas nacionales. Lo que no existe todavía es la firma. El convenio se iba a rubricar la última semana de julio. Quedó en suspenso. ¿Por qué? Por tres discusiones. Cuántos papeles se firman. Qué pasa con las obras que quedaron a medias. Y cuánta libertad va a tener la Provincia para decidir los proyectos. Ahora, el dato que explica el enojo. Hay cinco contratos de obra neutralizados. ¿Qué quiere decir eso? Que la obra está frenada, pero el contrato sigue vivo. Nadie trabaja. Y nadie más puede entrar a trabajar.",
+  "lastUpdated": "2026-08-07T07:00:00-03:00",
+  "eventDate": "2026-08-06",
+  "readingTime": 6,
+  "shortSummary": "Las lluvias sobre el Alto Valle destaparon los pozos de la Ruta 22 y llenaron los talleres de autos rotos. Vialidad Nacional hace bacheo en frío, pero el agua se llevó el material. En paralelo, el traspaso de la ruta a la Provincia sigue sin firmarse y cinco contratos continúan neutralizados.",
+  "whatsappSummary": "🛣️ *Ruta 22: los pozos que dejaron las lluvias*\nLas precipitaciones destaparon los baches en todo el Alto Valle. En las gomerías de Cinco Saltos pasaron de dos casos por día a once. El bacheo en frío que había puesto Vialidad se lavó con el agua.\nPiden una Mesa Regional de Emergencia. El traspaso a la Provincia sigue sin firma.",
+  "radioSummary": "Las lluvias de los últimos días no rompieron la ruta. Hicieron algo peor: la mostraron. Destaparon los baches que estaban parchados y dejaron el pavimento a la vista, en todo el Alto Valle. El dato que lo resume mejor está en las gomerías. En Cinco Saltos pasaron de atender dos casos por día a once en una sola jornada. Y una cubierta rajada, en general, no se repara: se cambia. Vialidad Nacional está haciendo bacheo en frío. El problema es que el agua se llevó ese material y los pozos volvieron a quedar al descubierto. Los sectores más complicados: el cruce con avenida Roca, la zona del Puente 83, y el tramo entre Cervantes y Roca, que todavía tiene doble mano. Ahora se pide una Mesa Regional de Emergencia, con Nación, Provincia y municipios. Mientras tanto, el traspaso de la ruta a Río Negro sigue sin firmarse, y hay cinco contratos de obra neutralizados. Congelados. Nadie trabaja, y nadie más puede entrar a trabajar.",
   "articleBody": [
     {
       "type": "paragraph",
-      "text": "El futuro administrativo de la Ruta Nacional 22 volvió a moverse en 2026, aunque todavía sin una definición firmada. El Gobierno de Río Negro busca quedarse con la administración de las rutas nacionales 22 y 151, dos corredores centrales para el Alto Valle, la fruticultura y la logística de Vaca Muerta."
+      "text": "Las lluvias que cayeron sobre el Alto Valle a fines de julio y comienzos de agosto no provocaron el deterioro de la Ruta 22, pero lo dejaron a la vista. El agua destapó los baches que habían sido parchados, formó lagunas que ocultan los pozos y arrastró el material de bacheo en frío colocado en varios sectores."
+    },
+    {
+      "type": "heading",
+      "text": "Los talleres, el termómetro"
+    },
+    {
+      "type": "paragraph",
+      "text": "El costo se mide en gomerías. En un local de Cinco Saltos sobre la Ruta 151 informaron que pasaron de atender dos casos por día a once en una sola jornada. Un mecánico de Cipolletti explicó que cuando una cubierta se raja difícilmente se pueda reparar: casi siempre hay que cambiarla. Un camionero del Alto Valle resumió la circulación en tres palabras: \"Es imposible andar\"."
+    },
+    {
+      "type": "heading",
+      "text": "Dónde está peor"
+    },
+    {
+      "type": "paragraph",
+      "text": "En General Roca, uno de los puntos más comprometidos volvió a ser el cruce de la ruta con avenida Roca, donde el agua acumulada cubrió baches, fisuras y deformaciones. También aparecen daños en el acceso por calle Mendoza y en la intersección con San Juan. Entre Roca y Cipolletti, el tramo que une la rotonda céntrica cipoleña con el Puente 83 quedó cubierto por lagunas extensas que esconden pozos profundos."
+    },
+    {
+      "type": "paragraph",
+      "text": "Entre Cervantes y General Roca la situación tiene un agravante: ese tramo conserva la configuración antigua de doble mano, sin cuatro carriles ni colectoras, justamente porque es una de las secciones que nunca se ejecutaron. Y entre Chichinales y Godoy el ahuellamiento de la calzada impide que el agua drene, lo que forma charcos y favorece el aquaplaning."
+    },
+    {
+      "type": "heading",
+      "text": "Qué se está haciendo"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operarios de Vialidad Nacional realizan bacheo en frío en los sectores más deteriorados. Los usuarios consideran que esas intervenciones son insuficientes frente al estado general de la traza, y las propias lluvias posteriores lavaron parte del material aplicado. Se anunció además una intervención en el Puente 83 con aporte de material y compactación mediante motoniveladora, sujeta a que el clima lo permita."
+    },
+    {
+      "type": "paragraph",
+      "text": "En paralelo comenzó a circular un pedido para conformar una Mesa Regional de Emergencia que reúna a autoridades nacionales, provinciales y municipales para coordinar acciones urgentes sobre el corredor."
+    },
+    {
+      "type": "heading",
+      "text": "El telón de fondo: el traspaso"
     },
     {
       "type": "heading",
@@ -69,6 +105,31 @@
   ],
   "confirmedFacts": [
     {
+      "fact": "Las lluvias sobre el Alto Valle dejaron al descubierto baches, deformaciones y problemas de drenaje en la Ruta 22 entre Regina y General Roca.",
+      "date": "2026-07-30",
+      "sourceId": "lcr_deterioro"
+    },
+    {
+      "fact": "Las precipitaciones posteriores lavaron el material de bacheo en frío que Vialidad había colocado, y los pozos volvieron a quedar al descubierto.",
+      "date": "2026-08-03",
+      "sourceId": "lcr_bacheo_lavado"
+    },
+    {
+      "fact": "Una gomería de Cinco Saltos informó que pasó de atender dos casos por día a once en una sola jornada.",
+      "date": "2026-08-04",
+      "sourceId": "rionegro_destruidas"
+    },
+    {
+      "fact": "Se anunció una intervención en el Puente 83 con aporte de material y compactación con motoniveladora, sujeta al clima.",
+      "date": "2026-08-04",
+      "sourceId": "rionegro_destruidas"
+    },
+    {
+      "fact": "Circula un pedido para conformar una Mesa Regional de Emergencia con autoridades nacionales, provinciales y municipales.",
+      "date": "2026-07-31",
+      "sourceId": "anroca_mesa"
+    },
+    {
       "fact": "El Decreto 253/2026, del 16 de abril de 2026, habilita a nueve provincias (entre ellas Río Negro) a concesionar por peaje tramos de rutas nacionales en su territorio.",
       "date": "2026-04-16",
       "sourceId": "rionegro_decreto253"
@@ -105,6 +166,8 @@
     }
   ],
   "pendingQuestions": [
+    "Si la Mesa Regional de Emergencia llega a conformarse y con qué facultades.",
+    "Cuándo se hace la reparación de fondo, más allá del bacheo en frío.",
     "Cuándo se firma el convenio y si será un documento único o dos.",
     "Qué destino tendrán los cinco contratos neutralizados: rescisión, transferencia a la Provincia o continuidad con las mismas empresas.",
     "Si habrá peaje, en qué lugares y con qué tarifa.",
@@ -112,7 +175,7 @@
     "Si el tramo urbano de General Roca queda incluido en el paquete que administrará la Provincia.",
     "Qué pasa con las obras complementarias inconclusas de las secciones ya habilitadas."
   ],
-  "whyItMatters": "La Ruta 22 es la calle larga del Alto Valle: por ahí se va a trabajar, se lleva la fruta, circulan los camiones de Vaca Muerta y se cruza de una ciudad a otra. Cada año sin definición es un año más de banquinas rotas, cruces peligrosos y demoras. Y ahora se suma una pregunta nueva: si la administra la Provincia, quién paga y si eso significa peaje.",
+  "whyItMatters": "La Ruta 22 es la calle larga del Alto Valle: por ahí se va a trabajar, se lleva la fruta y circulan los camiones de Vaca Muerta. Con la calzada así, el problema dejó de ser la demora y pasó a ser el bolsillo y la seguridad: cubiertas rotas, despistes y maniobras para esquivar pozos. Y encima se suma una pregunta nueva: si la administra la Provincia, quién paga y si eso significa peaje.",
   "timeline": [
     {
       "date": "2026-03-11",
@@ -145,26 +208,113 @@
       "sourceId": "anroca_neutralizadas"
     },
     {
+      "date": "2026-07-30",
+      "title": "Las lluvias destapan los pozos",
+      "text": "El deterioro entre Regina y Roca se agrava con las precipitaciones: baches, deformaciones, señalización borrada y drenajes tapados.",
+      "sourceId": "lcr_deterioro"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Piden una Mesa Regional de Emergencia",
+      "text": "Comienza a circular un pedido para reunir a autoridades nacionales, provinciales y municipales por el estado del corredor.",
+      "sourceId": "anroca_mesa"
+    },
+    {
       "date": "2026-08-02",
       "title": "La firma se posterga",
       "text": "Provincia y Vialidad Nacional no alcanzan consenso. Quedan en discusión la modalidad del convenio, las obras pendientes y las facultades provinciales.",
       "sourceId": "anroca_demora"
     },
     {
+      "date": "2026-08-03",
+      "title": "El agua se lleva el bacheo",
+      "text": "Las lluvias lavan el material de bacheo en frío aplicado en varios sectores y los pozos vuelven a quedar expuestos.",
+      "sourceId": "lcr_bacheo_lavado"
+    },
+    {
       "date": "2026-08-04",
       "title": "Continúan las gestiones",
       "text": "El Ministerio de Obras Públicas provincial sigue las conversaciones con Nación, con foco también en el deterioro de la Ruta 151 en la zona de Catriel.",
       "sourceId": "noticiasnqn_gestiones"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Los talleres desbordados",
+      "text": "Gomerías del Alto Valle multiplican las atenciones por cubiertas rotas. Se anuncia una intervención en el Puente 83.",
+      "sourceId": "rionegro_destruidas"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "La rotonda de acceso a Roca, bajo el agua",
+      "text": "El agua acumulada oculta los baches en uno de los puntos más transitados de la ciudad.",
+      "sourceId": "anroca_rotonda"
     }
   ],
   "sections": [],
   "suggestedQuestions": [
+    "¿Cómo está la ruta después de las lluvias?",
     "¿Río Negro ya se hizo cargo de la ruta?",
     "¿Qué son los contratos neutralizados?",
     "¿Va a haber peaje?",
     "¿Por qué se frenó la Ruta 22?"
   ],
   "sources": [
+    {
+      "id": "lcr_deterioro",
+      "name": "Deterioro de la Ruta 22 entre Regina y Roca agrava los riesgos bajo la lluvia",
+      "type": "press",
+      "publisher": "LCR Diario Digital",
+      "publishedAt": "2026-07-30",
+      "url": "https://www.lcr.com.ar/noticias/2026/07/30/51416-deterioro-de-la-ruta-22-entre-regina-y-roca-agrava-los-riesgos-para-quienes-transitan-bajo-la-lluvia"
+    },
+    {
+      "id": "anroca_mesa",
+      "name": "Piden que se conforme una Mesa Regional de Emergencia por el estado de la Ruta 22",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.anroca.com.ar/noticias/2026/07/31/216236-piden-que-se-conforme-una-mesa-regional-de-emergencia-por-el-estado-de-la-ruta-22"
+    },
+    {
+      "id": "lcr_bacheo_lavado",
+      "name": "Video: una fila de autos rotos camino a Neuquén por el estado de la Ruta 22",
+      "type": "press",
+      "publisher": "LCR Diario Digital",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.lcr.com.ar/noticias/2026/08/03/51637-video-queres-un-viaje-a-la-luna-anda-de-noche-por-la-ruta-22-ironizo-un-reginense-tras-filmar-una-fila-de-autos-rotos-cuando-iba-a-neuquen"
+    },
+    {
+      "id": "rionegro_destruidas",
+      "name": "Las rutas nacionales 22 y 151, cada vez más destruidas",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-08-04",
+      "url": "https://www.rionegro.com.ar/politica/las-rutas-nacionales-22-y-151-cada-vez-mas-destruidas-es-imposible-andar-repiten-los-automovilistas-4671229/"
+    },
+    {
+      "id": "anroca_talleres",
+      "name": "Mal estado de las rutas: crecen las reparaciones de autos en talleres del Alto Valle",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-08-05",
+      "url": "https://www.anroca.com.ar/noticias/2026/08/05/216997-mal-estado-de-las-rutas-crecen-las-reparaciones-de-autos-en-talleres-del-alto-valle"
+    },
+    {
+      "id": "anroca_rotonda",
+      "name": "Así es transitar por la Ruta 22 en la zona de la rotonda de acceso a Roca",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-08-06",
+      "url": "https://www.anroca.com.ar/noticias/2026/08/06/217231-en-pozos-asi-es-transitar-por-la-ruta-22-en-la-zona-de-la-rotonda-de-acceso-a-roca"
+    },
+    {
+      "id": "elcordillerano_fotos",
+      "name": "La lluvia dejó en evidencia el estado de la Ruta Nacional 22",
+      "type": "press",
+      "publisher": "Diario El Cordillerano",
+      "publishedAt": "2026-07-30",
+      "url": "https://www.elcordillerano.com.ar/noticias/2026/07/30/253511-la-lluvia-dejo-en-evidencia-el-estado-calamitoso-de-la-ruta-nacional-22-mira-las-fotos-de-los-baches"
+    },
     {
       "id": "anroca_demora",
       "name": "Se demora el traspaso de las rutas 22 y 151 a Río Negro",
@@ -238,5 +388,5 @@
       "url": "https://www.letrap.com.ar/politica/las-deudas-pendientes-las-rutas-rio-negro-n5423718"
     }
   ],
-  "radioHeadline": "Arrancamos con la Ruta 22, y con un traspaso que todavía no se firma."
+  "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias."
 }

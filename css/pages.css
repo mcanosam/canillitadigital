@@ -787,3 +787,8 @@
   border-color: var(--tinta);
   color: var(--papel);
 }
+
+/* La barra de secciones acompaña el ancho de lectura de las páginas */
+.page .secciones {
+  max-width: 640px;
+}
