@@ -33,6 +33,7 @@ const SALIDA = arg('out', 'build/respuestas.json');
 
 globalThis.Canillita = {};
 
+require(path.join(RAIZ, 'js', 'version.js'));
 require(path.join(RAIZ, 'js', 'router.js'));
 require(path.join(RAIZ, 'js', 'content.js'));
 require(path.join(RAIZ, 'js', 'preferences.js'));
@@ -150,6 +151,7 @@ if (problemas.length) {
 }
 
 const plan = {
+  version: Canillita.version,
   generatedAt: new Date().toISOString(),
   count: respuestas.length,
   answers: respuestas

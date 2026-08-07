@@ -141,6 +141,7 @@ with open(salida_path, 'w', encoding='utf-8') as f:
         'urlOpus': 'assets/audio/boletin.ogg',
         'voice': voz,
         'engine': 'Piper TTS',
+        'version': plan.get('version'),
         'generatedAt': plan['generatedAt'],
         'baseRate': plan['baseRate'],
         'duration': round(float(duracion), 2),

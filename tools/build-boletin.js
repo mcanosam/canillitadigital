@@ -80,6 +80,7 @@ globalThis.Canillita = {
 };
 
 const radio = require(path.join(RAIZ, 'js', 'radio.js'));
+const { version } = require(path.join(RAIZ, 'js', 'version.js'));
 
 /* ------------------------------------------------------------------- plan */
 
@@ -126,6 +127,7 @@ guion.segments.forEach((segmento, indice) => {
 });
 
 const plan = {
+  version: version,
   generatedAt: new Date().toISOString(),
   baseRate: OPCIONES.rate,
   targetSeconds: OPCIONES.seconds,

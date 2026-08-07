@@ -10,7 +10,19 @@
   var Canillita = global.Canillita = global.Canillita || {};
   var doc = global.document;
 
+  /**
+   * La versión se muestra siempre: sirve para saber qué está publicado.
+   * Es informativa, así que si el módulo no cargó no puede tumbar la app.
+   */
+  function paintVersion() {
+    var el = doc.getElementById('version-label');
+    if (el && typeof Canillita.versionLabel === 'function') {
+      el.textContent = Canillita.versionLabel();
+    }
+  }
+
   function paintHeader() {
+    paintVersion();
     var dateEl = doc.getElementById('today-label');
     if (dateEl) {
       dateEl.textContent = Canillita.responses.todayLabel();

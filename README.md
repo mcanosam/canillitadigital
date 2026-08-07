@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: Fase 3 de 4
+## Estado: v1.7 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -94,6 +94,26 @@ funcionando sin conexión.
 Todo el color sale de variables CSS en `css/styles.css`: cambiar la paleta es
 editar ese bloque.
 
+## Versiones
+
+El número vive en `js/version.js` y se muestra al pie de cada pantalla. El
+historial está en `CHANGELOG.md`.
+
+Para subirlo:
+
+```bash
+node tools/bump-version.js          # ajuste menor: 1.6.0 → 1.6.1
+node tools/bump-version.js minor    # algo nuevo:   1.6.1 → 1.7.0
+node tools/bump-version.js major    # cambio de fondo
+```
+
+El script actualiza la versión y agrega la entrada en el changelog para
+completar. No hace commit.
+
+La versión queda además grabada dentro de `assets/audio/boletin.json`: si el
+audio publicado se generó con una versión anterior a la que está corriendo, la
+edición lo avisa en pantalla en vez de disimularlo.
+
 ## Estructura
 
 ```text
@@ -103,6 +123,7 @@ tu-canillita-digital/
 │   ├── styles.css              Tokens de color y tipografía, estilos del chat
 │   └── pages.css               Estilos de las páginas largas
 ├── js/
+│   ├── version.js              Número de versión, fuente única
 │   ├── router.js               Rutas y prefijos relativos
 │   ├── content.js              Carga y consulta de las historias
 │   ├── preferences.js          Preferencias en localStorage
@@ -126,6 +147,7 @@ tu-canillita-digital/
 │   ├── edicion.html            Edición personalizada del día
 │   └── ruta22.html             Historia viva de la Ruta 22
 ├── tools/
+│   ├── bump-version.js         Sube la versión y abre el changelog
 │   ├── build-bundle.py         Copia embebida del contenido
 │   ├── build-boletin.js        Guion → plan de audio
 │   └── tts-boletin.sh          Plan → MP3 con Piper
@@ -228,7 +250,8 @@ respuesta de "no tengo ese dato". Se pueden grabar todas de antemano.
 `tools/build-respuestas.js` recorre el mismo motor que responde en pantalla y
 arma el texto de cada una; `tools/tts-respuestas.sh` las convierte en clips.
 Cuando en el chat aparece una respuesta que tiene clip, debajo sale un botón
-para escucharla.
+para escucharla. Los mismos clips aparecen fuera del chat: una barra de escucha
+en cada noticia de la edición y en cada tramo de la historia viva.
 
 Si mañana agregás una intención nueva a `js/intents.js`, sumás la pregunta a la
 lista de `build-respuestas.js` y el clip se genera solo. Si la pregunta no

@@ -792,3 +792,13 @@
 .page .secciones {
   max-width: 640px;
 }
+
+/* Barra de escucha dentro de una nota o de un tramo */
+.escuchar {
+  margin: 12px 0 4px;
+}
+
+.tramo .escuchar {
+  margin: 10px 0 0;
+  border-left-width: 3px;
+}

@@ -115,8 +115,8 @@
     blocked: 'Sin ejecutar'
   };
 
-  /** Estado por tramo. `detailed` agrega el párrafo explicativo. */
-  function sections(list, detailed) {
+  /** Estado por tramo. `detailed` agrega el párrafo; `withAudio`, el clip. */
+  function sections(list, detailed, withAudio) {
     var items = list.map(function (section) {
       return '<li class="tramo tramo--' + esc(section.status) + '" id="' + esc(section.id) + '">' +
         '<div class="tramo__head">' +
@@ -129,6 +129,7 @@
         '</p>' +
         '<p class="tramo__estado">' + esc(section.statusLabel) + '</p>' +
         (detailed ? '<p class="tramo__detalle">' + esc(section.detail) + '</p>' : '') +
+        (withAudio ? answerPlayer(section.id, 'Escuchar este tramo') : '') +
         '</li>';
     }).join('');
     return '<ul class="tramos">' + items + '</ul>';
@@ -172,6 +173,93 @@
     });
   }
 
+
+  /* ------------------------------------------- escuchar una respuesta */
+
+  /*
+   * Qué clip le corresponde a cada historia. Los tramos usan su propio id
+   * (seccion1, tramo6…), que ya coincide con el del clip generado.
+   */
+  var AUDIO_POR_HISTORIA = {
+    ruta22_actualidad: 'ruta22-actualidad',
+    ruta22_historia: 'ruta22-historia',
+    deportes_demo: 'deportes'
+  };
+
+  function audioIdForStory(storyId) {
+    return AUDIO_POR_HISTORIA[storyId] || null;
+  }
+
+  /*
+   * El reproductor es uno solo por página, pero los botones son varios.
+   * Acá se anota cuál manda, para que tocar play en un bloque no se
+   * interprete como pausar el que estaba sonando.
+   */
+  var reproduciendo = null;
+
+  function claimPlayback(id, reset) {
+    if (reproduciendo && reproduciendo.id !== id) reproduciendo.reset();
+    reproduciendo = { id: id, reset: reset };
+  }
+
+  function isPlaybackOwner(id) {
+    return reproduciendo !== null && reproduciendo.id === id;
+  }
+
+  function releasePlayback() {
+    reproduciendo = null;
+  }
+
+  /** Barra de escucha. Devuelve '' si esa respuesta no tiene clip grabado. */
+  function answerPlayer(audioId, label) {
+    if (!audioId || !Canillita.radio.answer(audioId)) return '';
+    var clip = Canillita.radio.answer(audioId);
+    return '<div class="escuchar clip" data-clip="' + esc(audioId) + '">' +
+      '<button type="button" class="clip__play" aria-label="Escuchar">▶</button>' +
+      '<span class="clip__label">' + esc(label || 'Escuchar') + ' · ' +
+        Math.round(clip.duration) + 's</span>' +
+      '</div>';
+  }
+
+  /** Activa todas las barras de escucha presentes en la página. */
+  function bindAnswerPlayers(root) {
+    var barras = (root || global.document).querySelectorAll('[data-clip]');
+    Array.prototype.forEach.call(barras, function (barra) {
+      var audioId = barra.dataset.clip;
+      var button = barra.querySelector('.clip__play');
+      var label = barra.querySelector('.clip__label');
+      var textoBase = label.textContent;
+
+      var callbacks = {
+        onState: function (state) {
+          var sonando = state === 'playing';
+          button.textContent = sonando ? '❚❚' : '▶';
+          button.setAttribute('aria-label', sonando ? 'Pausar' : 'Escuchar');
+          label.textContent = sonando ? 'Reproduciendo…' : textoBase;
+        },
+        onError: function () {
+          label.textContent = 'No pude reproducir el audio.';
+        }
+      };
+
+      button.addEventListener('click', function () {
+        var player = Canillita.radio.player;
+        player.setRate(Canillita.preferences.get().speechRate);
+
+        if (isPlaybackOwner(audioId) && player.state() === 'playing') {
+          player.pause();
+          return;
+        }
+        if (isPlaybackOwner(audioId) && player.state() === 'paused') {
+          player.resume();
+          return;
+        }
+        claimPlayback(audioId, function () { callbacks.onState('idle'); });
+        player.playAnswer(audioId, callbacks);
+      });
+    });
+  }
+
   /** Conecta el campo "preguntale al canillita" con el chat. */
   function bindAskForm(formId, inputId) {
     var form = global.document.getElementById(formId);
@@ -200,6 +288,12 @@
     sections: sections,
     sources: sources,
     followButton: followButton,
+    audioIdForStory: audioIdForStory,
+    answerPlayer: answerPlayer,
+    bindAnswerPlayers: bindAnswerPlayers,
+    claimPlayback: claimPlayback,
+    isPlaybackOwner: isPlaybackOwner,
+    releasePlayback: releasePlayback,
     bindFollowButtons: bindFollowButtons,
     bindAskForm: bindAskForm
   };

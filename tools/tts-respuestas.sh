@@ -110,6 +110,7 @@ with open(salida_path, 'w', encoding='utf-8') as f:
     json.dump({
         'voice': voz,
         'engine': 'Piper TTS',
+        'version': plan.get('version'),
         'generatedAt': plan['generatedAt'],
         'answers': indice
     }, f, ensure_ascii=False, indent=2)

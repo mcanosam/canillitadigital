@@ -16,6 +16,11 @@
   /* ------------------------------------------------------------ cabecera */
 
   function paintHeader() {
+    var versionEl = doc.getElementById('version-label');
+    if (versionEl && typeof Canillita.versionLabel === 'function') {
+      versionEl.textContent = Canillita.versionLabel();
+    }
+
     var prefs = Canillita.preferences.get();
     var name = prefs.name ? ', ' + prefs.name : '';
 
@@ -47,6 +52,7 @@
         'actualizada el ' + R.esc(R.longDate(story.lastUpdated)) + '</p>' +
       R.fictionBanner(story) +
       '<p class="nota__resumen">' + R.esc(story.shortSummary) + '</p>' +
+      R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar esta noticia') +
 
       '<details class="mas">' +
         '<summary class="mas__btn">Profundizar en esta historia</summary>' +
@@ -170,6 +176,11 @@
       // Caso normal: hay boletín generado con Piper.
       estado.textContent = 'Voz ' + grabado.voice + ' · generado el ' +
         R.longDate(grabado.generatedAt) + '.';
+      // Si el audio se generó con otra versión, el guion en pantalla y la voz
+      // pueden no coincidir: mejor decirlo que disimularlo.
+      if (grabado.version && grabado.version !== Canillita.version) {
+        estado.textContent += ' Audio de la versión ' + grabado.version + '.';
+      }
       var horas = Canillita.radio.recordedAgeHours();
       if (horas !== null && horas > 30) {
         estado.textContent += ' Atención: tiene más de un día.';
@@ -214,11 +225,19 @@
       // El guion aparece solo al reproducir: se sigue la lectura con la vista,
       // y mientras tanto no ocupa la pantalla con un texto largo.
       guion.hidden = false;
-      Canillita.radio.player.toggle(script, callbacks);
+
+      // El boletín compite con los clips de cada nota por el mismo reproductor
+      if (R.isPlaybackOwner('boletin')) {
+        Canillita.radio.player.toggle(script, callbacks);
+        return;
+      }
+      R.claimPlayback('boletin', function () { callbacks.onState('idle'); });
+      Canillita.radio.player.play(script, callbacks);
     });
 
     stop.addEventListener('click', function () {
       Canillita.radio.player.stop();
+      R.releasePlayback();
       callbacks.onState('idle');
     });
 
@@ -236,7 +255,7 @@
       doc.getElementById('bloque-ruta22').hidden = true;
       return;
     }
-    doc.getElementById('tramos').innerHTML = R.sections(historia.sections, false);
+    doc.getElementById('tramos').innerHTML = R.sections(historia.sections, false, true);
     doc.getElementById('cronologia').innerHTML = R.timeline(historia);
   }
 
@@ -262,7 +281,8 @@
     // El boletín grabado se busca en paralelo: si no está, seguimos igual.
     Promise.all([
       Canillita.content.load(),
-      Canillita.radio.loadRecorded()
+      Canillita.radio.loadRecorded(),
+      Canillita.radio.loadAnswers()
     ]).then(function () {
       var stories = Canillita.content.forDailySummary(Canillita.preferences.get().topics);
       if (!stories.length) stories = Canillita.content.all();
@@ -274,6 +294,7 @@
       paintSuggestions(stories);
 
       R.bindFollowButtons(doc);
+      R.bindAnswerPlayers(doc);
       R.bindAskForm('ask-form', 'ask-input');
     }).catch(function (error) {
       doc.getElementById('historias').innerHTML =

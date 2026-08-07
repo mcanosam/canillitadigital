@@ -20,6 +20,11 @@
   /* ------------------------------------------------------------ cabecera */
 
   function paintHeader() {
+    var versionEl = doc.getElementById('version-label');
+    if (versionEl && typeof Canillita.versionLabel === 'function') {
+      versionEl.textContent = Canillita.versionLabel();
+    }
+
     doc.getElementById('bajada').textContent = actualidad.subtitle;
     doc.getElementById('meta').textContent =
       'Última actualización: ' + R.longDate(actualidad.lastUpdated) +
@@ -38,20 +43,23 @@
       '<p class="destacado">' + R.esc(actualidad.shortSummary) + '</p>' +
       '<div class="article">' + R.articleBody(actualidad.articleBody) + '</div>' +
       '<div class="importa"><h3>Por qué importa acá</h3><p>' +
-        R.esc(actualidad.whyItMatters) + '</p></div>';
+        R.esc(actualidad.whyItMatters) + '</p></div>' +
+      R.answerPlayer('ruta22-actualidad', 'Escuchar el resumen');
   }
 
   /* -------------------------------------------------------------- tramos */
 
   function paintTramos() {
     doc.getElementById('tramos-lista').innerHTML =
-      R.sections(historia.sections, true);
+      R.sections(historia.sections, true, true);
   }
 
   /* ------------------------------------------------------------ historia */
 
   function paintHistoria() {
-    doc.getElementById('cuerpo').innerHTML = R.articleBody(historia.articleBody);
+    doc.getElementById('cuerpo').innerHTML =
+      R.answerPlayer('ruta22-historia', 'Escuchar por qué sigue incompleta') +
+      R.articleBody(historia.articleBody);
   }
 
   /* ---------------------------------------------------------- cronología */
@@ -113,7 +121,10 @@
 
   function start() {
     R = Canillita.render;
-    Canillita.content.load().then(function () {
+    Promise.all([
+      Canillita.content.load(),
+      Canillita.radio.loadAnswers()
+    ]).then(function () {
       actualidad = Canillita.content.get('ruta22_actualidad');
       historia = Canillita.content.get('ruta22_historia');
 
@@ -127,6 +138,7 @@
       paintSugeridas();
 
       R.bindFollowButtons(doc);
+      R.bindAnswerPlayers(doc);
       R.bindAskForm('ask-form', 'ask-input');
 
       // Si se llegó con un ancla (#seccion3), recién ahora existe el destino.

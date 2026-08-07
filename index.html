@@ -19,7 +19,7 @@
   <!-- Corondel con la fecha, como el pie de cabezal de un diario -->
   <p class="dateline">
     <span id="today-label">—</span>
-    <span>Edición de demostración</span>
+    <span>Demostración <span id="version-label"></span></span>
   </p>
 
   <!-- Secciones fijas: la edición no puede depender de un botón del chat -->
@@ -64,6 +64,7 @@
   <script src="content/content.bundle.js"></script>
 
   <!-- Orden obligatorio: cada módulo usa los anteriores -->
+  <script src="js/version.js"></script>
   <script src="js/router.js"></script>
   <script src="js/content.js"></script>
   <script src="js/preferences.js"></script>
