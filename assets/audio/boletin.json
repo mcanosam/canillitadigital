@@ -1,0 +1,133 @@
+{
+  "url": "assets/audio/boletin.mp3",
+  "urlOpus": "assets/audio/boletin.ogg",
+  "voice": "es_AR-daniela-high",
+  "engine": "Piper TTS",
+  "generatedAt": "2026-08-07T11:11:55.390Z",
+  "baseRate": 1,
+  "duration": 142.99,
+  "segments": [
+    {
+      "kind": "identificacion",
+      "text": "Tu Canillita Digital, boletín del Alto Valle."
+    },
+    {
+      "kind": "saludo",
+      "text": "Son las ocho y once de la mañana. Buen día."
+    },
+    {
+      "kind": "fecha",
+      "text": "Hoy es viernes 7 de agosto de 2026."
+    },
+    {
+      "kind": "presentacion",
+      "text": "Estas son las noticias que elegiste para hoy."
+    },
+    {
+      "kind": "titular",
+      "text": "Arrancamos con la Ruta 22, y con un traspaso que todavía no se firma."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "Río Negro sigue negociando con Vialidad Nacional. Quiere quedarse con la administración de las rutas 22 y 151. El permiso ya existe: es el decreto 253, de abril de este año. Nueve provincias quedaron habilitadas a concesionar tramos de rutas nacionales. Lo que no existe todavía es la firma. El convenio se iba a rubricar la última semana de julio. Quedó en suspenso. ¿Por qué? Por tres discusiones. Cuántos papeles se firman. Qué pasa con las obras que quedaron a medias. Y cuánta libertad va a tener la Provincia para decidir los proyectos. Ahora, el dato que explica el enojo. Hay cinco contratos de obra neutralizados. ¿Qué quiere decir eso? Que la obra está frenada, pero el contrato sigue vivo. Nadie trabaja. Y nadie más puede entrar a trabajar."
+    },
+    {
+      "kind": "separador",
+      "text": "Seguimos."
+    },
+    {
+      "kind": "titular",
+      "text": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "El proyecto se dividió en cinco secciones. Ahí está la clave de todo. Las del este avanzaron. Chichinales a Godoy quedó habilitada en 2011. Godoy a Cervantes se completó en 2021, con siete puentes. También avanzó buena parte del tramo de Fernández Oro a Cipolletti. Pero en el medio, justo en el medio, están los dos tramos que cruzan Roca y Allen. Ahí la obra nunca arrancó. El proyecto original planteaba una autopista elevada. Roca dijo que no. Que eso era una muralla, y que iba a partir la ciudad en dos. Hubo audiencia pública. Hubo amparo judicial, en 2016. Y la obra se frenó. En 2021 se firmaron actas para hacerla a nivel, como una avenida urbana, con semáforos. El acuerdo existe. La obra, no."
+    },
+    {
+      "kind": "separador",
+      "text": "Y vamos a los deportes."
+    },
+    {
+      "kind": "deportes",
+      "text": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración."
+    },
+    {
+      "kind": "seguimiento",
+      "text": "Durante el día vamos a estar siguiendo esto: cuándo se firma el convenio y si será un documento único o dos."
+    },
+    {
+      "kind": "invitacion",
+      "text": "Si querés profundizar en alguna de estas noticias, preguntame por el chat y te la explico con las fuentes."
+    },
+    {
+      "kind": "cierre",
+      "text": "Fue Tu Canillita Digital, que sigue la historia con vos. Buen día."
+    }
+  ],
+  "marks": [
+    {
+      "segment": 0,
+      "start": 0.0
+    },
+    {
+      "segment": 1,
+      "start": 3.19
+    },
+    {
+      "segment": 2,
+      "start": 5.982
+    },
+    {
+      "segment": 3,
+      "start": 8.827
+    },
+    {
+      "segment": 4,
+      "start": 11.5
+    },
+    {
+      "segment": 5,
+      "start": 16.082
+    },
+    {
+      "segment": 6,
+      "start": 55.503
+    },
+    {
+      "segment": 7,
+      "start": 56.744
+    },
+    {
+      "segment": 8,
+      "start": 61.074
+    },
+    {
+      "segment": 9,
+      "start": 98.356
+    },
+    {
+      "segment": 10,
+      "start": 100.33
+    },
+    {
+      "segment": 11,
+      "start": 104.98
+    },
+    {
+      "segment": 12,
+      "start": 128.568
+    },
+    {
+      "segment": 13,
+      "start": 134.071
+    },
+    {
+      "segment": 14,
+      "start": 139.368
+    }
+  ]
+}
