@@ -3,9 +3,9 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "generatedAt": "2026-08-07T11:11:55.390Z",
+  "generatedAt": "2026-08-07T14:50:45.778Z",
   "baseRate": 1,
-  "duration": 142.99,
+  "duration": 143.78,
   "segments": [
     {
       "kind": "identificacion",
@@ -13,7 +13,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las ocho y once de la mañana. Buen día."
+      "text": "Son las once y cincuenta de la mañana. Buen día."
     },
     {
       "kind": "fecha",
@@ -75,59 +75,59 @@
     },
     {
       "segment": 1,
-      "start": 3.19
+      "start": 3.213
     },
     {
       "segment": 2,
-      "start": 5.982
+      "start": 6.016
     },
     {
       "segment": 3,
-      "start": 8.827
+      "start": 8.848
     },
     {
       "segment": 4,
-      "start": 11.5
+      "start": 11.476
     },
     {
       "segment": 5,
-      "start": 16.082
+      "start": 16.068
     },
     {
       "segment": 6,
-      "start": 55.503
+      "start": 56.084
     },
     {
       "segment": 7,
-      "start": 56.744
+      "start": 57.342
     },
     {
       "segment": 8,
-      "start": 61.074
+      "start": 61.664
     },
     {
       "segment": 9,
-      "start": 98.356
+      "start": 99.122
     },
     {
       "segment": 10,
-      "start": 100.33
+      "start": 101.058
     },
     {
       "segment": 11,
-      "start": 104.98
+      "start": 105.759
     },
     {
       "segment": 12,
-      "start": 128.568
+      "start": 129.37
     },
     {
       "segment": 13,
-      "start": 134.071
+      "start": 134.779
     },
     {
       "segment": 14,
-      "start": 139.368
+      "start": 140.081
     }
   ]
 }
