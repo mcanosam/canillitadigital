@@ -73,6 +73,10 @@ for (( i=0; i<TOTAL; i++ )); do
   ffmpeg -y -loglevel error -i "$TRABAJO/$ID-final.wav" \
     -codec:a libmp3lame -b:a 80k "$SALIDA/$ID.mp3"
 
+  # OGG/Opus es el formato de las notas de voz de Telegram y WhatsApp
+  ffmpeg -y -loglevel error -i "$TRABAJO/$ID-final.wav" \
+    -codec:a libopus -b:a 32k "$SALIDA/$ID.ogg"
+
   DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SALIDA/$ID.mp3")
   echo "{\"id\":\"$ID\",\"duration\":$DUR}" >> "$DURACIONES"
 
@@ -101,6 +105,7 @@ for respuesta in plan['answers']:
         continue
     indice[respuesta['id']] = {
         'url': f"assets/audio/respuestas/{respuesta['id']}.mp3",
+        'urlOpus': f"assets/audio/respuestas/{respuesta['id']}.ogg",
         'duration': duraciones[respuesta['id']],
         'question': respuesta['question'],
         'intent': respuesta['intent']

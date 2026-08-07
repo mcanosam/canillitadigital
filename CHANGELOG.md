@@ -25,6 +25,19 @@ Criterio de numeración:
   uno detiene el otro y devuelve su botón al estado inicial.
 
 ---
+## v1.8.0 · 07-08-2026
+
+- Bot de Telegram: `bot/worker.js` corre en Cloudflare Workers y responde con
+  el mismo motor que usa la web. `bot/telegram.js` traduce la respuesta del
+  motor al formato del canal; la lógica no se toca.
+- El boletín y las respuestas grabadas llegan como notas de voz. Para eso,
+  `tts-respuestas.sh` genera además de MP3 un OGG/Opus por clip.
+- Despliegue automático con `.github/workflows/bot.yml`: no hace falta instalar
+  nada en la máquina.
+- Se descartó WhatsApp para esta etapa: el envío por iniciativa propia exige
+  plantillas pagas, cuenta de empresa verificada y un número dedicado.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

@@ -1,0 +1,56 @@
+# Despliega el bot de Telegram en Cloudflare Workers.
+#
+# Corre gratis: Actions no cobra en repositorios públicos y el plan gratuito de
+# Workers da 100.000 pedidos por día sin pedir tarjeta.
+#
+# Secretos que hay que cargar en Settings → Secrets and variables → Actions:
+#   CLOUDFLARE_API_TOKEN   token de Cloudflare con permiso "Edit Workers"
+#   CLOUDFLARE_ACCOUNT_ID  identificador de cuenta, está en el panel de Cloudflare
+#   TELEGRAM_TOKEN         el que da @BotFather
+#   WEBHOOK_SECRET         una cadena inventada por vos, cualquiera sirve
+#
+# Se dispara solo cuando cambia el bot, el motor o el contenido, porque el
+# Worker lleva las noticias adentro.
+
+name: Bot de Telegram
+
+on:
+  push:
+    paths:
+      - 'bot/**'
+      - 'js/**'
+      - 'content/**.json'
+      - 'wrangler.toml'
+      - '.github/workflows/bot.yml'
+  workflow_dispatch:
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Traer el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Desplegar el Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          secrets: |
+            TELEGRAM_TOKEN
+            WEBHOOK_SECRET
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
+
+      - name: Recordatorio
+        run: |
+          echo "Worker desplegado."
+          echo "Si es la primera vez, falta registrar el webhook en Telegram."
+          echo "Ver bot/README.md, paso 5."

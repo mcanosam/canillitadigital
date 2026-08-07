@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.7 · Fase 3 de 4
+## Estado: v1.8 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -146,6 +146,11 @@ tu-canillita-digital/
 ├── pages/
 │   ├── edicion.html            Edición personalizada del día
 │   └── ruta22.html             Historia viva de la Ruta 22
+├── bot/
+│   ├── worker.js               Bot de Telegram (Cloudflare Workers)
+│   ├── telegram.js             Traductor del motor al formato del canal
+│   └── README.md               Puesta en marcha paso a paso
+├── wrangler.toml               Configuración del Worker
 ├── tools/
 │   ├── bump-version.js         Sube la versión y abre el changelog
 │   ├── build-bundle.py         Copia embebida del contenido
