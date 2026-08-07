@@ -409,7 +409,14 @@
     var position = 0;
     var handlers = {};
     var voice = null;
-    var baseRate = 1.15;   // más ágil que la lectura por defecto
+    /*
+     * baseRate es lo que elige el lector: 1 = ritmo natural.
+     * El archivo grabado ya viene al ritmo correcto, así que se reproduce tal
+     * cual. La voz del navegador, en cambio, es lenta por defecto y necesita
+     * el empujón de SPEECH_BASE.
+     */
+    var baseRate = 1;
+    var SPEECH_BASE = 1.15;
     var pauseTimer = null;
     var audio = null;      // elemento <audio> cuando hay boletín grabado
     var mode = 'speech';   // 'file' | 'speech'
@@ -433,7 +440,7 @@
       var utterance = new global.SpeechSynthesisUtterance(item.text);
       utterance.lang = (voice && voice.lang) || 'es-AR';
       if (voice) utterance.voice = voice;
-      utterance.rate = baseRate * (item.rate || 1);
+      utterance.rate = SPEECH_BASE * baseRate * (item.rate || 1);
       utterance.pitch = item.pitch || 1;
 
       utterance.onstart = function () {
@@ -467,9 +474,7 @@
       // un stop(), se descartan comparando contra el elemento actual.
       var el = new global.Audio(grabado.absoluteUrl);
       audio = el;
-      // El archivo se generó a una velocidad conocida; el control del lector
-      // ajusta sobre esa base.
-      el.playbackRate = baseRate / (grabado.baseRate || 1);
+      el.playbackRate = baseRate;
 
       el.addEventListener('timeupdate', function () {
         if (audio !== el) return;
@@ -588,8 +593,8 @@
     /** Velocidad base del boletín. Cada bloque la ajusta con su prosodia. */
     function setRate(value) {
       baseRate = Math.min(2, Math.max(0.6, Number(value) || 1));
-      if (audio && grabado) {
-        audio.playbackRate = baseRate / (grabado.baseRate || 1);
+      if (audio) {
+        audio.playbackRate = baseRate;
       }
       return baseRate;
     }

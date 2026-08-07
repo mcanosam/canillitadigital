@@ -13,7 +13,7 @@
 
   var Canillita = global.Canillita = global.Canillita || {};
 
-  var STORAGE_KEY = 'canillita.prefs.v1';
+  var STORAGE_KEY = 'canillita.prefs.v2';
 
   var DEFAULTS = {
     name: '',
@@ -21,7 +21,11 @@
     topics: ['ruta22', 'deportes'],
     format: 'texto',        // texto | audio | html | texto_audio | todos
     audioSeconds: 60,       // 30 | 60 | 180 | 300
-    speechRate: 1.15,       // velocidad base del boletín
+    /*
+     * Multiplicador que elige el lector, NO la velocidad absoluta.
+     * 1 = el ritmo natural del boletín grabado.
+     */
+    speechRate: 1,
     hour: '07:00',
     following: []           // ids de historias que el lector eligió seguir
   };
@@ -107,10 +111,10 @@
   }
 
   var RATE_LABELS = [
-    { value: 0.95, label: 'Pausada' },
-    { value: 1.15, label: 'Normal' },
-    { value: 1.35, label: 'Ágil' },
-    { value: 1.55, label: 'Rápida' }
+    { value: 0.85, label: 'Pausada' },
+    { value: 1.00, label: 'Normal' },
+    { value: 1.15, label: 'Ágil' },
+    { value: 1.30, label: 'Rápida' }
   ];
 
   function rateLabel() {

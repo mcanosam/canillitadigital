@@ -249,6 +249,16 @@ alcanzar, la interfaz muestra la duración real en vez de fingirla.
 No hay cortina musical: nada con derechos de autor. La identificación es
 hablada.
 
+### Velocidad
+
+El control de la edición es un multiplicador sobre el ritmo natural del
+boletín: 1 es la velocidad a la que Piper lo generó. El archivo no se acelera
+salvo que el lector lo pida.
+
+La voz del navegador, en cambio, arranca de fábrica más lenta que un boletín,
+así que en ese modo se le aplica internamente un 1,15 antes del multiplicador
+del lector. Son dos escalas distintas para dos fuentes distintas.
+
 ### Voz de respaldo
 
 Cuando no hay boletín grabado se usa la **Web Speech API** del navegador. El

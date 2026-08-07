@@ -127,10 +127,29 @@
       targetSeconds: settings.audioSeconds
     });
 
-    var intro = '🎧 Boletín listo: ' + script.seconds + ' segundos de lectura.';
-    if (script.trimmed) {
-      intro += '\nLo ajusté a los ' + prefs.audioLabel() +
-        ' que elegiste, así que va la versión corta.';
+    /*
+     * Si existe el boletín grabado del día, es ESE el que se reproduce.
+     * Entonces el guion que se muestra tiene que ser el suyo, no el que
+     * armamos recién con la duración elegida: si no, la voz sigue hablando
+     * después de que se terminó el texto en pantalla.
+     */
+    var grabado = Canillita.radio.recorded();
+    var intro;
+
+    if (grabado && grabado.segments && grabado.segments.length) {
+      script = {
+        segments: grabado.segments,
+        seconds: Math.round(grabado.duration),
+        trimmed: false
+      };
+      intro = '🎧 Boletín del día, con voz ' + grabado.voice + ': ' +
+        script.seconds + ' segundos.';
+    } else {
+      intro = '🎧 Boletín listo: ' + script.seconds + ' segundos de lectura.';
+      if (script.trimmed) {
+        intro += '\nLo ajusté a los ' + prefs.audioLabel() +
+          ' que elegiste, así que va la versión corta.';
+      }
     }
 
     return reply([
