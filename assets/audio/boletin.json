@@ -3,9 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "generatedAt": "2026-08-07T19:51:20.598Z",
+  "version": "1.8.1",
+  "generatedAt": "2026-08-08T10:21:19.337Z",
   "baseRate": 1,
-  "duration": 151.33,
+  "duration": 150.96,
   "segments": [
     {
       "kind": "identificacion",
@@ -13,11 +14,11 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las cuatro y cincuenta y uno de la tarde. Buenas tardes."
+      "text": "Son las siete y veintiuno de la mañana. Buen día."
     },
     {
       "kind": "fecha",
-      "text": "Hoy es viernes 7 de agosto de 2026."
+      "text": "Hoy es sábado 8 de agosto de 2026."
     },
     {
       "kind": "presentacion",
@@ -75,59 +76,59 @@
     },
     {
       "segment": 1,
-      "start": 3.098
+      "start": 3.157
     },
     {
       "segment": 2,
-      "start": 6.573
+      "start": 6.056
     },
     {
       "segment": 3,
-      "start": 9.34
+      "start": 8.913
     },
     {
       "segment": 4,
-      "start": 11.915
+      "start": 11.623
     },
     {
       "segment": 5,
-      "start": 16.161
+      "start": 15.834
     },
     {
       "segment": 6,
-      "start": 63.099
+      "start": 62.857
     },
     {
       "segment": 7,
-      "start": 64.346
+      "start": 64.12
     },
     {
       "segment": 8,
-      "start": 68.68
+      "start": 68.455
     },
     {
       "segment": 9,
-      "start": 106.05
+      "start": 105.976
     },
     {
       "segment": 10,
-      "start": 108.044
+      "start": 107.887
     },
     {
       "segment": 11,
-      "start": 112.781
+      "start": 112.441
     },
     {
       "segment": 12,
-      "start": 136.279
+      "start": 135.941
     },
     {
       "segment": 13,
-      "start": 142.419
+      "start": 142.01
     },
     {
       "segment": 14,
-      "start": 147.75
+      "start": 147.315
     }
   ]
 }
