@@ -3,10 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.11.0",
-  "generatedAt": "2026-08-12T20:24:19.924Z",
+  "version": "1.13.0",
+  "generatedAt": "2026-08-12T21:46:31.136Z",
   "baseRate": 1,
-  "duration": 188.16,
+  "duration": 186.98,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,7 +14,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las cinco y veinticuatro de la tarde. Buenas tardes."
+      "text": "Son las seis y cuarenta y seis de la tarde. Buenas tardes."
     },
     {
       "kind": "fecha",
@@ -88,71 +88,71 @@
     },
     {
       "segment": 1,
-      "start": 2.426
+      "start": 2.492
     },
     {
       "segment": 2,
-      "start": 5.75
+      "start": 5.789
     },
     {
       "segment": 3,
-      "start": 8.755
+      "start": 8.694
     },
     {
       "segment": 4,
-      "start": 11.478
+      "start": 11.286
     },
     {
       "segment": 5,
-      "start": 15.7
+      "start": 15.427
     },
     {
       "segment": 6,
-      "start": 63.116
+      "start": 62.544
     },
     {
       "segment": 7,
-      "start": 64.337
+      "start": 63.839
     },
     {
       "segment": 8,
-      "start": 68.665
+      "start": 68.176
     },
     {
       "segment": 9,
-      "start": 106.062
+      "start": 105.515
     },
     {
       "segment": 10,
-      "start": 107.94
+      "start": 107.431
     },
     {
       "segment": 11,
-      "start": 110.659
+      "start": 110.015
     },
     {
       "segment": 12,
-      "start": 142.969
+      "start": 142.387
     },
     {
       "segment": 13,
-      "start": 144.865
+      "start": 144.246
     },
     {
       "segment": 14,
-      "start": 149.53
+      "start": 148.885
     },
     {
       "segment": 15,
-      "start": 173.452
+      "start": 172.285
     },
     {
       "segment": 16,
-      "start": 179.629
+      "start": 178.424
     },
     {
       "segment": 17,
-      "start": 184.971
+      "start": 183.802
     }
   ]
 }
