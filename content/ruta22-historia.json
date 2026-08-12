@@ -383,5 +383,11 @@
       "url": "https://www.anroca.com.ar/noticias/2026/07/14/213736-se-formalizara-el-pedido-de-traspaso-de-las-rutas-22-y-151-es-un-escandalo-que-las-obras-esten-neutralizadas"
     }
   ],
-  "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse."
+  "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse.",
+  "image": {
+    "src": "",
+    "alt": "Tramo de la Ruta 22 con calzada simple entre Cervantes y General Roca",
+    "credit": "",
+    "pending": "Foto propia: el tramo de doble mano entre Cervantes y Roca, donde la autopista nunca se construyó. Horizontal, con la ruta en fuga."
+  }
 }

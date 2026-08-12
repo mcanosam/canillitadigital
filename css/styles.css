@@ -113,10 +113,8 @@ body {
   margin: 0 auto;
   padding: 6px 16px;
   border-bottom: 2px solid var(--tinta);
-  font-family: var(--condensada);
-  font-size: .72rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .76rem;
   color: var(--tinta-suave);
 }
 
@@ -286,10 +284,9 @@ body {
   padding: 9px 0;
   border-bottom: 1px solid var(--linea);
   color: var(--ocre);
-  font-family: var(--condensada);
-  font-size: .84rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .88rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -370,10 +367,8 @@ body {
 /* Fecha del dato y fuentes: parte del contrato de confianza */
 .meta {
   margin-top: 10px;
-  font-family: var(--condensada);
-  font-size: .74rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .75rem;
   color: var(--tinta-suave);
 }
 
@@ -449,10 +444,8 @@ body {
   border-radius: 0;
   background: var(--burbuja-in);
   color: var(--tinta);
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .88rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -540,10 +533,9 @@ body {
 }
 
 .notes__links a {
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .88rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  font-weight: 600;
   color: var(--ocre);
   text-decoration: none;
 }
@@ -608,10 +600,8 @@ body {
 }
 
 .clip__label {
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .86rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
   color: var(--tinta);
 }
 
@@ -636,10 +626,9 @@ body {
 }
 
 .secciones a {
-  font-family: var(--condensada);
-  font-size: .88rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .92rem;
+  font-weight: 600;
   color: var(--tinta);
   text-decoration: none;
   border-bottom: 2px solid transparent;

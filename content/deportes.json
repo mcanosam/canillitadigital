@@ -76,5 +76,11 @@
       "url": ""
     }
   ],
-  "radioHeadline": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
+  "radioHeadline": "Atención, que esto es contenido ficticio, inventado para probar el sistema.",
+  "image": {
+    "src": "",
+    "alt": "Partido de la Liga Deportiva Confluencia",
+    "credit": "",
+    "pending": "Contenido ficticio: no lleva foto real. Si se reemplaza por una nota verdadera, foto propia de la cancha."
+  }
 }

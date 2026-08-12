@@ -390,7 +390,13 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "url": "https://www.letrap.com.ar/politica/las-deudas-pendientes-las-rutas-rio-negro-n5423718"
       }
     ],
-    "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias."
+    "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias.",
+    "image": {
+      "src": "",
+      "alt": "Agua acumulada sobre los baches de la Ruta 22 en el cruce con avenida Roca",
+      "credit": "",
+      "pending": "Foto propia: el cruce de la Ruta 22 con avenida Roca después de la lluvia, con el agua tapando los pozos. Horizontal."
+    }
   },
   "content/ruta22-historia.json": {
     "id": "ruta22_historia",
@@ -777,7 +783,13 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "url": "https://www.anroca.com.ar/noticias/2026/07/14/213736-se-formalizara-el-pedido-de-traspaso-de-las-rutas-22-y-151-es-un-escandalo-que-las-obras-esten-neutralizadas"
       }
     ],
-    "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse."
+    "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse.",
+    "image": {
+      "src": "",
+      "alt": "Tramo de la Ruta 22 con calzada simple entre Cervantes y General Roca",
+      "credit": "",
+      "pending": "Foto propia: el tramo de doble mano entre Cervantes y Roca, donde la autopista nunca se construyó. Horizontal, con la ruta en fuga."
+    }
   },
   "content/messi.json": {
     "id": "messi_hilo",
@@ -1075,7 +1087,13 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "dateNote": "Datos biográficos ampliamente documentados. Verificar cada uno contra una fuente primaria antes de publicar fuera de la demo.",
         "url": ""
       }
-    ]
+    ],
+    "image": {
+      "src": "",
+      "alt": "Retrato de Lionel Messi",
+      "credit": "",
+      "pending": "Requiere foto con licencia (agencia). No usar imágenes de prensa sin autorización. Alternativa: ilustración propia o gráfico de la cronología."
+    }
   },
   "content/deportes.json": {
     "id": "deportes_demo",
@@ -1155,6 +1173,12 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "url": ""
       }
     ],
-    "radioHeadline": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
+    "radioHeadline": "Atención, que esto es contenido ficticio, inventado para probar el sistema.",
+    "image": {
+      "src": "",
+      "alt": "Partido de la Liga Deportiva Confluencia",
+      "credit": "",
+      "pending": "Contenido ficticio: no lleva foto real. Si se reemplaza por una nota verdadera, foto propia de la cancha."
+    }
   }
 };

@@ -388,5 +388,11 @@
       "url": "https://www.letrap.com.ar/politica/las-deudas-pendientes-las-rutas-rio-negro-n5423718"
     }
   ],
-  "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias."
+  "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias.",
+  "image": {
+    "src": "",
+    "alt": "Agua acumulada sobre los baches de la Ruta 22 en el cruce con avenida Roca",
+    "credit": "",
+    "pending": "Foto propia: el cruce de la Ruta 22 con avenida Roca después de la lluvia, con el agua tapando los pozos. Horizontal."
+  }
 }

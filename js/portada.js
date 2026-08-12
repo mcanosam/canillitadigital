@@ -86,20 +86,41 @@
 
   function tarjeta(story, principal) {
     var audioId = R.audioIdForStory(story.id);
-    // Cada historia lleva a la página de su hilo, no a la edición
     var enlace = R.hiloUrl(Canillita.content.hiloDe(story.id));
 
-    return '<article class="portada-nota' + (principal ? ' portada-nota--principal' : '') + '">' +
-      '<p class="nota__eyebrow">' + R.esc(story.category) + '</p>' +
-      '<h2 class="portada-nota__titulo"><a href="' + enlace + '">' +
-        R.esc(story.title) + '</a></h2>' +
-      '<p class="nota__bajada">' + R.esc(story.subtitle) + '</p>' +
-      R.fictionBanner(story) +
-      (principal
-        ? '<p class="portada-nota__entrada">' + R.esc(story.shortSummary) + '</p>'
-        : '') +
-      '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
-        'actualizada el ' + R.esc(R.longDate(story.lastUpdated)) + '</p>' +
+    /*
+     * La principal lleva foto grande, bajada y entrada con capitular.
+     * Las secundarias, foto chica y título: si todas pesan igual, no hay
+     * portada, hay una lista.
+     */
+    if (principal) {
+      return '<article class="portada-nota portada-nota--principal">' +
+        R.figure(story, 'principal') +
+        '<p class="nota__eyebrow">' + R.esc(story.category) + '</p>' +
+        '<h2 class="portada-nota__titulo"><a href="' + enlace + '">' +
+          R.esc(story.title) + '</a></h2>' +
+        '<p class="nota__bajada">' + R.esc(story.subtitle) + '</p>' +
+        R.fictionBanner(story) +
+        '<p class="portada-nota__entrada">' + R.esc(story.shortSummary) + '</p>' +
+        '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
+          R.esc(R.longDate(story.lastUpdated)) + '</p>' +
+        R.answerPlayer(audioId, 'Escuchar') +
+        '</article>';
+    }
+
+    return '<article class="portada-nota">' +
+      '<div class="portada-nota__fila">' +
+        R.figure(story, 'secundaria') +
+        '<div class="portada-nota__texto">' +
+          '<p class="nota__eyebrow">' + R.esc(story.category) + '</p>' +
+          '<h2 class="portada-nota__titulo"><a href="' + enlace + '">' +
+            R.esc(story.title) + '</a></h2>' +
+          '<p class="nota__bajada">' + R.esc(story.subtitle) + '</p>' +
+          R.fictionBanner(story) +
+          '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
+            R.esc(R.longDate(story.lastUpdated)) + '</p>' +
+        '</div>' +
+      '</div>' +
       R.answerPlayer(audioId, 'Escuchar') +
       '</article>';
   }

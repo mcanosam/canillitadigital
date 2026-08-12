@@ -67,29 +67,26 @@
 
 .edicion-head__meta {
   margin: 0 auto;
-  font-family: var(--condensada);
-  font-size: .8rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .82rem;
   color: var(--tinta-suave);
 }
 
 .edicion-head__intereses {
   margin: 12px auto 0;
-  font-family: var(--condensada);
-  font-size: .78rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .84rem;
   color: var(--tinta-suave);
 }
 
 .tag {
   display: inline-block;
-  margin-left: 6px;
-  padding: 2px 8px;
-  background: var(--ocre);
-  color: var(--papel);
-  letter-spacing: .1em;
+  margin: 2px 0 2px 6px;
+  padding: 3px 9px;
+  border: 1px solid var(--filete);
+  background: transparent;
+  color: var(--tinta);
+  font-weight: 600;
 }
 
 /* ----------------------------------------------- cabecera historia viva */
@@ -166,10 +163,9 @@
   flex: 0 0 auto;
   padding: 7px 10px;
   border-radius: 0;
-  font-family: var(--condensada);
-  font-size: .84rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .88rem;
+  font-weight: 600;
   color: var(--tinta-suave);
   text-decoration: none;
   white-space: nowrap;
@@ -198,8 +194,9 @@
 
 .bloque__sub {
   margin: 22px 0 10px;
-  font-size: .74rem;
-  letter-spacing: .16em;
+  font-family: var(--condensada);
+  font-size: .88rem;
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--tinta-suave);
 }
@@ -220,15 +217,16 @@
 .nota--principal .nota__titulo { font-size: 1.75rem; }
 
 /* La volanta va en recuadro ocre, como el rótulo de sección impreso */
+/* La volanta va en texto, no en recuadro: el ocre relleno se repetía tanto
+   que había dejado de ser un acento */
 .nota__eyebrow {
-  display: inline-block;
-  margin: 0 0 8px;
-  padding: 3px 8px;
-  background: var(--ocre);
-  color: var(--papel);
+  display: block;
+  margin: 0 0 5px;
+  padding: 0;
+  color: var(--ocre);
   font-family: var(--condensada);
-  font-size: .72rem;
-  letter-spacing: .14em;
+  font-size: .78rem;
+  letter-spacing: .16em;
   text-transform: uppercase;
 }
 
@@ -249,12 +247,8 @@
 
 .nota__lectura {
   margin: 0 0 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--linea);
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .78rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
   color: var(--tinta-suave);
 }
 
@@ -456,10 +450,8 @@
 
 .tramo__name {
   margin: 0;
-  font-family: var(--condensada);
+  font-family: var(--display);
   font-size: 1.05rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
 }
 
 /* El texto del chip dice el estado: no depende solo del color */
@@ -467,10 +459,9 @@
   flex: 0 0 auto;
   padding: 3px 8px;
   border-radius: 0;
-  font-family: var(--condensada);
-  font-size: .72rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .74rem;
+  font-weight: 600;
 }
 
 .chip--done    { background: var(--ocre-claro); color: var(--ocre); }
@@ -522,18 +513,16 @@
 
 .hito__date {
   display: block;
-  font-size: .72rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--tinta-suave);
+  font-family: var(--interfaz);
+  font-size: .76rem;
+  font-weight: 600;
+  color: var(--ocre);
 }
 
 .hito__title {
   margin: 3px 0 4px;
-  font-family: var(--condensada);
-  font-size: 1.05rem;
-  letter-spacing: .05em;
-  text-transform: uppercase;
+  font-family: var(--display);
+  font-size: 1.02rem;
 }
 
 .hito__text {
@@ -569,10 +558,8 @@
 .fuente__meta {
   display: block;
   margin-top: 2px;
-  font-family: var(--condensada);
-  font-size: .8rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .78rem;
   color: var(--tinta-suave);
 }
 
@@ -677,10 +664,8 @@
   border-radius: 0;
   background: var(--burbuja-in);
   color: var(--tinta);
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .88rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -693,10 +678,9 @@
   min-height: 44px;
   padding: 11px 16px;
   border-radius: 0;
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .92rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid transparent;
@@ -719,9 +703,9 @@
 .btn--ghost:hover { background: var(--ocre-claro); }
 
 .btn--follow {
-  background: var(--ocre);
-  color: var(--papel);
-  border-color: var(--ocre);
+  background: transparent;
+  color: var(--tinta);
+  border-color: var(--tinta);
 }
 
 .btn--follow[aria-pressed="true"] {
@@ -757,9 +741,8 @@
 }
 
 .velocidad__label {
-  font-size: .72rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .8rem;
   color: var(--tinta-suave);
 }
 
@@ -774,10 +757,8 @@
   border: 1px solid var(--filete);
   border-radius: 0;
   background: var(--burbuja-in);
-  font-family: var(--condensada);
+  font-family: var(--interfaz);
   font-size: .86rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
   color: var(--tinta-suave);
   cursor: pointer;
 }
@@ -826,10 +807,8 @@
 
 .temas__rotulo {
   margin: 0 0 7px;
-  font-family: var(--condensada);
-  font-size: .72rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .78rem;
   color: var(--tinta-suave);
 }
 
@@ -846,16 +825,14 @@
   border-radius: 0;
   background: transparent;
   color: var(--tinta-suave);
-  font-family: var(--condensada);
-  font-size: .82rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .86rem;
   cursor: pointer;
 }
 
 .chip-tema.is-activo {
-  background: var(--ocre);
-  border-color: var(--ocre);
+  background: var(--tinta);
+  border-color: var(--tinta);
   color: var(--papel);
 }
 
@@ -980,10 +957,9 @@
   border-bottom: 3px solid transparent;
   background: transparent;
   color: var(--tinta-suave);
-  font-family: var(--condensada);
-  font-size: .9rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+  font-family: var(--interfaz);
+  font-size: .95rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -1014,7 +990,6 @@ a.tag:hover { background: var(--tinta); }
   padding-left: 14px;
   border-left: 1px solid var(--linea);
   color: var(--ocre) !important;
-  font-weight: 400;
 }
 
 .secciones__accion:hover {
@@ -1025,3 +1000,98 @@ a.tag:hover { background: var(--tinta); }
 @media (max-width: 560px) {
   .secciones__accion { margin-left: 0; }
 }
+
+/* ============================================================== fotos */
+
+.foto {
+  margin: 0 0 12px;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.foto__credito {
+  margin-top: 4px;
+  font-family: var(--interfaz);
+  font-size: .72rem;
+  color: var(--tinta-suave);
+}
+
+/* Espacio reservado: dice qué foto va, en vez de dejar un hueco */
+.foto__hueco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: var(--papel-viejo);
+  border: 1px dashed var(--filete);
+  color: var(--tinta-suave);
+}
+
+.foto--principal .foto__hueco { min-height: 150px; }
+
+.foto__icono {
+  font-size: 1.4rem;
+  color: var(--ocre);
+  line-height: 1;
+}
+
+.foto__nota {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .78rem;
+  line-height: 1.45;
+  opacity: .85;
+}
+
+/* En las secundarias la foto va al costado, chica */
+.portada-nota__fila {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.portada-nota__texto { flex: 1; min-width: 0; }
+
+.foto--secundaria {
+  flex: 0 0 96px;
+  width: 96px;
+  margin: 0;
+}
+
+.foto--secundaria .foto__hueco {
+  min-height: 84px;
+  padding: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.foto--secundaria .foto__nota { display: none; }
+.foto--secundaria .foto__icono { font-size: 1.2rem; }
+
+@media (min-width: 640px) {
+  .foto--secundaria { flex-basis: 140px; width: 140px; }
+  .foto--secundaria .foto__hueco { min-height: 105px; }
+}
+
+/* ------------------------------------------- jerarquía de la portada */
+
+.portada-nota--principal .portada-nota__titulo {
+  font-size: clamp(1.7rem, 7vw, 2.1rem);
+  line-height: 1.08;
+}
+
+.portada-nota:not(.portada-nota--principal) .portada-nota__titulo {
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.portada-nota:not(.portada-nota--principal) .nota__bajada {
+  font-size: .88rem;
+}
+
+.portada-nota--principal { padding-bottom: 24px; }

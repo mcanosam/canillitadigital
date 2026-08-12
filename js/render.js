@@ -68,6 +68,41 @@
 
   /* --------------------------------------------------------- componentes */
 
+  /**
+   * Foto de la nota.
+   *
+   * Mientras no exista el archivo, se dibuja un espacio reservado que dice qué
+   * foto va ahí. Es más útil que un hueco vacío —le indica al fotógrafo qué
+   * salir a buscar— y más honesto que una imagen de relleno que después habría
+   * que reemplazar.
+   *
+   * @param {Object} story
+   * @param {string} tamano 'principal' | 'secundaria'
+   */
+  function figure(story, tamano) {
+    var imagen = story.image;
+    if (!imagen) return '';
+
+    var clase = 'foto foto--' + (tamano || 'principal');
+
+    if (imagen.src) {
+      var base = (Canillita.router && Canillita.router.base()) || '';
+      return '<figure class="' + clase + '">' +
+        '<img src="' + esc(base + imagen.src) + '" alt="' + esc(imagen.alt) + '" loading="lazy">' +
+        (imagen.credit
+          ? '<figcaption class="foto__credito">' + esc(imagen.credit) + '</figcaption>'
+          : '') +
+        '</figure>';
+    }
+
+    return '<figure class="' + clase + ' foto--pendiente">' +
+      '<div class="foto__hueco" role="img" aria-label="' + esc(imagen.alt) + '">' +
+        '<span class="foto__icono" aria-hidden="true">▣</span>' +
+        '<span class="foto__nota">' + esc(imagen.pending || imagen.alt) + '</span>' +
+      '</div>' +
+      '</figure>';
+  }
+
   /** Aviso de contenido ficticio. Se muestra antes que nada. */
   function fictionBanner(story) {
     if (!story.isFiction) return '';
@@ -346,6 +381,7 @@
     todayShort: todayShort,
     clockLabel: clockLabel,
     timeGreeting: timeGreeting,
+    figure: figure,
     fictionBanner: fictionBanner,
     articleBody: articleBody,
     confirmedFacts: confirmedFacts,

@@ -294,5 +294,11 @@
       "dateNote": "Datos biográficos ampliamente documentados. Verificar cada uno contra una fuente primaria antes de publicar fuera de la demo.",
       "url": ""
     }
-  ]
+  ],
+  "image": {
+    "src": "",
+    "alt": "Retrato de Lionel Messi",
+    "credit": "",
+    "pending": "Requiere foto con licencia (agencia). No usar imágenes de prensa sin autorización. Alternativa: ilustración propia o gráfico de la cronología."
+  }
 }

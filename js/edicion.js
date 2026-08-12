@@ -71,6 +71,7 @@
     if (primeraDelHilo) hilosYaMostrados.push(hiloId);
 
     return '<article class="nota' + (isPrincipal ? ' nota--principal' : '') + '">' +
+      (isPrincipal ? R.figure(story, 'principal') : '') +
       '<p class="nota__eyebrow">' + R.esc(story.category) +
         (isPrincipal ? ' · Noticia principal' : '') + '</p>' +
       '<h2 class="nota__titulo">' + R.esc(story.title) + '</h2>' +

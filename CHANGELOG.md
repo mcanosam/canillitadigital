@@ -141,6 +141,29 @@ Criterio de numeración:
   portada: el simulador aclara que es una demostración y ofrece el canal real.
 
 ---
+## v1.13.0 · 12-08-2026
+
+**Fotos**
+
+- Cada historia declara su foto en el JSON (`image`). Mientras el archivo no
+  exista, se dibuja un espacio reservado que dice **qué foto hay que sacar**:
+  más útil que un hueco y más honesto que una imagen de relleno.
+- La nota principal lleva foto grande; las secundarias, miniatura al costado.
+- La ficha de Messi aclara que requiere foto con licencia: no se usan imágenes
+  de prensa sin autorización.
+
+**Tipografía y color**
+
+- Se saca la mayúscula de casi toda la interfaz: navegación, chips, botones,
+  fechas, metadatos y velocidad pasan a caja baja. Queda solo donde comunica
+  jerarquía: la chapa, las volantas y los títulos de bloque.
+- La volanta deja de ser un recuadro ocre relleno y pasa a texto ocre. El ocre
+  estaba en tantos lugares que había dejado de funcionar como acento.
+- Los chips activos, el botón de seguir y las etiquetas de tema pasan a tinta.
+- Jerarquía real en la portada: la principal casi duplica el cuerpo del título
+  y las secundarias se achican de verdad.
+
+---
 
 ## v1.6.0 · 07-08-2026
 
