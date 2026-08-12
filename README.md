@@ -1,4 +1,4 @@
-# Tu Canillita Digital
+# Tu Canillita
 
 Agente de noticias locales del Alto Valle. El lector conversa con el diario,
 elige qué quiere recibir y obtiene la misma información en tres formatos:
@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.10 · Fase 3 de 4
+## Estado: v1.11 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -119,13 +119,14 @@ edición lo avisa en pantalla en vez de disimularlo.
 
 ```text
 tu-canillita-digital/
-├── index.html                  Simulador del canal WhatsApp
+├── index.html                  Portada del diario
 ├── css/
 │   ├── styles.css              Tokens de color y tipografía, estilos del chat
 │   └── pages.css               Estilos de las páginas largas
 ├── js/
 │   ├── version.js              Número de versión, fuente única
 │   ├── router.js               Rutas y prefijos relativos
+│   ├── portada.js              Portada y franja de temas
 │   ├── content.js              Carga y consulta de las historias
 │   ├── preferences.js          Preferencias en localStorage
 │   ├── render.js               Piezas de HTML compartidas por las páginas
@@ -145,6 +146,7 @@ tu-canillita-digital/
 │   ├── images/
 │   └── audio/
 ├── pages/
+│   ├── chat.html               Simulador del canal
 │   ├── edicion.html            Edición personalizada del día
 │   └── ruta22.html             Historia viva de la Ruta 22
 ├── bot/
@@ -360,7 +362,7 @@ cada actualización es subir los archivos.
    cd tu-canillita-digital
    git init
    git add .
-   git commit -m "Tu Canillita Digital"
+   git commit -m "Tu Canillita"
    git branch -M main
    git remote add origin https://github.com/TUUSUARIO/tu-canillita-digital.git
    git push -u origin main

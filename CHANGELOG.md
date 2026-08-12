@@ -95,6 +95,22 @@ Criterio de numeración:
   para verlas en el teléfono en vez de como imagen.
 
 ---
+## v1.11.0 · 12-08-2026
+
+- **El diario pasa a llamarse "Tu Canillita".** Se saca "digital", que en 2026
+  no dice nada y estorbaba en el boletín hablado. El repositorio y la URL
+  quedan como están: la dirección técnica no tiene por qué coincidir.
+- **Portada nueva (opción A).** `index.html` deja de ser el simulador de chat y
+  pasa a ser la portada del diario: franja de temas arriba, nota principal con
+  capitular, secundarias abajo y el boletín del día.
+- Los temas se eligen tocando: la portada se rearma en el acto y la elección
+  queda guardada. Los temas sin contenido se muestran apagados como "pronto",
+  para no prometer secciones vacías.
+- El simulador de chat se muda a `pages/chat.html`. La conversación de verdad
+  vive en Telegram, y la portada la ofrece con "Conversá con el diario".
+- `js/portada.js` y `js/router.js` con `homeUrl()`.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

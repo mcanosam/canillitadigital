@@ -3,76 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tu Canillita Digital · canal de demostración</title>
-  <meta name="description" content="Demostración del agente de noticias locales del Alto Valle: conversación por WhatsApp, boletín de radio y edición visual.">
+  <title>Tu Canillita · noticias del Alto Valle</title>
+  <meta name="description" content="Noticias del Alto Valle de Río Negro. Elegís qué seguir y lo recibís como texto, audio o edición visual.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
-<body>
+<body class="page">
 
-  <!-- Cabecera: identidad del producto, no del canal -->
   <header class="masthead">
     <p class="masthead__eyebrow">Alto Valle · Río Negro</p>
-    <h1 class="masthead__title">Tu Canillita Digital</h1>
+    <h1 class="masthead__title">Tu Canillita</h1>
     <p class="masthead__line">Noticias del valle, todos los días</p>
   </header>
 
-  <!-- Corondel con la fecha, como el pie de cabezal de un diario -->
   <p class="dateline">
     <span id="today-label">—</span>
     <span>Demostración <span id="version-label"></span></span>
   </p>
 
-  <!-- Secciones fijas: la edición no puede depender de un botón del chat -->
   <nav class="secciones" aria-label="Secciones">
     <a href="pages/edicion.html">Mi edición</a>
     <a href="pages/ruta22.html">Ruta 22</a>
+    <a href="pages/chat.html">Chat</a>
   </nav>
 
-  <main class="stage">
-    <!-- Simulador del canal. No usa marcas ni tipografías de terceros. -->
-    <section class="phone" aria-label="Conversación de demostración con Tu Canillita Digital">
+  <!-- Franja de temas: al tocar uno, la portada se rearma -->
+  <section class="temas" aria-label="Elegí tus temas">
+    <p class="temas__rotulo">Tu edición · elegí qué seguir</p>
+    <div class="temas__chips" id="temas"></div>
+    <p class="temas__aviso" id="temas-aviso" role="status"></p>
+  </section>
 
-      <div class="phone__bar">
-        <div class="phone__avatar" aria-hidden="true">TC</div>
-        <div class="phone__id">
-          <p class="phone__name">Tu Canillita Digital</p>
-          <p class="phone__status">en línea · responde al instante</p>
-        </div>
-      </div>
+  <main class="page__body">
+    <div id="portada"></div>
 
-      <p class="phone__disclaimer">
-        Demostración del canal WhatsApp
-      </p>
-
-      <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-label="Mensajes"></div>
-
-      <div id="quick-replies" class="quick-replies" aria-label="Respuestas rápidas" hidden></div>
-
-      <form id="composer" class="composer" autocomplete="off">
-        <label class="visually-hidden" for="composer-input">Escribí tu mensaje</label>
-        <input id="composer-input" class="composer__input" type="text"
-               placeholder="Escribí “hola” para empezar" maxlength="200">
-        <button class="composer__send" type="submit" aria-label="Enviar mensaje">
-          <span aria-hidden="true">➤</span>
-        </button>
-      </form>
+    <section class="bloque bloque--boletin" id="bloque-boletin" hidden>
+      <h2 class="bloque__titulo">Boletín de hoy</h2>
+      <p class="bloque__bajada" id="boletin-meta"></p>
+      <div id="boletin-player"></div>
     </section>
-
   </main>
 
-  <!-- Copia embebida del contenido: permite abrir el archivo con doble clic -->
-  <script src="content/content.bundle.js"></script>
+  <!-- El canal real: la conversación vive en Telegram -->
+  <aside class="canal">
+    <p class="canal__frase">Conversá con el diario</p>
+    <div class="canal__acciones">
+      <a class="btn btn--primary" href="https://t.me/TuCanillitaBot" target="_blank" rel="noopener">Abrir en Telegram</a>
+      <a class="btn btn--ghost" href="pages/chat.html">Probar acá</a>
+    </div>
+  </aside>
 
-  <!-- Orden obligatorio: cada módulo usa los anteriores -->
+  <footer class="page__foot">
+    <p>Tu Canillita · demostración sin servicios pagos.</p>
+    <p id="preparada"></p>
+  </footer>
+
+  <script src="content/content.bundle.js"></script>
   <script src="js/version.js"></script>
   <script src="js/router.js"></script>
   <script src="js/content.js"></script>
   <script src="js/preferences.js"></script>
   <script src="js/render.js"></script>
   <script src="js/radio.js"></script>
-  <script src="js/intents.js"></script>
-  <script src="js/responses.js"></script>
-  <script src="js/chat.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/portada.js"></script>
 </body>
 </html>

@@ -133,7 +133,7 @@
   function greeting() {
     var name = prefs.isConfigured() ? ', ' + prefs.get().name : '';
     return reply([
-      message('¡' + timeGreeting() + name + '! Soy Tu Canillita Digital.\n\nPuedo contarte las noticias locales de manera breve, leértelas como un programa de radio o prepararte una edición visual.'),
+      message('¡' + timeGreeting() + name + '! Soy Tu Canillita.\n\nPuedo contarte las noticias locales de manera breve, leértelas como un programa de radio o prepararte una edición visual.'),
       message(menuText())
     ], menuReplies());
   }

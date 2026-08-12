@@ -812,3 +812,154 @@
   font-size: .82rem;
   color: var(--ocre);
 }
+
+/* ==================================================== portada del diario */
+
+/* Franja de temas: la personalización se ve antes que las noticias */
+.temas {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 10px 16px 12px;
+  background: var(--papel-viejo);
+  border-bottom: 1px solid var(--linea);
+}
+
+.temas__rotulo {
+  margin: 0 0 7px;
+  font-family: var(--condensada);
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.temas__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip-tema {
+  min-height: 36px;
+  padding: 6px 11px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  font-family: var(--condensada);
+  font-size: .82rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.chip-tema.is-activo {
+  background: var(--ocre);
+  border-color: var(--ocre);
+  color: var(--papel);
+}
+
+/* Los temas que todavía no existen se ven, pero no se pueden tocar */
+.chip-tema--pronto {
+  display: inline-flex;
+  align-items: center;
+  border-style: dashed;
+  opacity: .55;
+  cursor: default;
+}
+
+.temas__aviso {
+  margin: 8px 0 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .82rem;
+  color: var(--ocre);
+}
+
+/* ------------------------------------------------------ notas de portada */
+
+.portada-nota {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+.portada-nota__titulo {
+  margin: 0 0 6px;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  line-height: 1.14;
+}
+
+.portada-nota--principal .portada-nota__titulo { font-size: 1.75rem; }
+
+.portada-nota__titulo a {
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+.portada-nota__titulo a:hover { color: var(--ocre); }
+
+.portada-nota__entrada {
+  margin: 10px 0 0;
+  font-family: var(--display);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* La capitular es solo de la nota principal: si va en todas, pierde fuerza */
+.portada-nota--principal .portada-nota__entrada::first-letter {
+  float: left;
+  margin: 4px 7px 0 0;
+  font-size: 3rem;
+  line-height: .8;
+  color: var(--ocre);
+}
+
+.vacio {
+  padding: 22px 0;
+  font-family: var(--display);
+  font-style: italic;
+  color: var(--tinta-suave);
+}
+
+/* ---------------------------------------------------------- el canal --- */
+
+.canal {
+  background: var(--tinta);
+  color: var(--papel);
+  padding: 14px 16px;
+}
+
+.canal > * {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.canal__frase {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.canal__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.canal .btn--primary {
+  background: var(--ocre);
+  border-color: var(--ocre);
+  color: var(--papel);
+}
+
+.canal .btn--ghost {
+  color: var(--papel);
+  border-color: var(--papel);
+}
+
+.canal .btn--ghost:hover { background: rgba(247, 244, 238, .15); }
+
+.boletin-audio { width: 100%; margin-top: 4px; }

@@ -47,6 +47,12 @@
       ' de ' + now.getFullYear();
   }
 
+  /** Fecha sin año, para el filete de la portada: entra en una línea. */
+  function todayShort() {
+    var now = new Date();
+    return DAYS[now.getDay()] + ' ' + now.getDate() + ' de ' + MONTHS[now.getMonth()];
+  }
+
   function clockLabel() {
     var now = new Date();
     return String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
@@ -290,6 +296,7 @@
     longDate: longDate,
     timelineDate: timelineDate,
     todayLabel: todayLabel,
+    todayShort: todayShort,
     clockLabel: clockLabel,
     timeGreeting: timeGreeting,
     fictionBanner: fictionBanner,

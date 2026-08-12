@@ -1086,7 +1086,7 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "subtitle": "Contenido ficticio creado para probar la demostración",
     "status": "demo",
     "isFiction": true,
-    "fictionNotice": "⚠️ CONTENIDO FICTICIO. Este resultado, sus protagonistas y su fixture fueron inventados para probar Tu Canillita Digital. No corresponde a ningún partido real ni debe difundirse como información periodística.",
+    "fictionNotice": "⚠️ CONTENIDO FICTICIO. Este resultado, sus protagonistas y su fixture fueron inventados para probar Tu Canillita. No corresponde a ningún partido real ni debe difundirse como información periodística.",
     "lastUpdated": "2026-08-06T07:00:00-03:00",
     "eventDate": "2026-08-03",
     "readingTime": 2,
@@ -1120,7 +1120,7 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "articleBody": [
       {
         "type": "paragraph",
-        "text": "⚠️ Lo que sigue es contenido inventado. Sirve para probar cómo Tu Canillita Digital resume, narra y publica una noticia deportiva local, pero no describe hechos reales."
+        "text": "⚠️ Lo que sigue es contenido inventado. Sirve para probar cómo Tu Canillita resume, narra y publica una noticia deportiva local, pero no describe hechos reales."
       },
       {
         "type": "paragraph",
@@ -1150,7 +1150,7 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "id": "demo_ficticia",
         "name": "Contenido ficticio generado para la demostración",
         "type": "demo",
-        "publisher": "Tu Canillita Digital (demo)",
+        "publisher": "Tu Canillita (demo)",
         "publishedAt": "2026-08-06",
         "url": ""
       }

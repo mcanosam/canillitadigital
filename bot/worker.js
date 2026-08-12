@@ -67,7 +67,7 @@ function urlDelBoletin(sitio) {
 /* --------------------------------------------------------------- mensajes */
 
 const BIENVENIDA =
-  'Soy *Tu Canillita Digital*, las noticias del Alto Valle.\n\n' +
+  'Soy *Tu Canillita*, las noticias del Alto Valle.\n\n' +
   'Puedo contarte lo último de la Ruta 22, leértelo como un boletín de radio ' +
   'o abrirte la edición completa.\n\n' +
   'Escribime lo que quieras saber, o elegí una opción.';
@@ -155,7 +155,7 @@ async function enviarVozDelBoletin(config, chatId) {
 export default {
   async fetch(request, env) {
     if (request.method !== 'POST') {
-      return new Response('Tu Canillita Digital · bot de Telegram', { status: 200 });
+      return new Response('Tu Canillita · bot de Telegram', { status: 200 });
     }
 
     // Telegram reenvía este encabezado en cada webhook: si no coincide, no es él

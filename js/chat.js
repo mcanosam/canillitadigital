@@ -110,7 +110,7 @@
         '<div class="audio">' +
           '<button type="button" class="audio__play" aria-label="Reproducir el boletín">▶</button>' +
           '<div class="audio__info">' +
-            '<span class="audio__title">Boletín de Tu Canillita Digital</span>' +
+            '<span class="audio__title">Boletín de Tu Canillita</span>' +
             '<span class="audio__state">' +
               (grabado ? Math.round(grabado.duration) + ' segundos · voz ' + escapeHtml(grabado.voice)
                 : supported ? msg.script.seconds + ' segundos'
@@ -206,7 +206,7 @@
     var wrapper = doc.createElement('div');
     wrapper.className = 'msg msg--in';
     wrapper.dataset.typing = 'true';
-    wrapper.innerHTML = '<div class="bubble bubble--typing" aria-label="Tu Canillita Digital está escribiendo">' +
+    wrapper.innerHTML = '<div class="bubble bubble--typing" aria-label="Tu Canillita está escribiendo">' +
       '<span></span><span></span><span></span></div>';
     elements.log.appendChild(wrapper);
     scrollToEnd();

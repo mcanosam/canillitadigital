@@ -39,6 +39,11 @@
    * Edición personalizada. Las preferencias viajan por localStorage (mismo
    * origen), así que no hace falta pasarlas por la URL.
    */
+  /** La portada del diario. */
+  function homeUrl() {
+    return path('index.html');
+  }
+
   function editionUrl() {
     return path('pages/edicion.html');
   }
@@ -48,9 +53,9 @@
     return path('pages/ruta22.html') + (sectionId ? '#' + sectionId : '');
   }
 
-  /** Vuelta al chat, opcionalmente con una pregunta ya cargada. */
+  /** El chat, opcionalmente con una pregunta ya cargada. */
   function chatUrl(question) {
-    var url = path('index.html');
+    var url = path('pages/chat.html');
     return question ? url + '?q=' + encodeURIComponent(question) : url;
   }
 
@@ -64,6 +69,7 @@
     isSubpage: isSubpage,
     base: base,
     path: path,
+    homeUrl: homeUrl,
     editionUrl: editionUrl,
     route22Url: route22Url,
     chatUrl: chatUrl,

@@ -196,7 +196,7 @@
     }
 
     /* 1. Identificación. Sin cortina musical: nada con derechos de autor. */
-    push('identificacion', 'Tu Canillita Digital, boletín del Alto Valle.', ESENCIAL);
+    push('identificacion', 'Tu Canillita, boletín del Alto Valle.', ESENCIAL);
 
     /* 2 y 3. Saludo, hora y fecha. */
     push('saludo', spokenTime(now) + '. ' +
@@ -239,7 +239,7 @@
 
     /* 12 y 13. Invitación y cierre. */
     push('invitacion', 'Si querés profundizar en alguna de estas noticias, preguntame por el chat y te la explico con las fuentes.', AMPLIACION);
-    push('cierre', 'Fue Tu Canillita Digital, que sigue la historia con vos. Buen día.', ESENCIAL);
+    push('cierre', 'Fue Tu Canillita, que sigue la historia con vos. Buen día.', ESENCIAL);
 
     return fitToDuration(segments, opts.targetSeconds);
   }
