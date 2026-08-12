@@ -314,8 +314,13 @@
       enlaces.push('<a href="' + esc(hiloUrl(hilo.id)) + '">' + esc(hilo.label) + '</a>');
     });
 
+    /*
+     * "Conversá con el diario" no es una sección más: es la acción que
+     * distingue al producto. Va separada y marcada, al final de la barra.
+     */
     if (actual !== 'chat') {
-      enlaces.push('<a href="' + esc(router.chatUrl()) + '">Conversá con el diario</a>');
+      enlaces.push('<a class="secciones__accion" href="' + esc(router.chatUrl()) +
+        '">💬 Conversá con el diario</a>');
     }
     return enlaces.join('');
   }

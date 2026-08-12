@@ -132,6 +132,15 @@ Criterio de numeración:
 - El bot suma "Contame el hilo de Messi" a las opciones de arranque.
 
 ---
+## v1.12.1 · 12-08-2026
+
+- "Conversá con el diario" se separa del resto de la barra de secciones: no es
+  una sección más, es la acción que distingue al producto. Va al final, con
+  filete separador y en ocre.
+- El chat suma la barra del canal con "Abrir en Telegram", igual que la
+  portada: el simulador aclara que es una demostración y ofrece el canal real.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

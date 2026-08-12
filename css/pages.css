@@ -1007,3 +1007,21 @@
 
 a.tag { text-decoration: none; }
 a.tag:hover { background: var(--tinta); }
+
+/* La acción del canal se separa de las secciones y se marca en ocre */
+.secciones__accion {
+  margin-left: auto;
+  padding-left: 14px;
+  border-left: 1px solid var(--linea);
+  color: var(--ocre) !important;
+  font-weight: 400;
+}
+
+.secciones__accion:hover {
+  border-bottom-color: var(--ocre);
+}
+
+/* En pantallas angostas la barra se desliza y el margen automático no aplica */
+@media (max-width: 560px) {
+  .secciones__accion { margin-left: 0; }
+}
