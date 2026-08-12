@@ -3,10 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.8.1",
-  "generatedAt": "2026-08-12T10:51:45.026Z",
+  "version": "1.9.0",
+  "generatedAt": "2026-08-12T15:47:34.943Z",
   "baseRate": 1,
-  "duration": 151.01,
+  "duration": 188.26,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,7 +14,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las siete y cincuenta y uno de la mañana. Buen día."
+      "text": "Son las doce y cuarenta y siete del mediodía. Buen día."
     },
     {
       "kind": "fecha",
@@ -57,6 +57,18 @@
       "text": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración."
     },
     {
+      "kind": "separador",
+      "text": "Y vamos a los deportes."
+    },
+    {
+      "kind": "deportes",
+      "text": "Y vamos al hilo de Messi, que sigue abierto."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "Empecemos por el final, que es lo más fresco. El 19 de julio, en Nueva Jersey, Argentina perdió la final del Mundial con España. Uno a cero, gol de Ferran Torres a los 106 minutos, ya en el alargue. Messi tenía 39 años. Era su sexto Mundial y su tercera final. Ganó una, en Qatar, y perdió dos. Ahora, la pregunta que quedó dando vueltas. ¿Se retira de la Selección? No lo dijo. Escribió que el dolor era muy grande, volvió a Rosario con su familia, y no habló más. Contrato con Inter Miami tiene hasta 2028. Así que jugar, va a seguir jugando. La duda es si vuelve a ponerse la celeste y blanca."
+    },
+    {
       "kind": "seguimiento",
       "text": "Durante el día vamos a estar siguiendo esto: si la Mesa Regional de Emergencia llega a conformarse y con qué facultades."
     },
@@ -76,59 +88,71 @@
     },
     {
       "segment": 1,
-      "start": 3.062
+      "start": 3.156
     },
     {
       "segment": 2,
-      "start": 6.203
+      "start": 6.321
     },
     {
       "segment": 3,
-      "start": 9.137
+      "start": 9.202
     },
     {
       "segment": 4,
-      "start": 11.814
+      "start": 11.868
     },
     {
       "segment": 5,
-      "start": 16.025
+      "start": 16.076
     },
     {
       "segment": 6,
-      "start": 63.107
+      "start": 63.312
     },
     {
       "segment": 7,
-      "start": 64.351
+      "start": 64.563
     },
     {
       "segment": 8,
-      "start": 68.625
+      "start": 68.816
     },
     {
       "segment": 9,
-      "start": 105.677
+      "start": 106.349
     },
     {
       "segment": 10,
-      "start": 107.554
+      "start": 108.258
     },
     {
       "segment": 11,
-      "start": 112.231
+      "start": 112.843
     },
     {
       "segment": 12,
-      "start": 135.943
+      "start": 136.464
     },
     {
       "segment": 13,
-      "start": 142.07
+      "start": 138.399
     },
     {
       "segment": 14,
-      "start": 147.457
+      "start": 141.151
+    },
+    {
+      "segment": 15,
+      "start": 173.134
+    },
+    {
+      "segment": 16,
+      "start": 179.218
+    },
+    {
+      "segment": 17,
+      "start": 184.596
     }
   ]
 }
