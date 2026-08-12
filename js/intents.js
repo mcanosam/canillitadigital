@@ -32,8 +32,9 @@
     '1': 'daily_summary',
     '2': 'listen_summary',
     '3': 'route22_history',
-    '4': 'sports',
-    '5': 'preferences'
+    '4': 'messi',
+    '5': 'sports',
+    '6': 'preferences'
   };
 
   /*

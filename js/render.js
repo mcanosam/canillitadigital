@@ -169,6 +169,17 @@
         var following = Canillita.preferences.toggleFollow(button.dataset.follow);
         button.setAttribute('aria-pressed', following ? 'true' : 'false');
         button.textContent = following ? '✓ Seguís esta historia' : '＋ Seguir esta historia';
+
+        // Sin este aviso, seguir una historia no tenía ningún efecto visible
+        var aviso = button.parentNode.querySelector('.seguir-aviso');
+        if (!aviso) {
+          aviso = global.document.createElement('p');
+          aviso.className = 'seguir-aviso';
+          button.parentNode.appendChild(aviso);
+        }
+        aviso.textContent = following
+          ? 'Queda como acceso directo en el menú del chat.'
+          : '';
       });
     });
   }

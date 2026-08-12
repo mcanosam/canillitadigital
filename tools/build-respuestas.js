@@ -47,8 +47,8 @@ const Canillita = globalThis.Canillita;
 Canillita.content.hydrate([
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'ruta22-actualidad.json'), 'utf8')),
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'ruta22-historia.json'), 'utf8')),
-  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'deportes.json'), 'utf8')),
-  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'messi.json'), 'utf8'))
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'messi.json'), 'utf8')),
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'deportes.json'), 'utf8'))
 ]);
 
 /* ------------------------------------------------------ qué se va a decir */

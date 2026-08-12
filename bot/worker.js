@@ -36,7 +36,7 @@ const Canillita = globalThis.Canillita;
 let cargado = false;
 function prepararContenido() {
   if (cargado) return;
-  Canillita.content.hydrate([actualidad, historia, deportes, messi]);
+  Canillita.content.hydrate([actualidad, historia, messi, deportes]);
   cargado = true;
 }
 

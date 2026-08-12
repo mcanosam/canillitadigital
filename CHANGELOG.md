@@ -82,6 +82,19 @@ Criterio de numeración:
   Balones de Oro. Tres tienen clip de audio.
 
 ---
+## v1.10.0 · 12-08-2026
+
+- El hilo de Messi sube al tercer lugar de la edición, antes de la nota
+  ficticia: el contenido real va primero.
+- Menú ampliado a seis opciones, con "El hilo de Messi" como entrada propia.
+  Antes solo se llegaba escribiendo la pregunta.
+- **Seguir una historia ahora sirve para algo.** Las historias seguidas
+  aparecen encabezando el menú del chat y como primer botón. Al tocar el botón
+  de seguir, la edición avisa dónde queda.
+- `mockups/portadas.html`: las dos maquetas de portada como página navegable,
+  para verlas en el teléfono en vez de como imagen.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

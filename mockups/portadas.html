@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maquetas de portada · Tu Canillita Digital</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Estilos propios de esta página de maquetas. No forman parte del producto. */
+    body { padding-bottom: 40px; }
+
+    .intro {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .intro h1 {
+      margin: 0 0 6px;
+      font-family: var(--condensada);
+      font-size: 1.2rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .intro p {
+      margin: 0 0 8px;
+      font-family: var(--display);
+      font-size: .95rem;
+      line-height: 1.55;
+      color: var(--tinta-suave);
+    }
+
+    .opciones {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: grid;
+      gap: 28px;
+    }
+    @media (min-width: 800px) {
+      .opciones { grid-template-columns: 1fr 1fr; }
+    }
+
+    .opcion__rotulo {
+      margin: 0 0 4px;
+      font-family: var(--condensada);
+      font-size: 1rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .opcion__nota {
+      margin: 0 0 12px;
+      font-family: var(--display);
+      font-style: italic;
+      font-size: .88rem;
+      color: var(--tinta-suave);
+    }
+
+    /* El marco simula la pantalla de un teléfono */
+    .marco {
+      border: 1px solid var(--filete);
+      background: var(--papel);
+      overflow: hidden;
+    }
+
+    /* ---- piezas comunes a las dos maquetas ---- */
+    .m-chapa { background: var(--tinta); padding: 9px 12px; }
+    .m-chapa__eyebrow {
+      margin: 0; font-family: var(--condensada); font-size: .62rem;
+      letter-spacing: .2em; color: #B3AB98;
+    }
+    .m-chapa__titulo {
+      margin: 1px 0 0; font-family: var(--condensada); font-stretch: 87.5%;
+      font-size: 1.5rem; font-weight: 400; letter-spacing: .02em;
+      line-height: 1.05; text-transform: uppercase; color: var(--papel);
+    }
+    .m-chapa__linea {
+      margin: 1px 0 0; font-family: var(--display); font-style: italic;
+      font-size: .68rem; color: #B3AB98;
+    }
+
+    .m-fecha {
+      display: flex; justify-content: space-between;
+      padding: 5px 12px; border-bottom: 2px solid var(--tinta);
+      font-family: var(--condensada); font-size: .68rem;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-suave);
+    }
+
+    .m-volanta {
+      display: inline-block; padding: 3px 7px; margin-bottom: 6px;
+      background: var(--ocre); color: var(--papel);
+      font-family: var(--condensada); font-size: .64rem;
+      letter-spacing: .14em; text-transform: uppercase;
+    }
+    .m-titular {
+      margin: 0 0 5px; font-family: var(--display);
+      font-size: 1.25rem; line-height: 1.12;
+    }
+    .m-bajada {
+      margin: 0; font-family: var(--display); font-style: italic;
+      font-size: .8rem; line-height: 1.4; color: var(--tinta-suave);
+    }
+    .m-cuerpo { padding: 11px 12px; }
+    .m-secundaria { border-top: 1px solid var(--linea); padding: 10px 12px; }
+    .m-secundaria .m-titular { font-size: .98rem; }
+
+    .m-escuchar {
+      display: flex; align-items: center; gap: 7px; margin-top: 8px;
+      padding: 6px 9px; background: var(--burbuja-in);
+      border: 1px solid var(--linea); border-left: 3px solid var(--ocre);
+    }
+    .m-escuchar span:first-child {
+      width: 20px; height: 20px; flex: 0 0 20px;
+      display: grid; place-items: center;
+      background: var(--ocre); color: var(--papel); font-size: .6rem;
+    }
+    .m-escuchar span:last-child {
+      font-family: var(--condensada); font-size: .72rem;
+      letter-spacing: .06em; text-transform: uppercase;
+    }
+
+    .m-telegram {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px;
+      padding: 9px 12px; background: var(--tinta); color: var(--papel);
+    }
+    .m-telegram em { font-family: var(--display); font-size: .8rem; }
+    .m-telegram b {
+      font-family: var(--condensada); font-weight: 400; font-size: .68rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      border: 1px solid var(--papel); padding: 4px 9px;
+    }
+
+    /* ---- opción A: franja de temas ---- */
+    .m-temas {
+      padding: 9px 12px; background: var(--papel-viejo);
+      border-bottom: 1px solid var(--linea);
+    }
+    .m-temas__rotulo {
+      margin: 0 0 6px; font-family: var(--condensada); font-size: .62rem;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--tinta-suave);
+    }
+    .m-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .m-chip {
+      font-family: var(--condensada); font-size: .72rem;
+      letter-spacing: .08em; text-transform: uppercase; padding: 4px 9px;
+      background: var(--ocre); color: var(--papel);
+    }
+    .m-chip--off {
+      background: transparent; color: var(--tinta-suave);
+      border: 1px solid var(--filete); padding: 3px 8px;
+    }
+
+    /* ---- opción B: navegación de secciones ---- */
+    .m-nav {
+      display: flex; gap: 14px; padding: 6px 12px;
+      border-bottom: 2px solid var(--tinta);
+      font-family: var(--condensada); font-size: .72rem;
+      letter-spacing: .1em; text-transform: uppercase;
+    }
+    .m-nav span { color: var(--tinta-suave); }
+    .m-nav .activo {
+      color: var(--tinta); border-bottom: 2px solid var(--ocre); padding-bottom: 1px;
+    }
+
+    .m-capitular::first-letter {
+      float: left; margin: 3px 5px 0 0;
+      font-size: 2.2rem; line-height: .8; color: var(--ocre);
+    }
+
+    .m-armar {
+      margin: 0 12px 12px; padding: 11px; border: 1px solid var(--tinta);
+    }
+    .m-armar__rotulo {
+      margin: 0 0 5px; font-family: var(--condensada); font-size: .64rem;
+      letter-spacing: .16em; text-transform: uppercase; color: var(--ocre);
+    }
+    .m-armar p {
+      margin: 0 0 8px; font-family: var(--display);
+      font-size: .82rem; line-height: 1.45;
+    }
+    .m-armar__botones { display: flex; gap: 6px; }
+    .m-armar__botones span {
+      font-family: var(--condensada); font-size: .72rem;
+      letter-spacing: .08em; text-transform: uppercase; padding: 6px 11px;
+      background: var(--tinta); color: var(--papel);
+    }
+    .m-armar__botones span:last-child {
+      background: transparent; color: var(--tinta-suave);
+      border: 1px solid var(--filete); padding: 5px 10px;
+    }
+
+    .volver-arriba {
+      display: block; max-width: 640px; margin: 24px auto 0; padding: 0 16px;
+      font-family: var(--condensada); font-size: .82rem;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--ocre); text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <a class="volver" href="../index.html">‹ Volver</a>
+    <p class="masthead__eyebrow">Maquetas · no es el producto</p>
+    <h1 class="masthead__title">Dos portadas</h1>
+    <p class="masthead__line">Para decidir la entrada de la web</p>
+  </header>
+
+  <div class="intro">
+    <h1>Qué estás mirando</h1>
+    <p>
+      Dos formas de resolver lo mismo: una portada de diario que además permita
+      personalizar. No son páginas funcionales, no hacen nada al tocarlas.
+      Sirven para elegir una dirección antes de construirla.
+    </p>
+    <p>
+      La diferencia está en <em>cuándo</em> aparece la personalización: en la
+      opción A, antes de las noticias; en la B, después.
+    </p>
+  </div>
+
+  <div class="opciones">
+
+    <!-- ============================ OPCIÓN A ============================ -->
+    <section>
+      <p class="opcion__rotulo">A · Los temas, arriba de todo</p>
+      <p class="opcion__nota">Tocás un tema y la portada se reordena sola.</p>
+
+      <div class="marco">
+        <div class="m-chapa">
+          <p class="m-chapa__eyebrow">Alto Valle · Río Negro</p>
+          <p class="m-chapa__titulo">Tu Canillita Digital</p>
+          <p class="m-chapa__linea">Noticias del valle, todos los días</p>
+        </div>
+
+        <div class="m-fecha">
+          <span>Miércoles 12 de agosto</span><span>v1.9</span>
+        </div>
+
+        <div class="m-temas">
+          <p class="m-temas__rotulo">Tu edición · elegí qué seguir</p>
+          <div class="m-chips">
+            <span class="m-chip">✓ Ruta 22</span>
+            <span class="m-chip">✓ Deportes</span>
+            <span class="m-chip m-chip--off">+ Municipio</span>
+            <span class="m-chip m-chip--off">+ Policiales</span>
+          </div>
+        </div>
+
+        <div class="m-cuerpo">
+          <span class="m-volanta">Ruta 22</span>
+          <h2 class="m-titular">Los pozos que dejaron las lluvias</h2>
+          <p class="m-bajada">El bacheo en frío se lavó con el agua y los talleres no dan abasto</p>
+          <div class="m-escuchar">
+            <span aria-hidden="true">▶</span>
+            <span>Escuchar · 47s</span>
+          </div>
+        </div>
+
+        <div class="m-secundaria">
+          <span class="m-volanta">Deportes</span>
+          <h3 class="m-titular">Messi: el hilo completo, de Rosario a Nueva Jersey</h3>
+        </div>
+
+        <div class="m-telegram">
+          <em>Conversá con el diario</em>
+          <b>Abrir en Telegram</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ OPCIÓN B ============================ -->
+    <section>
+      <p class="opcion__rotulo">B · Primero el diario, después el vos</p>
+      <p class="opcion__nota">Portada igual para todos; la personalización espera abajo.</p>
+
+      <div class="marco">
+        <div class="m-chapa">
+          <p class="m-chapa__eyebrow">Alto Valle · Río Negro</p>
+          <p class="m-chapa__titulo">Tu Canillita Digital</p>
+          <p class="m-chapa__linea">Noticias del valle, todos los días</p>
+        </div>
+
+        <nav class="m-nav">
+          <span class="activo">Portada</span>
+          <span>Ruta 22</span>
+          <span>Deportes</span>
+          <span>Mi edición</span>
+        </nav>
+
+        <div class="m-cuerpo">
+          <span class="m-volanta">Ruta 22</span>
+          <h2 class="m-titular" style="font-size:1.35rem">Los pozos que dejaron las lluvias</h2>
+          <p class="m-bajada m-capitular" style="font-style:normal;color:var(--tinta)">
+            Las precipitaciones destaparon los baches en todo el Alto Valle.
+            En las gomerías de Cinco Saltos pasaron de dos casos por día a once.
+          </p>
+        </div>
+
+        <div class="m-secundaria">
+          <span class="m-volanta">Deportes</span>
+          <h3 class="m-titular">Messi: el hilo completo, de Rosario a Nueva Jersey</h3>
+        </div>
+
+        <div class="m-armar">
+          <p class="m-armar__rotulo">Armá tu edición</p>
+          <p>Decinos tu nombre y qué temas seguís, y preparamos tu edición y tu boletín de audio.</p>
+          <div class="m-armar__botones">
+            <span>Empezar</span>
+            <span>Por Telegram</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <a class="volver-arriba" href="../index.html">‹ Volver al chat</a>
+
+</body>
+</html>

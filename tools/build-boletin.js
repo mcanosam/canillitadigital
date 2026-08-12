@@ -48,8 +48,8 @@ function leerHistoria(archivo) {
 const historias = [
   leerHistoria('ruta22-actualidad.json'),
   leerHistoria('ruta22-historia.json'),
-  leerHistoria('deportes.json'),
-  leerHistoria('messi.json')
+  leerHistoria('messi.json'),
+  leerHistoria('deportes.json')
 ];
 
 const porId = {};

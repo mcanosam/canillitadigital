@@ -779,86 +779,6 @@ window.CANILLITA_CONTENT_BUNDLE = {
     ],
     "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse."
   },
-  "content/deportes.json": {
-    "id": "deportes_demo",
-    "type": "sports_story",
-    "category": "Deportes",
-    "topic": "deportes",
-    "title": "Deportivo Roca se impuso en el clásico del valle",
-    "subtitle": "Contenido ficticio creado para probar la demostración",
-    "status": "demo",
-    "isFiction": true,
-    "fictionNotice": "⚠️ CONTENIDO FICTICIO. Este resultado, sus protagonistas y su fixture fueron inventados para probar Tu Canillita Digital. No corresponde a ningún partido real ni debe difundirse como información periodística.",
-    "lastUpdated": "2026-08-06T07:00:00-03:00",
-    "eventDate": "2026-08-03",
-    "readingTime": 2,
-    "shortSummary": "En un partido ficticio de demostración, Deportivo Roca venció 2 a 1 a Cipolletti por la Liga Deportiva Confluencia y quedó a un punto de la punta.",
-    "whatsappSummary": "⚽ *Deportes* _(contenido ficticio de demo)_\nDeportivo Roca 2 - Cipolletti 1, por la fecha 14 de la Liga Deportiva Confluencia. Goles ficticios de Barrientos y Quilodrán para el local; descontó Aguirre.\nPróxima fecha: visita a Villa Regina, domingo 16:00.\n_Datos inventados para probar la demo._",
-    "radioSummary": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración.",
-    "match": {
-      "competition": "Liga Deportiva Confluencia (ficticia)",
-      "round": "Fecha 14",
-      "date": "2026-08-03T16:00:00-03:00",
-      "home": "Deportivo Roca",
-      "away": "Cipolletti",
-      "homeScore": 2,
-      "awayScore": 1,
-      "venue": "Estadio municipal (dato ficticio)",
-      "scorers": [
-        "Barrientos (Deportivo Roca, 23')",
-        "Quilodrán (Deportivo Roca, 61')",
-        "Aguirre (Cipolletti, 78')"
-      ]
-    },
-    "nextMatch": {
-      "date": "2026-08-09T16:00:00-03:00",
-      "dateLabel": "domingo 9 de agosto, 16:00",
-      "opponent": "Villa Regina",
-      "homeAway": "visitante",
-      "competition": "Liga Deportiva Confluencia (ficticia)",
-      "note": "Fixture ficticio de demostración."
-    },
-    "standingsNote": "Con este resultado ficticio, Deportivo Roca quedaría segundo, a un punto del líder.",
-    "articleBody": [
-      {
-        "type": "paragraph",
-        "text": "⚠️ Lo que sigue es contenido inventado. Sirve para probar cómo Tu Canillita Digital resume, narra y publica una noticia deportiva local, pero no describe hechos reales."
-      },
-      {
-        "type": "paragraph",
-        "text": "En un partido disputado el domingo por la fecha 14 de la Liga Deportiva Confluencia, Deportivo Roca venció 2 a 1 a Cipolletti. El local abrió el marcador a los 23 minutos con un gol de Barrientos y amplió en el complemento por intermedio de Quilodrán. La visita descontó sobre el final con un tanto de Aguirre."
-      },
-      {
-        "type": "paragraph",
-        "text": "El resultado dejaría a Deportivo Roca a un punto del líder, cuando restan cuatro fechas para el cierre de la fase regular."
-      },
-      {
-        "type": "paragraph",
-        "text": "La próxima presentación sería como visitante ante Villa Regina, el domingo 9 de agosto a las 16:00."
-      }
-    ],
-    "confirmedFacts": [],
-    "pendingQuestions": [],
-    "whyItMatters": "El clásico del valle mueve a las dos ciudades más pobladas de la región. En esta demostración sirve para mostrar cómo se adapta una misma noticia a WhatsApp, a la radio y a la edición visual.",
-    "timeline": [],
-    "sections": [],
-    "suggestedQuestions": [
-      "¿Cuándo juega Deportivo Roca?",
-      "¿Quiénes hicieron los goles?",
-      "¿Cómo quedó la tabla?"
-    ],
-    "sources": [
-      {
-        "id": "demo_ficticia",
-        "name": "Contenido ficticio generado para la demostración",
-        "type": "demo",
-        "publisher": "Tu Canillita Digital (demo)",
-        "publishedAt": "2026-08-06",
-        "url": ""
-      }
-    ],
-    "radioHeadline": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
-  },
   "content/messi.json": {
     "id": "messi_hilo",
     "type": "living_story",
@@ -1156,5 +1076,85 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "url": ""
       }
     ]
+  },
+  "content/deportes.json": {
+    "id": "deportes_demo",
+    "type": "sports_story",
+    "category": "Deportes",
+    "topic": "deportes",
+    "title": "Deportivo Roca se impuso en el clásico del valle",
+    "subtitle": "Contenido ficticio creado para probar la demostración",
+    "status": "demo",
+    "isFiction": true,
+    "fictionNotice": "⚠️ CONTENIDO FICTICIO. Este resultado, sus protagonistas y su fixture fueron inventados para probar Tu Canillita Digital. No corresponde a ningún partido real ni debe difundirse como información periodística.",
+    "lastUpdated": "2026-08-06T07:00:00-03:00",
+    "eventDate": "2026-08-03",
+    "readingTime": 2,
+    "shortSummary": "En un partido ficticio de demostración, Deportivo Roca venció 2 a 1 a Cipolletti por la Liga Deportiva Confluencia y quedó a un punto de la punta.",
+    "whatsappSummary": "⚽ *Deportes* _(contenido ficticio de demo)_\nDeportivo Roca 2 - Cipolletti 1, por la fecha 14 de la Liga Deportiva Confluencia. Goles ficticios de Barrientos y Quilodrán para el local; descontó Aguirre.\nPróxima fecha: visita a Villa Regina, domingo 16:00.\n_Datos inventados para probar la demo._",
+    "radioSummary": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración.",
+    "match": {
+      "competition": "Liga Deportiva Confluencia (ficticia)",
+      "round": "Fecha 14",
+      "date": "2026-08-03T16:00:00-03:00",
+      "home": "Deportivo Roca",
+      "away": "Cipolletti",
+      "homeScore": 2,
+      "awayScore": 1,
+      "venue": "Estadio municipal (dato ficticio)",
+      "scorers": [
+        "Barrientos (Deportivo Roca, 23')",
+        "Quilodrán (Deportivo Roca, 61')",
+        "Aguirre (Cipolletti, 78')"
+      ]
+    },
+    "nextMatch": {
+      "date": "2026-08-09T16:00:00-03:00",
+      "dateLabel": "domingo 9 de agosto, 16:00",
+      "opponent": "Villa Regina",
+      "homeAway": "visitante",
+      "competition": "Liga Deportiva Confluencia (ficticia)",
+      "note": "Fixture ficticio de demostración."
+    },
+    "standingsNote": "Con este resultado ficticio, Deportivo Roca quedaría segundo, a un punto del líder.",
+    "articleBody": [
+      {
+        "type": "paragraph",
+        "text": "⚠️ Lo que sigue es contenido inventado. Sirve para probar cómo Tu Canillita Digital resume, narra y publica una noticia deportiva local, pero no describe hechos reales."
+      },
+      {
+        "type": "paragraph",
+        "text": "En un partido disputado el domingo por la fecha 14 de la Liga Deportiva Confluencia, Deportivo Roca venció 2 a 1 a Cipolletti. El local abrió el marcador a los 23 minutos con un gol de Barrientos y amplió en el complemento por intermedio de Quilodrán. La visita descontó sobre el final con un tanto de Aguirre."
+      },
+      {
+        "type": "paragraph",
+        "text": "El resultado dejaría a Deportivo Roca a un punto del líder, cuando restan cuatro fechas para el cierre de la fase regular."
+      },
+      {
+        "type": "paragraph",
+        "text": "La próxima presentación sería como visitante ante Villa Regina, el domingo 9 de agosto a las 16:00."
+      }
+    ],
+    "confirmedFacts": [],
+    "pendingQuestions": [],
+    "whyItMatters": "El clásico del valle mueve a las dos ciudades más pobladas de la región. En esta demostración sirve para mostrar cómo se adapta una misma noticia a WhatsApp, a la radio y a la edición visual.",
+    "timeline": [],
+    "sections": [],
+    "suggestedQuestions": [
+      "¿Cuándo juega Deportivo Roca?",
+      "¿Quiénes hicieron los goles?",
+      "¿Cómo quedó la tabla?"
+    ],
+    "sources": [
+      {
+        "id": "demo_ficticia",
+        "name": "Contenido ficticio generado para la demostración",
+        "type": "demo",
+        "publisher": "Tu Canillita Digital (demo)",
+        "publishedAt": "2026-08-06",
+        "url": ""
+      }
+    ],
+    "radioHeadline": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
   }
 };

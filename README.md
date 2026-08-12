@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.9 · Fase 3 de 4
+## Estado: v1.10 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -152,6 +152,8 @@ tu-canillita-digital/
 │   ├── telegram.js             Traductor del motor al formato del canal
 │   └── README.md               Puesta en marcha paso a paso
 ├── wrangler.toml               Configuración del Worker
+├── mockups/
+│   └── portadas.html           Maquetas de portada (no es el producto)
 ├── tools/
 │   ├── bump-version.js         Sube la versión y abre el changelog
 │   ├── build-bundle.py         Copia embebida del contenido

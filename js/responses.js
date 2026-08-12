@@ -69,44 +69,83 @@
 
   /* ------------------------------------------------------------- respuestas */
 
+  /*
+   * Qué escribir para llegar a cada historia. Se usa para armar los accesos
+   * directos del menú a partir de las historias que el lector eligió seguir.
+   */
+  var ACCESO_DIRECTO = {
+    ruta22_actualidad: { label: 'Ruta 22 hoy', pregunta: 'Ruta 22 hoy' },
+    ruta22_historia: { label: 'Ruta 22: la historia', pregunta: 'Ver la historia de la Ruta 22' },
+    messi_hilo: { label: 'El hilo de Messi', pregunta: 'Contame el hilo de Messi' },
+    deportes_demo: { label: 'Deportes del valle', pregunta: 'Ver deportes' }
+  };
+
+  /** Accesos directos a las historias que el lector sigue. */
+  function seguidas() {
+    return prefs.get().following
+      .map(function (id) { return ACCESO_DIRECTO[id]; })
+      .filter(Boolean);
+  }
+
   function menuText() {
-    return [
+    var lineas = [
       '¿Qué querés recibir?',
       '',
       '1️⃣ Mi resumen de hoy',
       '2️⃣ Escuchar las noticias',
-      '3️⃣ Ver la historia de la Ruta 22',
-      '4️⃣ Ver deportes',
-      '5️⃣ Configurar mis preferencias',
-      '',
-      'Podés tocar un botón, escribir el número o preguntarme directamente.'
-    ].join('\n');
+      '3️⃣ Ruta 22: la historia completa',
+      '4️⃣ El hilo de Messi',
+      '5️⃣ Deportes del valle',
+      '6️⃣ Configurar mis preferencias'
+    ];
+
+    /* Lo que el lector eligió seguir va primero que el resto de las opciones */
+    var mias = seguidas();
+    if (mias.length) {
+      lineas.push('');
+      lineas.push('⭐ *Seguís estas historias:*');
+      mias.forEach(function (item) {
+        lineas.push('· ' + item.label);
+      });
+    }
+
+    lineas.push('');
+    lineas.push('Podés tocar un botón, escribir el número o preguntarme directamente.');
+    return lineas.join('\n');
   }
 
-  var MENU_REPLIES = [
-    'Mi resumen de hoy',
-    'Escuchar las noticias',
-    'Ver la historia de la Ruta 22',
-    'Ver deportes',
-    'Configurar mis preferencias'
-  ];
+  /* Los botones repiten el menú, con las historias seguidas adelante */
+  function menuReplies() {
+    var base = [
+      'Mi resumen de hoy',
+      'Escuchar las noticias',
+      'Ver la historia de la Ruta 22',
+      'Contame el hilo de Messi',
+      'Ver deportes',
+      'Configurar mis preferencias'
+    ];
+    var mias = seguidas().map(function (item) { return item.pregunta; });
+    return mias.concat(base.filter(function (opcion) {
+      return mias.indexOf(opcion) === -1;
+    }));
+  }
 
   function greeting() {
     var name = prefs.isConfigured() ? ', ' + prefs.get().name : '';
     return reply([
       message('¡' + timeGreeting() + name + '! Soy Tu Canillita Digital.\n\nPuedo contarte las noticias locales de manera breve, leértelas como un programa de radio o prepararte una edición visual.'),
       message(menuText())
-    ], MENU_REPLIES);
+    ], menuReplies());
   }
 
   function help() {
-    return reply(message(menuText()), MENU_REPLIES);
+    return reply(message(menuText()), menuReplies());
   }
 
   function dailySummary() {
     var stories = content.forDailySummary(prefs.get().topics);
     if (!stories.length) {
-      return reply(message('Todavía no tenés temas elegidos. Escribí “configurar” y lo resolvemos en un minuto.'), MENU_REPLIES);
+      return reply(message('Todavía no tenés temas elegidos. Escribí “configurar” y lo resolvemos en un minuto.'), menuReplies());
     }
 
     var header = '📰 *TU RESUMEN DE HOY*\n' + todayLabel() + ' · ' + clockLabel() +
@@ -561,7 +600,7 @@
     // Escape del flujo en cualquier momento.
     if (normalized === 'cancelar' || normalized === 'salir') {
       flowStep = null;
-      return reply(message('Listo, dejamos la configuración como estaba.'), MENU_REPLIES);
+      return reply(message('Listo, dejamos la configuración como estaba.'), menuReplies());
     }
 
     step.save(text);
