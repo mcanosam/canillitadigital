@@ -3,18 +3,18 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.9.0",
-  "generatedAt": "2026-08-12T15:47:34.943Z",
+  "version": "1.11.0",
+  "generatedAt": "2026-08-12T20:24:19.924Z",
   "baseRate": 1,
-  "duration": 188.26,
+  "duration": 188.16,
   "segments": [
     {
       "kind": "identificacion",
-      "text": "Tu Canillita Digital, boletín del Alto Valle."
+      "text": "Tu Canillita, boletín del Alto Valle."
     },
     {
       "kind": "saludo",
-      "text": "Son las doce y cuarenta y siete del mediodía. Buen día."
+      "text": "Son las cinco y veinticuatro de la tarde. Buenas tardes."
     },
     {
       "kind": "fecha",
@@ -50,11 +50,11 @@
     },
     {
       "kind": "deportes",
-      "text": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
+      "text": "Y vamos al hilo de Messi, que sigue abierto."
     },
     {
       "kind": "desarrollo",
-      "text": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración."
+      "text": "Empecemos por el final, que es lo más fresco. El 19 de julio, en Nueva Jersey, Argentina perdió la final del Mundial con España. Uno a cero, gol de Ferran Torres a los 106 minutos, ya en el alargue. Messi tenía 39 años. Era su sexto Mundial y su tercera final. Ganó una, en Qatar, y perdió dos. Ahora, la pregunta que quedó dando vueltas. ¿Se retira de la Selección? No lo dijo. Escribió que el dolor era muy grande, volvió a Rosario con su familia, y no habló más. Contrato con Inter Miami tiene hasta 2028. Así que jugar, va a seguir jugando. La duda es si vuelve a ponerse la celeste y blanca."
     },
     {
       "kind": "separador",
@@ -62,11 +62,11 @@
     },
     {
       "kind": "deportes",
-      "text": "Y vamos al hilo de Messi, que sigue abierto."
+      "text": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
     },
     {
       "kind": "desarrollo",
-      "text": "Empecemos por el final, que es lo más fresco. El 19 de julio, en Nueva Jersey, Argentina perdió la final del Mundial con España. Uno a cero, gol de Ferran Torres a los 106 minutos, ya en el alargue. Messi tenía 39 años. Era su sexto Mundial y su tercera final. Ganó una, en Qatar, y perdió dos. Ahora, la pregunta que quedó dando vueltas. ¿Se retira de la Selección? No lo dijo. Escribió que el dolor era muy grande, volvió a Rosario con su familia, y no habló más. Contrato con Inter Miami tiene hasta 2028. Así que jugar, va a seguir jugando. La duda es si vuelve a ponerse la celeste y blanca."
+      "text": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración."
     },
     {
       "kind": "seguimiento",
@@ -78,7 +78,7 @@
     },
     {
       "kind": "cierre",
-      "text": "Fue Tu Canillita Digital, que sigue la historia con vos. Buen día."
+      "text": "Fue Tu Canillita, que sigue la historia con vos. Buen día."
     }
   ],
   "marks": [
@@ -88,71 +88,71 @@
     },
     {
       "segment": 1,
-      "start": 3.156
+      "start": 2.426
     },
     {
       "segment": 2,
-      "start": 6.321
+      "start": 5.75
     },
     {
       "segment": 3,
-      "start": 9.202
+      "start": 8.755
     },
     {
       "segment": 4,
-      "start": 11.868
+      "start": 11.478
     },
     {
       "segment": 5,
-      "start": 16.076
+      "start": 15.7
     },
     {
       "segment": 6,
-      "start": 63.312
+      "start": 63.116
     },
     {
       "segment": 7,
-      "start": 64.563
+      "start": 64.337
     },
     {
       "segment": 8,
-      "start": 68.816
+      "start": 68.665
     },
     {
       "segment": 9,
-      "start": 106.349
+      "start": 106.062
     },
     {
       "segment": 10,
-      "start": 108.258
+      "start": 107.94
     },
     {
       "segment": 11,
-      "start": 112.843
+      "start": 110.659
     },
     {
       "segment": 12,
-      "start": 136.464
+      "start": 142.969
     },
     {
       "segment": 13,
-      "start": 138.399
+      "start": 144.865
     },
     {
       "segment": 14,
-      "start": 141.151
+      "start": 149.53
     },
     {
       "segment": 15,
-      "start": 173.134
+      "start": 173.452
     },
     {
       "segment": 16,
-      "start": 179.218
+      "start": 179.629
     },
     {
       "segment": 17,
-      "start": 184.596
+      "start": 184.971
     }
   ]
 }
