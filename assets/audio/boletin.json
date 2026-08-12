@@ -4,9 +4,9 @@
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
   "version": "1.8.1",
-  "generatedAt": "2026-08-11T10:41:47.216Z",
+  "generatedAt": "2026-08-12T10:51:45.026Z",
   "baseRate": 1,
-  "duration": 151.3,
+  "duration": 151.01,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,11 +14,11 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las siete y cuarenta y uno de la mañana. Buen día."
+      "text": "Son las siete y cincuenta y uno de la mañana. Buen día."
     },
     {
       "kind": "fecha",
-      "text": "Hoy es martes 11 de agosto de 2026."
+      "text": "Hoy es miércoles 12 de agosto de 2026."
     },
     {
       "kind": "presentacion",
@@ -76,59 +76,59 @@
     },
     {
       "segment": 1,
-      "start": 3.164
+      "start": 3.062
     },
     {
       "segment": 2,
-      "start": 6.373
+      "start": 6.203
     },
     {
       "segment": 3,
-      "start": 9.189
+      "start": 9.137
     },
     {
       "segment": 4,
-      "start": 11.914
+      "start": 11.814
     },
     {
       "segment": 5,
-      "start": 16.124
+      "start": 16.025
     },
     {
       "segment": 6,
-      "start": 62.938
+      "start": 63.107
     },
     {
       "segment": 7,
-      "start": 64.237
+      "start": 64.351
     },
     {
       "segment": 8,
-      "start": 68.495
+      "start": 68.625
     },
     {
       "segment": 9,
-      "start": 105.754
+      "start": 105.677
     },
     {
       "segment": 10,
-      "start": 107.724
+      "start": 107.554
     },
     {
       "segment": 11,
-      "start": 112.423
+      "start": 112.231
     },
     {
       "segment": 12,
-      "start": 136.098
+      "start": 135.943
     },
     {
       "segment": 13,
-      "start": 142.391
+      "start": 142.07
     },
     {
       "segment": 14,
-      "start": 147.686
+      "start": 147.457
     }
   ]
 }
