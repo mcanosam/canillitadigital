@@ -12,3 +12,4 @@ SITIO = "https://mcanosam.github.io/canillitadigital"
 
 [observability]
 enabled = true
+

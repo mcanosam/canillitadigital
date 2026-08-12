@@ -47,7 +47,8 @@ const Canillita = globalThis.Canillita;
 Canillita.content.hydrate([
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'ruta22-actualidad.json'), 'utf8')),
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'ruta22-historia.json'), 'utf8')),
-  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'deportes.json'), 'utf8'))
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'deportes.json'), 'utf8')),
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'messi.json'), 'utf8'))
 ]);
 
 /* ------------------------------------------------------ qué se va a decir */
@@ -77,6 +78,9 @@ const PREGUNTAS = [
   { id: 'tramo6',              pregunta: '¿Qué pasa en Cipolletti?' },
   { id: 'deportes',            pregunta: 'Ver deportes' },
   { id: 'deportes-proximo',    pregunta: '¿Cuándo juega Deportivo Roca?' },
+  { id: 'messi',               pregunta: 'Contame el hilo de Messi' },
+  { id: 'messi-final',         pregunta: '¿Cómo salió la final del Mundial 2026?' },
+  { id: 'messi-retiro',        pregunta: '¿Messi se retira de la Selección?' },
   { id: 'fuera-de-alcance',    pregunta: '¿Qué pasa con el dólar?' }
 ];
 

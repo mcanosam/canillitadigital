@@ -22,7 +22,8 @@
   var FILES = [
     'content/ruta22-actualidad.json',
     'content/ruta22-historia.json',
-    'content/deportes.json'
+    'content/deportes.json',
+    'content/messi.json'
   ];
 
   var state = {

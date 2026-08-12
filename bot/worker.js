@@ -17,6 +17,7 @@
 import actualidad from '../content/ruta22-actualidad.json';
 import historia from '../content/ruta22-historia.json';
 import deportes from '../content/deportes.json';
+import messi from '../content/messi.json';
 
 import '../js/version.js';
 import '../js/router.js';
@@ -35,7 +36,7 @@ const Canillita = globalThis.Canillita;
 let cargado = false;
 function prepararContenido() {
   if (cargado) return;
-  Canillita.content.hydrate([actualidad, historia, deportes]);
+  Canillita.content.hydrate([actualidad, historia, deportes, messi]);
   cargado = true;
 }
 

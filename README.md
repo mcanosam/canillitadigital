@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.8 · Fase 3 de 4
+## Estado: v1.9 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -56,6 +56,7 @@ Las tres historias viven en `content/`:
 | `ruta22-actualidad.json` | Ruta 22: qué cambió recientemente |
 | `ruta22-historia.json` | Ruta 22: por qué la obra sigue incompleta |
 | `deportes.json` | Noticia deportiva **ficticia** de demostración |
+| `messi.json` | El hilo de Messi, de Rosario al Mundial 2026 (real) |
 
 Cada historia tiene tres versiones del mismo hecho, escritas para canales
 distintos: `whatsappSummary` (breve, con emojis), `radioSummary` (oral, para

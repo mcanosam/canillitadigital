@@ -183,7 +183,8 @@
   var AUDIO_POR_HISTORIA = {
     ruta22_actualidad: 'ruta22-actualidad',
     ruta22_historia: 'ruta22-historia',
-    deportes_demo: 'deportes'
+    deportes_demo: 'deportes',
+    messi_hilo: 'messi'
   };
 
   function audioIdForStory(storyId) {

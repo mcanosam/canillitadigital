@@ -388,6 +388,73 @@
     ], ['Ver deportes', 'Mi resumen de hoy', 'Menú'], 'deportes-proximo');
   }
 
+
+  /* ------------------------------------------------------------- Messi */
+
+  function messi() {
+    var story = content.get('messi_hilo');
+    var hitos = story.timeline.slice(-4).map(function (item) {
+      return '• *' + item.date.slice(0, 4) + '* · ' + item.title;
+    }).join('\n');
+
+    return reply([
+      message('⚽ *' + story.title + '*\n_' + story.subtitle + '_\n\n' + story.shortSummary),
+      message('*Lo último del hilo*\n' + hitos, {
+        sources: content.sourcesFor(story, ['lanacion_final', 'si_regreso']),
+        dataDate: story.eventDate,
+        links: [{ label: 'Ver el hilo completo', href: Canillita.router.editionUrl() }]
+      })
+    ], ['¿Messi se retira de la Selección?', '¿Cómo salió la final del Mundial 2026?', 'Ver deportes'], 'messi');
+  }
+
+  function messiFinal() {
+    var story = content.get('messi_hilo');
+    return reply([
+      message(
+        '🏆 *España 1 - Argentina 0*\nFinal del Mundial 2026 · 19 de julio · MetLife Stadium, Nueva Jersey\n\n' +
+        'Terminó 0 a 0 los noventa minutos. A los 93, Enzo Fernández se fue expulsado por doble amarilla. ' +
+        'A los 106, ya en el segundo tiempo suplementario, Ferran Torres marcó el único gol.\n\n' +
+        'Emiliano Martínez fue la figura del equipo argentino. Messi terminó el torneo con ocho goles y cuatro asistencias, ' +
+        'pero sin premios individuales: el mejor jugador fue Rodri y la Bota de Oro quedó para Mbappé.',
+        {
+          sources: content.sourcesFor(story, ['lanacion_final', 'telemundo_final']),
+          dataDate: '2026-07-19'
+        }
+      )
+    ], ['¿Messi se retira de la Selección?', 'Contame el hilo de Messi', 'Menú'], 'messi-final');
+  }
+
+  function messiRetiro() {
+    var story = content.get('messi_hilo');
+    return reply([
+      message(
+        'No lo dijo, y esa es la respuesta honesta.\n\n' +
+        '✔️ *Confirmado:* después de la final se quebró al saludar a la hinchada, y al día siguiente escribió que el dolor era muy grande. No anunció nada sobre la Selección y volvió a Rosario con su familia.\n\n' +
+        '✔️ *Confirmado:* tiene contrato con Inter Miami hasta fines de 2028, así que jugar va a seguir jugando.\n\n' +
+        '⏳ *Sin definir:* si vuelve a jugar en la Selección. Scaloni, consultado después del partido, dijo que no tenía idea y que la pregunta era para Messi. La continuidad del propio entrenador también quedó en duda.',
+        {
+          sources: content.sourcesFor(story, ['prensalibre_futuro', 'olympics_retiro', 'si_regreso']),
+          dataDate: '2026-07-21'
+        }
+      )
+    ], ['¿Cómo salió la final del Mundial 2026?', 'Contame el hilo de Messi', 'Menú'], 'messi-retiro');
+  }
+
+  function messiPremios() {
+    var story = content.get('messi_hilo');
+    return reply([
+      message(
+        '🏅 *Ocho Balones de Oro*, más que ningún otro futbolista en la historia.\n\n' +
+        '2009, 2010, 2011, 2012, 2015, 2019, 2021 y 2023.\n\n' +
+        'Cristiano Ronaldo, su contemporáneo, tiene cinco. Desde 2024 Messi no figura entre los nominados: ese año ganó Rodri y en 2025, Dembélé.',
+        {
+          sources: content.sourcesFor(story, ['lanacion_balones']),
+          dataDate: '2025-09-22'
+        }
+      )
+    ], ['Contame el hilo de Messi', '¿Messi se retira de la Selección?', 'Menú']);
+  }
+
   function thanks() {
     return reply(message('De nada. Acá estoy cuando quieras seguir alguna historia.'), BASE_REPLIES);
   }
@@ -528,6 +595,10 @@
     route22_toll: route22Toll,
     sports: sports,
     sports_next: sportsNext,
+    messi: messi,
+    messi_final: messiFinal,
+    messi_retiro: messiRetiro,
+    messi_premios: messiPremios,
     preferences: startPreferences,
     thanks: thanks,
     unknown: unknown

@@ -47,6 +47,41 @@ Criterio de numeración:
   la llegada.
 
 ---
+## v1.8.1 · 07-08-2026
+
+- Bot: los botones viajan pegados a la nota de voz en vez de ir en un mensaje
+  aparte. El audio queda al final del hilo, que es donde el lector lo busca.
+- Bot: el aviso de "escribiendo" no se muestra antes del boletín. Telegram ya
+  indica que se está enviando una nota de voz, y el aviso doble solo demoraba
+  la llegada.
+
+---
+## v1.9.0 · 10-08-2026
+
+- **Pedidos compuestos.** `detectAll()` reconoce varias intenciones en una
+  misma frase cuando están unidas por un conector, y `respondToAll()` las
+  responde en orden. "El resumen por audio y abrime la edición" son dos cosas.
+  Sin conector se sigue respondiendo una sola, para no partir en dos una
+  pregunta común.
+- **El lector puede hablarle al bot.** Las notas de voz se transcriben con
+  Whisper de Workers AI, dentro de la asignación gratuita. El bot muestra lo
+  que entendió antes de responder, así una transcripción errada se ve.
+- Los tramos de la ruta entran en la detección múltiple: "la sección 3 y qué
+  pasa en Cipolletti" devuelve las dos fichas.
+
+---
+## v1.9.0 · 12-08-2026
+
+- Nueva historia viva en Deportes: **el hilo de Messi**, de Rosario a la final
+  del Mundial 2026. Cronología de trece hitos, hechos confirmados y preguntas
+  abiertas (si sigue en la Selección, si Scaloni continúa).
+- Contenido real y verificado con fuentes: La Nación, Telemundo, Prensa Libre,
+  Sports Illustrated y Olympics.com. La noticia deportiva ficticia se mantiene
+  aparte, marcada como tal.
+- Cuatro intenciones nuevas en el chat: el hilo, la final, el retiro y los
+  Balones de Oro. Tres tienen clip de audio.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

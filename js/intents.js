@@ -108,6 +108,22 @@
       'ver deportes', 'deportes', 'futbol', 'deportivo roca', 'clasico',
       'liga confluencia', 'liga deportiva', 'como salio', 'resultado', 'partido'
     ],
+    /* Messi va antes que 'deportes' por especificidad: gana la frase más larga */
+    messi: [
+      'messi', 'la pulga', 'hilo de messi', 'carrera de messi',
+      'historia de messi', 'lionel messi'
+    ],
+    messi_final: [
+      'final del mundial', 'como salio la final', 'mundial 2026',
+      'perdimos la final', 'argentina espana', 'la final con espana'
+    ],
+    messi_retiro: [
+      'messi se retira', 'se retira messi', 'deja la seleccion',
+      'sigue en la seleccion', 'ultimo partido de messi', 'retiro de messi'
+    ],
+    messi_premios: [
+      'balones de oro', 'balon de oro', 'cuantos balones', 'premios de messi'
+    ],
     sports_next: [
       'cuando juega', 'juega deportivo roca', 'proximo partido', 'proxima fecha',
       'cuando es el proximo partido', 'a que hora juega', 'contra quien juega'
@@ -153,6 +169,7 @@
 
     return best;
   }
+
 
   Canillita.intents = {
     normalize: normalize,
