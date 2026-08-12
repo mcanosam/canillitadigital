@@ -23,6 +23,11 @@
 
   function paintHeader() {
     paintVersion();
+
+    var nav = doc.getElementById('secciones');
+    if (nav && Canillita.render) {
+      nav.innerHTML = Canillita.render.seccionesNav('chat');
+    }
     var dateEl = doc.getElementById('today-label');
     if (dateEl) {
       dateEl.textContent = Canillita.responses.todayLabel();

@@ -13,7 +13,7 @@
 
   var Canillita = global.Canillita = global.Canillita || {};
 
-  var STORAGE_KEY = 'canillita.prefs.v2';
+  var STORAGE_KEY = 'canillita.prefs.v3';
 
   var DEFAULTS = {
     name: '',
@@ -27,7 +27,7 @@
      */
     speechRate: 1,
     hour: '07:00',
-    following: []           // ids de historias que el lector eligió seguir
+    following: []           // ids de HILOS que el lector eligió seguir
   };
 
   var TOPIC_LABELS = {

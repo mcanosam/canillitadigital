@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruta 22, historia viva · Tu Canillita</title>
-  <meta name="description" content="Qué pasó, qué está confirmado y qué falta definir en la ampliación de la Ruta Nacional 22 en el Alto Valle.">
+  <title>Historia viva · Tu Canillita</title>
+  <meta name="description" content="Historia viva de Tu Canillita: qué pasó, qué está confirmado y qué falta definir.">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/pages.css">
 </head>
@@ -13,7 +13,7 @@
   <header class="viva-head">
     <a class="volver" href="../index.html">‹ Volver al inicio</a>
     <p class="viva-head__eyebrow">Historia viva · se actualiza</p>
-    <h1 class="viva-head__titulo">Ruta 22</h1>
+    <h1 class="viva-head__titulo" id="titulo">—</h1>
     <p class="viva-head__bajada" id="bajada"></p>
     <p class="viva-head__meta" id="meta"></p>
     <div class="viva-head__acciones" id="acciones"></div>
@@ -21,10 +21,8 @@
 
   <nav class="secciones" id="secciones" aria-label="Secciones"></nav>
 
-  <!-- Navegación interna: la historia es larga -->
   <nav class="indice" aria-label="Secciones de la historia">
     <a href="#ahora">Dónde está hoy</a>
-    <a href="#tramos">Tramo por tramo</a>
     <a href="#cronologia">Cronología</a>
     <a href="#saber">Qué sabemos</a>
     <a href="#fuentes">Fuentes</a>
@@ -34,18 +32,8 @@
 
     <section class="bloque" id="ahora">
       <h2 class="bloque__titulo">Dónde está hoy</h2>
+      <div id="aviso-ficcion"></div>
       <div id="actualidad"></div>
-    </section>
-
-    <section class="bloque" id="tramos">
-      <h2 class="bloque__titulo">Tramo por tramo</h2>
-      <p class="bloque__bajada">El proyecto se dividió en secciones. Ahí está la explicación de por qué avanzó de a pedazos.</p>
-      <div id="tramos-lista"></div>
-    </section>
-
-    <section class="bloque" id="historia">
-      <h2 class="bloque__titulo">La historia completa</h2>
-      <div class="article" id="cuerpo"></div>
     </section>
 
     <section class="bloque" id="cronologia">
@@ -62,8 +50,7 @@
       <h2 class="bloque__titulo">Preguntale al canillita</h2>
       <form class="ask" id="ask-form">
         <label class="visually-hidden" for="ask-input">Escribí tu pregunta</label>
-        <input class="ask__input" id="ask-input" type="text" maxlength="200"
-               placeholder="¿Qué pasó en General Roca?">
+        <input class="ask__input" id="ask-input" type="text" maxlength="200" placeholder="Escribí tu pregunta">
         <button class="ask__send" type="submit">Preguntar</button>
       </form>
       <div class="sugeridas" id="sugeridas"></div>
@@ -71,7 +58,7 @@
 
     <section class="bloque" id="fuentes">
       <h2 class="bloque__titulo">Fuentes</h2>
-      <p class="bloque__bajada">Toda la información de esta página sale de estas publicaciones y documentos oficiales.</p>
+      <p class="bloque__bajada">Toda la información de esta página sale de estas publicaciones.</p>
       <div id="fuentes-lista"></div>
     </section>
 
@@ -89,6 +76,6 @@
   <script src="../js/preferences.js"></script>
   <script src="../js/render.js"></script>
   <script src="../js/radio.js"></script>
-  <script src="../js/ruta22.js"></script>
+  <script src="../js/hilo.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.11 · Fase 3 de 4
+## Estado: v1.12 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -127,6 +127,7 @@ tu-canillita-digital/
 │   ├── version.js              Número de versión, fuente única
 │   ├── router.js               Rutas y prefijos relativos
 │   ├── portada.js              Portada y franja de temas
+│   ├── hilo.js                 Historia viva genérica
 │   ├── content.js              Carga y consulta de las historias
 │   ├── preferences.js          Preferencias en localStorage
 │   ├── render.js               Piezas de HTML compartidas por las páginas
@@ -147,6 +148,7 @@ tu-canillita-digital/
 │   └── audio/
 ├── pages/
 │   ├── chat.html               Simulador del canal
+│   ├── hilo.html               Historia viva genérica (?id=…)
 │   ├── edicion.html            Edición personalizada del día
 │   └── ruta22.html             Historia viva de la Ruta 22
 ├── bot/

@@ -158,12 +158,24 @@
     return items ? '<ul class="fuentes">' + items + '</ul>' : '';
   }
 
-  /** Botón de seguir historia, con su estado actual. */
-  function followButton(storyId) {
-    var following = Canillita.preferences.isFollowing(storyId);
-    return '<button type="button" class="btn btn--follow" data-follow="' + esc(storyId) + '"' +
+  /** Dirección de la página de un hilo, desde donde se esté. */
+  function hiloUrl(hiloId) {
+    var hilo = Canillita.content.hilo(hiloId);
+    if (!hilo) return Canillita.router.homeUrl();
+    return Canillita.router.path(hilo.page);
+  }
+
+  /**
+   * Botón de seguir. Es por HILO, no por historia: seguir "Ruta 22" cubre
+   * tanto la actualidad como el porqué de la obra.
+   */
+  function followButton(hiloId) {
+    var hilo = Canillita.content.hilo(hiloId);
+    if (!hilo) return '';
+    var following = Canillita.preferences.isFollowing(hiloId);
+    return '<button type="button" class="btn btn--follow" data-follow="' + esc(hiloId) + '"' +
       ' aria-pressed="' + (following ? 'true' : 'false') + '">' +
-      (following ? '✓ Seguís esta historia' : '＋ Seguir esta historia') +
+      (following ? '✓ Seguís ' + esc(hilo.label) : '＋ Seguir ' + esc(hilo.label)) +
       '</button>';
   }
 
@@ -172,9 +184,12 @@
     var buttons = (root || global.document).querySelectorAll('[data-follow]');
     Array.prototype.forEach.call(buttons, function (button) {
       button.addEventListener('click', function () {
-        var following = Canillita.preferences.toggleFollow(button.dataset.follow);
+        var hiloId = button.dataset.follow;
+        var hilo = Canillita.content.hilo(hiloId);
+        var etiqueta = hilo ? hilo.label : 'esta historia';
+        var following = Canillita.preferences.toggleFollow(hiloId);
         button.setAttribute('aria-pressed', following ? 'true' : 'false');
-        button.textContent = following ? '✓ Seguís esta historia' : '＋ Seguir esta historia';
+        button.textContent = (following ? '✓ Seguís ' : '＋ Seguir ') + etiqueta;
 
         // Sin este aviso, seguir una historia no tenía ningún efecto visible
         var aviso = button.parentNode.querySelector('.seguir-aviso');
@@ -278,6 +293,33 @@
     });
   }
 
+  /**
+   * Barra de secciones. Se arma sola con los hilos cargados, así que sumar un
+   * hilo nuevo no obliga a tocar el HTML de cada página.
+   * `actual` es la página en la que estamos, para no enlazarla a sí misma.
+   */
+  function seccionesNav(actual) {
+    var router = Canillita.router;
+    var enlaces = [];
+
+    if (actual !== 'portada') {
+      enlaces.push('<a href="' + esc(router.homeUrl()) + '">Portada</a>');
+    }
+    if (actual !== 'edicion') {
+      enlaces.push('<a href="' + esc(router.editionUrl()) + '">Mi edición</a>');
+    }
+
+    Canillita.content.hilos().forEach(function (hilo) {
+      if (actual === hilo.id) return;
+      enlaces.push('<a href="' + esc(hiloUrl(hilo.id)) + '">' + esc(hilo.label) + '</a>');
+    });
+
+    if (actual !== 'chat') {
+      enlaces.push('<a href="' + esc(router.chatUrl()) + '">Conversá con el diario</a>');
+    }
+    return enlaces.join('');
+  }
+
   /** Conecta el campo "preguntale al canillita" con el chat. */
   function bindAskForm(formId, inputId) {
     var form = global.document.getElementById(formId);
@@ -307,6 +349,8 @@
     sections: sections,
     sources: sources,
     followButton: followButton,
+    hiloUrl: hiloUrl,
+    seccionesNav: seccionesNav,
     audioIdForStory: audioIdForStory,
     answerPlayer: answerPlayer,
     bindAnswerPlayers: bindAnswerPlayers,

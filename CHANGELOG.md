@@ -111,6 +111,27 @@ Criterio de numeración:
 - `js/portada.js` y `js/router.js` con `homeUrl()`.
 
 ---
+## v1.12.0 · 12-08-2026
+
+- **Aparece el concepto de HILO**, distinto del de historia: la Ruta 22 son dos
+  historias y un solo hilo. Seguir, navegar y personalizar pasan a hacerse por
+  hilo. La tabla está en `js/content.js`.
+- **`pages/hilo.html` + `js/hilo.js`**: página de historia viva genérica. Messi
+  ya tiene la suya, y cualquier hilo nuevo la tiene con solo agregarlo a la
+  tabla. La Ruta 22 conserva página propia porque funde dos historias.
+- **Portada con dos vistas**: "Todo" muestra lo publicado; "Mi edición" filtra
+  por los temas elegidos y es la que trae la franja de chips.
+- **Barra de secciones dinámica**: se arma con los hilos cargados y se desliza
+  cuando no entran. "Chat" pasa a llamarse "Conversá con el diario".
+- **Un solo botón de seguir por hilo.** Antes la Ruta 22 ofrecía dos.
+- Se saca el desplegable "Profundizar en esta historia": duplicaba el camino a
+  la nota completa. Queda "Leer la historia completa", que abre la página del
+  hilo.
+- En la edición, los temas de "Tus temas" ahora llevan a su hilo.
+- "Volver al chat" pasa a "Volver al inicio" en todas las páginas.
+- El bot suma "Contame el hilo de Messi" a las opciones de arranque.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

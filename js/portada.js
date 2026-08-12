@@ -23,6 +23,9 @@
    */
   var PROXIMAMENTE = ['Municipio', 'Policiales', 'Cultura'];
 
+  /* 'mia' filtra por los temas elegidos; 'todo' muestra lo publicado. */
+  var vista = 'mia';
+
   /* ---------------------------------------------------------- franja ---- */
 
   /** Temas que sí tienen al menos una historia cargada. */
@@ -83,9 +86,8 @@
 
   function tarjeta(story, principal) {
     var audioId = R.audioIdForStory(story.id);
-    var enlace = story.topic === 'ruta22'
-      ? 'pages/ruta22.html'
-      : 'pages/edicion.html';
+    // Cada historia lleva a la página de su hilo, no a la edición
+    var enlace = R.hiloUrl(Canillita.content.hiloDe(story.id));
 
     return '<article class="portada-nota' + (principal ? ' portada-nota--principal' : '') + '">' +
       '<p class="nota__eyebrow">' + R.esc(story.category) + '</p>' +
@@ -104,9 +106,15 @@
 
   function pintarPortada() {
     var elegidos = Canillita.preferences.get().topics;
-    var historias = elegidos.length
-      ? Canillita.content.forDailySummary(elegidos)
-      : Canillita.content.all();
+    var historias;
+
+    if (vista === 'todo') {
+      historias = Canillita.content.all();
+    } else {
+      historias = elegidos.length
+        ? Canillita.content.forDailySummary(elegidos)
+        : Canillita.content.all();
+    }
 
     if (!historias.length) {
       doc.getElementById('portada').innerHTML =
@@ -143,7 +151,25 @@
 
   /* ------------------------------------------------------------ init ---- */
 
+  /* La franja de temas solo tiene sentido mirando "Mi edición" */
+  function activarVistas() {
+    var contenedor = doc.querySelector('.vistas');
+    contenedor.addEventListener('click', function (event) {
+      var boton = event.target.closest('[data-vista]');
+      if (!boton) return;
+
+      vista = boton.dataset.vista;
+      Array.prototype.forEach.call(contenedor.querySelectorAll('[data-vista]'), function (otro) {
+        otro.classList.toggle('is-activa', otro === boton);
+      });
+
+      doc.getElementById('franja-temas').hidden = (vista === 'todo');
+      pintarPortada();
+    });
+  }
+
   function pintarCabecera() {
+    doc.getElementById('secciones').innerHTML = R.seccionesNav('portada');
     doc.getElementById('today-label').textContent = R.todayShort();
     var version = doc.getElementById('version-label');
     if (version && typeof Canillita.versionLabel === 'function') {
@@ -163,6 +189,7 @@
       pintarCabecera();
       pintarTemas();
       activarTemas();
+      activarVistas();
       pintarPortada();
       pintarBoletin();
     }).catch(function (error) {

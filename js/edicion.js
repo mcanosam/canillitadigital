@@ -29,11 +29,28 @@
       R.todayLabel() + ' · preparada a las ' + R.clockLabel() +
       (prefs.locality ? ' · ' + prefs.locality : '');
 
-    var temas = Canillita.preferences.topicLabels();
-    doc.getElementById('intereses').innerHTML = 'Tus temas: ' +
-      temas.map(function (label) {
-        return '<span class="tag">' + R.esc(label) + '</span>';
-      }).join('');
+    /*
+     * Cada tema lleva al hilo correspondiente. Si un tema tiene más de un
+     * hilo (deportes son dos), se muestra un enlace por hilo: es más honesto
+     * que mandarlos todos al mismo lado.
+     */
+    var etiquetas = Canillita.preferences.TOPIC_LABELS;
+    var enlaces = [];
+    prefs.topics.forEach(function (topic) {
+      var hilosDelTema = Canillita.content.hilos().filter(function (hilo) {
+        return hilo.topic === topic;
+      });
+      if (!hilosDelTema.length) {
+        enlaces.push('<span class="tag tag--vacio">' +
+          R.esc(etiquetas[topic] || topic) + '</span>');
+        return;
+      }
+      hilosDelTema.forEach(function (hilo) {
+        enlaces.push('<a class="tag" href="' + R.esc(R.hiloUrl(hilo.id)) + '">' +
+          R.esc(hilo.label) + '</a>');
+      });
+    });
+    doc.getElementById('intereses').innerHTML = 'Tus temas: ' + enlaces.join('');
 
     doc.getElementById('preparada').textContent =
       'Edición preparada el ' + R.todayLabel() + ' a las ' + R.clockLabel() + '.';
@@ -41,8 +58,18 @@
 
   /* ------------------------------------------------------------ historias */
 
+  /*
+   * El botón de seguir es por hilo, así que solo se muestra en la primera
+   * historia de cada uno: la Ruta 22 son dos notas y un solo seguimiento.
+   */
+  var hilosYaMostrados = [];
+
   function storyCard(story, index) {
     var isPrincipal = index === 0;
+    var hiloId = Canillita.content.hiloDe(story.id);
+    var primeraDelHilo = hilosYaMostrados.indexOf(hiloId) === -1;
+    if (primeraDelHilo) hilosYaMostrados.push(hiloId);
+
     return '<article class="nota' + (isPrincipal ? ' nota--principal' : '') + '">' +
       '<p class="nota__eyebrow">' + R.esc(story.category) +
         (isPrincipal ? ' · Noticia principal' : '') + '</p>' +
@@ -54,24 +81,11 @@
       '<p class="nota__resumen">' + R.esc(story.shortSummary) + '</p>' +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar esta noticia') +
 
-      '<details class="mas">' +
-        '<summary class="mas__btn">Profundizar en esta historia</summary>' +
-        '<div class="mas__cuerpo">' +
-          '<div class="article">' + R.articleBody(story.articleBody) + '</div>' +
-          (story.whyItMatters
-            ? '<div class="importa"><h3>Por qué importa acá</h3><p>' +
-              R.esc(story.whyItMatters) + '</p></div>'
-            : '') +
-          saberBlock(story) +
-          '<h3 class="mas__sub">Fuentes</h3>' + R.sources(story) +
-        '</div>' +
-      '</details>' +
-
       '<div class="nota__acciones">' +
-        R.followButton(story.id) +
-        (story.topic === 'ruta22'
-          ? '<a class="btn btn--ghost" href="ruta22.html">Ver historia viva ›</a>'
-          : '') +
+        // Un solo camino a la nota completa: la página del hilo
+        '<a class="btn btn--primary" href="' + R.esc(R.hiloUrl(hiloId)) + '">' +
+          'Leer la historia completa ›</a>' +
+        (primeraDelHilo ? R.followButton(hiloId) : '') +
       '</div>' +
     '</article>';
   }
@@ -88,6 +102,7 @@
   }
 
   function paintStories(stories) {
+    hilosYaMostrados = [];
     doc.getElementById('historias').innerHTML =
       stories.map(storyCard).join('');
   }

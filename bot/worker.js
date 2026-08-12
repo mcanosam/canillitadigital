@@ -72,10 +72,17 @@ const BIENVENIDA =
   'o abrirte la edición completa.\n\n' +
   'Escribime lo que quieras saber, o elegí una opción.';
 
+/*
+ * Las opciones de arranque se listan acá y no salen de las preferencias porque
+ * "seguir una historia" se guarda en el navegador del lector: el bot no tiene
+ * forma de conocerlo. Sincronizar las dos cosas requiere almacenamiento por
+ * conversación (Workers KV) y está pendiente.
+ */
 const OPCIONES_INICIO = [
   'Mi resumen de hoy',
   'Escuchar las noticias',
   'Ver la historia de la Ruta 22',
+  'Contame el hilo de Messi',
   'Ver deportes'
 ];
 

@@ -21,15 +21,17 @@
     <span>Demostración <span id="version-label"></span></span>
   </p>
 
-  <nav class="secciones" aria-label="Secciones">
-    <a href="pages/edicion.html">Mi edición</a>
-    <a href="pages/ruta22.html">Ruta 22</a>
-    <a href="pages/chat.html">Chat</a>
-  </nav>
+  <nav class="secciones" id="secciones" aria-label="Secciones"></nav>
+
+  <!-- Dos vistas del mismo diario: todo lo publicado, o solo lo que elegiste -->
+  <div class="vistas" role="group" aria-label="Vista de la portada">
+    <button type="button" class="vista" data-vista="todo">Todo</button>
+    <button type="button" class="vista is-activa" data-vista="mia">Mi edición</button>
+  </div>
 
   <!-- Franja de temas: al tocar uno, la portada se rearma -->
-  <section class="temas" aria-label="Elegí tus temas">
-    <p class="temas__rotulo">Tu edición · elegí qué seguir</p>
+  <section class="temas" id="franja-temas" aria-label="Elegí tus temas">
+    <p class="temas__rotulo">Elegí qué seguir</p>
     <div class="temas__chips" id="temas"></div>
     <p class="temas__aviso" id="temas-aviso" role="status"></p>
   </section>

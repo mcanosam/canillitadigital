@@ -963,3 +963,47 @@
 .canal .btn--ghost:hover { background: rgba(247, 244, 238, .15); }
 
 .boletin-audio { width: 100%; margin-top: 4px; }
+
+/* Todo / Mi edición: dos vistas del mismo diario */
+.vistas {
+  display: flex;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px;
+  gap: 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+.vista {
+  padding: 9px 14px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--tinta-suave);
+  font-family: var(--condensada);
+  font-size: .9rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.vista.is-activa {
+  color: var(--tinta);
+  border-bottom-color: var(--ocre);
+}
+
+/* Con varios hilos la barra no entra: se desliza */
+.secciones {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.secciones::-webkit-scrollbar { display: none; }
+.secciones a { flex: 0 0 auto; white-space: nowrap; }
+
+/* Un tema sin hilo cargado todavía no lleva a ningún lado */
+.tag--vacio { opacity: .55; }
+
+a.tag { text-decoration: none; }
+a.tag:hover { background: var(--tinta); }

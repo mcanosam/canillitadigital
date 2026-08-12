@@ -86,6 +86,56 @@
     return indexStories(list);
   }
 
+  /*
+   * Un HILO es un tema que se sigue en el tiempo. No coincide con "historia":
+   * la Ruta 22 son dos historias (la actualidad y el porqué) y un solo hilo.
+   * Seguir, navegar y personalizar se hacen por hilo, no por historia.
+   */
+  var HILOS = {
+    ruta22: {
+      label: 'Ruta 22',
+      topic: 'ruta22',
+      stories: ['ruta22_actualidad', 'ruta22_historia'],
+      page: 'pages/ruta22.html'
+    },
+    messi: {
+      label: 'Messi',
+      topic: 'deportes',
+      stories: ['messi_hilo'],
+      page: 'pages/hilo.html?id=messi_hilo'
+    },
+    deportes_valle: {
+      label: 'Deportes del valle',
+      topic: 'deportes',
+      stories: ['deportes_demo'],
+      page: 'pages/hilo.html?id=deportes_demo'
+    }
+  };
+
+  /** A qué hilo pertenece una historia. */
+  function hiloDe(storyId) {
+    var encontrado = null;
+    Object.keys(HILOS).forEach(function (id) {
+      if (HILOS[id].stories.indexOf(storyId) !== -1) encontrado = id;
+    });
+    return encontrado;
+  }
+
+  function hilo(id) {
+    return HILOS[id] || null;
+  }
+
+  /** Hilos que hoy tienen al menos una historia cargada. */
+  function hilos() {
+    return Object.keys(HILOS).filter(function (id) {
+      return HILOS[id].stories.some(function (storyId) {
+        return Boolean(state.byId[storyId]);
+      });
+    }).map(function (id) {
+      return Object.assign({ id: id }, HILOS[id]);
+    });
+  }
+
   /* ------------------------------------------------------------ consultas */
 
   function all() {
@@ -157,6 +207,9 @@
   Canillita.content = {
     load: load,
     hydrate: hydrate,
+    hiloDe: hiloDe,
+    hilo: hilo,
+    hilos: hilos,
     all: all,
     get: get,
     byTopic: byTopic,

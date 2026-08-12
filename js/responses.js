@@ -74,10 +74,9 @@
    * directos del menú a partir de las historias que el lector eligió seguir.
    */
   var ACCESO_DIRECTO = {
-    ruta22_actualidad: { label: 'Ruta 22 hoy', pregunta: 'Ruta 22 hoy' },
-    ruta22_historia: { label: 'Ruta 22: la historia', pregunta: 'Ver la historia de la Ruta 22' },
-    messi_hilo: { label: 'El hilo de Messi', pregunta: 'Contame el hilo de Messi' },
-    deportes_demo: { label: 'Deportes del valle', pregunta: 'Ver deportes' }
+    ruta22: { label: 'Ruta 22', pregunta: 'Ver la historia de la Ruta 22' },
+    messi: { label: 'El hilo de Messi', pregunta: 'Contame el hilo de Messi' },
+    deportes_valle: { label: 'Deportes del valle', pregunta: 'Ver deportes' }
   };
 
   /** Accesos directos a las historias que el lector sigue. */

@@ -20,6 +20,8 @@
   /* ------------------------------------------------------------ cabecera */
 
   function paintHeader() {
+    var nav = doc.getElementById('secciones');
+    if (nav) nav.innerHTML = R.seccionesNav('ruta22');
     var versionEl = doc.getElementById('version-label');
     if (versionEl && typeof Canillita.versionLabel === 'function') {
       versionEl.textContent = Canillita.versionLabel();
@@ -30,7 +32,7 @@
       'Última actualización: ' + R.longDate(actualidad.lastUpdated) +
       ' · ' + historia.readingTime + ' min de lectura';
     doc.getElementById('acciones').innerHTML =
-      R.followButton('ruta22_historia') +
+      R.followButton('ruta22') +
       '<a class="btn btn--ghost" href="edicion.html">Ver mi edición ›</a>';
     doc.getElementById('actualizada').textContent =
       'Página actualizada el ' + R.longDate(actualidad.lastUpdated) + '.';
