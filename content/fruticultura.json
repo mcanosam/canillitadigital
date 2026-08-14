@@ -1,0 +1,185 @@
+{
+  "id": "fruticultura_2026",
+  "type": "living_story",
+  "category": "Fruticultura",
+  "topic": "fruticultura",
+  "title": "Menos fruta, mejores precios: la cuenta que no cierra",
+  "subtitle": "La cosecha cayó 14% en Río Negro y Neuquén, los precios subieron hasta 87% y el margen del productor sigue en duda",
+  "status": "active",
+  "isFiction": false,
+  "lastUpdated": "2026-08-14T07:00:00-03:00",
+  "eventDate": "2026-06-02",
+  "readingTime": 5,
+  "shortSummary": "La campaña 2026 dejó 140.000 toneladas menos de peras y manzanas que el año pasado. Los precios subieron muy por encima de la inflación, pero producir un kilo cuesta 0,34 dólares y la mejora tiene que atravesar frío, empaque, flete y comercialización antes de llegar al productor.",
+  "whatsappSummary": "🍎 *Menos fruta, mejores precios*\nLa cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén: 140.000 toneladas menos, sobre todo en manzana.\nLos precios treparon hasta 87% interanual en el Mercado Central. Pero producir un kilo cuesta USD 0,34 y el margen se define después de la cosecha: frío, empaque, flete y venta.",
+  "radioHeadline": "Y ahora la fruta, que este año dejó una cuenta rara.",
+  "radioSummary": "Hubo menos fruta y valió más. Los números: al treinta de abril, la cosecha conjunta de peras y manzanas fue de poco más de ochocientas cincuenta y seis mil toneladas. Catorce por ciento menos que el año pasado. Ciento cuarenta mil toneladas que no están. La mayor parte de esa caída es manzana. ¿Y los precios? Subieron fuerte. En el Mercado Central, la Red Delicious aumentó cerca del ochenta y siete por ciento interanual, muy por encima de la inflación. Ahora, la pregunta del productor es otra. Producir un kilo cuesta treinta y cuatro centavos de dólar. Y ese precio bueno tiene que atravesar el frío, el empaque, el flete y la venta antes de convertirse en margen. Como dijo un productor del valle: el precio es bueno, pero es mucha la merma que hay en manzana.",
+  "articleBody": [
+    {
+      "type": "paragraph",
+      "text": "La campaña frutícola 2026 del Alto Valle se resume en una tensión: hubo bastante menos fruta y los precios subieron fuerte. Lo que todavía no está claro es si una cosa compensa a la otra."
+    },
+    {
+      "type": "heading",
+      "text": "Cuánta fruta falta"
+    },
+    {
+      "type": "paragraph",
+      "text": "Según datos del SENASA y de la Secretaría de Fruticultura de Río Negro, al 30 de abril la cosecha teórica conjunta de peras y manzanas alcanzó poco más de 856.000 toneladas. Es una caída del 14% respecto del mismo período de 2025: alrededor de 140.000 toneladas menos, con más de 90.000 correspondientes a manzana."
+    },
+    {
+      "type": "paragraph",
+      "text": "El origen del problema arrancó antes de la cosecha. La temporada comenzó con una polinización deficiente en agosto y septiembre, que redujo la producción de peras, manzanas y frutas de carozo, y se agravó después con episodios severos de granizo que afectaron tanto volúmenes como calidades."
+    },
+    {
+      "type": "heading",
+      "text": "Cuánto subieron los precios"
+    },
+    {
+      "type": "paragraph",
+      "text": "Con menos oferta, los valores treparon. Entre enero de 2025 y enero de 2026, los precios de peras y manzanas de Río Negro y Neuquén en el Mercado Central de Buenos Aires aumentaron muy por encima de la inflación: la manzana Granny Smith subió más del 70% interanual y la Red Delicious cerca del 87%. Las peras Giffard mostraron subas en torno al 75%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Medido en dólares, el aumento también fue significativo: más del 40% para la Granny Smith y más del 55% para la Red Delicious."
+    },
+    {
+      "type": "heading",
+      "text": "Dónde se juega el margen"
+    },
+    {
+      "type": "paragraph",
+      "text": "La Mesa de la Ley de Contractualización, reunida en Allen, oficializó el costo de producción de la temporada: 0,34 dólares por kilo de pera o manzana, según el análisis técnico del INTA. Un informe del INTA Alto Valle correspondiente a 2025/2026 ubicó ese costo en 540,20 pesos por kilo en manzana y 453,70 en pera, con la mano de obra, las labores culturales y la cosecha explicando la mayor parte."
+    },
+    {
+      "type": "paragraph",
+      "text": "El productor Gustavo Arno describió la campaña como difícil, con chacras golpeadas por el granizo y lotes donde, al haber poca fruta en la planta, se obtuvo fruta más uniforme pero con problemas comerciales por tamaños grandes y falta de color. Su síntesis: el precio es bueno, pero la merma en manzana es mucha."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ahí está la cuenta que sigue abierta: el precio mejora, pero tiene que atravesar frío, empaque, materiales, energía, flete, mercado interno y competencia importada antes de convertirse en margen."
+    }
+  ],
+  "confirmedFacts": [
+    {
+      "fact": "Al 30 de abril de 2026 la cosecha conjunta de peras y manzanas fue de poco más de 856.000 toneladas, un 14% menos que en 2025.",
+      "date": "2026-06-02",
+      "sourceId": "lmn_cosecha"
+    },
+    {
+      "fact": "La caída equivale a unas 140.000 toneladas, con más de 90.000 correspondientes a manzana.",
+      "date": "2026-06-02",
+      "sourceId": "lmn_cosecha"
+    },
+    {
+      "fact": "Entre enero de 2025 y enero de 2026, la manzana Red Delicious subió cerca de 87% y la Granny Smith más de 70% en el Mercado Central.",
+      "date": "2026-01-27",
+      "sourceId": "dn_precios"
+    },
+    {
+      "fact": "La Mesa de la Ley de Contractualización fijó el costo de producción en 0,34 dólares por kilo, según análisis del INTA.",
+      "date": "2026-03-01",
+      "sourceId": "notirio_costo"
+    },
+    {
+      "fact": "El informe del INTA Alto Valle 2025/2026 ubicó el costo en 540,20 pesos por kilo en manzana y 453,70 en pera.",
+      "date": "2026-04-01",
+      "sourceId": "rn_costos"
+    }
+  ],
+  "pendingQuestions": [
+    "Si los precios altos se sostienen durante el segundo semestre.",
+    "Cuánto de esa mejora llega efectivamente al productor y cuánto queda en la cadena.",
+    "Qué pasa con la barrera sanitaria del río Colorado y su efecto sobre las certificaciones de exportación.",
+    "Cuántos productores más dejan la actividad: entre 2011 y 2021 se perdió un tercio."
+  ],
+  "whyItMatters": "La fruta es la economía que sostiene al valle desde hace un siglo. Cuando la cuenta no cierra no se nota en un titular: se nota en chacras que se venden, en galpones que cierran y en gente que se va. Por eso el dato importante no es el precio, sino el margen.",
+  "timeline": [
+    {
+      "date": "2026-01-15",
+      "title": "Arranca la cosecha con expectativa a la baja",
+      "text": "Comienza la recolección de peras Williams. Desde CAFI anticipan una cosecha menor a la de 2025 por cuestiones meteorológicas.",
+      "sourceId": "infocampo_cosecha"
+    },
+    {
+      "date": "2026-01-27",
+      "title": "Los precios arrancan el año en alza",
+      "text": "Los valores de peras y manzanas en el Mercado Central suben muy por encima de la inflación, empujados por la menor oferta.",
+      "sourceId": "dn_precios"
+    },
+    {
+      "date": "2026-03-01",
+      "title": "Se fija el costo de producción",
+      "text": "La Mesa de la Ley de Contractualización oficializa el costo en 0,34 dólares por kilo, con análisis técnico del INTA.",
+      "sourceId": "notirio_costo"
+    },
+    {
+      "date": "2026-06-02",
+      "title": "Los números confirman la caída",
+      "text": "SENASA y la Secretaría de Fruticultura confirman 856.000 toneladas al 30 de abril: 14% menos que en 2025.",
+      "sourceId": "lmn_cosecha"
+    }
+  ],
+  "sections": [],
+  "suggestedQuestions": [
+    "¿Cuánto cayó la cosecha este año?",
+    "¿Cuánto cuesta producir un kilo de fruta?",
+    "¿Subieron los precios de la manzana?"
+  ],
+  "image": {
+    "src": "",
+    "alt": "Chacra del Alto Valle durante la cosecha de manzanas",
+    "credit": "",
+    "pending": "Foto propia: una chacra del valle, bines de manzana o el interior de un galpón de empaque. Horizontal."
+  },
+  "sources": [
+    {
+      "id": "lmn_cosecha",
+      "name": "La cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén",
+      "type": "press",
+      "publisher": "LM Neuquén",
+      "publishedAt": "2026-06-02",
+      "url": "https://masp.lmneuquen.com/fruticultura/la-cosecha-peras-y-manzanas-cayo-14-rio-negro-y-neuquen-habra-140000-toneladas-menos-fruta-n1240499"
+    },
+    {
+      "id": "rn_margen",
+      "name": "Fruticultura en la Patagonia: la manzana tiene buen precio, pero el margen se juega después de la cosecha",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-06-01",
+      "url": "https://www.rionegro.com.ar/rural/fruticultura-en-la-patagonia-la-manzana-tiene-buen-precio-pero-el-margen-se-juega-despues-de-la-cosecha/"
+    },
+    {
+      "id": "rn_costos",
+      "name": "Cuánto cuesta producir peras y manzanas en Río Negro y Neuquén",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-04-01",
+      "url": "https://www.rionegro.com.ar/rural/cuanto-cuesta-producir-peras-y-manzanas-en-rio-negro-y-neuquen-una-introduccion-a-los-costos-por-kilo-y-por-hectarea-4515121/"
+    },
+    {
+      "id": "dn_precios",
+      "name": "Fruticultura del Alto Valle: menos producción, pero fuertes subas de precios",
+      "type": "press",
+      "publisher": "Diario Neuquino",
+      "publishedAt": "2026-01-27",
+      "url": "https://diarioneuquino.com.ar/fruticultura-del-alto-valle-menos-produccion-pero-fuertes-subas-de-precios-para-peras-y-manzanas-en-el-arranque-de-2026/"
+    },
+    {
+      "id": "notirio_costo",
+      "name": "Fruticultura 2026: definieron el costo de producción en USD 0,34",
+      "type": "press",
+      "publisher": "Noti Río",
+      "publishedAt": "2026-03-01",
+      "url": "https://www.noti-rio.com.ar/2026/03/fruticultura-2026-definieron-el-costo-de-produccion-en-usd-034-y-habra-cambios-en-el-modelo-de-calculo/"
+    },
+    {
+      "id": "infocampo_cosecha",
+      "name": "En el Alto Valle ya está en marcha la cosecha de peras y manzanas",
+      "type": "press",
+      "publisher": "Infocampo",
+      "publishedAt": "2026-01-15",
+      "url": "https://www.infocampo.com.ar/en-el-alto-valle-ya-esta-en-marcha-la-cosecha-de-peras-y-manzanas-en-principio-sera-un-poco-menor/"
+    }
+  ]
+}

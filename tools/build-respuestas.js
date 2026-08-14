@@ -47,6 +47,9 @@ const Canillita = globalThis.Canillita;
 Canillita.content.hydrate([
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'ruta22-actualidad.json'), 'utf8')),
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'ruta22-historia.json'), 'utf8')),
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'agua-roca.json'), 'utf8')),
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'fruticultura.json'), 'utf8')),
+  JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'clima-rutas.json'), 'utf8')),
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'messi.json'), 'utf8')),
   JSON.parse(fs.readFileSync(path.join(RAIZ, 'content', 'deportes.json'), 'utf8'))
 ]);
@@ -78,6 +81,9 @@ const PREGUNTAS = [
   { id: 'tramo6',              pregunta: '¿Qué pasa en Cipolletti?' },
   { id: 'deportes',            pregunta: 'Ver deportes' },
   { id: 'deportes-proximo',    pregunta: '¿Cuándo juega Deportivo Roca?' },
+  { id: 'agua',                pregunta: 'Contame la obra de agua de Roca' },
+  { id: 'fruticultura',        pregunta: '¿Cómo viene la fruticultura?' },
+  { id: 'clima',               pregunta: '¿Cómo están las rutas?' },
   { id: 'messi',               pregunta: 'Contame el hilo de Messi' },
   { id: 'messi-final',         pregunta: '¿Cómo salió la final del Mundial 2026?' },
   { id: 'messi-retiro',        pregunta: '¿Messi se retira de la Selección?' },

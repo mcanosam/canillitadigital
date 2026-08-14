@@ -186,6 +186,34 @@ Criterio de numeración:
   en todo el proyecto aunque el contenido fuera idéntico.
 
 ---
+## v1.15.0 · 14-08-2026
+
+**Contenido: de 4 a 7 historias**
+
+- **La obra de agua más grande de Río Negro se hará en Roca** (Municipio):
+  38.552 millones de pesos financiados por el CAF, cinco empresas en carrera.
+  Fuente: LCR, 11-08-2026.
+- **Menos fruta, mejores precios** (Fruticultura): la cosecha cayó 14%, los
+  precios subieron hasta 87% y producir un kilo cuesta USD 0,34. Fuentes:
+  LM Neuquén, Diario Río Negro, Diario Neuquino, Noti Río, Infocampo.
+- **Frío polar, viento y hielo** (Clima y rutas): alertas del SMN, ráfagas de
+  78 km/h en el valle y riesgo de hielo en las rutas 22, 23, 40 y 237.
+  Fuentes: Diario Río Negro, NoticiasNQN.
+- Los temas pasan a ser cinco: Ruta 22, Municipio, Fruticultura, Clima y
+  Deportes. Policiales y Cultura siguen como "pronto".
+
+**La personalización se vuelve visible**
+
+- "Mi edición" muestra 4 de 7 historias: por primera vez filtrar cambia algo.
+- Cada nota explica por qué está ahí: *"porque elegiste Ruta 22"* o *"porque
+  seguís Agua en Roca"*. Solo en "Mi edición"; en "Todo" no hay criterio que
+  explicar.
+- Recuento arriba de la portada: *"De las 7 historias publicadas, estas 4 son
+  las tuyas"*. El número sale del contenido cargado, así que no puede mentir.
+- `storyReply()` en `responses.js`: plantilla genérica para hilos nuevos. Sumar
+  un hilo ya no obliga a escribir una función por historia.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

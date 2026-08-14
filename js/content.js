@@ -22,6 +22,9 @@
   var FILES = [
     'content/ruta22-actualidad.json',
     'content/ruta22-historia.json',
+    'content/agua-roca.json',
+    'content/fruticultura.json',
+    'content/clima-rutas.json',
     'content/messi.json',
     'content/deportes.json'
   ];
@@ -103,6 +106,24 @@
       topic: 'deportes',
       stories: ['messi_hilo'],
       page: 'pages/hilo.html?id=messi_hilo'
+    },
+    agua: {
+      label: 'Agua en Roca',
+      topic: 'municipio',
+      stories: ['agua_roca'],
+      page: 'pages/hilo.html?id=agua_roca'
+    },
+    fruticultura: {
+      label: 'Fruticultura',
+      topic: 'fruticultura',
+      stories: ['fruticultura_2026'],
+      page: 'pages/hilo.html?id=fruticultura_2026'
+    },
+    clima: {
+      label: 'Clima y rutas',
+      topic: 'clima',
+      stories: ['clima_rutas'],
+      page: 'pages/hilo.html?id=clima_rutas'
     },
     deportes_valle: {
       label: 'Deportes del valle',

@@ -32,7 +32,9 @@
 
   var TOPIC_LABELS = {
     ruta22: 'Ruta 22',
-    regionales: 'Noticias regionales',
+    municipio: 'Municipio',
+    fruticultura: 'Fruticultura',
+    clima: 'Clima y rutas',
     deportes: 'Deportes'
   };
 

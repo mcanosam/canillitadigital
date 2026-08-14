@@ -1,0 +1,156 @@
+{
+  "id": "clima_rutas",
+  "type": "living_story",
+  "category": "Clima y rutas",
+  "topic": "clima",
+  "title": "Frío polar, viento y hielo: cómo circular esta semana",
+  "subtitle": "Alertas por nevadas y temperaturas extremas, con ráfagas de hasta 80 km/h en el valle",
+  "status": "active",
+  "isFiction": false,
+  "lastUpdated": "2026-08-14T07:00:00-03:00",
+  "eventDate": "2026-08-10",
+  "readingTime": 3,
+  "shortSummary": "El ingreso de aire polar dejó alertas por nevadas en la cordillera y por frío extremo en buena parte de Río Negro y Neuquén. En el Alto Valle el protagonista es el viento, con ráfagas que llegaron a 78 km/h, y el riesgo principal es la formación de hielo sobre la calzada.",
+  "whatsappSummary": "🌡️ *Frío polar, viento y hielo*\nAlertas del SMN por nevadas en la cordillera y temperaturas extremas en Río Negro y Neuquén. En el Alto Valle, ráfagas de hasta 78 km/h.\nOjo en las rutas 22, 23, 40 y 237: riesgo de hielo sobre la calzada y visibilidad reducida. En zonas de montaña, cadenas obligatorias.",
+  "radioHeadline": "Atención con el tiempo y con las rutas.",
+  "radioSummary": "Entró aire polar y se nota. El Servicio Meteorológico Nacional emitió alertas por nevadas en la cordillera y por temperaturas extremas en buena parte de Neuquén y Río Negro. En el Alto Valle, en Roca y en Cipolletti, el protagonista es el viento: hubo ráfagas de setenta y ocho kilómetros por hora. Lo importante es la ruta. Hay riesgo de hielo sobre la calzada en las rutas veintidós, veintitrés, cuarenta y doscientos treinta y siete. Menos visibilidad por nieve acumulada, y viento blanco en zonas altas. En montaña, las cadenas son obligatorias. Y en la Ruta 22, con los pozos llenos de agua, el hielo agrega un problema arriba de otro.",
+  "articleBody": [
+    {
+      "type": "paragraph",
+      "text": "El invierno se endureció en el norte patagónico. El Servicio Meteorológico Nacional emitió durante los últimos días alertas combinadas: por nevadas persistentes en la franja cordillerana de Neuquén y Río Negro, y por temperaturas extremas por frío en buena parte de las dos provincias."
+    },
+    {
+      "type": "heading",
+      "text": "Qué pasa en el valle"
+    },
+    {
+      "type": "paragraph",
+      "text": "En Neuquén capital, Cipolletti, General Roca y el resto del cordón valletano, la inestabilidad se sintió sobre todo a través del viento. El lunes 10 se registraron vientos sostenidos de 69 km/h y ráfagas de hasta 78 km/h durante la mañana, con una merma hacia la noche. Los días previos ya habían dejado ráfagas cercanas a los 80 km/h."
+    },
+    {
+      "type": "paragraph",
+      "text": "El domingo 9 el Alto Valle transitó una jornada con mínima de -1 °C y máxima de apenas 8 °C."
+    },
+    {
+      "type": "heading",
+      "text": "El problema está en la calzada"
+    },
+    {
+      "type": "paragraph",
+      "text": "El riesgo principal no es la nieve sino el hielo. Los organismos viales advirtieron sobre la formación de hielo sobre la calzada en las rutas nacionales 22, 23, 40 y 237, además de visibilidad reducida por acumulación de nieve y viento blanco en sectores elevados. En zonas de montaña, el uso de cadenas es obligatorio."
+    },
+    {
+      "type": "paragraph",
+      "text": "La Autoridad Interjurisdiccional de Cuencas informó el ingreso de aire frío con nevadas en las cuencas de los ríos Limay, Collón Cura y Neuquén, y anticipó heladas intensas al mejorar las condiciones, cuando entra aire más seco."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobre la Ruta 22 hay un agravante local: los pozos llenos de agua que dejaron las lluvias de comienzos de mes se congelan de noche y suman un riesgo sobre otro que ya existía."
+    }
+  ],
+  "confirmedFacts": [
+    {
+      "fact": "El SMN emitió para el lunes 10 de agosto alertas por vientos intensos en todo Neuquén y por nevadas persistentes en la cordillera de Neuquén y Río Negro.",
+      "date": "2026-08-10",
+      "sourceId": "rn_lunes"
+    },
+    {
+      "fact": "En el Alto Valle se registraron vientos sostenidos de 69 km/h y ráfagas de hasta 78 km/h.",
+      "date": "2026-08-10",
+      "sourceId": "rn_lunes"
+    },
+    {
+      "fact": "Los organismos viales advirtieron por formación de hielo sobre la calzada en las rutas nacionales 22, 23, 40 y 237.",
+      "date": "2026-08-09",
+      "sourceId": "rn_domingo"
+    },
+    {
+      "fact": "El domingo 9 el Alto Valle tuvo una mínima de -1 °C y una máxima de 8 °C.",
+      "date": "2026-08-09",
+      "sourceId": "rn_domingo"
+    },
+    {
+      "fact": "La AIC informó el ingreso de aire frío con nevadas en las cuencas del Limay, Collón Cura y Neuquén, y anticipó heladas intensas.",
+      "date": "2026-08-07",
+      "sourceId": "nqn_aic"
+    }
+  ],
+  "pendingQuestions": [
+    "Cuánto se extiende el período de heladas intensas.",
+    "Si se registran daños por helada en la fruticultura del valle.",
+    "Si Vialidad interviene los sectores de la Ruta 22 donde el agua acumulada se congela."
+  ],
+  "whyItMatters": "En el valle el clima no es conversación de ascensor: define si se puede salir a la ruta, si la chacra pierde producción y si el camión llega a tiempo. Y con la Ruta 22 como está, una helada convierte un pozo con agua en una trampa.",
+  "timeline": [
+    {
+      "date": "2026-08-01",
+      "title": "Arranca agosto con viento y nieve",
+      "text": "El SMN anticipa ráfagas de hasta 80 km/h en los valles y acumulados de 20 a 40 cm de nieve en zonas altas.",
+      "sourceId": "rn_agosto"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "La AIC anticipa heladas",
+      "text": "Informa el ingreso de aire frío con nevadas en cordillera y anticipa heladas intensas desde el martes siguiente.",
+      "sourceId": "nqn_aic"
+    },
+    {
+      "date": "2026-08-09",
+      "title": "Doble alerta",
+      "text": "Alerta amarilla por nevadas en el norte y la cordillera neuquina, y por temperaturas extremas por frío en gran parte de las dos provincias.",
+      "sourceId": "rn_domingo"
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Viento fuerte en el valle",
+      "text": "Ráfagas de 78 km/h en el cordón valletano y advertencia por hielo en las rutas 22, 23, 40 y 237.",
+      "sourceId": "rn_lunes"
+    }
+  ],
+  "sections": [],
+  "suggestedQuestions": [
+    "¿Cómo están las rutas?",
+    "¿Hasta cuándo sigue el frío?",
+    "¿Hay alerta por nieve?"
+  ],
+  "image": {
+    "src": "",
+    "alt": "Calzada con hielo y escarcha en una ruta del Alto Valle al amanecer",
+    "credit": "",
+    "pending": "Foto propia: escarcha o hielo sobre la calzada al amanecer, o árboles del valle con helada. Horizontal."
+  },
+  "sources": [
+    {
+      "id": "rn_lunes",
+      "name": "Temperaturas bajo cero, nieve y viento: lunes complicado en Neuquén y Río Negro",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-08-10",
+      "url": "https://www.rionegro.com.ar/servicios/temperaturas-bajo-cero-nieve-y-viento-lunes-complicado-en-neuquen-y-rio-negro-por-el-ingreso-de-un-frente-frio-4677612/"
+    },
+    {
+      "id": "rn_domingo",
+      "name": "Frío extremo, nevadas y lluvias en Neuquén y Río Negro",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-08-09",
+      "url": "https://www.rionegro.com.ar/servicios/frio-extremo-nevadas-y-lluvias-en-neuquen-y-rio-negro-que-dice-el-pronostico-para-este-helado-domingo-9-de-agosto-4677072/"
+    },
+    {
+      "id": "nqn_aic",
+      "name": "Frío intenso en el Alto Valle: la AIC anticipó viento, inestabilidad y heladas",
+      "type": "press",
+      "publisher": "NoticiasNQN",
+      "publishedAt": "2026-08-07",
+      "url": "https://www.noticiasnqn.com.ar/noticias/2026/08/07/347050-frio-intenso-en-el-alto-valle-la-aic-anticipo-viento-inestabilidad-y-heladas"
+    },
+    {
+      "id": "rn_agosto",
+      "name": "Ráfagas de hasta 80 km/h en el Alto Valle y más nieve en la cordillera",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-08-01",
+      "url": "https://www.rionegro.com.ar/servicios/rafagas-de-hasta-80-km-h-en-el-alto-valle-y-mas-nieve-en-la-cordillera-el-pronostico-para-el-inicio-de-agosto-4668190/"
+    }
+  ]
+}

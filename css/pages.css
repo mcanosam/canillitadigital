@@ -1104,3 +1104,30 @@ a.tag:hover { background: var(--tinta); }
 
 /* En la miniatura no entra el crédito: va solo en la foto grande */
 .foto--secundaria .foto__credito { display: none; }
+
+/* Por qué esta nota está en tu portada */
+.porque {
+  margin: 10px 0 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--ocre);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .82rem;
+  color: var(--tinta-suave);
+}
+
+/* El recuento: cuántas de todas las publicadas son tuyas */
+.recuento {
+  margin: 0 0 4px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--linea);
+  font-family: var(--display);
+  font-size: .95rem;
+  color: var(--tinta-suave);
+}
+
+.recuento strong {
+  font-family: var(--condensada);
+  font-size: 1.25em;
+  color: var(--ocre);
+}

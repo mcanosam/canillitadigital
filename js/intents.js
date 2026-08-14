@@ -109,6 +109,20 @@
       'ver deportes', 'deportes', 'futbol', 'deportivo roca', 'clasico',
       'liga confluencia', 'liga deportiva', 'como salio', 'resultado', 'partido'
     ],
+    agua_roca: [
+      'obra de agua', 'agua potable', 'agua en roca', 'obra hidrica',
+      'la obra de agua', 'agua de roca', 'planta potabilizadora'
+    ],
+    fruticultura: [
+      'fruticultura', 'la fruta', 'cosecha', 'peras y manzanas', 'manzana',
+      'chacras', 'productores fruticolas', 'como viene la fruta'
+    ],
+    clima_rutas: [
+      'como estan las rutas', 'estado de las rutas', 'el clima', 'el tiempo',
+      'pronostico', 'hay alerta', 'nieve', 'heladas', 'hace frio',
+      'hasta cuando el frio'
+    ],
+
     /* Messi va antes que 'deportes' por especificidad: gana la frase más larga */
     messi: [
       'messi', 'la pulga', 'hilo de messi', 'carrera de messi',

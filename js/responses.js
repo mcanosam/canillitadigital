@@ -76,6 +76,9 @@
   var ACCESO_DIRECTO = {
     ruta22: { label: 'Ruta 22', pregunta: 'Ver la historia de la Ruta 22' },
     messi: { label: 'El hilo de Messi', pregunta: 'Contame el hilo de Messi' },
+    agua: { label: 'Agua en Roca', pregunta: 'Contame la obra de agua de Roca' },
+    fruticultura: { label: 'Fruticultura', pregunta: '¿Cómo viene la fruticultura?' },
+    clima: { label: 'Clima y rutas', pregunta: '¿Cómo están las rutas?' },
     deportes_valle: { label: 'Deportes del valle', pregunta: 'Ver deportes' }
   };
 
@@ -427,6 +430,60 @@
   }
 
 
+  /* ------------------------------------------------- historias genéricas */
+
+  /*
+   * Plantilla para historias que no necesitan tratamiento especial: resumen,
+   * los hechos confirmados con su fecha, y lo que falta definir. Sumar un hilo
+   * nuevo pasa a ser una línea en la tabla de abajo, no una función más.
+   */
+  function storyReply(storyId, audioId, botones) {
+    var story = content.get(storyId);
+    if (!story) return unknown();
+
+    var hechos = (story.confirmedFacts || []).slice(0, 4).map(function (item) {
+      return '✔️ ' + item.fact;
+    }).join('\n');
+    var pendientes = (story.pendingQuestions || []).slice(0, 3).map(function (item) {
+      return '❓ ' + item;
+    }).join('\n');
+
+    var mensajes = [
+      message('*' + story.title + '*\n_' + story.subtitle + '_\n\n' + story.shortSummary)
+    ];
+    if (hechos || pendientes) {
+      mensajes.push(message(
+        (hechos ? '*Qué sabemos*\n' + hechos : '') +
+        (hechos && pendientes ? '\n\n' : '') +
+        (pendientes ? '*Qué falta definir*\n' + pendientes : ''),
+        {
+          sources: (story.sources || []).slice(0, 3),
+          dataDate: story.eventDate,
+          links: [{
+            label: 'Ver la historia completa',
+            href: Canillita.render.hiloUrl(Canillita.content.hiloDe(storyId))
+          }]
+        }
+      ));
+    }
+    return reply(mensajes, botones, audioId);
+  }
+
+  function aguaRoca() {
+    return storyReply('agua_roca', 'agua',
+      ['¿Cómo viene la fruticultura?', 'Ruta 22 hoy', 'Menú']);
+  }
+
+  function fruticultura() {
+    return storyReply('fruticultura_2026', 'fruticultura',
+      ['¿Cómo están las rutas?', 'Contame la obra de agua de Roca', 'Menú']);
+  }
+
+  function climaRutas() {
+    return storyReply('clima_rutas', 'clima',
+      ['¿Por qué se frenó la Ruta 22?', '¿Cómo viene la fruticultura?', 'Menú']);
+  }
+
   /* ------------------------------------------------------------- Messi */
 
   function messi() {
@@ -633,6 +690,9 @@
     route22_toll: route22Toll,
     sports: sports,
     sports_next: sportsNext,
+    agua_roca: aguaRoca,
+    fruticultura: fruticultura,
+    clima_rutas: climaRutas,
     messi: messi,
     messi_final: messiFinal,
     messi_retiro: messiRetiro,

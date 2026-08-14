@@ -21,7 +21,7 @@
    * poder tocarse: dicen hacia dónde va el diario sin prometer algo que hoy
    * devolvería una sección vacía.
    */
-  var PROXIMAMENTE = ['Municipio', 'Policiales', 'Cultura'];
+  var PROXIMAMENTE = ['Policiales', 'Cultura'];
 
   /* 'mia' filtra por los temas elegidos; 'todo' muestra lo publicado. */
   var vista = 'mia';
@@ -84,6 +84,23 @@
 
   /* --------------------------------------------------------- noticias --- */
 
+  /*
+   * Por qué esta nota está en tu portada. Es la línea que convierte el filtro
+   * en algo visible: sin ella, la personalización pasa desapercibida.
+   * Solo aparece en "Mi edición": en "Todo" no hay criterio que explicar.
+   */
+  function porQue(story) {
+    if (vista === 'todo') return '';
+    var hiloId = Canillita.content.hiloDe(story.id);
+    var etiquetas = Canillita.preferences.TOPIC_LABELS;
+
+    var razon = Canillita.preferences.isFollowing(hiloId)
+      ? 'Porque seguís ' + Canillita.content.hilo(hiloId).label
+      : 'Porque elegiste ' + (etiquetas[story.topic] || story.topic);
+
+    return '<p class="porque">' + R.esc(razon) + '</p>';
+  }
+
   function tarjeta(story, principal) {
     var audioId = R.audioIdForStory(story.id);
     var enlace = R.hiloUrl(Canillita.content.hiloDe(story.id));
@@ -105,6 +122,7 @@
         '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
           R.esc(R.longDate(story.lastUpdated)) + '</p>' +
         R.answerPlayer(audioId, 'Escuchar') +
+        porQue(story) +
         '</article>';
     }
 
@@ -122,6 +140,7 @@
         '</div>' +
       '</div>' +
       R.answerPlayer(audioId, 'Escuchar') +
+      porQue(story) +
       '</article>';
   }
 
@@ -144,7 +163,17 @@
       return;
     }
 
-    doc.getElementById('portada').innerHTML = historias.map(function (story, i) {
+    var total = Canillita.content.all().length;
+    var recuento = '';
+
+    if (vista === 'mia' && historias.length < total) {
+      // El número sale del contenido cargado: si algún día miente, se nota
+      recuento = '<p class="recuento">De las <strong>' + total +
+        '</strong> historias publicadas, estas <strong>' + historias.length +
+        '</strong> son las tuyas.</p>';
+    }
+
+    doc.getElementById('portada').innerHTML = recuento + historias.map(function (story, i) {
       return tarjeta(story, i === 0);
     }).join('');
 

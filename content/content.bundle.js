@@ -793,6 +793,453 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "pending": ""
     }
   },
+  "content/agua-roca.json": {
+    "id": "agua_roca",
+    "type": "living_story",
+    "category": "Municipio",
+    "topic": "municipio",
+    "title": "La obra de agua más grande de Río Negro se hará en Roca",
+    "subtitle": "Se abrieron los sobres técnicos: cinco empresas compiten por una inversión de 38.552 millones de pesos",
+    "status": "active",
+    "isFiction": false,
+    "lastUpdated": "2026-08-11T18:00:00-03:00",
+    "eventDate": "2026-08-11",
+    "readingTime": 4,
+    "shortSummary": "El Gobierno provincial abrió los sobres técnicos de la obra que ampliará un 50% la capacidad de producción de agua potable de General Roca. Está pensada para abastecer a 210.000 vecinos durante las próximas dos décadas y se financia con un crédito del Banco de Desarrollo de América Latina y el Caribe.",
+    "whatsappSummary": "🚰 *La obra de agua más grande de la provincia se hará en Roca*\nSe abrieron los sobres técnicos. Presupuesto oficial: 38.552 millones de pesos, financiados por el CAF. Amplía un 50% la capacidad de producción y apunta a abastecer a 210.000 vecinos durante veinte años.\nCinco empresas presentaron ofertas. Ahora empieza la evaluación técnica.",
+    "radioHeadline": "Vamos con una obra que puede cambiar el agua de Roca para los próximos veinte años.",
+    "radioSummary": "El martes se abrieron los sobres técnicos de la obra hídrica más grande que se haya hecho en Río Negro. Y va a ser en General Roca. Los números: treinta y ocho mil quinientos cincuenta y dos millones de pesos de presupuesto oficial. La plata sale de un crédito del Banco de Desarrollo de América Latina y el Caribe, el CAF. ¿Qué resuelve? Aumenta un cincuenta por ciento la capacidad de producción de agua potable de la ciudad. Está pensada para abastecer a doscientos diez mil vecinos durante las próximas dos décadas. Cinco empresas se presentaron. Ahora arranca la evaluación técnica de las propuestas, así que todavía no hay adjudicación ni fecha de inicio.",
+    "articleBody": [
+      {
+        "type": "paragraph",
+        "text": "El Gobierno de Río Negro abrió el martes los sobres técnicos de la obra que va a transformar el sistema de agua potable de General Roca. Según el propio Ejecutivo provincial, se trata de la inversión de mayor magnitud financiada en la provincia a través del Banco de Desarrollo de América Latina y el Caribe."
+      },
+      {
+        "type": "heading",
+        "text": "Qué resuelve"
+      },
+      {
+        "type": "paragraph",
+        "text": "La obra apunta a aumentar un 50% la capacidad de producción de agua potable de la ciudad y a garantizar el abastecimiento de 210.000 vecinos durante las próximas dos décadas. El presupuesto oficial es de 38.552 millones de pesos."
+      },
+      {
+        "type": "paragraph",
+        "text": "El ministro de Obras y Servicios Públicos, Alejandro Echarren, la definió como la obra más grande de toda la provincia y destacó que se ejecute en General Roca. Es el mismo funcionario que viene siguiendo la negociación por el traspaso de las rutas 22 y 151."
+      },
+      {
+        "type": "heading",
+        "text": "Quiénes se presentaron"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cinco empresas presentaron ofertas: Cecosa SA, Sylpa SRL, Ecosur Bahía, Constructora Roque Mocciola SA y ALUSA SA. Ahora comienza el proceso de evaluación técnica de las propuestas, que es el paso previo a la apertura de los sobres económicos y a la adjudicación."
+      },
+      {
+        "type": "paragraph",
+        "text": "Es decir: la obra está más cerca, pero todavía no tiene empresa asignada ni fecha de inicio. Esos son los dos datos que faltan y los que conviene seguir."
+      }
+    ],
+    "confirmedFacts": [
+      {
+        "fact": "El 11 de agosto de 2026 se abrieron los sobres técnicos de la obra hídrica de General Roca.",
+        "date": "2026-08-11",
+        "sourceId": "lcr_agua"
+      },
+      {
+        "fact": "El presupuesto oficial es de 38.552 millones de pesos, financiados por el Banco de Desarrollo de América Latina y el Caribe (CAF).",
+        "date": "2026-08-11",
+        "sourceId": "lcr_agua"
+      },
+      {
+        "fact": "La obra aumentaría un 50% la capacidad de producción de agua potable y abastecería a 210.000 vecinos durante dos décadas.",
+        "date": "2026-08-11",
+        "sourceId": "lcr_agua"
+      },
+      {
+        "fact": "Se presentaron cinco empresas: Cecosa SA, Sylpa SRL, Ecosur Bahía, Constructora Roque Mocciola SA y ALUSA SA.",
+        "date": "2026-08-11",
+        "sourceId": "lcr_agua"
+      }
+    ],
+    "pendingQuestions": [
+      "Qué empresa resulta adjudicataria tras la evaluación técnica y económica.",
+      "Cuándo arrancan efectivamente los trabajos.",
+      "Cuánto tiempo demanda la ejecución y si habrá cortes de servicio durante la obra.",
+      "Qué barrios son los primeros en notar la mejora."
+    ],
+    "whyItMatters": "Roca tiene más de cien mil habitantes y un sistema de agua que viene ajustado hace años, sobre todo en verano y en los barrios altos. Si esta obra se concreta, es la diferencia entre seguir administrando la escasez y tener margen por veinte años.",
+    "timeline": [
+      {
+        "date": "2026-08-11",
+        "title": "Se abren los sobres técnicos",
+        "text": "Cinco empresas presentan ofertas por la obra hídrica más grande de la provincia. Empieza la evaluación técnica.",
+        "sourceId": "lcr_agua"
+      }
+    ],
+    "sections": [],
+    "suggestedQuestions": [
+      "¿Cuánto cuesta la obra de agua de Roca?",
+      "¿Qué empresas se presentaron?",
+      "¿Cuándo empieza la obra?"
+    ],
+    "image": {
+      "src": "",
+      "alt": "Planta potabilizadora de General Roca",
+      "credit": "",
+      "pending": "Foto propia: la planta potabilizadora o el sector donde se ejecutará la ampliación. Horizontal."
+    },
+    "sources": [
+      {
+        "id": "lcr_agua",
+        "name": "Histórica obra de agua: Río Negro dio un paso decisivo en General Roca",
+        "type": "press",
+        "publisher": "LCR Diario Digital",
+        "publishedAt": "2026-08-11",
+        "url": "https://www.lcr.com.ar/noticias/2026/08/11/52333-historica-obra-de-agua-rio-negro-dio-un-paso-decisivo-en-general-roca"
+      }
+    ]
+  },
+  "content/fruticultura.json": {
+    "id": "fruticultura_2026",
+    "type": "living_story",
+    "category": "Fruticultura",
+    "topic": "fruticultura",
+    "title": "Menos fruta, mejores precios: la cuenta que no cierra",
+    "subtitle": "La cosecha cayó 14% en Río Negro y Neuquén, los precios subieron hasta 87% y el margen del productor sigue en duda",
+    "status": "active",
+    "isFiction": false,
+    "lastUpdated": "2026-08-14T07:00:00-03:00",
+    "eventDate": "2026-06-02",
+    "readingTime": 5,
+    "shortSummary": "La campaña 2026 dejó 140.000 toneladas menos de peras y manzanas que el año pasado. Los precios subieron muy por encima de la inflación, pero producir un kilo cuesta 0,34 dólares y la mejora tiene que atravesar frío, empaque, flete y comercialización antes de llegar al productor.",
+    "whatsappSummary": "🍎 *Menos fruta, mejores precios*\nLa cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén: 140.000 toneladas menos, sobre todo en manzana.\nLos precios treparon hasta 87% interanual en el Mercado Central. Pero producir un kilo cuesta USD 0,34 y el margen se define después de la cosecha: frío, empaque, flete y venta.",
+    "radioHeadline": "Y ahora la fruta, que este año dejó una cuenta rara.",
+    "radioSummary": "Hubo menos fruta y valió más. Los números: al treinta de abril, la cosecha conjunta de peras y manzanas fue de poco más de ochocientas cincuenta y seis mil toneladas. Catorce por ciento menos que el año pasado. Ciento cuarenta mil toneladas que no están. La mayor parte de esa caída es manzana. ¿Y los precios? Subieron fuerte. En el Mercado Central, la Red Delicious aumentó cerca del ochenta y siete por ciento interanual, muy por encima de la inflación. Ahora, la pregunta del productor es otra. Producir un kilo cuesta treinta y cuatro centavos de dólar. Y ese precio bueno tiene que atravesar el frío, el empaque, el flete y la venta antes de convertirse en margen. Como dijo un productor del valle: el precio es bueno, pero es mucha la merma que hay en manzana.",
+    "articleBody": [
+      {
+        "type": "paragraph",
+        "text": "La campaña frutícola 2026 del Alto Valle se resume en una tensión: hubo bastante menos fruta y los precios subieron fuerte. Lo que todavía no está claro es si una cosa compensa a la otra."
+      },
+      {
+        "type": "heading",
+        "text": "Cuánta fruta falta"
+      },
+      {
+        "type": "paragraph",
+        "text": "Según datos del SENASA y de la Secretaría de Fruticultura de Río Negro, al 30 de abril la cosecha teórica conjunta de peras y manzanas alcanzó poco más de 856.000 toneladas. Es una caída del 14% respecto del mismo período de 2025: alrededor de 140.000 toneladas menos, con más de 90.000 correspondientes a manzana."
+      },
+      {
+        "type": "paragraph",
+        "text": "El origen del problema arrancó antes de la cosecha. La temporada comenzó con una polinización deficiente en agosto y septiembre, que redujo la producción de peras, manzanas y frutas de carozo, y se agravó después con episodios severos de granizo que afectaron tanto volúmenes como calidades."
+      },
+      {
+        "type": "heading",
+        "text": "Cuánto subieron los precios"
+      },
+      {
+        "type": "paragraph",
+        "text": "Con menos oferta, los valores treparon. Entre enero de 2025 y enero de 2026, los precios de peras y manzanas de Río Negro y Neuquén en el Mercado Central de Buenos Aires aumentaron muy por encima de la inflación: la manzana Granny Smith subió más del 70% interanual y la Red Delicious cerca del 87%. Las peras Giffard mostraron subas en torno al 75%."
+      },
+      {
+        "type": "paragraph",
+        "text": "Medido en dólares, el aumento también fue significativo: más del 40% para la Granny Smith y más del 55% para la Red Delicious."
+      },
+      {
+        "type": "heading",
+        "text": "Dónde se juega el margen"
+      },
+      {
+        "type": "paragraph",
+        "text": "La Mesa de la Ley de Contractualización, reunida en Allen, oficializó el costo de producción de la temporada: 0,34 dólares por kilo de pera o manzana, según el análisis técnico del INTA. Un informe del INTA Alto Valle correspondiente a 2025/2026 ubicó ese costo en 540,20 pesos por kilo en manzana y 453,70 en pera, con la mano de obra, las labores culturales y la cosecha explicando la mayor parte."
+      },
+      {
+        "type": "paragraph",
+        "text": "El productor Gustavo Arno describió la campaña como difícil, con chacras golpeadas por el granizo y lotes donde, al haber poca fruta en la planta, se obtuvo fruta más uniforme pero con problemas comerciales por tamaños grandes y falta de color. Su síntesis: el precio es bueno, pero la merma en manzana es mucha."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ahí está la cuenta que sigue abierta: el precio mejora, pero tiene que atravesar frío, empaque, materiales, energía, flete, mercado interno y competencia importada antes de convertirse en margen."
+      }
+    ],
+    "confirmedFacts": [
+      {
+        "fact": "Al 30 de abril de 2026 la cosecha conjunta de peras y manzanas fue de poco más de 856.000 toneladas, un 14% menos que en 2025.",
+        "date": "2026-06-02",
+        "sourceId": "lmn_cosecha"
+      },
+      {
+        "fact": "La caída equivale a unas 140.000 toneladas, con más de 90.000 correspondientes a manzana.",
+        "date": "2026-06-02",
+        "sourceId": "lmn_cosecha"
+      },
+      {
+        "fact": "Entre enero de 2025 y enero de 2026, la manzana Red Delicious subió cerca de 87% y la Granny Smith más de 70% en el Mercado Central.",
+        "date": "2026-01-27",
+        "sourceId": "dn_precios"
+      },
+      {
+        "fact": "La Mesa de la Ley de Contractualización fijó el costo de producción en 0,34 dólares por kilo, según análisis del INTA.",
+        "date": "2026-03-01",
+        "sourceId": "notirio_costo"
+      },
+      {
+        "fact": "El informe del INTA Alto Valle 2025/2026 ubicó el costo en 540,20 pesos por kilo en manzana y 453,70 en pera.",
+        "date": "2026-04-01",
+        "sourceId": "rn_costos"
+      }
+    ],
+    "pendingQuestions": [
+      "Si los precios altos se sostienen durante el segundo semestre.",
+      "Cuánto de esa mejora llega efectivamente al productor y cuánto queda en la cadena.",
+      "Qué pasa con la barrera sanitaria del río Colorado y su efecto sobre las certificaciones de exportación.",
+      "Cuántos productores más dejan la actividad: entre 2011 y 2021 se perdió un tercio."
+    ],
+    "whyItMatters": "La fruta es la economía que sostiene al valle desde hace un siglo. Cuando la cuenta no cierra no se nota en un titular: se nota en chacras que se venden, en galpones que cierran y en gente que se va. Por eso el dato importante no es el precio, sino el margen.",
+    "timeline": [
+      {
+        "date": "2026-01-15",
+        "title": "Arranca la cosecha con expectativa a la baja",
+        "text": "Comienza la recolección de peras Williams. Desde CAFI anticipan una cosecha menor a la de 2025 por cuestiones meteorológicas.",
+        "sourceId": "infocampo_cosecha"
+      },
+      {
+        "date": "2026-01-27",
+        "title": "Los precios arrancan el año en alza",
+        "text": "Los valores de peras y manzanas en el Mercado Central suben muy por encima de la inflación, empujados por la menor oferta.",
+        "sourceId": "dn_precios"
+      },
+      {
+        "date": "2026-03-01",
+        "title": "Se fija el costo de producción",
+        "text": "La Mesa de la Ley de Contractualización oficializa el costo en 0,34 dólares por kilo, con análisis técnico del INTA.",
+        "sourceId": "notirio_costo"
+      },
+      {
+        "date": "2026-06-02",
+        "title": "Los números confirman la caída",
+        "text": "SENASA y la Secretaría de Fruticultura confirman 856.000 toneladas al 30 de abril: 14% menos que en 2025.",
+        "sourceId": "lmn_cosecha"
+      }
+    ],
+    "sections": [],
+    "suggestedQuestions": [
+      "¿Cuánto cayó la cosecha este año?",
+      "¿Cuánto cuesta producir un kilo de fruta?",
+      "¿Subieron los precios de la manzana?"
+    ],
+    "image": {
+      "src": "",
+      "alt": "Chacra del Alto Valle durante la cosecha de manzanas",
+      "credit": "",
+      "pending": "Foto propia: una chacra del valle, bines de manzana o el interior de un galpón de empaque. Horizontal."
+    },
+    "sources": [
+      {
+        "id": "lmn_cosecha",
+        "name": "La cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén",
+        "type": "press",
+        "publisher": "LM Neuquén",
+        "publishedAt": "2026-06-02",
+        "url": "https://masp.lmneuquen.com/fruticultura/la-cosecha-peras-y-manzanas-cayo-14-rio-negro-y-neuquen-habra-140000-toneladas-menos-fruta-n1240499"
+      },
+      {
+        "id": "rn_margen",
+        "name": "Fruticultura en la Patagonia: la manzana tiene buen precio, pero el margen se juega después de la cosecha",
+        "type": "press",
+        "publisher": "Diario Río Negro",
+        "publishedAt": "2026-06-01",
+        "url": "https://www.rionegro.com.ar/rural/fruticultura-en-la-patagonia-la-manzana-tiene-buen-precio-pero-el-margen-se-juega-despues-de-la-cosecha/"
+      },
+      {
+        "id": "rn_costos",
+        "name": "Cuánto cuesta producir peras y manzanas en Río Negro y Neuquén",
+        "type": "press",
+        "publisher": "Diario Río Negro",
+        "publishedAt": "2026-04-01",
+        "url": "https://www.rionegro.com.ar/rural/cuanto-cuesta-producir-peras-y-manzanas-en-rio-negro-y-neuquen-una-introduccion-a-los-costos-por-kilo-y-por-hectarea-4515121/"
+      },
+      {
+        "id": "dn_precios",
+        "name": "Fruticultura del Alto Valle: menos producción, pero fuertes subas de precios",
+        "type": "press",
+        "publisher": "Diario Neuquino",
+        "publishedAt": "2026-01-27",
+        "url": "https://diarioneuquino.com.ar/fruticultura-del-alto-valle-menos-produccion-pero-fuertes-subas-de-precios-para-peras-y-manzanas-en-el-arranque-de-2026/"
+      },
+      {
+        "id": "notirio_costo",
+        "name": "Fruticultura 2026: definieron el costo de producción en USD 0,34",
+        "type": "press",
+        "publisher": "Noti Río",
+        "publishedAt": "2026-03-01",
+        "url": "https://www.noti-rio.com.ar/2026/03/fruticultura-2026-definieron-el-costo-de-produccion-en-usd-034-y-habra-cambios-en-el-modelo-de-calculo/"
+      },
+      {
+        "id": "infocampo_cosecha",
+        "name": "En el Alto Valle ya está en marcha la cosecha de peras y manzanas",
+        "type": "press",
+        "publisher": "Infocampo",
+        "publishedAt": "2026-01-15",
+        "url": "https://www.infocampo.com.ar/en-el-alto-valle-ya-esta-en-marcha-la-cosecha-de-peras-y-manzanas-en-principio-sera-un-poco-menor/"
+      }
+    ]
+  },
+  "content/clima-rutas.json": {
+    "id": "clima_rutas",
+    "type": "living_story",
+    "category": "Clima y rutas",
+    "topic": "clima",
+    "title": "Frío polar, viento y hielo: cómo circular esta semana",
+    "subtitle": "Alertas por nevadas y temperaturas extremas, con ráfagas de hasta 80 km/h en el valle",
+    "status": "active",
+    "isFiction": false,
+    "lastUpdated": "2026-08-14T07:00:00-03:00",
+    "eventDate": "2026-08-10",
+    "readingTime": 3,
+    "shortSummary": "El ingreso de aire polar dejó alertas por nevadas en la cordillera y por frío extremo en buena parte de Río Negro y Neuquén. En el Alto Valle el protagonista es el viento, con ráfagas que llegaron a 78 km/h, y el riesgo principal es la formación de hielo sobre la calzada.",
+    "whatsappSummary": "🌡️ *Frío polar, viento y hielo*\nAlertas del SMN por nevadas en la cordillera y temperaturas extremas en Río Negro y Neuquén. En el Alto Valle, ráfagas de hasta 78 km/h.\nOjo en las rutas 22, 23, 40 y 237: riesgo de hielo sobre la calzada y visibilidad reducida. En zonas de montaña, cadenas obligatorias.",
+    "radioHeadline": "Atención con el tiempo y con las rutas.",
+    "radioSummary": "Entró aire polar y se nota. El Servicio Meteorológico Nacional emitió alertas por nevadas en la cordillera y por temperaturas extremas en buena parte de Neuquén y Río Negro. En el Alto Valle, en Roca y en Cipolletti, el protagonista es el viento: hubo ráfagas de setenta y ocho kilómetros por hora. Lo importante es la ruta. Hay riesgo de hielo sobre la calzada en las rutas veintidós, veintitrés, cuarenta y doscientos treinta y siete. Menos visibilidad por nieve acumulada, y viento blanco en zonas altas. En montaña, las cadenas son obligatorias. Y en la Ruta 22, con los pozos llenos de agua, el hielo agrega un problema arriba de otro.",
+    "articleBody": [
+      {
+        "type": "paragraph",
+        "text": "El invierno se endureció en el norte patagónico. El Servicio Meteorológico Nacional emitió durante los últimos días alertas combinadas: por nevadas persistentes en la franja cordillerana de Neuquén y Río Negro, y por temperaturas extremas por frío en buena parte de las dos provincias."
+      },
+      {
+        "type": "heading",
+        "text": "Qué pasa en el valle"
+      },
+      {
+        "type": "paragraph",
+        "text": "En Neuquén capital, Cipolletti, General Roca y el resto del cordón valletano, la inestabilidad se sintió sobre todo a través del viento. El lunes 10 se registraron vientos sostenidos de 69 km/h y ráfagas de hasta 78 km/h durante la mañana, con una merma hacia la noche. Los días previos ya habían dejado ráfagas cercanas a los 80 km/h."
+      },
+      {
+        "type": "paragraph",
+        "text": "El domingo 9 el Alto Valle transitó una jornada con mínima de -1 °C y máxima de apenas 8 °C."
+      },
+      {
+        "type": "heading",
+        "text": "El problema está en la calzada"
+      },
+      {
+        "type": "paragraph",
+        "text": "El riesgo principal no es la nieve sino el hielo. Los organismos viales advirtieron sobre la formación de hielo sobre la calzada en las rutas nacionales 22, 23, 40 y 237, además de visibilidad reducida por acumulación de nieve y viento blanco en sectores elevados. En zonas de montaña, el uso de cadenas es obligatorio."
+      },
+      {
+        "type": "paragraph",
+        "text": "La Autoridad Interjurisdiccional de Cuencas informó el ingreso de aire frío con nevadas en las cuencas de los ríos Limay, Collón Cura y Neuquén, y anticipó heladas intensas al mejorar las condiciones, cuando entra aire más seco."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sobre la Ruta 22 hay un agravante local: los pozos llenos de agua que dejaron las lluvias de comienzos de mes se congelan de noche y suman un riesgo sobre otro que ya existía."
+      }
+    ],
+    "confirmedFacts": [
+      {
+        "fact": "El SMN emitió para el lunes 10 de agosto alertas por vientos intensos en todo Neuquén y por nevadas persistentes en la cordillera de Neuquén y Río Negro.",
+        "date": "2026-08-10",
+        "sourceId": "rn_lunes"
+      },
+      {
+        "fact": "En el Alto Valle se registraron vientos sostenidos de 69 km/h y ráfagas de hasta 78 km/h.",
+        "date": "2026-08-10",
+        "sourceId": "rn_lunes"
+      },
+      {
+        "fact": "Los organismos viales advirtieron por formación de hielo sobre la calzada en las rutas nacionales 22, 23, 40 y 237.",
+        "date": "2026-08-09",
+        "sourceId": "rn_domingo"
+      },
+      {
+        "fact": "El domingo 9 el Alto Valle tuvo una mínima de -1 °C y una máxima de 8 °C.",
+        "date": "2026-08-09",
+        "sourceId": "rn_domingo"
+      },
+      {
+        "fact": "La AIC informó el ingreso de aire frío con nevadas en las cuencas del Limay, Collón Cura y Neuquén, y anticipó heladas intensas.",
+        "date": "2026-08-07",
+        "sourceId": "nqn_aic"
+      }
+    ],
+    "pendingQuestions": [
+      "Cuánto se extiende el período de heladas intensas.",
+      "Si se registran daños por helada en la fruticultura del valle.",
+      "Si Vialidad interviene los sectores de la Ruta 22 donde el agua acumulada se congela."
+    ],
+    "whyItMatters": "En el valle el clima no es conversación de ascensor: define si se puede salir a la ruta, si la chacra pierde producción y si el camión llega a tiempo. Y con la Ruta 22 como está, una helada convierte un pozo con agua en una trampa.",
+    "timeline": [
+      {
+        "date": "2026-08-01",
+        "title": "Arranca agosto con viento y nieve",
+        "text": "El SMN anticipa ráfagas de hasta 80 km/h en los valles y acumulados de 20 a 40 cm de nieve en zonas altas.",
+        "sourceId": "rn_agosto"
+      },
+      {
+        "date": "2026-08-07",
+        "title": "La AIC anticipa heladas",
+        "text": "Informa el ingreso de aire frío con nevadas en cordillera y anticipa heladas intensas desde el martes siguiente.",
+        "sourceId": "nqn_aic"
+      },
+      {
+        "date": "2026-08-09",
+        "title": "Doble alerta",
+        "text": "Alerta amarilla por nevadas en el norte y la cordillera neuquina, y por temperaturas extremas por frío en gran parte de las dos provincias.",
+        "sourceId": "rn_domingo"
+      },
+      {
+        "date": "2026-08-10",
+        "title": "Viento fuerte en el valle",
+        "text": "Ráfagas de 78 km/h en el cordón valletano y advertencia por hielo en las rutas 22, 23, 40 y 237.",
+        "sourceId": "rn_lunes"
+      }
+    ],
+    "sections": [],
+    "suggestedQuestions": [
+      "¿Cómo están las rutas?",
+      "¿Hasta cuándo sigue el frío?",
+      "¿Hay alerta por nieve?"
+    ],
+    "image": {
+      "src": "",
+      "alt": "Calzada con hielo y escarcha en una ruta del Alto Valle al amanecer",
+      "credit": "",
+      "pending": "Foto propia: escarcha o hielo sobre la calzada al amanecer, o árboles del valle con helada. Horizontal."
+    },
+    "sources": [
+      {
+        "id": "rn_lunes",
+        "name": "Temperaturas bajo cero, nieve y viento: lunes complicado en Neuquén y Río Negro",
+        "type": "press",
+        "publisher": "Diario Río Negro",
+        "publishedAt": "2026-08-10",
+        "url": "https://www.rionegro.com.ar/servicios/temperaturas-bajo-cero-nieve-y-viento-lunes-complicado-en-neuquen-y-rio-negro-por-el-ingreso-de-un-frente-frio-4677612/"
+      },
+      {
+        "id": "rn_domingo",
+        "name": "Frío extremo, nevadas y lluvias en Neuquén y Río Negro",
+        "type": "press",
+        "publisher": "Diario Río Negro",
+        "publishedAt": "2026-08-09",
+        "url": "https://www.rionegro.com.ar/servicios/frio-extremo-nevadas-y-lluvias-en-neuquen-y-rio-negro-que-dice-el-pronostico-para-este-helado-domingo-9-de-agosto-4677072/"
+      },
+      {
+        "id": "nqn_aic",
+        "name": "Frío intenso en el Alto Valle: la AIC anticipó viento, inestabilidad y heladas",
+        "type": "press",
+        "publisher": "NoticiasNQN",
+        "publishedAt": "2026-08-07",
+        "url": "https://www.noticiasnqn.com.ar/noticias/2026/08/07/347050-frio-intenso-en-el-alto-valle-la-aic-anticipo-viento-inestabilidad-y-heladas"
+      },
+      {
+        "id": "rn_agosto",
+        "name": "Ráfagas de hasta 80 km/h en el Alto Valle y más nieve en la cordillera",
+        "type": "press",
+        "publisher": "Diario Río Negro",
+        "publishedAt": "2026-08-01",
+        "url": "https://www.rionegro.com.ar/servicios/rafagas-de-hasta-80-km-h-en-el-alto-valle-y-mas-nieve-en-la-cordillera-el-pronostico-para-el-inicio-de-agosto-4668190/"
+      }
+    ]
+  },
   "content/messi.json": {
     "id": "messi_hilo",
     "type": "living_story",

@@ -1,0 +1,106 @@
+{
+  "id": "agua_roca",
+  "type": "living_story",
+  "category": "Municipio",
+  "topic": "municipio",
+  "title": "La obra de agua más grande de Río Negro se hará en Roca",
+  "subtitle": "Se abrieron los sobres técnicos: cinco empresas compiten por una inversión de 38.552 millones de pesos",
+  "status": "active",
+  "isFiction": false,
+  "lastUpdated": "2026-08-11T18:00:00-03:00",
+  "eventDate": "2026-08-11",
+  "readingTime": 4,
+  "shortSummary": "El Gobierno provincial abrió los sobres técnicos de la obra que ampliará un 50% la capacidad de producción de agua potable de General Roca. Está pensada para abastecer a 210.000 vecinos durante las próximas dos décadas y se financia con un crédito del Banco de Desarrollo de América Latina y el Caribe.",
+  "whatsappSummary": "🚰 *La obra de agua más grande de la provincia se hará en Roca*\nSe abrieron los sobres técnicos. Presupuesto oficial: 38.552 millones de pesos, financiados por el CAF. Amplía un 50% la capacidad de producción y apunta a abastecer a 210.000 vecinos durante veinte años.\nCinco empresas presentaron ofertas. Ahora empieza la evaluación técnica.",
+  "radioHeadline": "Vamos con una obra que puede cambiar el agua de Roca para los próximos veinte años.",
+  "radioSummary": "El martes se abrieron los sobres técnicos de la obra hídrica más grande que se haya hecho en Río Negro. Y va a ser en General Roca. Los números: treinta y ocho mil quinientos cincuenta y dos millones de pesos de presupuesto oficial. La plata sale de un crédito del Banco de Desarrollo de América Latina y el Caribe, el CAF. ¿Qué resuelve? Aumenta un cincuenta por ciento la capacidad de producción de agua potable de la ciudad. Está pensada para abastecer a doscientos diez mil vecinos durante las próximas dos décadas. Cinco empresas se presentaron. Ahora arranca la evaluación técnica de las propuestas, así que todavía no hay adjudicación ni fecha de inicio.",
+  "articleBody": [
+    {
+      "type": "paragraph",
+      "text": "El Gobierno de Río Negro abrió el martes los sobres técnicos de la obra que va a transformar el sistema de agua potable de General Roca. Según el propio Ejecutivo provincial, se trata de la inversión de mayor magnitud financiada en la provincia a través del Banco de Desarrollo de América Latina y el Caribe."
+    },
+    {
+      "type": "heading",
+      "text": "Qué resuelve"
+    },
+    {
+      "type": "paragraph",
+      "text": "La obra apunta a aumentar un 50% la capacidad de producción de agua potable de la ciudad y a garantizar el abastecimiento de 210.000 vecinos durante las próximas dos décadas. El presupuesto oficial es de 38.552 millones de pesos."
+    },
+    {
+      "type": "paragraph",
+      "text": "El ministro de Obras y Servicios Públicos, Alejandro Echarren, la definió como la obra más grande de toda la provincia y destacó que se ejecute en General Roca. Es el mismo funcionario que viene siguiendo la negociación por el traspaso de las rutas 22 y 151."
+    },
+    {
+      "type": "heading",
+      "text": "Quiénes se presentaron"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cinco empresas presentaron ofertas: Cecosa SA, Sylpa SRL, Ecosur Bahía, Constructora Roque Mocciola SA y ALUSA SA. Ahora comienza el proceso de evaluación técnica de las propuestas, que es el paso previo a la apertura de los sobres económicos y a la adjudicación."
+    },
+    {
+      "type": "paragraph",
+      "text": "Es decir: la obra está más cerca, pero todavía no tiene empresa asignada ni fecha de inicio. Esos son los dos datos que faltan y los que conviene seguir."
+    }
+  ],
+  "confirmedFacts": [
+    {
+      "fact": "El 11 de agosto de 2026 se abrieron los sobres técnicos de la obra hídrica de General Roca.",
+      "date": "2026-08-11",
+      "sourceId": "lcr_agua"
+    },
+    {
+      "fact": "El presupuesto oficial es de 38.552 millones de pesos, financiados por el Banco de Desarrollo de América Latina y el Caribe (CAF).",
+      "date": "2026-08-11",
+      "sourceId": "lcr_agua"
+    },
+    {
+      "fact": "La obra aumentaría un 50% la capacidad de producción de agua potable y abastecería a 210.000 vecinos durante dos décadas.",
+      "date": "2026-08-11",
+      "sourceId": "lcr_agua"
+    },
+    {
+      "fact": "Se presentaron cinco empresas: Cecosa SA, Sylpa SRL, Ecosur Bahía, Constructora Roque Mocciola SA y ALUSA SA.",
+      "date": "2026-08-11",
+      "sourceId": "lcr_agua"
+    }
+  ],
+  "pendingQuestions": [
+    "Qué empresa resulta adjudicataria tras la evaluación técnica y económica.",
+    "Cuándo arrancan efectivamente los trabajos.",
+    "Cuánto tiempo demanda la ejecución y si habrá cortes de servicio durante la obra.",
+    "Qué barrios son los primeros en notar la mejora."
+  ],
+  "whyItMatters": "Roca tiene más de cien mil habitantes y un sistema de agua que viene ajustado hace años, sobre todo en verano y en los barrios altos. Si esta obra se concreta, es la diferencia entre seguir administrando la escasez y tener margen por veinte años.",
+  "timeline": [
+    {
+      "date": "2026-08-11",
+      "title": "Se abren los sobres técnicos",
+      "text": "Cinco empresas presentan ofertas por la obra hídrica más grande de la provincia. Empieza la evaluación técnica.",
+      "sourceId": "lcr_agua"
+    }
+  ],
+  "sections": [],
+  "suggestedQuestions": [
+    "¿Cuánto cuesta la obra de agua de Roca?",
+    "¿Qué empresas se presentaron?",
+    "¿Cuándo empieza la obra?"
+  ],
+  "image": {
+    "src": "",
+    "alt": "Planta potabilizadora de General Roca",
+    "credit": "",
+    "pending": "Foto propia: la planta potabilizadora o el sector donde se ejecutará la ampliación. Horizontal."
+  },
+  "sources": [
+    {
+      "id": "lcr_agua",
+      "name": "Histórica obra de agua: Río Negro dio un paso decisivo en General Roca",
+      "type": "press",
+      "publisher": "LCR Diario Digital",
+      "publishedAt": "2026-08-11",
+      "url": "https://www.lcr.com.ar/noticias/2026/08/11/52333-historica-obra-de-agua-rio-negro-dio-un-paso-decisivo-en-general-roca"
+    }
+  ]
+}
