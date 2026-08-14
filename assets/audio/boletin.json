@@ -3,10 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.14.1",
-  "generatedAt": "2026-08-14T15:06:13.487Z",
+  "version": "1.15.0",
+  "generatedAt": "2026-08-14T19:56:48.350Z",
   "baseRate": 1,
-  "duration": 186.44,
+  "duration": 201.17,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,15 +14,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las doce y seis del mediodía. Buen día."
-    },
-    {
-      "kind": "fecha",
-      "text": "Hoy es viernes 14 de agosto de 2026."
-    },
-    {
-      "kind": "presentacion",
-      "text": "Estas son las noticias que elegiste para hoy."
+      "text": "Son las cuatro y cincuenta y seis de la tarde. Buenas tardes."
     },
     {
       "kind": "titular",
@@ -46,6 +38,34 @@
     },
     {
       "kind": "separador",
+      "text": "Vamos con la que sigue."
+    },
+    {
+      "kind": "titular",
+      "text": "Vamos con una obra que puede cambiar el agua de Roca para los próximos veinte años."
+    },
+    {
+      "kind": "separador",
+      "text": "Y ahora, otro tema."
+    },
+    {
+      "kind": "titular",
+      "text": "Y ahora la fruta, que este año dejó una cuenta rara."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "Hubo menos fruta y valió más. Los números: al treinta de abril, la cosecha conjunta de peras y manzanas fue de poco más de ochocientas cincuenta y seis mil toneladas. Catorce por ciento menos que el año pasado. Ciento cuarenta mil toneladas que no están. La mayor parte de esa caída es manzana. ¿Y los precios? Subieron fuerte. En el Mercado Central, la Red Delicious aumentó cerca del ochenta y siete por ciento interanual, muy por encima de la inflación. Ahora, la pregunta del productor es otra. Producir un kilo cuesta treinta y cuatro centavos de dólar. Y ese precio bueno tiene que atravesar el frío, el empaque, el flete y la venta antes de convertirse en margen. Como dijo un productor del valle: el precio es bueno, pero es mucha la merma que hay en manzana."
+    },
+    {
+      "kind": "separador",
+      "text": "Seguimos."
+    },
+    {
+      "kind": "titular",
+      "text": "Atención con el tiempo y con las rutas."
+    },
+    {
+      "kind": "separador",
       "text": "Y vamos a los deportes."
     },
     {
@@ -65,18 +85,6 @@
       "text": "Atención, que esto es contenido ficticio, inventado para probar el sistema."
     },
     {
-      "kind": "desarrollo",
-      "text": "Repetimos: son datos de prueba, no son reales. En un partido inventado, por la fecha catorce de la Liga Deportiva Confluencia, Deportivo Roca le ganó dos a uno a Cipolletti. Los goles, también inventados, de Barrientos y Quilodrán para el local. Descontó Aguirre para la visita. Con ese resultado el naranja quedaría a un punto de la punta. La próxima fecha, visita a Villa Regina, el domingo a las cuatro de la tarde. Insistimos: es contenido de demostración."
-    },
-    {
-      "kind": "seguimiento",
-      "text": "Durante el día vamos a estar siguiendo esto: si la Mesa Regional de Emergencia llega a conformarse y con qué facultades."
-    },
-    {
-      "kind": "invitacion",
-      "text": "Si querés profundizar en alguna de estas noticias, preguntame por el chat y te la explico con las fuentes."
-    },
-    {
       "kind": "cierre",
       "text": "Fue Tu Canillita, que sigue la historia con vos. Buen día."
     }
@@ -88,71 +96,79 @@
     },
     {
       "segment": 1,
-      "start": 2.451
+      "start": 2.523
     },
     {
       "segment": 2,
-      "start": 5.078
+      "start": 5.94
     },
     {
       "segment": 3,
-      "start": 8.172
+      "start": 10.092
     },
     {
       "segment": 4,
-      "start": 10.848
+      "start": 57.313
     },
     {
       "segment": 5,
-      "start": 14.875
+      "start": 58.603
     },
     {
       "segment": 6,
-      "start": 62.23
+      "start": 62.947
     },
     {
       "segment": 7,
-      "start": 63.484
+      "start": 100.727
     },
     {
       "segment": 8,
-      "start": 67.841
+      "start": 102.498
     },
     {
       "segment": 9,
-      "start": 105.205
+      "start": 107.045
     },
     {
       "segment": 10,
-      "start": 107.101
+      "start": 108.895
     },
     {
       "segment": 11,
-      "start": 109.83
+      "start": 112.187
     },
     {
       "segment": 12,
-      "start": 142.157
+      "start": 150.446
     },
     {
       "segment": 13,
-      "start": 144.043
+      "start": 151.713
     },
     {
       "segment": 14,
-      "start": 148.619
+      "start": 154.379
     },
     {
       "segment": 15,
-      "start": 172.06
+      "start": 156.328
     },
     {
       "segment": 16,
-      "start": 178.139
+      "start": 159.04
     },
     {
       "segment": 17,
-      "start": 183.343
+      "start": 191.424
+    },
+    {
+      "segment": 18,
+      "start": 193.359
+    },
+    {
+      "segment": 19,
+      "start": 198.093
     }
   ]
 }
