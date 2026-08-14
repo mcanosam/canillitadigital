@@ -252,6 +252,22 @@ Criterio de numeración:
 - La banda no aparece en "Todo": ahí no hay criterio personal que aplicar.
 
 ---
+## v1.18.0 · 14-08-2026
+
+- **Recorrido guiado** (`js/recorrido.js`): siete pasos que explican el
+  producto sobre la portada real, no sobre pantallas aparte. Bienvenida,
+  elegir lector, la selección, los hilos vivos, el boletín, la conversación y
+  el cierre.
+- Se activa con `?demo=1` en la dirección —para el enlace que se comparte— o
+  con el botón "Hacer el recorrido guiado", siempre disponible.
+- El paso se guarda: elegir un lector recarga la página y el recorrido sigue
+  donde estaba. Sin eso se cortaba en el segundo paso.
+- Los pasos cuyo objetivo no está visible se saltean solos. Es el caso del
+  boletín cuando todavía no se generó el audio.
+- Al terminar se limpia `?demo=1` de la dirección, así recargar no vuelve a
+  arrancar el recorrido.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

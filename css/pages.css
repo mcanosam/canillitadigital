@@ -1331,3 +1331,128 @@ a.tag:hover { background: var(--tinta); }
   padding-left: 12px;
   margin-left: -15px;
 }
+
+/* ==================================================== recorrido guiado */
+
+.btn-recorrido {
+  margin-top: 11px;
+  padding: 8px 13px;
+  border: 1px solid var(--senal-vivo);
+  border-radius: 0;
+  background: transparent;
+  color: var(--senal-vivo);
+  font-family: var(--interfaz);
+  font-size: .86rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-recorrido:hover { background: rgba(55, 208, 232, .12); }
+
+body.recorrido-activo { overflow: hidden; }
+
+.recorrido__fondo {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 14, .78);
+  z-index: 1000;
+}
+
+/* El elemento señalado queda por encima del velo, con su propio fondo */
+.recorrido-foco {
+  position: relative;
+  z-index: 1001;
+  box-shadow: 0 0 0 3px var(--senal-vivo), 0 0 0 12px rgba(55, 208, 232, .18);
+}
+
+/* La franja de temas y la barra de lectores son transparentes por dentro */
+.recorrido-foco.personas,
+.recorrido-foco.novedades { background-clip: padding-box; }
+
+.recorrido__panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1002;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 18px 20px;
+  background: var(--papel);
+  border-top: 4px solid var(--senal);
+}
+
+/* Los pasos de apertura y cierre no señalan nada: van centrados */
+.recorrido--centrado .recorrido__panel {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  border-top-width: 6px;
+}
+
+.recorrido__volanta {
+  margin: 0 0 6px;
+  font-family: var(--condensada);
+  font-size: .76rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--senal);
+}
+
+.recorrido__titulo {
+  margin: 0 0 8px;
+  font-family: var(--display);
+  font-size: 1.4rem;
+  line-height: 1.15;
+}
+
+.recorrido--centrado .recorrido__titulo { font-size: 1.75rem; }
+
+.recorrido__texto {
+  margin: 0 0 16px;
+  font-family: var(--display);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--tinta-suave);
+}
+
+.recorrido__acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recorrido__seguir {
+  min-height: 46px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 0;
+  background: var(--senal);
+  color: var(--senal-papel);
+  font-family: var(--interfaz);
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.recorrido__seguir:hover { background: #0A3A46; }
+
+.recorrido__salir {
+  min-height: 46px;
+  padding: 12px 8px;
+  border: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  font-family: var(--interfaz);
+  font-size: .88rem;
+  cursor: pointer;
+}
+
+.recorrido__salir:hover { color: var(--tinta); }
+
+@media (prefers-reduced-motion: reduce) {
+  .novedades__punto { animation: none; }
+}
+
+/* Durante el recorrido, el botón para iniciarlo sobra */
+body.recorrido-activo .btn-recorrido { display: none; }

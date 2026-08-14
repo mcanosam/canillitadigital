@@ -234,8 +234,10 @@
   function pintarPersonas() {
     var caja = doc.getElementById('personas');
     if (!caja) return;
-    caja.innerHTML = R.personaBar();
+    caja.innerHTML = R.personaBar() +
+      (Canillita.recorrido ? Canillita.recorrido.botonRecorrido() : '');
     R.bindPersonaBar(caja);
+    if (Canillita.recorrido) Canillita.recorrido.bindBoton(caja);
   }
 
   function pintarCabecera() {
@@ -266,6 +268,10 @@
       activarVistas();
       pintarPortada();
       pintarBoletin();
+
+      /* El recorrido arranca cuando la portada ya está dibujada: si no, los
+         pasos apuntarían a elementos que todavía no existen. */
+      if (Canillita.recorrido) Canillita.recorrido.init();
     }).catch(function (error) {
       doc.getElementById('portada').innerHTML =
         '<p class="error">No pude cargar las noticias. ' +
