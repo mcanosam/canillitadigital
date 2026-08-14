@@ -1,125 +1,125 @@
 {
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.15.0",
-  "generatedAt": "2026-08-14T19:59:04.728Z",
+  "version": "1.20.0",
+  "generatedAt": "2026-08-14T21:50:15.612Z",
   "answers": {
     "ruta22-actualidad": {
       "url": "assets/audio/respuestas/ruta22-actualidad.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-actualidad.ogg",
-      "duration": 64.26,
+      "duration": 64.76,
       "question": "Ruta 22 hoy",
       "intent": "route22_current"
     },
     "ruta22-historia": {
       "url": "assets/audio/respuestas/ruta22-historia.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-historia.ogg",
-      "duration": 64.78,
+      "duration": 64.42,
       "question": "Ver la historia de la Ruta 22",
       "intent": "route22_history"
     },
     "ruta22-por-que": {
       "url": "assets/audio/respuestas/ruta22-por-que.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-por-que.ogg",
-      "duration": 37.22,
+      "duration": 36.88,
       "question": "¿Por qué se frenó la Ruta 22?",
       "intent": "route22_reason_stopped"
     },
     "ruta22-tramos": {
       "url": "assets/audio/respuestas/ruta22-tramos.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-tramos.ogg",
-      "duration": 52.11,
+      "duration": 52.19,
       "question": "¿Qué tramo está terminado?",
       "intent": "route22_status"
     },
     "ruta22-roca": {
       "url": "assets/audio/respuestas/ruta22-roca.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-roca.ogg",
-      "duration": 46.18,
+      "duration": 45.66,
       "question": "¿Qué pasó en General Roca?",
       "intent": "route22_roca"
     },
     "ruta22-traspaso": {
       "url": "assets/audio/respuestas/ruta22-traspaso.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-traspaso.ogg",
-      "duration": 35.42,
+      "duration": 35.58,
       "question": "¿Río Negro ya se hizo cargo?",
       "intent": "route22_province"
     },
     "ruta22-neutralizados": {
       "url": "assets/audio/respuestas/ruta22-neutralizados.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-neutralizados.ogg",
-      "duration": 29.05,
+      "duration": 29.23,
       "question": "¿Qué son los contratos neutralizados?",
       "intent": "route22_neutralized"
     },
     "ruta22-peaje": {
       "url": "assets/audio/respuestas/ruta22-peaje.mp3",
       "urlOpus": "assets/audio/respuestas/ruta22-peaje.ogg",
-      "duration": 31.45,
+      "duration": 31.03,
       "question": "¿Va a haber peaje?",
       "intent": "route22_toll"
     },
     "seccion1": {
       "url": "assets/audio/respuestas/seccion1.mp3",
       "urlOpus": "assets/audio/respuestas/seccion1.ogg",
-      "duration": 19.33,
+      "duration": 19.44,
       "question": "Sección 1",
       "intent": "route22_section:seccion1"
     },
     "seccion2": {
       "url": "assets/audio/respuestas/seccion2.mp3",
       "urlOpus": "assets/audio/respuestas/seccion2.ogg",
-      "duration": 22.67,
+      "duration": 22.44,
       "question": "Sección 2",
       "intent": "route22_section:seccion2"
     },
     "seccion3": {
       "url": "assets/audio/respuestas/seccion3.mp3",
       "urlOpus": "assets/audio/respuestas/seccion3.ogg",
-      "duration": 26.91,
+      "duration": 26.96,
       "question": "Sección 3",
       "intent": "route22_section:seccion3"
     },
     "seccion4": {
       "url": "assets/audio/respuestas/seccion4.mp3",
       "urlOpus": "assets/audio/respuestas/seccion4.ogg",
-      "duration": 18.63,
+      "duration": 18.47,
       "question": "Sección 4",
       "intent": "route22_section:seccion4"
     },
     "seccion5": {
       "url": "assets/audio/respuestas/seccion5.mp3",
       "urlOpus": "assets/audio/respuestas/seccion5.ogg",
-      "duration": 24.76,
+      "duration": 24.56,
       "question": "Sección 5",
       "intent": "route22_section:seccion5"
     },
     "tramo6": {
       "url": "assets/audio/respuestas/tramo6.mp3",
       "urlOpus": "assets/audio/respuestas/tramo6.ogg",
-      "duration": 25.5,
+      "duration": 25.47,
       "question": "¿Qué pasa en Cipolletti?",
       "intent": "route22_section:tramo6"
     },
     "deportes": {
       "url": "assets/audio/respuestas/deportes.mp3",
       "urlOpus": "assets/audio/respuestas/deportes.ogg",
-      "duration": 33.46,
+      "duration": 33.33,
       "question": "Ver deportes",
       "intent": "sports"
     },
     "deportes-proximo": {
       "url": "assets/audio/respuestas/deportes-proximo.mp3",
       "urlOpus": "assets/audio/respuestas/deportes-proximo.ogg",
-      "duration": 19.3,
+      "duration": 19.41,
       "question": "¿Cuándo juega Deportivo Roca?",
       "intent": "sports_next"
     },
     "agua": {
       "url": "assets/audio/respuestas/agua.mp3",
       "urlOpus": "assets/audio/respuestas/agua.ogg",
-      "duration": 62.54,
+      "duration": 62.48,
       "question": "Contame la obra de agua de Roca",
       "intent": "agua_roca"
     },
@@ -140,28 +140,28 @@
     "messi": {
       "url": "assets/audio/respuestas/messi.mp3",
       "urlOpus": "assets/audio/respuestas/messi.ogg",
-      "duration": 31.11,
+      "duration": 31.16,
       "question": "Contame el hilo de Messi",
       "intent": "messi"
     },
     "messi-final": {
       "url": "assets/audio/respuestas/messi-final.mp3",
       "urlOpus": "assets/audio/respuestas/messi-final.ogg",
-      "duration": 26.75,
+      "duration": 26.57,
       "question": "¿Cómo salió la final del Mundial 2026?",
       "intent": "messi_final"
     },
     "messi-retiro": {
       "url": "assets/audio/respuestas/messi-retiro.mp3",
       "urlOpus": "assets/audio/respuestas/messi-retiro.ogg",
-      "duration": 28.71,
+      "duration": 28.5,
       "question": "¿Messi se retira de la Selección?",
       "intent": "messi_retiro"
     },
     "fuera-de-alcance": {
       "url": "assets/audio/respuestas/fuera-de-alcance.mp3",
       "urlOpus": "assets/audio/respuestas/fuera-de-alcance.ogg",
-      "duration": 9.8,
+      "duration": 9.74,
       "question": "¿Qué pasa con el dólar?",
       "intent": "unknown"
     }
