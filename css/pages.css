@@ -1095,3 +1095,12 @@ a.tag:hover { background: var(--tinta); }
 }
 
 .portada-nota--principal { padding-bottom: 24px; }
+
+/* Un crédito sin completar se marca: publicar una foto sin autoría es un error */
+.foto__credito--falta {
+  color: var(--rojo);
+  font-style: italic;
+}
+
+/* En la miniatura no entra el crédito: va solo en la foto grande */
+.foto--secundaria .foto__credito { display: none; }

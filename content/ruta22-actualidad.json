@@ -390,9 +390,10 @@
   ],
   "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias.",
   "image": {
-    "src": "",
-    "alt": "Agua acumulada sobre los baches de la Ruta 22 en el cruce con avenida Roca",
+    "src": "assets/images/ruta22-pozos.jpg",
+    "alt": "Pozos con agua acumulada sobre la calzada de la Ruta 22 después de las lluvias",
     "credit": "",
-    "pending": "Foto propia: el cruce de la Ruta 22 con avenida Roca después de la lluvia, con el agua tapando los pozos. Horizontal."
+    "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
+    "pending": ""
   }
 }

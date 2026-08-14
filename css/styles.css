@@ -636,3 +636,9 @@ body {
 }
 
 .secciones a:hover { border-bottom-color: var(--ocre); color: var(--ocre); }
+
+/* El canal real, a la vista dentro del simulador */
+.phone__disclaimer a {
+  color: var(--ocre);
+  font-weight: 600;
+}

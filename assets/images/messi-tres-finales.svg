@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" role="img"
+     aria-labelledby="titulo-finales desc-finales">
+  <title id="titulo-finales">Las tres finales del mundo de Messi</title>
+  <desc id="desc-finales">Tres círculos en línea: 2014 en Brasil, subcampeón; 2022 en Qatar, campeón, marcado en ocre; y 2026 en Norteamérica, subcampeón.</desc>
+
+  <!--
+    Ilustración propia para el hilo de Messi.
+    Se dibuja en vez de usar una foto de agencia: las imágenes de prensa
+    requieren licencia, y este gráfico cuenta lo mismo con datos verificados.
+    Paleta del diario: tinta #1A1A18, papel #F7F4EE, ocre #9A5B1E.
+  -->
+
+  <rect width="520" height="250" fill="#EDE8DC"/>
+
+  <!-- El hilo que une las tres finales -->
+  <line x1="46" y1="112" x2="474" y2="112" stroke="#1A1A18" stroke-width="1.5" opacity=".35"/>
+
+  <!-- 2014 · Brasil · subcampeón -->
+  <g>
+    <circle cx="110" cy="112" r="42" fill="#EDE8DC" stroke="#1A1A18" stroke-width="2"/>
+    <text x="110" y="106" text-anchor="middle" font-family="Georgia, serif"
+          font-size="26" fill="#1A1A18">2°</text>
+    <text x="110" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+          font-size="11" fill="#6A6357">Brasil</text>
+    <text x="110" y="182" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif"
+          font-size="17" letter-spacing="1.5" fill="#1A1A18">2014</text>
+    <text x="110" y="202" text-anchor="middle" font-family="Georgia, serif" font-style="italic"
+          font-size="12" fill="#6A6357">Subcampeón</text>
+  </g>
+
+  <!-- 2022 · Qatar · campeón. El único relleno: es el único ganado -->
+  <g>
+    <circle cx="260" cy="112" r="50" fill="#9A5B1E"/>
+    <text x="260" y="104" text-anchor="middle" font-family="Georgia, serif"
+          font-size="34" fill="#F7F4EE">1°</text>
+    <text x="260" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+          font-size="12" fill="#F7F4EE" opacity=".85">Qatar</text>
+    <text x="260" y="188" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif"
+          font-size="20" letter-spacing="1.5" fill="#1A1A18">2022</text>
+    <text x="260" y="209" text-anchor="middle" font-family="Georgia, serif" font-style="italic"
+          font-size="13" fill="#9A5B1E">Campeón del mundo</text>
+  </g>
+
+  <!-- 2026 · Norteamérica · subcampeón -->
+  <g>
+    <circle cx="410" cy="112" r="42" fill="#EDE8DC" stroke="#1A1A18" stroke-width="2"/>
+    <text x="410" y="106" text-anchor="middle" font-family="Georgia, serif"
+          font-size="26" fill="#1A1A18">2°</text>
+    <text x="410" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+          font-size="10" fill="#6A6357">Norteamérica</text>
+    <text x="410" y="182" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif"
+          font-size="17" letter-spacing="1.5" fill="#1A1A18">2026</text>
+    <text x="410" y="202" text-anchor="middle" font-family="Georgia, serif" font-style="italic"
+          font-size="12" fill="#6A6357">Subcampeón</text>
+  </g>
+
+  <!-- Volanta y pie -->
+  <text x="26" y="34" font-family="Arial Narrow, Arial, sans-serif" font-size="13"
+        letter-spacing="2.6" fill="#9A5B1E">TRES FINALES DEL MUNDO</text>
+  <line x1="26" y1="44" x2="494" y2="44" stroke="#1A1A18" stroke-width="1.5"/>
+
+  <text x="26" y="238" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#6A6357">
+    Seis Mundiales jugados · 39 años en la final de Nueva Jersey
+  </text>
+</svg>

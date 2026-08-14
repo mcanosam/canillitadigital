@@ -91,7 +91,8 @@
         '<img src="' + esc(base + imagen.src) + '" alt="' + esc(imagen.alt) + '" loading="lazy">' +
         (imagen.credit
           ? '<figcaption class="foto__credito">' + esc(imagen.credit) + '</figcaption>'
-          : '') +
+          : '<figcaption class="foto__credito foto__credito--falta">' +
+            'Crédito pendiente' + '</figcaption>') +
         '</figure>';
     }
 

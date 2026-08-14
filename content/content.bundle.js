@@ -392,10 +392,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
     ],
     "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias.",
     "image": {
-      "src": "",
-      "alt": "Agua acumulada sobre los baches de la Ruta 22 en el cruce con avenida Roca",
+      "src": "assets/images/ruta22-pozos.jpg",
+      "alt": "Pozos con agua acumulada sobre la calzada de la Ruta 22 después de las lluvias",
       "credit": "",
-      "pending": "Foto propia: el cruce de la Ruta 22 con avenida Roca después de la lluvia, con el agua tapando los pozos. Horizontal."
+      "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
+      "pending": ""
     }
   },
   "content/ruta22-historia.json": {
@@ -785,10 +786,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
     ],
     "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse.",
     "image": {
-      "src": "",
-      "alt": "Tramo de la Ruta 22 con calzada simple entre Cervantes y General Roca",
+      "src": "assets/images/ruta22-fila.jpg",
+      "alt": "Fila de autos y camiones sobre el tramo de calzada simple de la Ruta 22, con banquinas deterioradas",
       "credit": "",
-      "pending": "Foto propia: el tramo de doble mano entre Cervantes y Roca, donde la autopista nunca se construyó. Horizontal, con la ruta en fuga."
+      "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
+      "pending": ""
     }
   },
   "content/messi.json": {
@@ -1089,10 +1091,10 @@ window.CANILLITA_CONTENT_BUNDLE = {
       }
     ],
     "image": {
-      "src": "",
-      "alt": "Retrato de Lionel Messi",
-      "credit": "",
-      "pending": "Requiere foto con licencia (agencia). No usar imágenes de prensa sin autorización. Alternativa: ilustración propia o gráfico de la cronología."
+      "src": "assets/images/messi-tres-finales.svg",
+      "alt": "Gráfico con las tres finales del mundo de Messi: 2014 subcampeón, 2022 campeón, 2026 subcampeón",
+      "credit": "Gráfico: Tu Canillita",
+      "pending": ""
     }
   },
   "content/deportes.json": {

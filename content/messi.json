@@ -296,9 +296,9 @@
     }
   ],
   "image": {
-    "src": "",
-    "alt": "Retrato de Lionel Messi",
-    "credit": "",
-    "pending": "Requiere foto con licencia (agencia). No usar imágenes de prensa sin autorización. Alternativa: ilustración propia o gráfico de la cronología."
+    "src": "assets/images/messi-tres-finales.svg",
+    "alt": "Gráfico con las tres finales del mundo de Messi: 2014 subcampeón, 2022 campeón, 2026 subcampeón",
+    "credit": "Gráfico: Tu Canillita",
+    "pending": ""
   }
 }

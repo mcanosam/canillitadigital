@@ -1,0 +1,22 @@
+# Normaliza los finales de línea.
+#
+# Sin esto, los archivos guardados en Windows (CRLF) y los que genera el
+# workflow en Linux (LF) se ven como si hubiera cambiado cada línea de cada
+# archivo. Al unir las dos historias, Git marca conflictos en todo el proyecto
+# aunque el contenido sea idéntico.
+#
+# `text=auto eol=lf` guarda todo con LF en el repositorio, sin importar desde
+# dónde se suba.
+
+* text=auto eol=lf
+
+# Binarios: no se tocan nunca
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.mp3  binary
+*.ogg  binary
+*.wav  binary
+*.onnx binary
+*.zip  binary

@@ -385,9 +385,10 @@
   ],
   "radioHeadline": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse.",
   "image": {
-    "src": "",
-    "alt": "Tramo de la Ruta 22 con calzada simple entre Cervantes y General Roca",
+    "src": "assets/images/ruta22-fila.jpg",
+    "alt": "Fila de autos y camiones sobre el tramo de calzada simple de la Ruta 22, con banquinas deterioradas",
     "credit": "",
-    "pending": "Foto propia: el tramo de doble mano entre Cervantes y Roca, donde la autopista nunca se construyó. Horizontal, con la ruta en fuga."
+    "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
+    "pending": ""
   }
 }

@@ -164,6 +164,28 @@ Criterio de numeración:
   y las secundarias se achican de verdad.
 
 ---
+## v1.14.0 · 12-08-2026
+
+- Primeras fotos reales en las dos historias de la Ruta 22: los pozos con agua
+  y la fila de vehículos sobre el tramo de calzada simple.
+- Ilustración propia para el hilo de Messi
+  (`assets/images/messi-tres-finales.svg`): las tres finales del mundo, con la
+  de 2022 marcada como la única ganada. Se dibuja en vez de usar una foto de
+  agencia, que requeriría licencia.
+- Cuando una foto no tiene crédito cargado, el pie lo marca en rojo. Publicar
+  una imagen sin autoría es un error, y el diseño ahora lo hace visible.
+- "Abrir en Telegram" pasa a la barra superior del simulador, donde se ve sin
+  tener que bajar hasta el pie.
+
+---
+## v1.14.1 · 14-08-2026
+
+- Se agrega `.gitattributes` con `text=auto eol=lf`. Sin esto, los archivos
+  guardados en Windows y los que genera el workflow en Linux se veían como si
+  hubiera cambiado cada línea, y al unir las historias Git marcaba conflictos
+  en todo el proyecto aunque el contenido fuera idéntico.
+
+---
 
 ## v1.6.0 · 07-08-2026
 
