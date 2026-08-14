@@ -28,6 +28,7 @@
     speechRate: 1,
     hour: '07:00',
     persona: null,          // lector de ejemplo elegido para la demo
+    lastVisit: null,        // ISO de la visita anterior, para marcar novedades
     following: []           // ids de HILOS que el lector eligió seguir
   };
 
@@ -128,6 +129,39 @@
     return found.length ? found[0].label : current + '×';
   }
 
+  /* ------------------------------------------------------ última visita */
+
+  /* Recargar la página no debería borrar las novedades: se considera la misma
+     visita si pasó menos de media hora. */
+  var MISMA_VISITA_MS = 30 * 60 * 1000;
+
+  /**
+   * Devuelve la fecha de la visita anterior y, si corresponde, la actualiza.
+   * @returns {Date|null} null en la primera visita.
+   */
+  function marcarVisita() {
+    var guardada = read().lastVisit;
+    var ahora = Date.now();
+
+    if (!guardada) {
+      set({ lastVisit: new Date(ahora).toISOString() });
+      return null;
+    }
+
+    var anterior = new Date(guardada);
+    if (ahora - anterior.getTime() > MISMA_VISITA_MS) {
+      set({ lastVisit: new Date(ahora).toISOString() });
+    }
+    return anterior;
+  }
+
+  /** Retrasa la última visita. Solo lo usa la demo, y lo dice en pantalla. */
+  function simularAusencia(dias) {
+    var fecha = new Date(Date.now() - dias * 24 * 60 * 60 * 1000);
+    set({ lastVisit: fecha.toISOString() });
+    return fecha;
+  }
+
   /* ------------------------------------------------- historias seguidas */
 
   function isFollowing(storyId) {
@@ -168,6 +202,8 @@
     audioLabel: audioLabel,
     rateLabel: rateLabel,
     RATE_LABELS: RATE_LABELS,
+    marcarVisita: marcarVisita,
+    simularAusencia: simularAusencia,
     isFollowing: isFollowing,
     toggleFollow: toggleFollow,
     summaryText: summaryText,

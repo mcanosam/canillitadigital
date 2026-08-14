@@ -361,6 +361,130 @@
     return enlaces.join('');
   }
 
+  /* -------------------------------------------------------- novedades */
+
+  /*
+   * Qué se movió desde la última visita.
+   *
+   * Se compara `lastUpdated` de cada historia contra la fecha guardada. Solo
+   * cuentan los hilos que el lector sigue o los temas que eligió: avisar de
+   * algo que no le interesa sería ruido, no novedad.
+   *
+   * @returns {{desde: Date|null, hilos: Array, total: number}}
+   */
+  function novedades(desde) {
+    if (!desde) return { desde: null, hilos: [], total: 0 };
+
+    var prefs = Canillita.preferences.get();
+    var porHilo = {};
+
+    Canillita.content.all().forEach(function (story) {
+      if (!story.lastUpdated) return;
+      if (new Date(story.lastUpdated) <= desde) return;
+
+      var hiloId = Canillita.content.hiloDe(story.id);
+      var hilo = Canillita.content.hilo(hiloId);
+      if (!hilo) return;
+
+      var leInteresa = Canillita.preferences.isFollowing(hiloId) ||
+        prefs.topics.indexOf(story.topic) !== -1;
+      if (!leInteresa) return;
+
+      if (!porHilo[hiloId]) {
+        porHilo[hiloId] = { id: hiloId, label: hilo.label, historias: [] };
+      }
+      porHilo[hiloId].historias.push(story);
+    });
+
+    var hilos = Object.keys(porHilo).map(function (id) { return porHilo[id]; });
+    return {
+      desde: desde,
+      hilos: hilos,
+      total: hilos.reduce(function (suma, h) { return suma + h.historias.length; }, 0)
+    };
+  }
+
+  /** ¿Esta historia cambió desde la última visita? */
+  function esNovedad(story, resumen) {
+    if (!resumen || !resumen.desde || !story.lastUpdated) return false;
+    return new Date(story.lastUpdated) > resumen.desde;
+  }
+
+  /** "hace 3 días", "hoy", "ayer" */
+  function haceCuanto(fecha) {
+    var dias = Math.floor((Date.now() - fecha.getTime()) / 86400000);
+    if (dias <= 0) return 'hoy';
+    if (dias === 1) return 'ayer';
+    return 'hace ' + dias + ' días';
+  }
+
+  /**
+   * Banda de novedades.
+   *
+   * En la primera visita no hay con qué comparar. En vez de inventar
+   * novedades, se explica la función y se ofrece simularla: para el que abre
+   * la demo por un enlace, es la única forma honesta de que la vea.
+   */
+  function novedadesBanda(resumen) {
+    if (!resumen.desde) {
+      return '<section class="novedades novedades--primera">' +
+        '<p class="novedades__rotulo">Cómo funciona</p>' +
+        '<p class="novedades__titulo">Los hilos que seguís no se cierran.</p>' +
+        '<p class="novedades__texto">Cuando vuelvas, acá te marcamos qué se movió ' +
+        'mientras no estabas. Ninguna historia queda vieja: se actualiza.</p>' +
+        '<button type="button" class="novedades__simular" data-simular="7">' +
+        'Ver cómo se vería si volvieras en una semana</button>' +
+        '</section>';
+    }
+
+    if (!resumen.total) {
+      return '<section class="novedades novedades--quieta">' +
+        '<p class="novedades__rotulo">Desde tu última visita · ' +
+          esc(haceCuanto(resumen.desde)) + '</p>' +
+        '<p class="novedades__texto">Ninguno de tus hilos se movió todavía.</p>' +
+        '<button type="button" class="novedades__simular" data-simular="7">' +
+        'Ver cómo se vería si volvieras en una semana</button>' +
+        '</section>';
+    }
+
+    var lineas = resumen.hilos.map(function (hilo) {
+      var cuantas = hilo.historias.length;
+      return '<li><a href="' + esc(hiloUrl(hilo.id)) + '">' +
+        '<span class="novedades__hilo">' + esc(hilo.label) + '</span>' +
+        '<span class="novedades__detalle">' +
+          (cuantas === 1
+            ? esc(hilo.historias[0].subtitle)
+            : cuantas + ' actualizaciones') +
+        '</span></a></li>';
+    }).join('');
+
+    var cuantos = resumen.hilos.length;
+    return '<section class="novedades">' +
+      '<p class="novedades__rotulo"><span class="novedades__punto" aria-hidden="true"></span>' +
+        'Desde tu última visita · ' + esc(haceCuanto(resumen.desde)) + '</p>' +
+      '<p class="novedades__titulo"><strong>' + cuantos +
+        (cuantos === 1 ? ' hilo' : ' hilos') + '</strong> que seguís se ' +
+        (cuantos === 1 ? 'movió' : 'movieron')  + '</p>' +
+      '<ul class="novedades__lista">' + lineas + '</ul>' +
+      '</section>';
+  }
+
+  /** Sello para una nota que cambió. */
+  function selloNovedad(story, resumen) {
+    if (!esNovedad(story, resumen)) return '';
+    return '<span class="sello-nuevo">Actualizada</span>';
+  }
+
+  /** Activa el botón que simula una ausencia. Solo existe en la demo. */
+  function bindSimularAusencia(root) {
+    var boton = (root || global.document).querySelector('[data-simular]');
+    if (!boton) return;
+    boton.addEventListener('click', function () {
+      Canillita.preferences.simularAusencia(Number(boton.dataset.simular) || 3);
+      global.location.reload();
+    });
+  }
+
   /*
    * Barra para ver la demo como distintos lectores. Es una ayuda de
    * demostración, no una función del diario: por eso se muestra aparte y
@@ -448,6 +572,11 @@
     followButton: followButton,
     hiloUrl: hiloUrl,
     seccionesNav: seccionesNav,
+    novedades: novedades,
+    esNovedad: esNovedad,
+    novedadesBanda: novedadesBanda,
+    selloNovedad: selloNovedad,
+    bindSimularAusencia: bindSimularAusencia,
     personaBar: personaBar,
     bindPersonaBar: bindPersonaBar,
     audioIdForStory: audioIdForStory,

@@ -85,7 +85,14 @@
   function aplicar(id) {
     var persona = get(id);
     if (!persona) return null;
-    Canillita.preferences.set(Object.assign({ persona: id }, persona.prefs));
+    /*
+     * lastVisit vuelve a cero: cada lector tiene su propia historia de
+     * visitas. Sin esto, al cambiar de persona se arrastraba la visita del
+     * anterior y las novedades quedaban vacías.
+     */
+    Canillita.preferences.set(Object.assign(
+      { persona: id, lastVisit: null }, persona.prefs
+    ));
     return persona;
   }
 

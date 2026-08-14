@@ -20,6 +20,13 @@
   --ocre-claro:   #F2E7D8;
   --destacado:    #EBD9B4;
   --rojo:         #8C1D18;
+
+  /* Señal: se usa SOLO para "esto cambió". Si aparece en otro lado pierde el
+     significado, que es exactamente lo que le pasó al ocre. */
+  --senal:        #0E4C5C;
+  --senal-vivo:   #37D0E8;
+  --senal-suave:  #8FD8E6;
+  --senal-papel:  #EAF6F8;
   --linea:        rgba(26, 26, 24, .18);
   --filete:       rgba(26, 26, 24, .55);
 

@@ -230,6 +230,28 @@ Criterio de numeración:
 - Tocar los temas a mano desactiva la persona y pasa a "Yo".
 
 ---
+## v1.17.0 · 14-08-2026
+
+**Qué cambió desde tu última visita**
+
+- Se agrega un **color señal** (`--senal`, petróleo) reservado a una sola cosa:
+  "esto cambió". El ocre venía haciendo cinco trabajos —volantas, capitulares,
+  chips, enlaces, audio— y por eso el diseño se leía monótono: cuando un color
+  significa todo, no significa nada.
+- Banda de novedades arriba de "Mi edición": cuántos hilos se movieron y cuáles,
+  con el tiempo transcurrido. Único elemento animado de la portada: un punto
+  que late.
+- Sello "Actualizada" y filete lateral en las notas que cambiaron.
+- `preferences.marcarVisita()` guarda la visita anterior. Recargar no borra las
+  novedades: se considera la misma visita si pasó menos de media hora.
+- **Primera visita:** no se inventan novedades. La banda explica la función y
+  ofrece simular una ausencia de una semana, diciendo que es una simulación.
+- Cambiar de lector de ejemplo reinicia su historial de visitas: cada persona
+  tiene la suya. Mauro ve moverse Agua en Roca y Messi; Jorge, Fruticultura y
+  Clima; Diego, solo Messi.
+- La banda no aparece en "Todo": ahí no hay criterio personal que aplicar.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

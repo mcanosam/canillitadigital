@@ -26,6 +26,9 @@
   /* 'mia' filtra por los temas elegidos; 'todo' muestra lo publicado. */
   var vista = 'mia';
 
+  /* Qué se movió desde la última visita. Se calcula una vez por carga. */
+  var resumenNovedades = null;
+
   /* ---------------------------------------------------------- franja ---- */
 
   /** Temas que sí tienen al menos una historia cargada. */
@@ -113,9 +116,11 @@
      * portada, hay una lista.
      */
     if (principal) {
-      return '<article class="portada-nota portada-nota--principal">' +
+      return '<article class="portada-nota portada-nota--principal' +
+        (R.esNovedad(story, resumenNovedades) ? ' es-novedad' : '') + '">' +
         R.figure(story, 'principal') +
-        '<p class="nota__eyebrow">' + R.esc(story.category) + '</p>' +
+        '<p class="nota__eyebrow">' + R.selloNovedad(story, resumenNovedades) +
+          R.esc(story.category) + '</p>' +
         '<h2 class="portada-nota__titulo"><a href="' + enlace + '">' +
           R.esc(story.title) + '</a></h2>' +
         '<p class="nota__bajada">' + R.esc(story.subtitle) + '</p>' +
@@ -128,11 +133,13 @@
         '</article>';
     }
 
-    return '<article class="portada-nota">' +
+    return '<article class="portada-nota' +
+      (R.esNovedad(story, resumenNovedades) ? ' es-novedad' : '') + '">' +
       '<div class="portada-nota__fila">' +
         R.figure(story, 'secundaria') +
         '<div class="portada-nota__texto">' +
-          '<p class="nota__eyebrow">' + R.esc(story.category) + '</p>' +
+          '<p class="nota__eyebrow">' + R.selloNovedad(story, resumenNovedades) +
+            R.esc(story.category) + '</p>' +
           '<h2 class="portada-nota__titulo"><a href="' + enlace + '">' +
             R.esc(story.title) + '</a></h2>' +
           '<p class="nota__bajada">' + R.esc(story.subtitle) + '</p>' +
@@ -175,12 +182,16 @@
         '</strong> son las tuyas.</p>';
     }
 
-    doc.getElementById('portada').innerHTML = recuento + historias.map(function (story, i) {
+    /* La banda es sobre lo tuyo: en "Todo" no hay criterio personal que aplicar */
+    var banda = vista === 'mia' ? R.novedadesBanda(resumenNovedades) : '';
+
+    doc.getElementById('portada').innerHTML = banda + recuento + historias.map(function (story, i) {
       return tarjeta(story, i === 0);
     }).join('');
 
     // Los botones se recrean con cada repintado, así que se reconectan acá
     R.bindAnswerPlayers(doc.getElementById('portada'));
+    R.bindSimularAusencia(doc.getElementById('portada'));
   }
 
   /* --------------------------------------------------------- boletín ---- */
@@ -245,6 +256,9 @@
       Canillita.radio.loadRecorded(),
       Canillita.radio.loadAnswers()
     ]).then(function () {
+      // marcarVisita() devuelve la visita anterior y adelanta el reloj
+      resumenNovedades = R.novedades(Canillita.preferences.marcarVisita());
+
       pintarCabecera();
       pintarPersonas();
       pintarTemas();
