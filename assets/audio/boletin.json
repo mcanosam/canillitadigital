@@ -3,10 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.13.0",
-  "generatedAt": "2026-08-14T10:49:32.577Z",
+  "version": "1.14.1",
+  "generatedAt": "2026-08-14T15:06:13.487Z",
   "baseRate": 1,
-  "duration": 187.01,
+  "duration": 186.44,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,7 +14,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las siete y cuarenta y nueve de la mañana. Buen día."
+      "text": "Son las doce y seis del mediodía. Buen día."
     },
     {
       "kind": "fecha",
@@ -88,71 +88,71 @@
     },
     {
       "segment": 1,
-      "start": 2.545
+      "start": 2.451
     },
     {
       "segment": 2,
-      "start": 5.708
+      "start": 5.078
     },
     {
       "segment": 3,
-      "start": 8.766
+      "start": 8.172
     },
     {
       "segment": 4,
-      "start": 11.396
+      "start": 10.848
     },
     {
       "segment": 5,
-      "start": 15.608
+      "start": 14.875
     },
     {
       "segment": 6,
-      "start": 62.672
+      "start": 62.23
     },
     {
       "segment": 7,
-      "start": 63.891
+      "start": 63.484
     },
     {
       "segment": 8,
-      "start": 68.252
+      "start": 67.841
     },
     {
       "segment": 9,
-      "start": 105.45
+      "start": 105.205
     },
     {
       "segment": 10,
-      "start": 107.363
+      "start": 107.101
     },
     {
       "segment": 11,
-      "start": 110.025
+      "start": 109.83
     },
     {
       "segment": 12,
-      "start": 142.632
+      "start": 142.157
     },
     {
       "segment": 13,
-      "start": 144.509
+      "start": 144.043
     },
     {
       "segment": 14,
-      "start": 149.126
+      "start": 148.619
     },
     {
       "segment": 15,
-      "start": 172.354
+      "start": 172.06
     },
     {
       "segment": 16,
-      "start": 178.541
+      "start": 178.139
     },
     {
       "segment": 17,
-      "start": 183.876
+      "start": 183.343
     }
   ]
 }
