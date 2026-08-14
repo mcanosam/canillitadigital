@@ -39,7 +39,6 @@
     {
       id: 'lector',
       objetivo: '.personas',
-      volanta: 'Paso 1 de 5',
       titulo: 'Elegí quién sos',
       texto: 'Tres lectores del valle, con intereses distintos. Tocá uno y ' +
              'mirá cómo se rearma el diario. No es una simulación: cambia de verdad.',
@@ -49,16 +48,14 @@
     {
       id: 'seleccion',
       objetivo: '.recuento',
-      volanta: 'Paso 2 de 5',
       titulo: 'Tu portada no es la de todos',
-      texto: 'De todo lo que se publicó hoy, solo aparece lo que te sirve. ' +
+      texto: 'De todo lo que se publicó, solo aparece lo que te sirve. ' +
              'Y cada nota dice por qué está ahí.',
       boton: 'Seguir'
     },
     {
       id: 'novedades',
       objetivo: '.novedades',
-      volanta: 'Paso 3 de 5',
       titulo: 'Las historias no se cierran',
       texto: 'Un diario común publica la nota de hoy y mañana la reemplaza. ' +
              'Acá cada tema es un hilo que sigue, y te marcamos qué se movió ' +
@@ -66,9 +63,18 @@
       boton: 'Seguir'
     },
     {
+      id: 'periodismo',
+      objetivo: '.credenciales',
+      titulo: 'Acá está el trabajo',
+      texto: 'Seguir un tema durante años es reconstruir hitos, verificar cada ' +
+             'dato con su fuente y admitir qué todavía no se sabe. Eso no lo ' +
+             'hace un algoritmo: lo hace una redacción. Lo que cambia es cómo ' +
+             'te llega.',
+      boton: 'Seguir'
+    },
+    {
       id: 'audio',
       objetivo: '#bloque-boletin',
-      volanta: 'Paso 4 de 5',
       titulo: 'O escuchalo',
       texto: 'No es la lectura de las notas: es un boletín de radio armado con ' +
              'tu edición, con la duración que elegiste.',
@@ -76,11 +82,11 @@
     },
     {
       id: 'preguntar',
-      objetivo: '.secciones__accion',
-      volanta: 'Paso 5 de 5',
+      objetivo: '.canal',
       titulo: 'Y preguntale',
-      texto: 'Cualquier duda sobre una noticia, se la preguntás al diario. ' +
-             'Te responde con la fecha del dato y la fuente. También por Telegram.',
+      texto: 'Cualquier duda sobre una noticia se la preguntás al diario, y te ' +
+             'responde con la fecha del dato y la fuente. Hoy por Telegram; ' +
+             'más adelante, por WhatsApp.',
       boton: 'Terminar'
     },
     {
@@ -93,6 +99,15 @@
       boton: 'Explorar por mi cuenta'
     }
   ];
+
+  /* La numeración se calcula: agregar o sacar un paso no obliga a renumerar */
+  var NUMERADOS = PASOS.filter(function (paso) { return !paso.centrado; });
+
+  function volantaDe(paso) {
+    if (paso.volanta) return paso.volanta;
+    var n = NUMERADOS.indexOf(paso) + 1;
+    return 'Paso ' + n + ' de ' + NUMERADOS.length;
+  }
 
   /* ------------------------------------------------------------- estado */
 
@@ -168,7 +183,7 @@
     guardarPaso(indice);
     limpiarFoco();
 
-    capa.querySelector('.recorrido__volanta').textContent = paso.volanta;
+    capa.querySelector('.recorrido__volanta').textContent = volantaDe(paso);
     capa.querySelector('.recorrido__titulo').textContent = paso.titulo;
     capa.querySelector('.recorrido__texto').textContent = paso.texto;
     capa.querySelector('.recorrido__seguir').textContent = paso.boton;
@@ -177,7 +192,7 @@
     if (objetivo) {
       enfocado = objetivo;
       objetivo.classList.add('recorrido-foco');
-      objetivo.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      objetivo.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });
     } else {
       global.scrollTo({ top: 0, behavior: 'smooth' });
     }

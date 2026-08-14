@@ -361,6 +361,41 @@
     return enlaces.join('');
   }
 
+  /* ------------------------------------------------ credenciales del hilo */
+
+  /*
+   * Lo que hay detrás de una historia viva, en números: hitos reconstruidos,
+   * hechos verificados con fecha, preguntas todavía sin respuesta y fuentes
+   * consultadas.
+   *
+   * Existe porque el trabajo periodístico es invisible en una portada. Un
+   * lector ve un título y no distingue entre una nota escrita en diez minutos
+   * y un hilo seguido durante años. Estos cuatro números lo hacen visible, y
+   * salen del propio contenido: si algún día bajan, se nota.
+   */
+  function credencialesHilo(story) {
+    var datos = [
+      { n: (story.timeline || []).length, uno: 'hito reconstruido', varios: 'hitos reconstruidos' },
+      { n: (story.confirmedFacts || []).length, uno: 'hecho verificado', varios: 'hechos verificados' },
+      { n: (story.pendingQuestions || []).length, uno: 'pregunta sin respuesta', varios: 'preguntas sin respuesta' },
+      { n: (story.sources || []).length, uno: 'fuente consultada', varios: 'fuentes consultadas' }
+    ].filter(function (dato) { return dato.n > 0; });
+
+    if (datos.length < 2) return '';
+
+    var items = datos.map(function (dato) {
+      return '<li><strong>' + dato.n + '</strong> ' +
+        esc(dato.n === 1 ? dato.uno : dato.varios) + '</li>';
+    }).join('');
+
+    return '<div class="credenciales">' +
+      '<p class="credenciales__rotulo">Detrás de esta historia</p>' +
+      '<ul class="credenciales__lista">' + items + '</ul>' +
+      '<p class="credenciales__nota">Lo confirmado y lo que falta definir van ' +
+      'separados. Cada dato, con su fecha y su fuente.</p>' +
+      '</div>';
+  }
+
   /* -------------------------------------------------------- novedades */
 
   /*
@@ -540,6 +575,52 @@
     });
   }
 
+  /*
+   * Al tocar "Conversá con el diario" se pregunta dónde. Antes llevaba
+   * directo al simulador, que es lo menos interesante de los dos caminos:
+   * el bot de Telegram funciona de verdad.
+   */
+  function bindConversarConDiario(root) {
+    var enlaces = (root || global.document).querySelectorAll('.secciones__accion');
+    Array.prototype.forEach.call(enlaces, function (enlace) {
+      enlace.addEventListener('click', function (evento) {
+        evento.preventDefault();
+        abrirElectorDeCanal(enlace.getAttribute('href'));
+      });
+    });
+  }
+
+  function abrirElectorDeCanal(urlChat) {
+    var previo = global.document.querySelector('.canal-elector');
+    if (previo) previo.remove();
+
+    var caja = global.document.createElement('div');
+    caja.className = 'canal-elector';
+    caja.innerHTML =
+      '<div class="canal-elector__fondo"></div>' +
+      '<div class="canal-elector__panel" role="dialog" aria-label="Dónde conversar">' +
+        '<p class="canal-elector__volanta">Conversá con el diario</p>' +
+        '<h2 class="canal-elector__titulo">¿Dónde querés hablar?</h2>' +
+        '<a class="canal-elector__opcion canal-elector__opcion--fuerte" ' +
+          'href="https://t.me/TuCanillitaBot" target="_blank" rel="noopener">' +
+          '<span class="canal-elector__nombre">En Telegram</span>' +
+          '<span class="canal-elector__detalle">El canal real, funcionando</span>' +
+        '</a>' +
+        '<a class="canal-elector__opcion" href="' + esc(urlChat) + '">' +
+          '<span class="canal-elector__nombre">Acá mismo</span>' +
+          '<span class="canal-elector__detalle">Sin salir del navegador</span>' +
+        '</a>' +
+        '<p class="canal-elector__pronto">Pronto también por WhatsApp, que es ' +
+        'donde está la gente del valle. Hoy no lo usamos porque el envío diario ' +
+        'exige plantillas pagas y una empresa verificada.</p>' +
+        '<button type="button" class="canal-elector__cerrar">Cerrar</button>' +
+      '</div>';
+
+    global.document.body.appendChild(caja);
+    caja.querySelector('.canal-elector__fondo').addEventListener('click', function () { caja.remove(); });
+    caja.querySelector('.canal-elector__cerrar').addEventListener('click', function () { caja.remove(); });
+  }
+
   /** Conecta el campo "preguntale al canillita" con el chat. */
   function bindAskForm(formId, inputId) {
     var form = global.document.getElementById(formId);
@@ -577,6 +658,8 @@
     novedadesBanda: novedadesBanda,
     selloNovedad: selloNovedad,
     bindSimularAusencia: bindSimularAusencia,
+    credencialesHilo: credencialesHilo,
+    bindConversarConDiario: bindConversarConDiario,
     personaBar: personaBar,
     bindPersonaBar: bindPersonaBar,
     audioIdForStory: audioIdForStory,

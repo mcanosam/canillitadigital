@@ -27,6 +27,7 @@
     var nav = doc.getElementById('secciones');
     if (nav && Canillita.render) {
       nav.innerHTML = Canillita.render.seccionesNav('chat');
+      Canillita.render.bindConversarConDiario(nav);
     }
 
     var cajaPersonas = doc.getElementById('personas');

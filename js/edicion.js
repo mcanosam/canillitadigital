@@ -23,6 +23,7 @@
 
     var nav = doc.getElementById('secciones');
     if (nav) nav.innerHTML = R.seccionesNav('edicion');
+    R.bindConversarConDiario(doc.getElementById('secciones'));
 
     var cajaPersonas = doc.getElementById('personas');
     if (cajaPersonas && R.personaBar) {

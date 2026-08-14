@@ -129,6 +129,7 @@
         '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
           R.esc(R.longDate(story.lastUpdated)) + '</p>' +
         R.answerPlayer(audioId, 'Escuchar') +
+        R.credencialesHilo(story) +
         porQue(story) +
         '</article>';
     }
@@ -242,6 +243,7 @@
 
   function pintarCabecera() {
     doc.getElementById('secciones').innerHTML = R.seccionesNav('portada');
+    R.bindConversarConDiario(doc.getElementById('secciones'));
     doc.getElementById('today-label').textContent = R.todayShort();
     var version = doc.getElementById('version-label');
     if (version && typeof Canillita.versionLabel === 'function') {

@@ -22,6 +22,7 @@
   /** Las mismas secciones que en la portada, para no perder el hilo. */
   function pintarSecciones() {
     doc.getElementById('secciones').innerHTML = R.seccionesNav(hiloId);
+    R.bindConversarConDiario(doc.getElementById('secciones'));
 
     var cajaPersonas = doc.getElementById('personas');
     if (cajaPersonas && R.personaBar) {
@@ -61,6 +62,7 @@
       R.figure(story, 'principal') +
       '<p class="destacado">' + R.esc(story.shortSummary) + '</p>' +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar el resumen') +
+      R.credencialesHilo(story) +
       '<div class="article">' + R.articleBody(story.articleBody) + '</div>' +
       (story.whyItMatters
         ? '<div class="importa"><h3>Por qué importa acá</h3><p>' +

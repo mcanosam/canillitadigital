@@ -268,6 +268,21 @@ Criterio de numeración:
   arrancar el recorrido.
 
 ---
+## v1.19.0 · 14-08-2026
+
+- **Credenciales del hilo**: debajo de la nota principal y en cada historia
+  viva, cuatro números que hacen visible el trabajo periodístico —hitos
+  reconstruidos, hechos verificados, preguntas sin respuesta y fuentes
+  consultadas—. Salen del propio contenido: si bajan, se nota.
+- Paso nuevo en el recorrido, "Acá está el trabajo", que señala esas
+  credenciales. La numeración de los pasos pasa a calcularse sola.
+- El paso de la conversación deja de apuntar al enlace de la barra —que se
+  perdía al deslizarse— y apunta al bloque del canal, que es grande y fijo.
+- **Elector de canal**: al tocar "Conversá con el diario" se pregunta dónde
+  hablar, Telegram o el simulador, y se aclara que WhatsApp llega después y
+  por qué todavía no está.
+
+---
 
 ## v1.6.0 · 07-08-2026
 
