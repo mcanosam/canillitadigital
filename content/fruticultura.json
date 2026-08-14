@@ -181,5 +181,9 @@
       "publishedAt": "2026-01-15",
       "url": "https://www.infocampo.com.ar/en-el-alto-valle-ya-esta-en-marcha-la-cosecha-de-peras-y-manzanas-en-principio-sera-un-poco-menor/"
     }
-  ]
+  ],
+  "beat": {
+    "role": "Cobertura",
+    "name": "Redacción Tu Canillita"
+  }
 }

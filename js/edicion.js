@@ -90,6 +90,7 @@
         'actualizada el ' + R.esc(R.longDate(story.lastUpdated)) + '</p>' +
       R.fictionBanner(story) +
       '<p class="nota__resumen">' + R.esc(story.shortSummary) + '</p>' +
+      R.firma(story) +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar esta noticia') +
 
       '<div class="nota__acciones">' +

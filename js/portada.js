@@ -128,6 +128,7 @@
         '<p class="portada-nota__entrada">' + R.esc(story.shortSummary) + '</p>' +
         '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
           R.esc(R.longDate(story.lastUpdated)) + '</p>' +
+        R.firma(story) +
         R.answerPlayer(audioId, 'Escuchar') +
         R.credencialesHilo(story) +
         porQue(story) +
@@ -213,6 +214,13 @@
     doc.getElementById('boletin-player').appendChild(audio);
   }
 
+  function pintarProgramacion() {
+    var caja = doc.getElementById('programacion');
+    if (!caja) return;
+    caja.innerHTML = R.programacion();
+    R.bindProgramacion(caja);
+  }
+
   /* ------------------------------------------------------------ init ---- */
 
   /* La franja de temas solo tiene sentido mirando "Mi edición" */
@@ -270,6 +278,7 @@
       activarVistas();
       pintarPortada();
       pintarBoletin();
+      pintarProgramacion();
 
       /* El recorrido arranca cuando la portada ya está dibujada: si no, los
          pasos apuntarían a elementos que todavía no existen. */

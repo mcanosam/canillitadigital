@@ -397,6 +397,10 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "credit": "",
       "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
       "pending": ""
+    },
+    "beat": {
+      "role": "Periodista especializado",
+      "name": "Hugo Alonso"
     }
   },
   "content/ruta22-historia.json": {
@@ -791,6 +795,10 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "credit": "",
       "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
       "pending": ""
+    },
+    "beat": {
+      "role": "Periodista especializado",
+      "name": "Hugo Alonso"
     }
   },
   "content/agua-roca.json": {
@@ -897,7 +905,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "publishedAt": "2026-08-11",
         "url": "https://www.lcr.com.ar/noticias/2026/08/11/52333-historica-obra-de-agua-rio-negro-dio-un-paso-decisivo-en-general-roca"
       }
-    ]
+    ],
+    "beat": {
+      "role": "Cobertura",
+      "name": "Redacción Tu Canillita"
+    }
   },
   "content/fruticultura.json": {
     "id": "fruticultura_2026",
@@ -1082,7 +1094,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "publishedAt": "2026-01-15",
         "url": "https://www.infocampo.com.ar/en-el-alto-valle-ya-esta-en-marcha-la-cosecha-de-peras-y-manzanas-en-principio-sera-un-poco-menor/"
       }
-    ]
+    ],
+    "beat": {
+      "role": "Cobertura",
+      "name": "Redacción Tu Canillita"
+    }
   },
   "content/clima-rutas.json": {
     "id": "clima_rutas",
@@ -1238,7 +1254,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "publishedAt": "2026-08-01",
         "url": "https://www.rionegro.com.ar/servicios/rafagas-de-hasta-80-km-h-en-el-alto-valle-y-mas-nieve-en-la-cordillera-el-pronostico-para-el-inicio-de-agosto-4668190/"
       }
-    ]
+    ],
+    "beat": {
+      "role": "Cobertura",
+      "name": "Redacción Tu Canillita"
+    }
   },
   "content/messi.json": {
     "id": "messi_hilo",
@@ -1542,6 +1562,10 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "alt": "Gráfico con las tres finales del mundo de Messi: 2014 subcampeón, 2022 campeón, 2026 subcampeón",
       "credit": "Gráfico: Tu Canillita",
       "pending": ""
+    },
+    "beat": {
+      "role": "Cobertura",
+      "name": "Redacción Tu Canillita"
     }
   },
   "content/deportes.json": {

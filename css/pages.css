@@ -1606,3 +1606,134 @@ body.recorrido-activo .btn-recorrido { display: none; }
   font-size: .82rem;
   opacity: .75;
 }
+
+/* La barra de secciones se desliza; la acción del canal no */
+.secciones {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow: visible;
+}
+
+.secciones__lista {
+  display: flex;
+  gap: 18px;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.secciones__lista::-webkit-scrollbar { display: none; }
+
+.secciones__accion {
+  flex: 0 0 auto;
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid var(--linea);
+  white-space: nowrap;
+}
+
+/* Quién sigue el tema */
+.firma {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding-top: 9px;
+  border-top: 1px solid var(--linea);
+}
+
+.firma__rol {
+  font-family: var(--condensada);
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.firma__nombre {
+  font-family: var(--display);
+  font-size: .95rem;
+  color: var(--tinta);
+}
+
+/* ================================================== programá tu boletín */
+
+.programar {
+  margin: 0 -16px;
+  padding: 18px 16px 20px;
+  background: var(--papel-viejo);
+  border-top: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+}
+
+.programar__rotulo {
+  margin: 0 0 4px;
+  font-family: var(--condensada);
+  font-size: 1rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.programar__bajada {
+  margin: 0 0 12px;
+  font-family: var(--display);
+  font-size: .92rem;
+  line-height: 1.5;
+  color: var(--tinta-suave);
+}
+
+.programar__horarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 9px 13px;
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  background: var(--burbuja-in);
+  color: var(--tinta);
+  cursor: pointer;
+  text-align: left;
+}
+
+.horario.is-activo {
+  background: var(--tinta);
+  border-color: var(--tinta);
+  color: var(--papel);
+}
+
+.horario__hora {
+  font-family: var(--display);
+  font-size: 1.15rem;
+}
+
+.horario__nota {
+  font-family: var(--interfaz);
+  font-size: .74rem;
+  opacity: .75;
+}
+
+.programar__canales {
+  margin: 13px 0 0;
+  font-family: var(--display);
+  font-size: .92rem;
+  color: var(--tinta);
+}
+
+.programar__aviso {
+  margin: 8px 0 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .82rem;
+  line-height: 1.45;
+  color: var(--tinta-suave);
+}

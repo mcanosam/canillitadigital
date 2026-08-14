@@ -152,5 +152,9 @@
       "publishedAt": "2026-08-01",
       "url": "https://www.rionegro.com.ar/servicios/rafagas-de-hasta-80-km-h-en-el-alto-valle-y-mas-nieve-en-la-cordillera-el-pronostico-para-el-inicio-de-agosto-4668190/"
     }
-  ]
+  ],
+  "beat": {
+    "role": "Cobertura",
+    "name": "Redacción Tu Canillita"
+  }
 }

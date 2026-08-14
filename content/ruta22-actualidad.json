@@ -395,5 +395,9 @@
     "credit": "",
     "creditNote": "COMPLETAR antes de publicar: autor y medio. Si no es foto propia, hace falta autorización.",
     "pending": ""
+  },
+  "beat": {
+    "role": "Periodista especializado",
+    "name": "Hugo Alonso"
   }
 }

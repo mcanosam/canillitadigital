@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.19 · Fase 3 de 4
+## Estado: v1.20 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|

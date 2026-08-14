@@ -102,5 +102,9 @@
       "publishedAt": "2026-08-11",
       "url": "https://www.lcr.com.ar/noticias/2026/08/11/52333-historica-obra-de-agua-rio-negro-dio-un-paso-decisivo-en-general-roca"
     }
-  ]
+  ],
+  "beat": {
+    "role": "Cobertura",
+    "name": "Redacción Tu Canillita"
+  }
 }

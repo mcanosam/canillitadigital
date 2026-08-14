@@ -32,7 +32,7 @@
       centrado: true,
       volanta: 'Tu Canillita',
       titulo: '¿Y si el diario supiera qué necesitás saber?',
-      texto: 'Las noticias del Alto Valle, armadas para cada lector. ' +
+      texto: 'Las noticias de tu ciudad, armadas para cada lector. ' +
              'Son dos minutos: te muestro cómo funciona.',
       boton: 'Empezar el recorrido'
     },
@@ -40,8 +40,8 @@
       id: 'lector',
       objetivo: '.personas',
       titulo: 'Elegí quién sos',
-      texto: 'Tres lectores del valle, con intereses distintos. Tocá uno y ' +
-             'mirá cómo se rearma el diario. No es una simulación: cambia de verdad.',
+      texto: 'Tres lectores con intereses distintos. Tocá uno y mirá cómo se ' +
+             'rearma el diario. No es una simulación: cambia de verdad.',
       boton: 'Ya elegí',
       esperaClic: '[data-persona]'
     },
@@ -77,7 +77,16 @@
       objetivo: '#bloque-boletin',
       titulo: 'O escuchalo',
       texto: 'No es la lectura de las notas: es un boletín de radio armado con ' +
-             'tu edición, con la duración que elegiste.',
+             'tu edición, con la duración que elegiste. Podés escucharlo acá o ' +
+             'recibirlo como nota de voz por Telegram, y más adelante por WhatsApp.',
+      boton: 'Seguir'
+    },
+    {
+      id: 'programar',
+      objetivo: '.programar',
+      titulo: 'Vos decidís cuándo',
+      texto: 'A las siete, al mediodía o de noche. El diario te busca a la hora ' +
+             'que te sirve, en vez de esperar a que vos te acuerdes de entrar.',
       boton: 'Seguir'
     },
     {

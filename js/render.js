@@ -351,14 +351,95 @@
     });
 
     /*
-     * "Conversá con el diario" no es una sección más: es la acción que
-     * distingue al producto. Va separada y marcada, al final de la barra.
+     * Las secciones se deslizan cuando no entran, pero la acción NO: queda
+     * fija a la derecha. Antes viajaba dentro del área deslizable y se perdía
+     * apenas había tres o cuatro hilos.
      */
-    if (actual !== 'chat') {
-      enlaces.push('<a class="secciones__accion" href="' + esc(router.chatUrl()) +
-        '">💬 Conversá con el diario</a>');
-    }
-    return enlaces.join('');
+    var lista = '<div class="secciones__lista">' + enlaces.join('') + '</div>';
+    var accion = actual === 'chat' ? '' :
+      '<a class="secciones__accion" href="' + esc(router.chatUrl()) +
+      '">💬 Conversá</a>';
+
+    return lista + accion;
+  }
+
+  /* ------------------------------------------------------- programación */
+
+  var HORARIOS = [
+    { valor: '07:00', etiqueta: '7 de la mañana', nota: 'antes de salir' },
+    { valor: '13:00', etiqueta: '1 de la tarde', nota: 'al mediodía' },
+    { valor: '20:00', etiqueta: '8 de la noche', nota: 'después del trabajo' }
+  ];
+
+  /*
+   * Cuándo querés que llegue.
+   *
+   * Se dice con todas las letras que el envío automático todavía no está: la
+   * demo guarda la preferencia y nada más. Prometer un boletín a las 7 que no
+   * llega sería el peor error posible en un producto periodístico.
+   */
+  function programacion() {
+    var prefs = Canillita.preferences.get();
+
+    var opciones = HORARIOS.map(function (horario) {
+      var activo = prefs.hour === horario.valor;
+      return '<button type="button" class="horario' + (activo ? ' is-activo' : '') +
+        '" data-hora="' + esc(horario.valor) + '" aria-pressed="' + activo + '">' +
+        '<span class="horario__hora">' + esc(horario.valor) + '</span>' +
+        '<span class="horario__nota">' + esc(horario.nota) + '</span>' +
+        '</button>';
+    }).join('');
+
+    return '<section class="programar" id="programar">' +
+      '<p class="programar__rotulo">Programá tu boletín</p>' +
+      '<p class="programar__bajada">Elegí a qué hora querés recibir tu edición ' +
+        'y las actualizaciones de los hilos que seguís.</p>' +
+      '<div class="programar__horarios">' + opciones + '</div>' +
+      '<p class="programar__canales">Te llega por <strong>Telegram</strong>. ' +
+        'Más adelante, también por WhatsApp.</p>' +
+      '<p class="programar__aviso" id="programar-aviso">En esta demostración se ' +
+        'guarda tu elección, pero el envío automático todavía no está conectado.</p>' +
+      '</section>';
+  }
+
+  function bindProgramacion(root) {
+    var caja = (root || global.document).querySelector('.programar__horarios');
+    if (!caja) return;
+
+    caja.addEventListener('click', function (evento) {
+      var boton = evento.target.closest('[data-hora]');
+      if (!boton) return;
+
+      Canillita.preferences.set({ hour: boton.dataset.hora });
+
+      Array.prototype.forEach.call(caja.querySelectorAll('[data-hora]'), function (otro) {
+        var activo = otro === boton;
+        otro.classList.toggle('is-activo', activo);
+        otro.setAttribute('aria-pressed', activo);
+      });
+
+      var aviso = global.document.getElementById('programar-aviso');
+      if (aviso) {
+        aviso.textContent = 'Anotado: ' + boton.dataset.hora +
+          '. En esta demostración se guarda tu elección, pero el envío ' +
+          'automático todavía no está conectado.';
+      }
+    });
+  }
+
+  /* ---------------------------------------------------------- la firma */
+
+  /*
+   * Quién sigue el tema. No es la firma de este texto: es el periodista que
+   * cubre el asunto, que en un diario local es lo que da autoridad sobre un
+   * tema seguido durante años.
+   */
+  function firma(story) {
+    if (!story.beat || !story.beat.name) return '';
+    return '<p class="firma">' +
+      '<span class="firma__rol">' + esc(story.beat.role || 'Sigue el tema') + '</span>' +
+      '<span class="firma__nombre">' + esc(story.beat.name) + '</span>' +
+      '</p>';
   }
 
   /* ------------------------------------------------ credenciales del hilo */
@@ -658,6 +739,9 @@
     novedadesBanda: novedadesBanda,
     selloNovedad: selloNovedad,
     bindSimularAusencia: bindSimularAusencia,
+    firma: firma,
+    programacion: programacion,
+    bindProgramacion: bindProgramacion,
     credencialesHilo: credencialesHilo,
     bindConversarConDiario: bindConversarConDiario,
     personaBar: personaBar,

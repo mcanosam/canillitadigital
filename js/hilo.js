@@ -61,6 +61,7 @@
     doc.getElementById('actualidad').innerHTML =
       R.figure(story, 'principal') +
       '<p class="destacado">' + R.esc(story.shortSummary) + '</p>' +
+      R.firma(story) +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar el resumen') +
       R.credencialesHilo(story) +
       '<div class="article">' + R.articleBody(story.articleBody) + '</div>' +

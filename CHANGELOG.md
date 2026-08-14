@@ -283,6 +283,25 @@ Criterio de numeración:
   por qué todavía no está.
 
 ---
+## v1.20.0 · 14-08-2026
+
+- **"Conversá" vuelve a estar arriba, y ya no se pierde.** Las secciones se
+  deslizan dentro de su propia caja y la acción queda fija a la derecha. Antes
+  viajaba dentro del área deslizable y desaparecía con tres o cuatro hilos.
+- **Quién sigue el tema.** Cada historia muestra al periodista que cubre el
+  asunto: en la Ruta 22, Hugo Alonso. No es la firma del texto sino la
+  autoridad sobre un tema seguido durante años, que es lo que distingue a un
+  diario local.
+- **Programá tu boletín**: elegís las 7, la 1 o las 20 y queda guardado. Se
+  aclara en pantalla que el envío automático todavía no está conectado.
+  Prometer un boletín que no llega sería el peor error posible.
+- Paso nuevo en el recorrido, "Vos decidís cuándo".
+- El paso del audio aclara que también llega como nota de voz por Telegram, y
+  más adelante por WhatsApp.
+- Se saca "Alto Valle" de los textos del recorrido: la propuesta no se acota a
+  una región.
+
+---
 
 ## v1.6.0 · 07-08-2026
 
