@@ -22,6 +22,13 @@
   /** Las mismas secciones que en la portada, para no perder el hilo. */
   function pintarSecciones() {
     doc.getElementById('secciones').innerHTML = R.seccionesNav(hiloId);
+
+    var cajaPersonas = doc.getElementById('personas');
+    if (cajaPersonas && R.personaBar) {
+      cajaPersonas.innerHTML = R.personaBar();
+      R.bindPersonaBar(cajaPersonas);
+    }
+
   }
 
   /* ---------------------------------------------------------- cabecera */

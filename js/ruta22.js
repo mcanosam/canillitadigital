@@ -22,6 +22,13 @@
   function paintHeader() {
     var nav = doc.getElementById('secciones');
     if (nav) nav.innerHTML = R.seccionesNav('ruta22');
+
+    var cajaPersonas = doc.getElementById('personas');
+    if (cajaPersonas && R.personaBar) {
+      cajaPersonas.innerHTML = R.personaBar();
+      R.bindPersonaBar(cajaPersonas);
+    }
+
     var versionEl = doc.getElementById('version-label');
     if (versionEl && typeof Canillita.versionLabel === 'function') {
       versionEl.textContent = Canillita.versionLabel();

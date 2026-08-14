@@ -214,6 +214,22 @@ Criterio de numeración:
   un hilo ya no obliga a escribir una función por historia.
 
 ---
+## v1.16.0 · 14-08-2026
+
+- **Lectores de ejemplo** (`js/personas.js`): Mauro, vecino de Roca; Jorge,
+  productor frutícola de Cervantes; y Diego, hincha de Cipolletti. Cambiar de
+  lector reescribe las preferencias reales, así que la portada, la edición, el
+  boletín y el chat cambian de verdad, no simulan cambiar.
+  - Mauro ve 5 de 7 historias, boletín de 1 minuto.
+  - Jorge ve 4: fruticultura, clima y Ruta 22. Boletín de 3 minutos, porque
+    escucha en la camioneta.
+  - Diego ve 2, las dos deportivas, con boletín de 30 segundos.
+- La barra aparece en las cinco pantallas, sobre fondo tinta y con el rótulo
+  "Ver la demo como", para que se lea como ayuda de demostración y no como una
+  función del diario.
+- Tocar los temas a mano desactiva la persona y pasa a "Yo".
+
+---
 
 ## v1.6.0 · 07-08-2026
 

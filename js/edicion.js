@@ -21,6 +21,15 @@
       versionEl.textContent = Canillita.versionLabel();
     }
 
+    var nav = doc.getElementById('secciones');
+    if (nav) nav.innerHTML = R.seccionesNav('edicion');
+
+    var cajaPersonas = doc.getElementById('personas');
+    if (cajaPersonas && R.personaBar) {
+      cajaPersonas.innerHTML = R.personaBar();
+      R.bindPersonaBar(cajaPersonas);
+    }
+
     var prefs = Canillita.preferences.get();
     var name = prefs.name ? ', ' + prefs.name : '';
 

@@ -1131,3 +1131,67 @@ a.tag:hover { background: var(--tinta); }
   font-size: 1.25em;
   color: var(--ocre);
 }
+
+/* ======================================== lectores de ejemplo (demo) */
+
+.personas {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 10px 16px 12px;
+  background: var(--tinta);
+  color: var(--papel);
+}
+
+.personas__rotulo {
+  margin: 0 0 7px;
+  font-family: var(--interfaz);
+  font-size: .76rem;
+  color: #B3AB98;
+}
+
+.personas__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 7px 12px;
+  border: 1px solid rgba(247, 244, 238, .35);
+  border-radius: 0;
+  background: transparent;
+  color: var(--papel);
+  cursor: pointer;
+  text-align: left;
+}
+
+.persona:hover { border-color: var(--papel); }
+
+.persona.is-activa {
+  background: var(--ocre);
+  border-color: var(--ocre);
+}
+
+.persona__nombre {
+  font-family: var(--interfaz);
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+.persona__rol {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .74rem;
+  opacity: .8;
+}
+
+.personas__nota {
+  margin: 9px 0 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .84rem;
+  color: #B3AB98;
+}

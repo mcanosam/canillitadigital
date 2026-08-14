@@ -361,6 +361,61 @@
     return enlaces.join('');
   }
 
+  /*
+   * Barra para ver la demo como distintos lectores. Es una ayuda de
+   * demostración, no una función del diario: por eso se muestra aparte y
+   * dice explícitamente qué es.
+   */
+  function personaBar() {
+    if (!Canillita.personas) return '';
+    var activa = Canillita.personas.activa();
+
+    var botones = Canillita.personas.todas().map(function (persona) {
+      var esta = persona.id === activa;
+      return '<button type="button" class="persona' + (esta ? ' is-activa' : '') +
+        '" data-persona="' + esc(persona.id) + '" aria-pressed="' + esta + '">' +
+        '<span class="persona__nombre">' + esc(persona.nombre) + '</span>' +
+        '<span class="persona__rol">' + esc(persona.rol) + '</span>' +
+        '</button>';
+    }).join('');
+
+    var yo = '<button type="button" class="persona' + (!activa ? ' is-activa' : '') +
+      '" data-persona="" aria-pressed="' + !activa + '">' +
+      '<span class="persona__nombre">Yo</span>' +
+      '<span class="persona__rol">Mi configuración</span>' +
+      '</button>';
+
+    var actual = activa ? Canillita.personas.get(activa) : null;
+
+    return '<div class="personas">' +
+      '<p class="personas__rotulo">Ver la demo como</p>' +
+      '<div class="personas__lista">' + botones + yo + '</div>' +
+      (actual
+        ? '<p class="personas__nota">' + esc(actual.descripcion) + '</p>'
+        : '<p class="personas__nota">Elegí un lector y mirá cómo cambia el diario.</p>') +
+      '</div>';
+  }
+
+  /**
+   * Activa la barra. Al cambiar de lector se recarga la página: es la forma
+   * más segura de que todo quede consistente, incluidos el audio y el chat.
+   */
+  function bindPersonaBar(root) {
+    var barra = (root || global.document).querySelector('.personas');
+    if (!barra) return;
+
+    barra.addEventListener('click', function (event) {
+      var boton = event.target.closest('[data-persona]');
+      if (!boton) return;
+
+      var id = boton.dataset.persona;
+      if (id) Canillita.personas.aplicar(id);
+      else Canillita.personas.limpiar();
+
+      global.location.reload();
+    });
+  }
+
   /** Conecta el campo "preguntale al canillita" con el chat. */
   function bindAskForm(formId, inputId) {
     var form = global.document.getElementById(formId);
@@ -393,6 +448,8 @@
     followButton: followButton,
     hiloUrl: hiloUrl,
     seccionesNav: seccionesNav,
+    personaBar: personaBar,
+    bindPersonaBar: bindPersonaBar,
     audioIdForStory: audioIdForStory,
     answerPlayer: answerPlayer,
     bindAnswerPlayers: bindAnswerPlayers,

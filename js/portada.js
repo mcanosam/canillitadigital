@@ -69,7 +69,9 @@
       if (i === -1) elegidos.push(topic);
       else elegidos.splice(i, 1);
 
-      Canillita.preferences.set({ topics: elegidos });
+      // Al tocar los temas la configuración pasa a ser propia
+      Canillita.preferences.set({ topics: elegidos, persona: null });
+      pintarPersonas();
       pintarTemas();
       pintarPortada();
 
@@ -218,6 +220,13 @@
     });
   }
 
+  function pintarPersonas() {
+    var caja = doc.getElementById('personas');
+    if (!caja) return;
+    caja.innerHTML = R.personaBar();
+    R.bindPersonaBar(caja);
+  }
+
   function pintarCabecera() {
     doc.getElementById('secciones').innerHTML = R.seccionesNav('portada');
     doc.getElementById('today-label').textContent = R.todayShort();
@@ -237,6 +246,7 @@
       Canillita.radio.loadAnswers()
     ]).then(function () {
       pintarCabecera();
+      pintarPersonas();
       pintarTemas();
       activarTemas();
       activarVistas();

@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.15 · Fase 3 de 4
+## Estado: v1.16 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -127,6 +127,7 @@ tu-canillita-digital/
 │   ├── version.js              Número de versión, fuente única
 │   ├── router.js               Rutas y prefijos relativos
 │   ├── portada.js              Portada y franja de temas
+│   ├── personas.js             Lectores de ejemplo para la demo
 │   ├── hilo.js                 Historia viva genérica
 │   ├── content.js              Carga y consulta de las historias
 │   ├── preferences.js          Preferencias en localStorage

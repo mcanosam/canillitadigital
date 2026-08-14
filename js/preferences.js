@@ -27,6 +27,7 @@
      */
     speechRate: 1,
     hour: '07:00',
+    persona: null,          // lector de ejemplo elegido para la demo
     following: []           // ids de HILOS que el lector eligió seguir
   };
 

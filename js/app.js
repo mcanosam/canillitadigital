@@ -28,6 +28,12 @@
     if (nav && Canillita.render) {
       nav.innerHTML = Canillita.render.seccionesNav('chat');
     }
+
+    var cajaPersonas = doc.getElementById('personas');
+    if (cajaPersonas && Canillita.render && Canillita.render.personaBar) {
+      cajaPersonas.innerHTML = Canillita.render.personaBar();
+      Canillita.render.bindPersonaBar(cajaPersonas);
+    }
     var dateEl = doc.getElementById('today-label');
     if (dateEl) {
       dateEl.textContent = Canillita.responses.todayLabel();
