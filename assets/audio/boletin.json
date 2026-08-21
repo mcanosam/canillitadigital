@@ -4,9 +4,9 @@
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
   "version": "1.20.0",
-  "generatedAt": "2026-08-20T10:20:13.800Z",
+  "generatedAt": "2026-08-21T10:20:16.971Z",
   "baseRate": 1,
-  "duration": 200.12,
+  "duration": 200.1,
   "segments": [
     {
       "kind": "identificacion",
@@ -96,79 +96,79 @@
     },
     {
       "segment": 1,
-      "start": 2.499
+      "start": 2.534
     },
     {
       "segment": 2,
-      "start": 5.267
+      "start": 5.339
     },
     {
       "segment": 3,
-      "start": 9.496
+      "start": 9.56
     },
     {
       "segment": 4,
-      "start": 56.403
+      "start": 56.611
     },
     {
       "segment": 5,
-      "start": 57.668
+      "start": 57.868
     },
     {
       "segment": 6,
-      "start": 62.129
+      "start": 62.05
     },
     {
       "segment": 7,
-      "start": 99.519
+      "start": 99.632
     },
     {
       "segment": 8,
-      "start": 101.259
+      "start": 101.38
     },
     {
       "segment": 9,
-      "start": 105.693
+      "start": 105.838
     },
     {
       "segment": 10,
-      "start": 107.483
+      "start": 107.604
     },
     {
       "segment": 11,
-      "start": 110.869
+      "start": 110.883
     },
     {
       "segment": 12,
-      "start": 148.894
+      "start": 149.109
     },
     {
       "segment": 13,
-      "start": 150.136
+      "start": 150.351
     },
     {
       "segment": 14,
-      "start": 152.788
+      "start": 153.006
     },
     {
       "segment": 15,
-      "start": 154.688
+      "start": 154.859
     },
     {
       "segment": 16,
-      "start": 157.45
+      "start": 157.578
     },
     {
       "segment": 17,
-      "start": 190.293
+      "start": 190.307
     },
     {
       "segment": 18,
-      "start": 192.268
+      "start": 192.256
     },
     {
       "segment": 19,
-      "start": 196.894
+      "start": 196.892
     }
   ]
 }
