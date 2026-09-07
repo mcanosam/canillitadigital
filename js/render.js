@@ -124,7 +124,7 @@
   function confirmedFacts(story) {
     var items = (story.confirmedFacts || []).map(function (item) {
       return '<li>' + esc(item.fact) +
-        '<span class="fact__date">Dato del ' + esc(longDate(item.date)) + '</span></li>';
+        '<span class="fact__date">Verificado el ' + esc(longDate(item.date)) + '</span></li>';
     }).join('');
     return items ? '<ul class="facts facts--confirmed">' + items + '</ul>' : '';
   }
@@ -140,12 +140,10 @@
   /** Cronología vertical. */
   function timeline(story) {
     var items = (story.timeline || []).map(function (item) {
-      var source = Canillita.content.sourceById(story, item.sourceId);
       return '<li class="hito">' +
         '<span class="hito__date">' + esc(timelineDate(item.date)) + '</span>' +
         '<h4 class="hito__title">' + esc(item.title) + '</h4>' +
         '<p class="hito__text">' + esc(item.text) + '</p>' +
-        (source ? '<p class="hito__source">' + esc(source.publisher) + '</p>' : '') +
         '</li>';
     }).join('');
     return items ? '<ol class="cronologia">' + items + '</ol>' : '';
@@ -177,7 +175,14 @@
     return '<ul class="tramos">' + items + '</ul>';
   }
 
-  /** Lista de fuentes con publicación y fecha. */
+  /*
+   * Listado de fuentes externas.
+   *
+   * Ya no se muestra en la interfaz: en un diario propio el contenido lo firma
+   * su redacción, y citar a otros medios lo convertiría en un agregador. Los
+   * datos quedan en los JSON como registro interno de dónde salió cada cosa
+   * mientras se arma la demostración, pero no se publican.
+   */
   function sources(story) {
     var items = (story.sources || []).map(function (source) {
       var date = source.publishedAt
@@ -251,6 +256,10 @@
   var AUDIO_POR_HISTORIA = {
     ruta22_actualidad: 'ruta22-actualidad',
     ruta22_historia: 'ruta22-historia',
+    vacamuerta_hilo: 'vacamuerta',
+    agua_roca: 'agua',
+    fruticultura_2026: 'fruticultura',
+    clima_rutas: 'clima',
     deportes_demo: 'deportes',
     messi_hilo: 'messi'
   };
@@ -458,8 +467,7 @@
     var datos = [
       { n: (story.timeline || []).length, uno: 'hito reconstruido', varios: 'hitos reconstruidos' },
       { n: (story.confirmedFacts || []).length, uno: 'hecho verificado', varios: 'hechos verificados' },
-      { n: (story.pendingQuestions || []).length, uno: 'pregunta sin respuesta', varios: 'preguntas sin respuesta' },
-      { n: (story.sources || []).length, uno: 'fuente consultada', varios: 'fuentes consultadas' }
+      { n: (story.pendingQuestions || []).length, uno: 'pregunta sin respuesta', varios: 'preguntas sin respuesta' }
     ].filter(function (dato) { return dato.n > 0; });
 
     if (datos.length < 2) return '';
@@ -473,7 +481,7 @@
       '<p class="credenciales__rotulo">Detrás de esta historia</p>' +
       '<ul class="credenciales__lista">' + items + '</ul>' +
       '<p class="credenciales__nota">Lo confirmado y lo que falta definir van ' +
-      'separados. Cada dato, con su fecha y su fuente.</p>' +
+      'separados, y cada dato lleva la fecha en que se verificó.</p>' +
       '</div>';
   }
 

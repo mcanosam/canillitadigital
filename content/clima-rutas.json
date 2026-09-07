@@ -114,10 +114,11 @@
     "¿Hay alerta por nieve?"
   ],
   "image": {
-    "src": "",
-    "alt": "Calzada con hielo y escarcha en una ruta del Alto Valle al amanecer",
+    "src": "assets/images/clima-ruta.jpg",
+    "alt": "Ruta con la calzada mojada y niebla baja sobre el paisaje",
     "credit": "",
-    "pending": "Foto propia: escarcha o hielo sobre la calzada al amanecer, o árboles del valle con helada. Horizontal."
+    "creditNote": "COMPLETAR antes de publicar: autor y origen. La imagen no corresponde a la Ruta 22.",
+    "pending": ""
   },
   "sources": [
     {

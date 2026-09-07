@@ -94,9 +94,6 @@
       (pendientes ? '<div class="saber__col"><h3>Qué todavía falta definir</h3>' + pendientes + '</div>' : '');
   }
 
-  function pintarFuentes() {
-    doc.getElementById('fuentes-lista').innerHTML = R.sources(story);
-  }
 
   function pintarSugeridas() {
     doc.getElementById('sugeridas').innerHTML =
@@ -133,7 +130,6 @@
       pintarActualidad();
       pintarCronologia();
       pintarSaber();
-      pintarFuentes();
       pintarSugeridas();
 
       R.bindFollowButtons(doc);

@@ -1080,10 +1080,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "¿Por qué rompen las rutas los camiones?"
     ],
     "image": {
-      "src": "",
-      "alt": "Camiones de arena circulando por la Ruta 22 hacia los yacimientos",
+      "src": "assets/images/vacamuerta-oleoducto.jpg",
+      "alt": "Cuadrilla trabajando en el tendido de un tramo del oleoducto, con una bandera argentina sobre la maquinaria",
       "credit": "",
-      "pending": "Foto propia: fila de camiones de arena sobre la Ruta 22, o la traza del oleoducto cruzando la meseta. Horizontal."
+      "creditNote": "COMPLETAR antes de publicar: autor y origen.",
+      "pending": ""
     },
     "beat": {
       "role": "Cobertura",
@@ -1270,10 +1271,10 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "¿Cuándo empieza la obra?"
     ],
     "image": {
-      "src": "",
-      "alt": "Planta potabilizadora de General Roca",
-      "credit": "",
-      "pending": "Foto propia: la planta potabilizadora o el sector donde se ejecutará la ampliación. Horizontal."
+      "src": "assets/images/agua-roca-planta.jpg",
+      "alt": "Render del proyecto de ampliación de la planta potabilizadora, con las piletas de decantación y pasarelas",
+      "credit": "Render del proyecto",
+      "pending": ""
     },
     "sources": [
       {
@@ -1419,10 +1420,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "¿Subieron los precios de la manzana?"
     ],
     "image": {
-      "src": "",
-      "alt": "Chacra del Alto Valle durante la cosecha de manzanas",
+      "src": "assets/images/fruticultura-chacra.jpg",
+      "alt": "Hilera de frutales bajo malla antigranizo en una chacra del valle",
       "credit": "",
-      "pending": "Foto propia: una chacra del valle, bines de manzana o el interior de un galpón de empaque. Horizontal."
+      "creditNote": "COMPLETAR antes de publicar: autor y origen.",
+      "pending": ""
     },
     "sources": [
       {
@@ -1595,10 +1597,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "¿Hay alerta por nieve?"
     ],
     "image": {
-      "src": "",
-      "alt": "Calzada con hielo y escarcha en una ruta del Alto Valle al amanecer",
+      "src": "assets/images/clima-ruta.jpg",
+      "alt": "Ruta con la calzada mojada y niebla baja sobre el paisaje",
       "credit": "",
-      "pending": "Foto propia: escarcha o hielo sobre la calzada al amanecer, o árboles del valle con helada. Horizontal."
+      "creditNote": "COMPLETAR antes de publicar: autor y origen. La imagen no corresponde a la Ruta 22.",
+      "pending": ""
     },
     "sources": [
       {

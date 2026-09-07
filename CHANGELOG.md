@@ -357,6 +357,34 @@ Criterio de numeración:
   audio, porque salen del mismo contenido y del mismo motor.
 
 ---
+## v1.24.0 · 07-09-2026
+
+- **Se saca el listado de fuentes externas de la interfaz.** En un diario
+  propio el contenido lo firma su redacción; citar a otros medios lo convertía
+  en un agregador. Desaparecen la sección "Fuentes" de las historias vivas, el
+  medio al pie de cada hito y el bloque de fuentes en las respuestas del chat.
+- Los datos quedan en los JSON como registro interno de dónde salió cada cosa
+  mientras se arma la demostración, pero no se publican.
+- La transparencia se sostiene con lo que sí es propio: quién sigue el tema,
+  los hechos verificados con su fecha y las preguntas todavía abiertas.
+- Los hechos confirmados pasan de "Dato del…" a "Verificado el…", que es lo
+  que corresponde cuando la verificación es de la casa.
+- Las credenciales del hilo quedan en tres números: hitos reconstruidos,
+  hechos verificados y preguntas sin respuesta.
+
+---
+## v1.25.0 · 07-09-2026
+
+- **Corrección: faltaba "Escuchar el resumen"** en Vaca Muerta, Agua en Roca,
+  Fruticultura y Clima y rutas. Los clips existían y se generaban, pero el mapa
+  que los vincula con cada historia solo tenía las cuatro primeras. Ahora están
+  las ocho.
+- Fotos en cuatro historias: el tendido del oleoducto en Vaca Muerta, el render
+  de la planta potabilizadora en Agua en Roca, la ruta mojada con niebla en
+  Clima y la chacra bajo malla antigranizo en Fruticultura.
+- El render de la planta queda acreditado como tal, no como fotografía.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

@@ -127,10 +127,11 @@
     "¿Subieron los precios de la manzana?"
   ],
   "image": {
-    "src": "",
-    "alt": "Chacra del Alto Valle durante la cosecha de manzanas",
+    "src": "assets/images/fruticultura-chacra.jpg",
+    "alt": "Hilera de frutales bajo malla antigranizo en una chacra del valle",
     "credit": "",
-    "pending": "Foto propia: una chacra del valle, bines de manzana o el interior de un galpón de empaque. Horizontal."
+    "creditNote": "COMPLETAR antes de publicar: autor y origen.",
+    "pending": ""
   },
   "sources": [
     {

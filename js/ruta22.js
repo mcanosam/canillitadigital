@@ -53,6 +53,7 @@
       R.figure(actualidad, 'principal') +
       '<p class="destacado">' + R.esc(actualidad.shortSummary) + '</p>' +
       R.firma(actualidad) +
+      R.credencialesHilo(actualidad) +
       '<div class="article">' + R.articleBody(actualidad.articleBody) + '</div>' +
       '<div class="importa"><h3>Por qué importa acá</h3><p>' +
         R.esc(actualidad.whyItMatters) + '</p></div>' +
@@ -101,18 +102,6 @@
 
   /* -------------------------------------------------------------- fuentes */
 
-  function paintFuentes() {
-    // Las dos notas comparten fuentes: se muestran una sola vez.
-    var vistas = {};
-    var unicas = [];
-    historia.sources.concat(actualidad.sources).forEach(function (source) {
-      var clave = source.url || source.name;
-      if (vistas[clave]) return;
-      vistas[clave] = true;
-      unicas.push(source);
-    });
-    doc.getElementById('fuentes-lista').innerHTML = R.sources({ sources: unicas });
-  }
 
   /* ---------------------------------------------------------- sugerencias */
 
@@ -146,7 +135,6 @@
       paintHistoria();
       paintCronologia();
       paintSaber();
-      paintFuentes();
       paintSugeridas();
 
       R.bindFollowButtons(doc);

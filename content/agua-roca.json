@@ -88,10 +88,10 @@
     "¿Cuándo empieza la obra?"
   ],
   "image": {
-    "src": "",
-    "alt": "Planta potabilizadora de General Roca",
-    "credit": "",
-    "pending": "Foto propia: la planta potabilizadora o el sector donde se ejecutará la ampliación. Horizontal."
+    "src": "assets/images/agua-roca-planta.jpg",
+    "alt": "Render del proyecto de ampliación de la planta potabilizadora, con las piletas de decantación y pasarelas",
+    "credit": "Render del proyecto",
+    "pending": ""
   },
   "sources": [
     {

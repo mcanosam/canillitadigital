@@ -240,7 +240,6 @@
     return reply([
       message('🛣️ *' + story.title + '*\n_' + story.subtitle + '_\n\n' + story.shortSummary),
       message('*Qué sabemos*\n' + facts + '\n\n*Qué falta definir*\n' + pending, {
-        sources: content.sourcesFor(story, ['anroca_demora', 'anroca_neutralizadas', 'rionegro_decreto253']),
         dataDate: story.eventDate
       })
     ], ['¿Por qué se frenó la Ruta 22?', '¿Va a haber peaje?', 'Ver la historia de la Ruta 22'], 'ruta22-actualidad');
@@ -255,7 +254,6 @@
     return reply([
       message('🛣️ *' + story.title + '*\n_' + story.subtitle + '_\n\n' + story.shortSummary),
       message('*Estado por tramo*\n' + sections, {
-        sources: content.sourcesFor(story, ['argentina_obras', 'rionegro_27km', 'mejorinformado_tramos']),
         dataDate: story.lastUpdated
       }),
       message('Preguntame por cualquier tramo: “sección 3”, “Allen”, “Cipolletti”, “Cervantes”. O abrí la historia completa, con la cronología y las fuentes.', {
@@ -281,8 +279,6 @@
         '2️⃣ *El reemplazo que no llegó a obra.* En mayo de 2021 Vialidad Nacional, Roca y Cipolletti firmaron actas para hacer una avenida urbana a nivel, con semáforos y sin cruces elevados. El acuerdo se firmó, la obra no arrancó.\n\n' +
         '3️⃣ *Los contratos congelados.* Hoy las obras están “neutralizadas”: el contrato sigue vigente pero los trabajos están parados. Nadie trabaja y nadie más puede entrar a trabajar.',
         {
-          sources: content.sourcesFor(story, ['diarioneuquino_paralizada', 'rionegro_actas'])
-            .concat(content.sourcesFor(actualidad, ['anroca_neutralizadas'])),
           dataDate: '2026-07-14'
         }
       )
@@ -305,7 +301,6 @@
       message('🟢 *Habilitado o parcialmente habilitado*\n' + done.join('\n')),
       message('🔴 *Sin ejecutar*\n' + pendingList.join('\n') +
         '\n\nOjo con una diferencia importante: “habilitado al tránsito” no es lo mismo que “obra terminada”. En las secciones abiertas quedaron pendientes colectoras, desagües y garitas.', {
-          sources: content.sourcesFor(story, ['rionegro_inauguran', 'mejorinformado_tramos']),
           dataDate: story.lastUpdated
         })
     ], ['¿Qué pasó en General Roca?', 'Sección 4', 'Ver la historia de la Ruta 22'], 'ruta22-tramos');
@@ -321,7 +316,6 @@
         (section.lengthKm ? '\nLongitud: ' + String(section.lengthKm).replace('.', ',') + ' km' : '') +
         '\nEstado: ' + section.statusLabel + '\n\n' + section.detail,
         {
-          sources: source ? [source] : [],
           dataDate: story.lastUpdated,
           links: [{
             label: 'Ver este tramo en la historia viva',
@@ -346,7 +340,6 @@
         'En 2016 el municipio presentó un amparo judicial contra lo que en la ciudad se llamó “la muralla de piedra”. La intendenta María Emilia Soria sostuvo después que no se rechazó la ampliación sino el proyecto original, que ignoraba las particularidades urbanas.\n\n' +
         'En mayo de 2021 se firmaron las actas que descartaron los pasos elevados. Desde entonces, el tramo sigue sin ejecutarse.',
         {
-          sources: content.sourcesFor(story, ['diarioneuquino_paralizada', 'rionegro_actas', 'rionegro_acuerdo_roca']),
           dataDate: '2025-05-18'
         }
       ),
@@ -367,7 +360,6 @@
         '⏳ Ahora la parte lenta: las obras arrancan 60 días después de publicada la ley, ' +
         'los tramos se entregan de a uno con actas propias, y Nación no aporta plata.',
         {
-          sources: content.sourcesFor(story, ['dn_legislatura', 'bp_esley', 'nn_historico']),
           dataDate: '2026-09-03',
           links: [{
             label: 'Ver el hilo completo',
@@ -386,7 +378,6 @@
         'En la práctica: la obra está parada, pero el vínculo con la empresa sigue vigente. Eso impide que otro organismo entre a trabajar en esa traza.\n\n' +
         'La Provincia relevó cinco contratos en esa situación sobre las rutas 22 y 151. “Es un escándalo que estén durante años neutralizadas”, dijo el ministro de Obras Públicas, Alejandro Echarren. De los 518 kilómetros que abarcan ambas rutas, unos 213 siguen alcanzados por compromisos contractuales.',
         {
-          sources: content.sourcesFor(story, ['anroca_neutralizadas', 'anroca_demora']),
           dataDate: '2026-07-14'
         }
       )
@@ -402,7 +393,6 @@
         '⏳ Todavía no están definidos ni la tarifa, ni la ubicación de las estaciones, ni la fecha. Río Negro adelantó que su estrategia no dependería solo de la recaudación por peaje y que aportaría recursos propios.\n\n' +
         'Cuando haya números oficiales, te los traigo con la fuente.',
         {
-          sources: content.sourcesFor(story, ['rionegro_decreto253', 'lmc_concesiones']),
           dataDate: '2026-04-22'
         }
       )
@@ -468,7 +458,6 @@
         (hechos && pendientes ? '\n\n' : '') +
         (pendientes ? '*Qué falta definir*\n' + pendientes : ''),
         {
-          sources: (story.sources || []).slice(0, 3),
           dataDate: story.eventDate,
           links: [{
             label: 'Ver la historia completa',
@@ -499,7 +488,6 @@
         '⏳ Lo que falta definir: cuánto de todo esto se traduce en empleo y regalías para Río Negro. ' +
         'Weretilneck dijo que el crecimiento fuerte llegaría hacia 2028 o 2029.',
         {
-          sources: content.sourcesFor(story, ['ambito_recta', 'parl_recta', 'dn_regalias']),
           dataDate: '2026-09-04',
           links: [{
             label: 'Ver el hilo completo',
@@ -536,7 +524,6 @@
     return reply([
       message('⚽ *' + story.title + '*\n_' + story.subtitle + '_\n\n' + story.shortSummary),
       message('*Lo último del hilo*\n' + hitos, {
-        sources: content.sourcesFor(story, ['lanacion_final', 'si_regreso']),
         dataDate: story.eventDate,
         links: [{ label: 'Ver el hilo completo', href: Canillita.router.editionUrl() }]
       })
@@ -553,7 +540,6 @@
         'Emiliano Martínez fue la figura del equipo argentino. Messi terminó el torneo con ocho goles y cuatro asistencias, ' +
         'pero sin premios individuales: el mejor jugador fue Rodri y la Bota de Oro quedó para Mbappé.',
         {
-          sources: content.sourcesFor(story, ['lanacion_final', 'telemundo_final']),
           dataDate: '2026-07-19'
         }
       )
@@ -569,7 +555,6 @@
         '✔️ *Confirmado:* tiene contrato con Inter Miami hasta fines de 2028, así que jugar va a seguir jugando.\n\n' +
         '⏳ *Sin definir:* si vuelve a jugar en la Selección. Scaloni, consultado después del partido, dijo que no tenía idea y que la pregunta era para Messi. La continuidad del propio entrenador también quedó en duda.',
         {
-          sources: content.sourcesFor(story, ['prensalibre_futuro', 'olympics_retiro', 'si_regreso']),
           dataDate: '2026-07-21'
         }
       )
@@ -584,7 +569,6 @@
         '2009, 2010, 2011, 2012, 2015, 2019, 2021 y 2023.\n\n' +
         'Cristiano Ronaldo, su contemporáneo, tiene cinco. Desde 2024 Messi no figura entre los nominados: ese año ganó Rodri y en 2025, Dembélé.',
         {
-          sources: content.sourcesFor(story, ['lanacion_balones']),
           dataDate: '2025-09-22'
         }
       )
