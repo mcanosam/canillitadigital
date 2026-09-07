@@ -4,9 +4,9 @@
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
   "version": "1.20.0",
-  "generatedAt": "2026-09-06T13:17:50.991Z",
+  "generatedAt": "2026-09-07T15:23:57.865Z",
   "baseRate": 1,
-  "duration": 200.2,
+  "duration": 199.89,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,7 +14,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las diez y diecisiete de la mañana. Buen día."
+      "text": "Son las doce y veintitrés del mediodía. Buen día."
     },
     {
       "kind": "titular",
@@ -96,79 +96,79 @@
     },
     {
       "segment": 1,
-      "start": 2.512
+      "start": 2.533
     },
     {
       "segment": 2,
-      "start": 5.35
+      "start": 5.429
     },
     {
       "segment": 3,
-      "start": 9.607
+      "start": 9.689
     },
     {
       "segment": 4,
-      "start": 56.813
+      "start": 56.952
     },
     {
       "segment": 5,
-      "start": 58.079
+      "start": 58.231
     },
     {
       "segment": 6,
-      "start": 62.383
+      "start": 62.58
     },
     {
       "segment": 7,
-      "start": 99.746
+      "start": 99.767
     },
     {
       "segment": 8,
-      "start": 101.597
+      "start": 101.549
     },
     {
       "segment": 9,
-      "start": 106.114
+      "start": 105.964
     },
     {
       "segment": 10,
-      "start": 107.903
+      "start": 107.754
     },
     {
       "segment": 11,
-      "start": 111.314
+      "start": 111.063
     },
     {
       "segment": 12,
-      "start": 149.577
+      "start": 149.196
     },
     {
       "segment": 13,
-      "start": 150.832
+      "start": 150.475
     },
     {
       "segment": 14,
-      "start": 153.512
+      "start": 153.114
     },
     {
       "segment": 15,
-      "start": 155.412
+      "start": 155.064
     },
     {
       "segment": 16,
-      "start": 158.151
+      "start": 157.827
     },
     {
       "segment": 17,
-      "start": 190.428
+      "start": 190.272
     },
     {
       "segment": 18,
-      "start": 192.356
+      "start": 192.168
     },
     {
       "segment": 19,
-      "start": 197.089
+      "start": 196.74
     }
   ]
 }
