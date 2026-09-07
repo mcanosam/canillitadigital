@@ -3,10 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.20.0",
-  "generatedAt": "2026-09-07T15:23:57.865Z",
+  "version": "1.23.0",
+  "generatedAt": "2026-09-07T21:41:45.153Z",
   "baseRate": 1,
-  "duration": 199.89,
+  "duration": 214.94,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,15 +14,15 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las doce y veintitrés del mediodía. Buen día."
+      "text": "Son las seis y cuarenta y uno de la tarde. Buenas tardes."
     },
     {
       "kind": "titular",
-      "text": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias."
+      "text": "Arrancamos con la Ruta 22, que por fin cambió de manos."
     },
     {
       "kind": "desarrollo",
-      "text": "Las lluvias de los últimos días no rompieron la ruta. Hicieron algo peor: la mostraron. Destaparon los baches que estaban parchados y dejaron el pavimento a la vista, en todo el Alto Valle. El dato que lo resume mejor está en las gomerías. En Cinco Saltos pasaron de atender dos casos por día a once en una sola jornada. Y una cubierta rajada, en general, no se repara: se cambia. Vialidad Nacional está haciendo bacheo en frío. El problema es que el agua se llevó ese material y los pozos volvieron a quedar al descubierto. Los sectores más complicados: el cruce con avenida Roca, la zona del Puente 83, y el tramo entre Cervantes y Roca, que todavía tiene doble mano. Ahora se pide una Mesa Regional de Emergencia, con Nación, Provincia y municipios. Mientras tanto, el traspaso de la ruta a Río Negro sigue sin firmarse, y hay cinco contratos de obra neutralizados. Congelados. Nadie trabaja, y nadie más puede entrar a trabajar."
+      "text": "Pasó algo que se venía reclamando hace años. Río Negro ya tiene la Ruta 22. El 25 de agosto se firmó el convenio en Casa Rosada, y el 3 de septiembre la Legislatura lo ratificó. Treinta y ocho votos a favor, tres en contra. Son quinientos dieciocho kilómetros, entre la 22 y la 151, por veinte años. Se declaró la emergencia vial por un año, que permite contratar de urgencia. Y se autorizó un crédito de hasta sesenta millones de dólares con el Fonplata. Ahora, la letra chica. Primero: Nación no manda plata. La provincia paga. Segundo: las obras arrancan recién sesenta días después de que la ley se publique. Y tercero: los kilómetros no llegan todos juntos. Cada tramo se entrega con un acta propia. Un dato para dimensionar por qué había apuro. Entre 2018 y este año murieron doscientas doce personas en esas dos rutas."
     },
     {
       "kind": "separador",
@@ -42,11 +42,23 @@
     },
     {
       "kind": "titular",
-      "text": "Vamos con una obra que puede cambiar el agua de Roca para los próximos veinte años."
+      "text": "Y vamos con Vaca Muerta, que nos cruza por el medio."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "Hay una obra enorme atravesando la provincia y conviene entender qué es. Se llama Vaca Muerta Oil Sur, o VMOS. Es un oleoducto de cuatrocientos treinta y siete kilómetros que sale de Allen y termina en Punta Colorada, cerca de Sierra Grande, sobre el Atlántico. Tres mil millones de dólares. Lo hacen siete petroleras juntas, con YPF a la cabeza. Ya superó el ochenta por ciento. Las primeras exportaciones se esperan para principios del año que viene. Arranca moviendo ciento ochenta mil barriles por día y sube a quinientos cincuenta mil durante 2027. Ahora, lo que nos toca de cerca. Por el valle pasan más de dos mil camiones de arena por día, que vienen desde Entre Ríos, a mil trescientos kilómetros. Esa arena es la que rompe las rutas. Y la plata, las regalías, según el propio gobernador recién se van a sentir fuerte hacia 2028 o 2029. Río Negro está en el medio del negocio, pero todavía no en el reparto."
     },
     {
       "kind": "separador",
       "text": "Y ahora, otro tema."
+    },
+    {
+      "kind": "titular",
+      "text": "Vamos con una obra que puede cambiar el agua de Roca para los próximos veinte años."
+    },
+    {
+      "kind": "separador",
+      "text": "Seguimos."
     },
     {
       "kind": "titular",
@@ -58,7 +70,7 @@
     },
     {
       "kind": "separador",
-      "text": "Seguimos."
+      "text": "Vamos con la que sigue."
     },
     {
       "kind": "titular",
@@ -71,10 +83,6 @@
     {
       "kind": "deportes",
       "text": "Y vamos al hilo de Messi, que sigue abierto."
-    },
-    {
-      "kind": "desarrollo",
-      "text": "Empecemos por el final, que es lo más fresco. El 19 de julio, en Nueva Jersey, Argentina perdió la final del Mundial con España. Uno a cero, gol de Ferran Torres a los 106 minutos, ya en el alargue. Messi tenía 39 años. Era su sexto Mundial y su tercera final. Ganó una, en Qatar, y perdió dos. Ahora, la pregunta que quedó dando vueltas. ¿Se retira de la Selección? No lo dijo. Escribió que el dolor era muy grande, volvió a Rosario con su familia, y no habló más. Contrato con Inter Miami tiene hasta 2028. Así que jugar, va a seguir jugando. La duda es si vuelve a ponerse la celeste y blanca."
     },
     {
       "kind": "separador",
@@ -96,79 +104,87 @@
     },
     {
       "segment": 1,
-      "start": 2.533
+      "start": 2.531
     },
     {
       "segment": 2,
-      "start": 5.429
+      "start": 5.799
     },
     {
       "segment": 3,
-      "start": 9.689
+      "start": 9.465
     },
     {
       "segment": 4,
-      "start": 56.952
+      "start": 52.999
     },
     {
       "segment": 5,
-      "start": 58.231
+      "start": 54.262
     },
     {
       "segment": 6,
-      "start": 62.58
+      "start": 58.543
     },
     {
       "segment": 7,
-      "start": 99.767
+      "start": 95.856
     },
     {
       "segment": 8,
-      "start": 101.549
+      "start": 97.621
     },
     {
       "segment": 9,
-      "start": 105.964
+      "start": 100.646
     },
     {
       "segment": 10,
-      "start": 107.754
+      "start": 147.353
     },
     {
       "segment": 11,
-      "start": 111.063
+      "start": 149.177
     },
     {
       "segment": 12,
-      "start": 149.196
+      "start": 153.619
     },
     {
       "segment": 13,
-      "start": 150.475
+      "start": 154.929
     },
     {
       "segment": 14,
-      "start": 153.114
+      "start": 158.243
     },
     {
       "segment": 15,
-      "start": 155.064
+      "start": 196.385
     },
     {
       "segment": 16,
-      "start": 157.827
+      "start": 198.127
     },
     {
       "segment": 17,
-      "start": 190.272
+      "start": 200.726
     },
     {
       "segment": 18,
-      "start": 192.168
+      "start": 202.646
     },
     {
       "segment": 19,
-      "start": 196.74
+      "start": 205.228
+    },
+    {
+      "segment": 20,
+      "start": 207.215
+    },
+    {
+      "segment": 21,
+      "start": 211.866
     }
   ]
 }
