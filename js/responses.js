@@ -74,6 +74,7 @@
    * directos del menú a partir de las historias que el lector eligió seguir.
    */
   var ACCESO_DIRECTO = {
+    vacamuerta: { label: 'Vaca Muerta', pregunta: 'Contame lo de Vaca Muerta' },
     ruta22: { label: 'Ruta 22', pregunta: 'Ver la historia de la Ruta 22' },
     messi: { label: 'El hilo de Messi', pregunta: 'Contame el hilo de Messi' },
     agua: { label: 'Agua en Roca', pregunta: 'Contame la obra de agua de Roca' },
@@ -95,10 +96,11 @@
       '',
       '1️⃣ Mi resumen de hoy',
       '2️⃣ Escuchar las noticias',
-      '3️⃣ Ruta 22: la historia completa',
-      '4️⃣ El hilo de Messi',
-      '5️⃣ Deportes del valle',
-      '6️⃣ Configurar mis preferencias'
+      '3️⃣ Vaca Muerta',
+      '4️⃣ Ruta 22: la historia completa',
+      '5️⃣ El hilo de Messi',
+      '6️⃣ Deportes del valle',
+      '7️⃣ Configurar mis preferencias'
     ];
 
     /* Lo que el lector eligió seguir va primero que el resto de las opciones */
@@ -121,6 +123,7 @@
     var base = [
       'Mi resumen de hoy',
       'Escuchar las noticias',
+      'Contame lo de Vaca Muerta',
       'Ver la historia de la Ruta 22',
       'Contame el hilo de Messi',
       'Ver deportes',
@@ -355,16 +358,24 @@
     var story = content.get('ruta22_actualidad');
     return reply([
       message(
-        'Todavía no. Está negociado, no firmado.\n\n' +
-        '✔️ *Confirmado:* el Decreto 253/2026, del 16 de abril, habilita a nueve provincias —entre ellas Río Negro— a concesionar por peaje tramos de rutas nacionales. Para que sea efectivo hace falta un convenio con Vialidad Nacional.\n\n' +
-        '✔️ *Confirmado:* el gobernador Weretilneck planteó formalmente que la Provincia asuma las rutas 22 y 151.\n\n' +
-        '⏳ *Sin cerrar:* al 2 de agosto de 2026 el convenio seguía sin firmarse. Las diferencias son la modalidad (uno o dos documentos), las obras inconclusas, los contratos vigentes y la exigencia nacional de aprobar previamente los proyectos.',
+        'Sí, ya está. Se firmó y la Legislatura lo ratificó.\n\n' +
+        '✔️ *25 de agosto:* se firmó el convenio en Casa Rosada.\n' +
+        '✔️ *3 de septiembre:* la Legislatura lo ratificó con 38 votos a favor y 3 en contra. ' +
+        'Son 518 kilómetros de las rutas 22 y 151, por 20 años.\n' +
+        '✔️ Se declaró la *emergencia vial* por un año y se autorizó un crédito de hasta ' +
+        '*60 millones de dólares* con el Fonplata, garantizado con regalías.\n\n' +
+        '⏳ Ahora la parte lenta: las obras arrancan 60 días después de publicada la ley, ' +
+        'los tramos se entregan de a uno con actas propias, y Nación no aporta plata.',
         {
-          sources: content.sourcesFor(story, ['anroca_demora', 'rionegro_decreto253', 'lmc_weretilneck']),
-          dataDate: '2026-08-02'
+          sources: content.sourcesFor(story, ['dn_legislatura', 'bp_esley', 'nn_historico']),
+          dataDate: '2026-09-03',
+          links: [{
+            label: 'Ver el hilo completo',
+            href: Canillita.render.hiloUrl('ruta22')
+          }]
         }
       )
-    ], ['¿Qué son los contratos neutralizados?', '¿Va a haber peaje?', 'Ruta 22 hoy'], 'ruta22-traspaso');
+    ], ['¿Qué pasa con el tramo Roca-Allen?', 'Contame lo de Vaca Muerta', 'Menú'], 'ruta22-traspaso');
   }
 
   function route22Neutralized() {
@@ -467,6 +478,36 @@
       ));
     }
     return reply(mensajes, botones, audioId);
+  }
+
+  function vacamuerta() {
+    return storyReply('vacamuerta_hilo', 'vacamuerta',
+      ['¿Qué es el VMOS?', 'Ruta 22 hoy', 'Menú']);
+  }
+
+  function vmos() {
+    var story = content.get('vacamuerta_hilo');
+    return reply([
+      message(
+        '🛢️ *VMOS · Vaca Muerta Oil Sur*\n\n' +
+        'Un oleoducto de 437 kilómetros que va de la cuenca neuquina a la Terminal de Punta Colorada, ' +
+        'en la costa rionegrina cerca de Sierra Grande. Inversión estimada: 3.000 millones de dólares.\n\n' +
+        'Lo hacen siete petroleras juntas: YPF, Vista, PAE, Pampa, Chevron, Pluspetrol y Shell.\n\n' +
+        '✔️ Hacia fines de julio rondaba el 80% de avance.\n' +
+        '✔️ Arranca con 180.000 barriles por día y escala a 550.000 en 2027.\n' +
+        '✔️ Los primeros despachos se esperan a principios de 2027.\n\n' +
+        '⏳ Lo que falta definir: cuánto de todo esto se traduce en empleo y regalías para Río Negro. ' +
+        'Weretilneck dijo que el crecimiento fuerte llegaría hacia 2028 o 2029.',
+        {
+          sources: content.sourcesFor(story, ['ambito_recta', 'parl_recta', 'dn_regalias']),
+          dataDate: '2026-09-04',
+          links: [{
+            label: 'Ver el hilo completo',
+            href: Canillita.render.hiloUrl('vacamuerta')
+          }]
+        }
+      )
+    ], ['Contame lo de Vaca Muerta', '¿Por qué rompen las rutas los camiones?', 'Menú'], 'vmos');
   }
 
   function aguaRoca() {
@@ -690,6 +731,8 @@
     route22_toll: route22Toll,
     sports: sports,
     sports_next: sportsNext,
+    vacamuerta: vacamuerta,
+    vmos: vmos,
     agua_roca: aguaRoca,
     fruticultura: fruticultura,
     clima_rutas: climaRutas,

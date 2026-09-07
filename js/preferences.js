@@ -18,7 +18,7 @@
   var DEFAULTS = {
     name: '',
     locality: '',
-    topics: ['ruta22', 'deportes'],
+    topics: ['vacamuerta', 'municipio', 'clima'],
     format: 'texto',        // texto | audio | html | texto_audio | todos
     audioSeconds: 60,       // 30 | 60 | 180 | 300
     /*
@@ -33,6 +33,7 @@
   };
 
   var TOPIC_LABELS = {
+    vacamuerta: 'Vaca Muerta',
     ruta22: 'Ruta 22',
     municipio: 'Municipio',
     fruticultura: 'Fruticultura',

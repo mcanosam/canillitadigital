@@ -1,0 +1,302 @@
+{
+  "id": "vacamuerta_hilo",
+  "type": "living_story",
+  "category": "Vaca Muerta",
+  "topic": "vacamuerta",
+  "title": "Vaca Muerta: el caño que cruza Río Negro y termina en el mar",
+  "subtitle": "El VMOS entra en la recta final y la provincia queda en el medio: pasa el petróleo, pasan los camiones, y las regalías llegan después",
+  "status": "active",
+  "isFiction": false,
+  "lastUpdated": "2026-09-07T07:00:00-03:00",
+  "eventDate": "2026-09-04",
+  "readingTime": 7,
+  "shortSummary": "El oleoducto Vaca Muerta Oil Sur va del yacimiento neuquino a Punta Colorada: 437 kilómetros, tres mil millones de dólares y una terminal en la costa rionegrina. Supera el 80% de avance y las primeras exportaciones se esperan para principios de 2027. Mientras tanto, por el Alto Valle pasan más de dos mil camiones de arena por día y las regalías fuertes recién se verían hacia 2028.",
+  "whatsappSummary": "🛢️ *Vaca Muerta: el caño que cruza Río Negro*\nEl oleoducto VMOS une Allen con Punta Colorada: 437 km y US$3.000 millones. Ya superó el 80% de avance y las primeras exportaciones se esperan a principios de 2027.\nEmpieza con 180.000 barriles por día y escala a 550.000 en 2027.\nEl costado local: más de 2.000 camiones de arena por día castigan las rutas 22 y 151, y las regalías fuertes llegarían recién en 2028.",
+  "radioHeadline": "Y vamos con Vaca Muerta, que nos cruza por el medio.",
+  "radioSummary": "Hay una obra enorme atravesando la provincia y conviene entender qué es. Se llama Vaca Muerta Oil Sur, o VMOS. Es un oleoducto de cuatrocientos treinta y siete kilómetros que sale de Allen y termina en Punta Colorada, cerca de Sierra Grande, sobre el Atlántico. Tres mil millones de dólares. Lo hacen siete petroleras juntas, con YPF a la cabeza. Ya superó el ochenta por ciento. Las primeras exportaciones se esperan para principios del año que viene. Arranca moviendo ciento ochenta mil barriles por día y sube a quinientos cincuenta mil durante 2027. Ahora, lo que nos toca de cerca. Por el valle pasan más de dos mil camiones de arena por día, que vienen desde Entre Ríos, a mil trescientos kilómetros. Esa arena es la que rompe las rutas. Y la plata, las regalías, según el propio gobernador recién se van a sentir fuerte hacia 2028 o 2029. Río Negro está en el medio del negocio, pero todavía no en el reparto.",
+  "articleBody": [
+    {
+      "type": "paragraph",
+      "text": "Hay una obra de tres mil millones de dólares atravesando Río Negro de oeste a este, y buena parte del valle la conoce sobre todo por sus efectos secundarios: los camiones. Conviene mirarla entera."
+    },
+    {
+      "type": "heading",
+      "text": "Qué es el VMOS"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vaca Muerta Oil Sur es un oleoducto de 437 kilómetros que une la cuenca neuquina con la Terminal Portuaria de Punta Colorada, sobre la costa atlántica rionegrina, cerca de Sierra Grande. Lo ejecuta un consorcio integrado por YPF, Vista, Pan American Energy, Pampa Energía, Chevron, Pluspetrol y Shell."
+    },
+    {
+      "type": "paragraph",
+      "text": "El objetivo es resolver el cuello de botella del shale argentino: hay más petróleo del que se puede sacar. La terminal contará con seis tanques de almacenamiento de cerca de 720.000 metros cúbicos y un sistema offshore de dos monoboyas que permiten cargar buques de gran porte directamente en el mar, sin muelle."
+    },
+    {
+      "type": "paragraph",
+      "text": "El financiamiento se estructuró como el project finance más grande de la Argentina, con un consorcio de bancos internacionales y locales. La deuda se garantiza con los flujos futuros del propio proyecto."
+    },
+    {
+      "type": "heading",
+      "text": "En qué está la obra"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hacia fines de julio el proyecto rondaba el 80% de avance. Uno de los hitos técnicos fue el cruce del río Negro, resuelto con perforación horizontal dirigida, es decir por debajo del lecho. También se completó la soldadura del ducto costero de 38 pulgadas y avanzan en paralelo las estaciones de bombeo y la terminal."
+    },
+    {
+      "type": "paragraph",
+      "text": "La puesta en marcha arranca con una capacidad de 180.000 barriles diarios. El esquema prevé escalar a 550.000 durante 2027, con un techo técnico que podría llegar a 700.000 si el mercado internacional lo demanda. Los primeros despachos se esperan para principios de 2027."
+    },
+    {
+      "type": "heading",
+      "text": "Los números de fondo"
+    },
+    {
+      "type": "paragraph",
+      "text": "La producción argentina de petróleo viene rompiendo marcas. El promedio de 2026 alcanzó los 894.900 barriles diarios, por encima del récord anual anterior, que era de 846.900 y databa de 1998. Prácticamente todo el crecimiento lo explica el shale, que llegó a 644.200 barriles por día, un 26,6% más que un año atrás, mientras la producción convencional cayó 11,2%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Las proyecciones privadas apuntan a acercarse a los 970.000 barriles diarios hacia fin de año y superar el millón durante el verano."
+    },
+    {
+      "type": "heading",
+      "text": "Qué le toca al valle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Acá aparece la parte incómoda. Para fracturar la roca se necesita arena silícea, y esa arena viene principalmente de Entre Ríos, a unos 1.300 kilómetros. Como no hay tren que haga el recorrido, viaja en camión. El gobernador Alberto Weretilneck informó que más de 2.000 camiones de arena circulan por día hacia los yacimientos."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fuentes oficiales atribuyen el deterioro de las rutas 22 y 151 al sobrepeso constante y a las limitaciones para controlarlo. La motivación es económica: un exceso moderado de carga permite ahorrar viajes. Es la razón por la que el traspaso de las rutas a la Provincia incluye un sistema permanente de balanzas móviles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Del lado positivo, la actividad empieza a mover la economía local. En la construcción del VMOS, el 15% de la mano de obra rionegrina contratada correspondió a trabajadores de General Roca. El puerto de San Antonio Este también sumó operaciones y actividad logística durante más meses del año."
+    },
+    {
+      "type": "heading",
+      "text": "La plata, más adelante"
+    },
+    {
+      "type": "paragraph",
+      "text": "Río Negro cobra regalías por lo que se extrae de su subsuelo, no por lo que pasa por sus rutas ni por lo que se embarca en su costa. Y la producción rionegrina, concentrada en áreas como Campo Grande, todavía es chica al lado de la neuquina."
+    },
+    {
+      "type": "paragraph",
+      "text": "El propio Weretilneck lo dijo con todas las letras: el crecimiento fuerte de las regalías se vería más hacia 2028 o 2029. Mientras tanto, la provincia está muy atravesada por la dinámica petrolera sin recibir todavía una parte relevante del reparto."
+    },
+    {
+      "type": "paragraph",
+      "text": "Esa asimetría explica dos discusiones que hoy están abiertas. Una: un proyecto en el Congreso propone destinar el 50% de las retenciones al petróleo y el gas a un fondo para las rutas de las provincias productoras. Otra: durante el debate del traspaso, la legisladora Martina Lacour sostuvo que la Ruta 151 debería haber quedado bajo concesión de las propias empresas petroleras, que son las que la deterioran."
+    }
+  ],
+  "confirmedFacts": [
+    {
+      "fact": "El VMOS es un oleoducto de 437 kilómetros entre la cuenca neuquina y Punta Colorada, con una inversión estimada de 3.000 millones de dólares.",
+      "date": "2026-09-04",
+      "sourceId": "ambito_recta"
+    },
+    {
+      "fact": "Lo ejecuta un consorcio de siete operadoras: YPF, Vista, PAE, Pampa Energía, Chevron, Pluspetrol y Shell.",
+      "date": "2026-03-23",
+      "sourceId": "iprof_gigante"
+    },
+    {
+      "fact": "Hacia fines de julio de 2026 el proyecto presentaba cerca de un 80% de avance.",
+      "date": "2026-09-04",
+      "sourceId": "ambito_recta"
+    },
+    {
+      "fact": "Arranca con 180.000 barriles diarios y escalaría a 550.000 durante 2027, con un techo técnico de 700.000.",
+      "date": "2026-07-29",
+      "sourceId": "parl_recta"
+    },
+    {
+      "fact": "El promedio de producción de 2026 llegó a 894.900 barriles diarios, superando el récord anual de 846.900 de 1998.",
+      "date": "2026-09-04",
+      "sourceId": "ambito_recta"
+    },
+    {
+      "fact": "El shale alcanzó 644.200 barriles por día, un 26,6% más que un año atrás; el convencional cayó 11,2%.",
+      "date": "2026-09-04",
+      "sourceId": "ambito_recta"
+    },
+    {
+      "fact": "Más de 2.000 camiones de arena circulan por día hacia los yacimientos, con arena traída desde Entre Ríos a 1.300 kilómetros.",
+      "date": "2025-12-18",
+      "sourceId": "lmn_colapso"
+    },
+    {
+      "fact": "En la construcción del VMOS, el 15% de la mano de obra rionegrina contratada correspondió a trabajadores de General Roca.",
+      "date": "2026-08-31",
+      "sourceId": "anroca_roca"
+    },
+    {
+      "fact": "Weretilneck estimó que el crecimiento fuerte de las regalías para Río Negro se vería hacia 2028 o 2029.",
+      "date": "2026-08-31",
+      "sourceId": "dn_regalias"
+    }
+  ],
+  "pendingQuestions": [
+    "Si las primeras exportaciones salen efectivamente a principios de 2027.",
+    "Cuánto del empleo generado queda en la región una vez terminada la obra.",
+    "Si prospera el proyecto para destinar retenciones a las rutas de las provincias productoras.",
+    "Cuándo empiezan a funcionar las balanzas móviles y si frenan el sobrepeso.",
+    "Cuánto crece la producción rionegrina en áreas como Campo Grande.",
+    "Si el puerto de San Antonio Este consolida el movimiento que ganó este año."
+  ],
+  "whyItMatters": "Por el valle pasa un negocio de miles de millones de dólares y lo que más se nota son los pozos que dejan los camiones. Entender el VMOS es entender por qué la Ruta 22 se rompe, por qué la provincia se endeudó para arreglarla y por qué la discusión de fondo es quién paga la infraestructura que hace posible la exportación.",
+  "timeline": [
+    {
+      "date": "2026-01-13",
+      "title": "Empieza el cruce del río Negro",
+      "text": "Con un 51% de avance, el oleoducto inicia el tendido por debajo del lecho del río mediante perforación horizontal dirigida.",
+      "sourceId": "econo_cruce"
+    },
+    {
+      "date": "2026-03-23",
+      "title": "Se completa el cruce del río",
+      "text": "Las autoridades provinciales informan el cruce como un éxito de ingeniería. Avanza también la soldadura del ducto costero de 38 pulgadas.",
+      "sourceId": "iprof_gigante"
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Última soldadura en el ingreso a la terminal",
+      "text": "El VMOS finaliza la soldadura automática en línea regular en el ingreso a la Terminal Portuaria de Punta Colorada.",
+      "sourceId": "vmos_sitio"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Más del 70% ejecutado",
+      "text": "YPF informa el avance ante la Comisión de Energía de Diputados. La terminal tendrá seis tanques y un sistema offshore de monoboyas.",
+      "sourceId": "parl_recta"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Roca al ritmo del petróleo",
+      "text": "La Secretaría de Energía provincial informa que el 15% de la mano de obra rionegrina del VMOS fue de General Roca.",
+      "sourceId": "anroca_roca"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Vaca Muerta en el debate de las rutas",
+      "text": "En la Legislatura, el tránsito pesado de Vaca Muerta aparece como causa del deterioro y como garantía del crédito: las regalías se cobran en dólares.",
+      "sourceId": "vmn_legislatura"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Récord de producción y recta final del caño",
+      "text": "El promedio de 2026 supera el récord de 1998. El VMOS ronda el 80% y apunta a los primeros despachos a principios de 2027.",
+      "sourceId": "ambito_recta"
+    }
+  ],
+  "sections": [],
+  "suggestedQuestions": [
+    "¿Qué es el VMOS?",
+    "¿Cuándo empieza a exportar Vaca Muerta?",
+    "¿Cuánta plata le queda a Río Negro?",
+    "¿Por qué rompen las rutas los camiones?"
+  ],
+  "image": {
+    "src": "",
+    "alt": "Camiones de arena circulando por la Ruta 22 hacia los yacimientos",
+    "credit": "",
+    "pending": "Foto propia: fila de camiones de arena sobre la Ruta 22, o la traza del oleoducto cruzando la meseta. Horizontal."
+  },
+  "beat": {
+    "role": "Cobertura",
+    "name": "Redacción Tu Canillita"
+  },
+  "sources": [
+    {
+      "id": "ambito_recta",
+      "name": "Vaca Muerta rompe récords y VMOS entra en la recta final",
+      "type": "press",
+      "publisher": "Ámbito",
+      "publishedAt": "2026-09-04",
+      "url": "https://www.ambito.com/vaca-muerta-rompe-records-y-vmos-entra-la-recta-final-que-oportunidades-abre-las-petroleras-n6318751"
+    },
+    {
+      "id": "parl_recta",
+      "name": "VMOS entra en la recta final",
+      "type": "press",
+      "publisher": "Parlamentario",
+      "publishedAt": "2026-07-29",
+      "url": "https://www.parlamentario.com/2026/07/29/vmos-entra-en-la-recta-final/"
+    },
+    {
+      "id": "econo_cruce",
+      "name": "Vaca Muerta Oil Sur: la obra alcanzó el 51% y comenzó el cruce del río Negro",
+      "type": "press",
+      "publisher": "EconoJournal",
+      "publishedAt": "2026-01-13",
+      "url": "https://econojournal.com.ar/2026/01/vaca-muerta-oil-sur-la-obra-alcanzo-el-51-de-avance-y-comenzo-el-cruce-estrategico-del-rio-negro/"
+    },
+    {
+      "id": "iprof_gigante",
+      "name": "Un gigante de acero bajo el río cierra otro hito del oleoducto VMOS",
+      "type": "press",
+      "publisher": "iProfesional",
+      "publishedAt": "2026-03-23",
+      "url": "https://www.iprofesional.com/energia/450786-vaca-muerta-un-gigante-de-acero-bajo-el-rio-cierra-otro-hito-del-oleoducto-vmos"
+    },
+    {
+      "id": "vmos_sitio",
+      "name": "Vaca Muerta Oil Sur · sitio oficial del proyecto",
+      "type": "official",
+      "publisher": "VMOS S.A.",
+      "publishedAt": "2026-07-10",
+      "url": "https://vmos.ar/"
+    },
+    {
+      "id": "lmn_colapso",
+      "name": "El colapso de las rutas en el Alto Valle: crisis por la llegada de camiones de arena y Vaca Muerta",
+      "type": "press",
+      "publisher": "LM Neuquén",
+      "publishedAt": "2025-12-18",
+      "url": "https://masp.lmneuquen.com/fruticultura/el-colapso-las-rutas-el-alto-valle-crisis-la-llegada-camiones-arena-y-vaca-muerta-n1221513"
+    },
+    {
+      "id": "anroca_roca",
+      "name": "Roca al ritmo del petróleo: qué lugar puede ocupar la ciudad en el crecimiento de Vaca Muerta",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-08-31",
+      "url": "https://www.anroca.com.ar/noticias/2026/08/31/220973-roca-al-ritmo-del-petroleo-que-lugar-puede-ocupar-la-ciudad-en-el-crecimiento-de-vaca-muerta"
+    },
+    {
+      "id": "dn_regalias",
+      "name": "Río Negro apuesta al GNL y Vaca Muerta, pero el impacto en regalías recién se vería hacia 2028",
+      "type": "press",
+      "publisher": "Diario Neuquino",
+      "publishedAt": "2026-08-31",
+      "url": "https://diarioneuquino.com.ar/rio-negro-apuesta-al-gnl-y-vaca-muerta-pero-el-impacto-en-regalias-recien-se-veria-hacia-2028/"
+    },
+    {
+      "id": "vmn_legislatura",
+      "name": "La Legislatura rionegrina avaló el traspaso de las rutas 22 y 151",
+      "type": "press",
+      "publisher": "Vaca Muerta News",
+      "publishedAt": "2026-09-03",
+      "url": "https://vacamuertanews.com/actualidad/la-legislatura-rionegrina-avalo-el-traspaso-de-las-rutas-22-y-151.htm"
+    },
+    {
+      "id": "rn_retenciones",
+      "name": "Proponen destinar el 50% de las retenciones al petróleo y gas para financiar las rutas de Río Negro",
+      "type": "press",
+      "publisher": "Diario Río Negro",
+      "publishedAt": "2026-09-02",
+      "url": "https://www.rionegro.com.ar/politica/proponen-destinar-el-50-de-las-retenciones-al-petroleo-y-gas-para-financiar-las-rutas-de-vaca-muerta-4706752/"
+    },
+    {
+      "id": "cenital_ganadoras",
+      "name": "Más allá de Vaca Muerta: ganadoras y perdedoras del cambio petrolero",
+      "type": "press",
+      "publisher": "Cenital",
+      "publishedAt": "2026-09-02",
+      "url": "https://cenital.com/mas-alla-de-vaca-muerta-ganadoras-y-perdedoras-del-cambio-petrolero/"
+    }
+  ]
+}

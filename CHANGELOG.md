@@ -302,6 +302,61 @@ Criterio de numeración:
   una región.
 
 ---
+## v1.21.0 · 19-08-2026
+
+- **`pages/propuesta.html`**: la propuesta en una página, para acompañar el
+  enlace de la demo. Tres pilares —hilos que no se cierran, edición por lector,
+  el mismo contenido en tres formatos—, los números reales del contenido
+  cargado (43 hitos, 40 hechos, 28 preguntas, 46 fuentes) y una separación
+  explícita entre lo que anda hoy y lo que todavía no.
+- La redacción queda en el centro: "nada de esto reemplaza a la redacción; lo
+  que cambia es cómo le llega al lector".
+
+---
+## v1.22.0 · 19-08-2026
+
+- **`pages/vision.html`**: el alcance completo del proyecto, reorganizado en
+  cinco bloques —por dónde le hablás, qué hace el diario, de dónde sale la
+  información, cómo lo recibís y qué elegís vos—.
+- Cada una de las 26 piezas lleva su estado: **Anda** (13), **En camino** (4) o
+  **Previsto** (12). La ambición queda a la vista sin confundirse con lo que
+  ya funciona.
+- El bloque del medio evita el "robot que escribe noticias": el diario
+  recuerda, prioriza, distingue, transforma y avisa. Y se aclara que el trabajo
+  periodístico no está en esa lista a propósito.
+- La propuesta enlaza a la visión, y la visión al recorrido.
+
+---
+## v1.23.0 · 07-09-2026
+
+**Contenido**
+
+- **Ruta 22 actualizada**: el traspaso se firmó el 25-08 en Casa Rosada y la
+  Legislatura lo ratificó el 03-09 con 38 votos contra 3. Emergencia vial por
+  un año, crédito de hasta US$60 millones con Fonplata, 518 km por 20 años.
+  Las obras arrancan 60 días después de publicada la ley y Nación no aporta.
+  Fuentes: Diario Neuquino, ADNSUR, NoticiasNet, Baires Post, Bariloche2000,
+  LCR, ANRoca y Quorum.
+- **Hilo nuevo: Vaca Muerta.** El VMOS —437 km de Allen a Punta Colorada,
+  US$3.000 millones, más del 80% ejecutado—, el récord de producción de 2026 y
+  el costado local: 2.000 camiones de arena por día y regalías fuertes recién
+  hacia 2028. Fuentes: Ámbito, Parlamentario, EconoJournal, iProfesional, VMOS,
+  LM Neuquén, ANRoca, Diario Neuquino y Cenital.
+- El hilo de Vaca Muerta se cruza con el de la Ruta 22: los camiones que rompen
+  la ruta son los que sostienen el negocio que garantiza el crédito.
+- Ocho historias en seis temas.
+
+**Lectores de ejemplo**
+
+- Pasan a ser Juan Carlos (energía y ruta), Horacio (productor frutícola),
+  Hugo (periodista) y Yo. Cada uno con sus temas, su duración de boletín y sus
+  hilos seguidos: ven entre 3 y 5 de las 8 historias.
+- "Yo" deja de ser el botón de limpiar y pasa a tener su propia configuración:
+  Vaca Muerta, Municipio y Clima.
+- Todo el cambio alcanza también al chat, al bot de Telegram y al boletín de
+  audio, porque salen del mismo contenido y del mismo motor.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

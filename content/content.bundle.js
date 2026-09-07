@@ -5,179 +5,159 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "type": "living_story",
     "category": "Región",
     "topic": "ruta22",
-    "title": "Ruta 22: qué cambió recientemente",
-    "subtitle": "Las lluvias dejaron la calzada llena de pozos mientras el traspaso sigue sin firmarse",
+    "title": "Ruta 22: la Provincia ya tiene la ruta, ahora faltan las obras",
+    "subtitle": "Se firmó el traspaso y la Legislatura lo ratificó, con emergencia vial y un crédito de 60 millones de dólares",
     "status": "active",
     "isFiction": false,
-    "lastUpdated": "2026-08-07T07:00:00-03:00",
-    "eventDate": "2026-08-06",
+    "lastUpdated": "2026-09-07T07:00:00-03:00",
+    "eventDate": "2026-09-03",
     "readingTime": 6,
-    "shortSummary": "Las lluvias sobre el Alto Valle destaparon los pozos de la Ruta 22 y llenaron los talleres de autos rotos. Vialidad Nacional hace bacheo en frío, pero el agua se llevó el material. En paralelo, el traspaso de la ruta a la Provincia sigue sin firmarse y cinco contratos continúan neutralizados.",
-    "whatsappSummary": "🛣️ *Ruta 22: los pozos que dejaron las lluvias*\nLas precipitaciones destaparon los baches en todo el Alto Valle. En las gomerías de Cinco Saltos pasaron de dos casos por día a once. El bacheo en frío que había puesto Vialidad se lavó con el agua.\nPiden una Mesa Regional de Emergencia. El traspaso a la Provincia sigue sin firma.",
-    "radioSummary": "Las lluvias de los últimos días no rompieron la ruta. Hicieron algo peor: la mostraron. Destaparon los baches que estaban parchados y dejaron el pavimento a la vista, en todo el Alto Valle. El dato que lo resume mejor está en las gomerías. En Cinco Saltos pasaron de atender dos casos por día a once en una sola jornada. Y una cubierta rajada, en general, no se repara: se cambia. Vialidad Nacional está haciendo bacheo en frío. El problema es que el agua se llevó ese material y los pozos volvieron a quedar al descubierto. Los sectores más complicados: el cruce con avenida Roca, la zona del Puente 83, y el tramo entre Cervantes y Roca, que todavía tiene doble mano. Ahora se pide una Mesa Regional de Emergencia, con Nación, Provincia y municipios. Mientras tanto, el traspaso de la ruta a Río Negro sigue sin firmarse, y hay cinco contratos de obra neutralizados. Congelados. Nadie trabaja, y nadie más puede entrar a trabajar.",
+    "shortSummary": "Después de años de reclamos, Río Negro se quedó con la gestión de las rutas 22 y 151 por veinte años. La Legislatura ratificó el convenio con 38 votos contra 3, declaró la emergencia vial y autorizó un crédito de hasta 60 millones de dólares. Los trabajos arrancan recién sesenta días después de publicada la ley, y Nación no aporta un peso.",
+    "whatsappSummary": "🛣️ *Ruta 22: la Provincia ya tiene la ruta*\nLa Legislatura ratificó el traspaso el 3 de septiembre: 38 votos a favor y 3 en contra. Son 518 km de las rutas 22 y 151 por 20 años, con emergencia vial por un año y un crédito de hasta US$60 millones del Fonplata.\nLas obras arrancan 60 días después de publicada la ley. Nación no manda plata.",
+    "radioSummary": "Pasó algo que se venía reclamando hace años. Río Negro ya tiene la Ruta 22. El 25 de agosto se firmó el convenio en Casa Rosada, y el 3 de septiembre la Legislatura lo ratificó. Treinta y ocho votos a favor, tres en contra. Son quinientos dieciocho kilómetros, entre la 22 y la 151, por veinte años. Se declaró la emergencia vial por un año, que permite contratar de urgencia. Y se autorizó un crédito de hasta sesenta millones de dólares con el Fonplata. Ahora, la letra chica. Primero: Nación no manda plata. La provincia paga. Segundo: las obras arrancan recién sesenta días después de que la ley se publique. Y tercero: los kilómetros no llegan todos juntos. Cada tramo se entrega con un acta propia. Un dato para dimensionar por qué había apuro. Entre 2018 y este año murieron doscientas doce personas en esas dos rutas.",
     "articleBody": [
       {
         "type": "paragraph",
-        "text": "Las lluvias que cayeron sobre el Alto Valle a fines de julio y comienzos de agosto no provocaron el deterioro de la Ruta 22, pero lo dejaron a la vista. El agua destapó los baches que habían sido parchados, formó lagunas que ocultan los pozos y arrastró el material de bacheo en frío colocado en varios sectores."
+        "text": "El 3 de septiembre de 2026 la Legislatura de Río Negro ratificó el convenio que transfiere a la Provincia la gestión, administración y mantenimiento de las rutas nacionales 22 y 151. Fueron 38 votos a favor y 3 en contra, en única vuelta. Con eso se cerró un reclamo que llevaba años y se abrió otra etapa, bastante menos épica: la de conseguir la plata y empezar a trabajar."
       },
       {
         "type": "heading",
-        "text": "Los talleres, el termómetro"
+        "text": "Qué se aprobó"
       },
       {
         "type": "paragraph",
-        "text": "El costo se mide en gomerías. En un local de Cinco Saltos sobre la Ruta 151 informaron que pasaron de atender dos casos por día a once en una sola jornada. Un mecánico de Cipolletti explicó que cuando una cubierta se raja difícilmente se pueda reparar: casi siempre hay que cambiarla. Un camionero del Alto Valle resumió la circulación en tres palabras: \"Es imposible andar\"."
+        "text": "El convenio, firmado el 25 de agosto en la Casa Rosada por el gobernador Alberto Weretilneck, abarca 518 kilómetros: la Ruta 22 desde Río Colorado hasta Cipolletti y la 151 desde Cipolletti hasta el límite con La Pampa, pasando por Catriel. El plazo es de veinte años y la infraestructura queda bajo la órbita de Vialidad Rionegrina, aunque la Nación conserva la jurisdicción y el dominio federal sobre las trazas."
+      },
+      {
+        "type": "paragraph",
+        "text": "La misma ley declara por un año la emergencia vial en toda la extensión de ambas rutas dentro de la provincia. Esa figura habilita contrataciones directas de urgencia, que es lo que permite saltear los tiempos habituales de una licitación."
       },
       {
         "type": "heading",
-        "text": "Dónde está peor"
+        "text": "De dónde sale la plata"
       },
       {
         "type": "paragraph",
-        "text": "En General Roca, uno de los puntos más comprometidos volvió a ser el cruce de la ruta con avenida Roca, donde el agua acumulada cubrió baches, fisuras y deformaciones. También aparecen daños en el acceso por calle Mendoza y en la intersección con San Juan. Entre Roca y Cipolletti, el tramo que une la rotonda céntrica cipoleña con el Puente 83 quedó cubierto por lagunas extensas que esconden pozos profundos."
+        "text": "El Ejecutivo quedó autorizado a tomar un crédito de hasta 60 millones de dólares con el Banco de Desarrollo de la Cuenca del Plata, el Fonplata. El destino es acotado: obras críticas e inmediatas —bacheo, repavimentación, banquinas y señalización en los puntos más deteriorados— y estudios de preinversión para definir las etapas siguientes."
       },
       {
         "type": "paragraph",
-        "text": "Entre Cervantes y General Roca la situación tiene un agravante: ese tramo conserva la configuración antigua de doble mano, sin cuatro carriles ni colectoras, justamente porque es una de las secciones que nunca se ejecutaron. Y entre Chichinales y Godoy el ahuellamiento de la calzada impide que el agua drene, lo que forma charcos y favorece el aquaplaning."
+        "text": "El préstamo se garantiza con las regalías hidrocarburíferas, que la provincia cobra en dólares. Los intereses se empiezan a pagar enseguida; el capital, recién desde 2032. El organismo ejecutor será el Ministerio de Hacienda y Vialidad Rionegrina la autoridad técnica."
+      },
+      {
+        "type": "paragraph",
+        "text": "Lo que no hay es aporte nacional. El propio ministro de Obras y Servicios Públicos, Alejandro Echarren, lo dijo antes de la firma: la provincia recibe las rutas sin financiamiento de Nación y deberá afrontar la recuperación con recursos propios."
       },
       {
         "type": "heading",
-        "text": "Qué se está haciendo"
+        "text": "Cuándo se empieza"
       },
       {
         "type": "paragraph",
-        "text": "Operarios de Vialidad Nacional realizan bacheo en frío en los sectores más deteriorados. Los usuarios consideran que esas intervenciones son insuficientes frente al estado general de la traza, y las propias lluvias posteriores lavaron parte del material aplicado. Se anunció además una intervención en el Puente 83 con aporte de material y compactación mediante motoniveladora, sujeta a que el clima lo permita."
+        "text": "No de inmediato. Desde la publicación de la ley corre un plazo de 60 días durante el cual Vialidad Nacional sigue siendo responsable de los 518 kilómetros. En ese período la Provincia prepara pliegos, documentación y acuerdos con las empresas."
       },
       {
         "type": "paragraph",
-        "text": "En paralelo comenzó a circular un pedido para conformar una Mesa Regional de Emergencia que reúna a autoridades nacionales, provinciales y municipales para coordinar acciones urgentes sobre el corredor."
+        "text": "Y hay otra particularidad: Río Negro no recibe los 518 kilómetros de una vez. El traspaso se concreta con actas de toma de posesión tramo por tramo. De la traza total, 305 kilómetros están catalogados como \"liberados\", sin contratos ni proyectos pendientes de resolución, y son los que pueden intervenirse más rápido."
+      },
+      {
+        "type": "paragraph",
+        "text": "Entre las primeras obras que podrían retomarse aparece la rotonda de Choele Choel, hoy paralizada: ya hubo contactos con la empresa a cargo para transferir el contrato desde Vialidad Nacional a la Provincia. La misma vía se exploraría para un contrato de 103 kilómetros de mejoramiento en la Ruta 151."
       },
       {
         "type": "heading",
-        "text": "El telón de fondo: el traspaso"
+        "text": "Lo que se discutió"
+      },
+      {
+        "type": "paragraph",
+        "text": "El respaldo fue amplio pero no unánime en los fundamentos. La oposición que acompañó planteó reparos sobre el endeudamiento en dólares, la falta de recursos nacionales y las contrataciones directas que habilita la emergencia. Varios legisladores reclamaron que la provincia siga exigiendo a Nación los fondos del impuesto a los combustibles."
+      },
+      {
+        "type": "paragraph",
+        "text": "El día anterior a la votación, desde la banca radical se pidió que el tramo General Roca–Allen quede como prioridad en el plan de obras. Por ese corredor circulan más de 11.000 vehículos diarios y el tránsito pesado vinculado a Vaca Muerta explica una parte importante del flujo."
+      },
+      {
+        "type": "paragraph",
+        "text": "La legisladora Martina Lacour, que votó a favor, consideró injusto que la reparación de la 151 la paguen todos los rionegrinos y sostuvo que esa traza debería haber quedado bajo concesión de las empresas petroleras que la deterioran con el tránsito pesado."
+      },
+      {
+        "type": "paragraph",
+        "text": "El dato que ordenó el debate lo aportó el miembro informante, Carlos Valeri: entre 2018 y 2026 murieron 212 personas en ambas rutas por fallas estructurales."
       },
       {
         "type": "heading",
-        "text": "Qué habilitó el traspaso"
+        "text": "Qué viene después"
       },
       {
         "type": "paragraph",
-        "text": "El marco es el Decreto 253/2026, firmado el 16 de abril de 2026 y publicado en el Boletín Oficial. La norma delega en nueve provincias —Río Negro, Neuquén, Mendoza, Córdoba, Santa Fe, Corrientes, San Luis, San Juan y Santa Cruz— la competencia para otorgar concesiones por peaje en tramos de rutas nacionales que atraviesan sus territorios. Para que la delegación sea efectiva, cada provincia debe firmar un convenio con la Dirección Nacional de Vialidad presentando un plan de obras, un cronograma técnico, el peaje máximo proyectado y las fuentes de financiamiento."
+        "text": "Más allá de las reparaciones urgentes, Río Negro firmó un convenio con el Consejo Federal de Inversiones para una consultoría integral sobre el sistema vial del Alto Valle, junto con Neuquén. El estudio abarcará el corredor entre Cervantes y Catriel, las rutas provinciales 65 y 69, los accesos urbanos y las variaciones de tránsito derivadas de Vaca Muerta."
       },
       {
         "type": "paragraph",
-        "text": "El gobernador Alberto Weretilneck planteó formalmente ante Vialidad Nacional la intención de que Río Negro asuma la administración de la 22 y la 151. La Provincia conformó además una comisión con el Ministerio de Obras Públicas, Hacienda, Fiscalía de Estado, representantes legislativos y Vialidad Rionegrina para analizar el convenio propuesto por Nación y elaborar una contrapropuesta."
-      },
-      {
-        "type": "heading",
-        "text": "Por qué todavía no se firmó"
-      },
-      {
-        "type": "paragraph",
-        "text": "El 2 de agosto de 2026 se informó que el acuerdo volvió a postergarse. La Provincia esperaba firmar un convenio inicial, pero las reuniones terminaron sin consenso. Los puntos en discusión son concretos: Vialidad Nacional propone instrumentar la transferencia mediante dos convenios y Río Negro pretende un único documento que deje todas las obligaciones escritas; la Provincia reclama definiciones sobre las obras inconclusas y sobre los contratos que Nación mantiene con empresas constructoras; y rechaza que Nación exija aprobación previa de los futuros proyectos viales."
-      },
-      {
-        "type": "paragraph",
-        "text": "Sobre la extensión involucrada hay cifras distintas según la fuente y el recorte del tramo: se mencionaron alrededor de 510 kilómetros, 518 kilómetros y hasta unos 560 kilómetros entre ambas rutas, desde Río Colorado hasta Cipolletti por la 22 y desde Cipolletti hasta el límite con La Pampa por la 151. De esos kilómetros, unos 213 continúan alcanzados por compromisos contractuales vigentes."
-      },
-      {
-        "type": "heading",
-        "text": "El problema de los contratos neutralizados"
-      },
-      {
-        "type": "paragraph",
-        "text": "En julio de 2026, el ministro de Obras y Servicios Públicos de Río Negro, Alejandro Echarren, informó que el relevamiento provincial encontró cinco contratos de obra pública nacional neutralizados. Neutralizado es una figura administrativa que congela el contrato sin rescindirlo: la obra no avanza, pero el vínculo sigue vigente y bloquea que otro organismo intervenga en esa traza. \"Es un escándalo que estén durante años neutralizadas\", sostuvo el ministro."
-      },
-      {
-        "type": "paragraph",
-        "text": "El caso de la rotonda de Choele Choel fue señalado como un ejemplo que requiere análisis particular: la obra está paralizada y su contrato podría transferirse a la Provincia si hay acuerdo con la empresa adjudicataria."
-      },
-      {
-        "type": "heading",
-        "text": "Qué se anunció mientras tanto"
-      },
-      {
-        "type": "paragraph",
-        "text": "En paralelo a la negociación, Vialidad Nacional anunció que destinará 5.000 toneladas de mezcla asfáltica en caliente para reparar los sectores más deteriorados de las rutas 22 y 151, con una licitación para la provisión del material y una intervención específica en la zona del Puente 83, dañada tras las lluvias. El plan incluye además la adjudicación del servicio de mantenimiento de iluminación en cruces e intersecciones de alto tránsito."
-      },
-      {
-        "type": "paragraph",
-        "text": "Es un plan de conservación, no de ampliación: el bacheo mejora la transitabilidad, pero no avanza sobre la autopista prometida. En el presupuesto nacional 2026 la partida asignada a la Ruta 22 fue de aproximadamente 2.380 millones de pesos, un monto que —según el costo promedio por kilómetro de la obra de ampliación— alcanzaría para unos ocho kilómetros."
+        "text": "También se prevé un sistema permanente de control de peso con balanzas móviles, para proteger lo que se construya del tránsito pesado con sobrecarga. Las multas estimadas rondarían entre tres y cinco millones de pesos. Y el peaje sigue sobre la mesa como alternativa de financiamiento, aunque su implementación depende del modelo de gestión que adopte la Provincia."
       }
     ],
     "confirmedFacts": [
       {
-        "fact": "Las lluvias sobre el Alto Valle dejaron al descubierto baches, deformaciones y problemas de drenaje en la Ruta 22 entre Regina y General Roca.",
-        "date": "2026-07-30",
-        "sourceId": "lcr_deterioro"
+        "fact": "El 3 de septiembre de 2026 la Legislatura ratificó el traspaso con 38 votos a favor y 3 en contra, en única vuelta.",
+        "date": "2026-09-03",
+        "sourceId": "dn_legislatura"
       },
       {
-        "fact": "Las precipitaciones posteriores lavaron el material de bacheo en frío que Vialidad había colocado, y los pozos volvieron a quedar al descubierto.",
-        "date": "2026-08-03",
-        "sourceId": "lcr_bacheo_lavado"
+        "fact": "El convenio abarca 518 kilómetros de las rutas 22 y 151 y rige por 20 años. Nación conserva la jurisdicción y el dominio federal.",
+        "date": "2026-09-03",
+        "sourceId": "bp_esley"
       },
       {
-        "fact": "Una gomería de Cinco Saltos informó que pasó de atender dos casos por día a once en una sola jornada.",
-        "date": "2026-08-04",
-        "sourceId": "rionegro_destruidas"
+        "fact": "La ley declara la emergencia vial por un año, lo que habilita contrataciones directas de urgencia.",
+        "date": "2026-09-03",
+        "sourceId": "bp_esley"
       },
       {
-        "fact": "Se anunció una intervención en el Puente 83 con aporte de material y compactación con motoniveladora, sujeta al clima.",
-        "date": "2026-08-04",
-        "sourceId": "rionegro_destruidas"
+        "fact": "Se autorizó un crédito de hasta 60 millones de dólares con el Fonplata, garantizado con regalías hidrocarburíferas.",
+        "date": "2026-09-03",
+        "sourceId": "adn_ratifico"
       },
       {
-        "fact": "Circula un pedido para conformar una Mesa Regional de Emergencia con autoridades nacionales, provinciales y municipales.",
-        "date": "2026-07-31",
-        "sourceId": "anroca_mesa"
+        "fact": "Los trabajos arrancan 60 días después de publicada la ley. Hasta entonces Vialidad Nacional sigue a cargo.",
+        "date": "2026-09-03",
+        "sourceId": "nn_historico"
       },
       {
-        "fact": "El Decreto 253/2026, del 16 de abril de 2026, habilita a nueve provincias (entre ellas Río Negro) a concesionar por peaje tramos de rutas nacionales en su territorio.",
-        "date": "2026-04-16",
-        "sourceId": "rionegro_decreto253"
+        "fact": "Los intereses del crédito se pagan desde el inicio; el capital, recién desde 2032.",
+        "date": "2026-09-03",
+        "sourceId": "nn_historico"
       },
       {
-        "fact": "Para que la delegación sea efectiva, cada provincia debe firmar un convenio con Vialidad Nacional con plan de obras, cronograma, peaje máximo proyectado y fuentes de financiamiento.",
-        "date": "2026-04-22",
-        "sourceId": "rionegro_decreto253"
+        "fact": "De los 518 kilómetros, 305 están catalogados como liberados: sin contratos ni proyectos pendientes.",
+        "date": "2026-08-25",
+        "sourceId": "lcr_prioridades"
       },
       {
-        "fact": "Río Negro relevó cinco contratos de obra pública nacional neutralizados sobre las rutas 22 y 151: congelados sin rescisión.",
-        "date": "2026-07-14",
-        "sourceId": "anroca_neutralizadas"
+        "fact": "Nación no aporta financiamiento: la provincia afronta la recuperación con recursos propios.",
+        "date": "2026-08-24",
+        "sourceId": "nnet_primeras"
       },
       {
-        "fact": "El 2 de agosto de 2026 el traspaso seguía sin firmarse: no hubo consenso sobre la modalidad del convenio, las obras pendientes ni los contratos vigentes.",
-        "date": "2026-08-02",
-        "sourceId": "anroca_demora"
+        "fact": "Entre 2018 y 2026 murieron 212 personas en ambas rutas por fallas estructurales, según el miembro informante Carlos Valeri.",
+        "date": "2026-09-03",
+        "sourceId": "nn_historico"
       },
       {
-        "fact": "De los 518 kilómetros comprendidos entre ambas rutas, alrededor de 213 continúan alcanzados por compromisos contractuales.",
-        "date": "2026-08-02",
-        "sourceId": "anroca_demora"
-      },
-      {
-        "fact": "Vialidad Nacional anunció 5.000 toneladas de mezcla asfáltica para bacheo en las rutas 22 y 151, más una intervención en el Puente 83.",
-        "date": "2026-08-02",
-        "sourceId": "diarioneuquino_asfalto"
-      },
-      {
-        "fact": "El presupuesto nacional 2026 previó unos 2.380 millones de pesos para la Ruta 22, equivalentes a unos ocho kilómetros de ampliación.",
-        "date": "2026-03-11",
-        "sourceId": "lmc_concesiones"
+        "fact": "Por el corredor General Roca–Allen circulan más de 11.000 vehículos diarios, con fuerte peso del tránsito de Vaca Muerta.",
+        "date": "2026-09-03",
+        "sourceId": "bp_esley"
       }
     ],
     "pendingQuestions": [
-      "Si la Mesa Regional de Emergencia llega a conformarse y con qué facultades.",
-      "Cuándo se hace la reparación de fondo, más allá del bacheo en frío.",
-      "Cuándo se firma el convenio y si será un documento único o dos.",
-      "Qué destino tendrán los cinco contratos neutralizados: rescisión, transferencia a la Provincia o continuidad con las mismas empresas.",
-      "Si habrá peaje, en qué lugares y con qué tarifa.",
-      "Quién financia la terminación de las secciones 3 y 4, las que nunca se ejecutaron.",
-      "Si el tramo urbano de General Roca queda incluido en el paquete que administrará la Provincia.",
-      "Qué pasa con las obras complementarias inconclusas de las secciones ya habilitadas."
+      "Cuándo se firma cada acta de toma de posesión y en qué orden llegan los tramos.",
+      "Si el crédito del Fonplata se concreta y con qué tasa y plazos finales.",
+      "Si el tramo General Roca–Allen queda como prioridad en el plan de obras.",
+      "Qué pasa con las secciones 3 y 4, las que nunca se ejecutaron.",
+      "Si finalmente habrá peaje, dónde y con qué tarifa.",
+      "Cuándo empiezan a funcionar las balanzas móviles de control de peso."
     ],
-    "whyItMatters": "La Ruta 22 es la calle larga del Alto Valle: por ahí se va a trabajar, se lleva la fruta y circulan los camiones de Vaca Muerta. Con la calzada así, el problema dejó de ser la demora y pasó a ser el bolsillo y la seguridad: cubiertas rotas, despistes y maniobras para esquivar pozos. Y encima se suma una pregunta nueva: si la administra la Provincia, quién paga y si eso significa peaje.",
+    "whyItMatters": "La Ruta 22 es la calle larga del Alto Valle: por ahí se va a trabajar, se lleva la fruta y pasan los camiones de Vaca Muerta. Después de años de reclamar que Nación hiciera algo, ahora la responsabilidad es de la Provincia y el reloj corre. Lo que se discutía era de quién era el problema; lo que se discute ahora es en qué orden se arregla, y con qué plata.",
     "timeline": [
       {
         "date": "2026-03-11",
@@ -250,17 +230,114 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "title": "La rotonda de acceso a Roca, bajo el agua",
         "text": "El agua acumulada oculta los baches en uno de los puntos más transitados de la ciudad.",
         "sourceId": "anroca_rotonda"
+      },
+      {
+        "date": "2026-08-25",
+        "title": "Se firma el convenio en Casa Rosada",
+        "text": "Weretilneck firma con Nación el traspaso de las rutas 22 y 151, junto con la transferencia del Tren del Valle. La provincia recibe las rutas sin financiamiento nacional.",
+        "sourceId": "nnet_primeras"
+      },
+      {
+        "date": "2026-09-02",
+        "title": "Dictamen favorable en comisiones",
+        "text": "Las comisiones de Planificación, Asuntos Constitucionales y Presupuesto aprueban el dictamen. Echarren y el ministro de Hacienda explican los alcances.",
+        "sourceId": "b2000_dictamen"
+      },
+      {
+        "date": "2026-09-03",
+        "title": "Es ley: 38 votos contra 3",
+        "text": "La Legislatura ratifica el traspaso por 20 años, declara la emergencia vial por un año y autoriza el crédito de hasta 60 millones de dólares.",
+        "sourceId": "dn_legislatura"
       }
     ],
     "sections": [],
     "suggestedQuestions": [
-      "¿Cómo está la ruta después de las lluvias?",
-      "¿Río Negro ya se hizo cargo de la ruta?",
-      "¿Qué son los contratos neutralizados?",
-      "¿Va a haber peaje?",
-      "¿Por qué se frenó la Ruta 22?"
+      "¿Ya se firmó el traspaso de la Ruta 22?",
+      "¿Cuándo empiezan las obras?",
+      "¿De dónde sale la plata?",
+      "¿Qué pasa con el tramo Roca-Allen?"
     ],
     "sources": [
+      {
+        "id": "dn_legislatura",
+        "name": "Río Negro asumirá la gestión de las rutas 22 y 151 tras un amplio respaldo de la Legislatura",
+        "type": "press",
+        "publisher": "Diario Neuquino",
+        "publishedAt": "2026-09-03",
+        "url": "https://diarioneuquino.com.ar/rio-negro-asumira-la-gestion-de-las-rutas-22-y-151-tras-un-amplio-respaldo-de-la-legislatura/"
+      },
+      {
+        "id": "adn_ratifico",
+        "name": "La Legislatura de Río Negro ratificó el traspaso de las rutas 22 y 151: 38 votos a favor y 3 en contra",
+        "type": "press",
+        "publisher": "ADNSUR",
+        "publishedAt": "2026-09-03",
+        "url": "https://www.adnsur.com.ar/neuquen/la-legislatura-de-rio-negro-ratifico-el-traspaso-de-las-rutas-22-y-151-a-la-provincia--38-votos-a-favor-y-3-en-contra_a6a99c4323a0927671fadd456"
+      },
+      {
+        "id": "nn_historico",
+        "name": "Paso histórico en la Legislatura: avalaron el traspaso de las rutas 22 y 151 a Río Negro",
+        "type": "press",
+        "publisher": "NoticiasNet",
+        "publishedAt": "2026-09-03",
+        "url": "https://www.noticiasnet.com.ar/noticias/2026/09/03/221834-paso-historico-en-la-legislatura-avalaron-el-traspaso-de-las-rutas-22-y-151-a-rio-negro"
+      },
+      {
+        "id": "bp_esley",
+        "name": "Es ley: Río Negro toma el control de las rutas 22 y 151 y habilita hasta USD 60 millones para obras",
+        "type": "press",
+        "publisher": "Baires Post",
+        "publishedAt": "2026-09-04",
+        "url": "https://bairespost.com/es-ley-rio-negro-toma-el-control-de-las-rutas-22-y-151-y-habilita-hasta-usd-60-millones-para-obras/"
+      },
+      {
+        "id": "b2000_dictamen",
+        "name": "Río Negro avanza en el traspaso de las rutas 22 y 151: financiamiento, emergencia vial y dictamen favorable",
+        "type": "press",
+        "publisher": "Bariloche2000",
+        "publishedAt": "2026-09-02",
+        "url": "https://www.bariloche2000.com/sociedad/rio-negro-avanza-en-el-traspaso-de-las-rutas-22-y-151-financiamiento-emergencia-vial-y-dictamen-favorable-en-la-legislatura-20260902-0006.html"
+      },
+      {
+        "id": "nnet_primeras",
+        "name": "Traspaso de rutas nacionales a Río Negro: ¿cuáles serán las primeras obras?",
+        "type": "press",
+        "publisher": "NoticiasNet",
+        "publishedAt": "2026-08-24",
+        "url": "https://www.noticiasnet.com.ar/noticias/2026/08/24/219835-traspaso-de-rutas-nacionales-a-rio-negro-cuales-seran-las-primeras-obras"
+      },
+      {
+        "id": "nnet_quecambia",
+        "name": "Rutas 22 y 151: qué cambia con el traspaso y cuáles son las primeras obras que Río Negro podría retomar",
+        "type": "press",
+        "publisher": "NoticiasNet",
+        "publishedAt": "2026-08-28",
+        "url": "https://www.noticiasnet.com.ar/noticias/2026/08/28/220763-rutas-22-y-151-que-cambia-con-el-traspaso-y-cuales-son-las-primeras-obras-que-rio-negro-podria-retomar"
+      },
+      {
+        "id": "lcr_prioridades",
+        "name": "Traspaso de rutas a Río Negro: prioridades, plazos y la necesidad de los consensos",
+        "type": "press",
+        "publisher": "LCR Diario Digital",
+        "publishedAt": "2026-08-25",
+        "url": "https://www.lcr.com.ar/noticias/2026/08/25/53455-traspaso-de-rutas-a-rio-negro-prioridades-plazos-y-la-necesidad-de-los-consensos"
+      },
+      {
+        "id": "anroca_rocaallen",
+        "name": "Traspaso de las rutas 22 y 151: piden que el tramo Roca-Allen sea prioridad en el plan de obras",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-03",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/03/221477-traspaso-de-las-rutas-22-y-151-piden-que-el-tramo-roca--allen-sea-prioridad-en-el-plan-de-obras"
+      },
+      {
+        "id": "quorum_avalo",
+        "name": "La Legislatura rionegrina avaló el traspaso de las rutas 22 y 151",
+        "type": "press",
+        "publisher": "Quorum · Legislatura de Río Negro",
+        "publishedAt": "2026-09-03",
+        "url": "https://quorum.legisrn.gov.ar/la-legislatura-rionegrina-avalo-el-traspaso-de-las-rutas-22-y-151/"
+      },
       {
         "id": "lcr_deterioro",
         "name": "Deterioro de la Ruta 22 entre Regina y Roca agrava los riesgos bajo la lluvia",
@@ -390,7 +467,7 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "url": "https://www.letrap.com.ar/politica/las-deudas-pendientes-las-rutas-rio-negro-n5423718"
       }
     ],
-    "radioHeadline": "Arrancamos con la Ruta 22, y con los pozos que dejaron las lluvias.",
+    "radioHeadline": "Arrancamos con la Ruta 22, que por fin cambió de manos.",
     "image": {
       "src": "assets/images/ruta22-pozos.jpg",
       "alt": "Pozos con agua acumulada sobre la calzada de la Ruta 22 después de las lluvias",
@@ -800,6 +877,308 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "role": "Periodista especializado",
       "name": "Hugo Alonso"
     }
+  },
+  "content/vacamuerta.json": {
+    "id": "vacamuerta_hilo",
+    "type": "living_story",
+    "category": "Vaca Muerta",
+    "topic": "vacamuerta",
+    "title": "Vaca Muerta: el caño que cruza Río Negro y termina en el mar",
+    "subtitle": "El VMOS entra en la recta final y la provincia queda en el medio: pasa el petróleo, pasan los camiones, y las regalías llegan después",
+    "status": "active",
+    "isFiction": false,
+    "lastUpdated": "2026-09-07T07:00:00-03:00",
+    "eventDate": "2026-09-04",
+    "readingTime": 7,
+    "shortSummary": "El oleoducto Vaca Muerta Oil Sur va del yacimiento neuquino a Punta Colorada: 437 kilómetros, tres mil millones de dólares y una terminal en la costa rionegrina. Supera el 80% de avance y las primeras exportaciones se esperan para principios de 2027. Mientras tanto, por el Alto Valle pasan más de dos mil camiones de arena por día y las regalías fuertes recién se verían hacia 2028.",
+    "whatsappSummary": "🛢️ *Vaca Muerta: el caño que cruza Río Negro*\nEl oleoducto VMOS une Allen con Punta Colorada: 437 km y US$3.000 millones. Ya superó el 80% de avance y las primeras exportaciones se esperan a principios de 2027.\nEmpieza con 180.000 barriles por día y escala a 550.000 en 2027.\nEl costado local: más de 2.000 camiones de arena por día castigan las rutas 22 y 151, y las regalías fuertes llegarían recién en 2028.",
+    "radioHeadline": "Y vamos con Vaca Muerta, que nos cruza por el medio.",
+    "radioSummary": "Hay una obra enorme atravesando la provincia y conviene entender qué es. Se llama Vaca Muerta Oil Sur, o VMOS. Es un oleoducto de cuatrocientos treinta y siete kilómetros que sale de Allen y termina en Punta Colorada, cerca de Sierra Grande, sobre el Atlántico. Tres mil millones de dólares. Lo hacen siete petroleras juntas, con YPF a la cabeza. Ya superó el ochenta por ciento. Las primeras exportaciones se esperan para principios del año que viene. Arranca moviendo ciento ochenta mil barriles por día y sube a quinientos cincuenta mil durante 2027. Ahora, lo que nos toca de cerca. Por el valle pasan más de dos mil camiones de arena por día, que vienen desde Entre Ríos, a mil trescientos kilómetros. Esa arena es la que rompe las rutas. Y la plata, las regalías, según el propio gobernador recién se van a sentir fuerte hacia 2028 o 2029. Río Negro está en el medio del negocio, pero todavía no en el reparto.",
+    "articleBody": [
+      {
+        "type": "paragraph",
+        "text": "Hay una obra de tres mil millones de dólares atravesando Río Negro de oeste a este, y buena parte del valle la conoce sobre todo por sus efectos secundarios: los camiones. Conviene mirarla entera."
+      },
+      {
+        "type": "heading",
+        "text": "Qué es el VMOS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Vaca Muerta Oil Sur es un oleoducto de 437 kilómetros que une la cuenca neuquina con la Terminal Portuaria de Punta Colorada, sobre la costa atlántica rionegrina, cerca de Sierra Grande. Lo ejecuta un consorcio integrado por YPF, Vista, Pan American Energy, Pampa Energía, Chevron, Pluspetrol y Shell."
+      },
+      {
+        "type": "paragraph",
+        "text": "El objetivo es resolver el cuello de botella del shale argentino: hay más petróleo del que se puede sacar. La terminal contará con seis tanques de almacenamiento de cerca de 720.000 metros cúbicos y un sistema offshore de dos monoboyas que permiten cargar buques de gran porte directamente en el mar, sin muelle."
+      },
+      {
+        "type": "paragraph",
+        "text": "El financiamiento se estructuró como el project finance más grande de la Argentina, con un consorcio de bancos internacionales y locales. La deuda se garantiza con los flujos futuros del propio proyecto."
+      },
+      {
+        "type": "heading",
+        "text": "En qué está la obra"
+      },
+      {
+        "type": "paragraph",
+        "text": "Hacia fines de julio el proyecto rondaba el 80% de avance. Uno de los hitos técnicos fue el cruce del río Negro, resuelto con perforación horizontal dirigida, es decir por debajo del lecho. También se completó la soldadura del ducto costero de 38 pulgadas y avanzan en paralelo las estaciones de bombeo y la terminal."
+      },
+      {
+        "type": "paragraph",
+        "text": "La puesta en marcha arranca con una capacidad de 180.000 barriles diarios. El esquema prevé escalar a 550.000 durante 2027, con un techo técnico que podría llegar a 700.000 si el mercado internacional lo demanda. Los primeros despachos se esperan para principios de 2027."
+      },
+      {
+        "type": "heading",
+        "text": "Los números de fondo"
+      },
+      {
+        "type": "paragraph",
+        "text": "La producción argentina de petróleo viene rompiendo marcas. El promedio de 2026 alcanzó los 894.900 barriles diarios, por encima del récord anual anterior, que era de 846.900 y databa de 1998. Prácticamente todo el crecimiento lo explica el shale, que llegó a 644.200 barriles por día, un 26,6% más que un año atrás, mientras la producción convencional cayó 11,2%."
+      },
+      {
+        "type": "paragraph",
+        "text": "Las proyecciones privadas apuntan a acercarse a los 970.000 barriles diarios hacia fin de año y superar el millón durante el verano."
+      },
+      {
+        "type": "heading",
+        "text": "Qué le toca al valle"
+      },
+      {
+        "type": "paragraph",
+        "text": "Acá aparece la parte incómoda. Para fracturar la roca se necesita arena silícea, y esa arena viene principalmente de Entre Ríos, a unos 1.300 kilómetros. Como no hay tren que haga el recorrido, viaja en camión. El gobernador Alberto Weretilneck informó que más de 2.000 camiones de arena circulan por día hacia los yacimientos."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fuentes oficiales atribuyen el deterioro de las rutas 22 y 151 al sobrepeso constante y a las limitaciones para controlarlo. La motivación es económica: un exceso moderado de carga permite ahorrar viajes. Es la razón por la que el traspaso de las rutas a la Provincia incluye un sistema permanente de balanzas móviles."
+      },
+      {
+        "type": "paragraph",
+        "text": "Del lado positivo, la actividad empieza a mover la economía local. En la construcción del VMOS, el 15% de la mano de obra rionegrina contratada correspondió a trabajadores de General Roca. El puerto de San Antonio Este también sumó operaciones y actividad logística durante más meses del año."
+      },
+      {
+        "type": "heading",
+        "text": "La plata, más adelante"
+      },
+      {
+        "type": "paragraph",
+        "text": "Río Negro cobra regalías por lo que se extrae de su subsuelo, no por lo que pasa por sus rutas ni por lo que se embarca en su costa. Y la producción rionegrina, concentrada en áreas como Campo Grande, todavía es chica al lado de la neuquina."
+      },
+      {
+        "type": "paragraph",
+        "text": "El propio Weretilneck lo dijo con todas las letras: el crecimiento fuerte de las regalías se vería más hacia 2028 o 2029. Mientras tanto, la provincia está muy atravesada por la dinámica petrolera sin recibir todavía una parte relevante del reparto."
+      },
+      {
+        "type": "paragraph",
+        "text": "Esa asimetría explica dos discusiones que hoy están abiertas. Una: un proyecto en el Congreso propone destinar el 50% de las retenciones al petróleo y el gas a un fondo para las rutas de las provincias productoras. Otra: durante el debate del traspaso, la legisladora Martina Lacour sostuvo que la Ruta 151 debería haber quedado bajo concesión de las propias empresas petroleras, que son las que la deterioran."
+      }
+    ],
+    "confirmedFacts": [
+      {
+        "fact": "El VMOS es un oleoducto de 437 kilómetros entre la cuenca neuquina y Punta Colorada, con una inversión estimada de 3.000 millones de dólares.",
+        "date": "2026-09-04",
+        "sourceId": "ambito_recta"
+      },
+      {
+        "fact": "Lo ejecuta un consorcio de siete operadoras: YPF, Vista, PAE, Pampa Energía, Chevron, Pluspetrol y Shell.",
+        "date": "2026-03-23",
+        "sourceId": "iprof_gigante"
+      },
+      {
+        "fact": "Hacia fines de julio de 2026 el proyecto presentaba cerca de un 80% de avance.",
+        "date": "2026-09-04",
+        "sourceId": "ambito_recta"
+      },
+      {
+        "fact": "Arranca con 180.000 barriles diarios y escalaría a 550.000 durante 2027, con un techo técnico de 700.000.",
+        "date": "2026-07-29",
+        "sourceId": "parl_recta"
+      },
+      {
+        "fact": "El promedio de producción de 2026 llegó a 894.900 barriles diarios, superando el récord anual de 846.900 de 1998.",
+        "date": "2026-09-04",
+        "sourceId": "ambito_recta"
+      },
+      {
+        "fact": "El shale alcanzó 644.200 barriles por día, un 26,6% más que un año atrás; el convencional cayó 11,2%.",
+        "date": "2026-09-04",
+        "sourceId": "ambito_recta"
+      },
+      {
+        "fact": "Más de 2.000 camiones de arena circulan por día hacia los yacimientos, con arena traída desde Entre Ríos a 1.300 kilómetros.",
+        "date": "2025-12-18",
+        "sourceId": "lmn_colapso"
+      },
+      {
+        "fact": "En la construcción del VMOS, el 15% de la mano de obra rionegrina contratada correspondió a trabajadores de General Roca.",
+        "date": "2026-08-31",
+        "sourceId": "anroca_roca"
+      },
+      {
+        "fact": "Weretilneck estimó que el crecimiento fuerte de las regalías para Río Negro se vería hacia 2028 o 2029.",
+        "date": "2026-08-31",
+        "sourceId": "dn_regalias"
+      }
+    ],
+    "pendingQuestions": [
+      "Si las primeras exportaciones salen efectivamente a principios de 2027.",
+      "Cuánto del empleo generado queda en la región una vez terminada la obra.",
+      "Si prospera el proyecto para destinar retenciones a las rutas de las provincias productoras.",
+      "Cuándo empiezan a funcionar las balanzas móviles y si frenan el sobrepeso.",
+      "Cuánto crece la producción rionegrina en áreas como Campo Grande.",
+      "Si el puerto de San Antonio Este consolida el movimiento que ganó este año."
+    ],
+    "whyItMatters": "Por el valle pasa un negocio de miles de millones de dólares y lo que más se nota son los pozos que dejan los camiones. Entender el VMOS es entender por qué la Ruta 22 se rompe, por qué la provincia se endeudó para arreglarla y por qué la discusión de fondo es quién paga la infraestructura que hace posible la exportación.",
+    "timeline": [
+      {
+        "date": "2026-01-13",
+        "title": "Empieza el cruce del río Negro",
+        "text": "Con un 51% de avance, el oleoducto inicia el tendido por debajo del lecho del río mediante perforación horizontal dirigida.",
+        "sourceId": "econo_cruce"
+      },
+      {
+        "date": "2026-03-23",
+        "title": "Se completa el cruce del río",
+        "text": "Las autoridades provinciales informan el cruce como un éxito de ingeniería. Avanza también la soldadura del ducto costero de 38 pulgadas.",
+        "sourceId": "iprof_gigante"
+      },
+      {
+        "date": "2026-07-10",
+        "title": "Última soldadura en el ingreso a la terminal",
+        "text": "El VMOS finaliza la soldadura automática en línea regular en el ingreso a la Terminal Portuaria de Punta Colorada.",
+        "sourceId": "vmos_sitio"
+      },
+      {
+        "date": "2026-07-29",
+        "title": "Más del 70% ejecutado",
+        "text": "YPF informa el avance ante la Comisión de Energía de Diputados. La terminal tendrá seis tanques y un sistema offshore de monoboyas.",
+        "sourceId": "parl_recta"
+      },
+      {
+        "date": "2026-08-31",
+        "title": "Roca al ritmo del petróleo",
+        "text": "La Secretaría de Energía provincial informa que el 15% de la mano de obra rionegrina del VMOS fue de General Roca.",
+        "sourceId": "anroca_roca"
+      },
+      {
+        "date": "2026-09-03",
+        "title": "Vaca Muerta en el debate de las rutas",
+        "text": "En la Legislatura, el tránsito pesado de Vaca Muerta aparece como causa del deterioro y como garantía del crédito: las regalías se cobran en dólares.",
+        "sourceId": "vmn_legislatura"
+      },
+      {
+        "date": "2026-09-04",
+        "title": "Récord de producción y recta final del caño",
+        "text": "El promedio de 2026 supera el récord de 1998. El VMOS ronda el 80% y apunta a los primeros despachos a principios de 2027.",
+        "sourceId": "ambito_recta"
+      }
+    ],
+    "sections": [],
+    "suggestedQuestions": [
+      "¿Qué es el VMOS?",
+      "¿Cuándo empieza a exportar Vaca Muerta?",
+      "¿Cuánta plata le queda a Río Negro?",
+      "¿Por qué rompen las rutas los camiones?"
+    ],
+    "image": {
+      "src": "",
+      "alt": "Camiones de arena circulando por la Ruta 22 hacia los yacimientos",
+      "credit": "",
+      "pending": "Foto propia: fila de camiones de arena sobre la Ruta 22, o la traza del oleoducto cruzando la meseta. Horizontal."
+    },
+    "beat": {
+      "role": "Cobertura",
+      "name": "Redacción Tu Canillita"
+    },
+    "sources": [
+      {
+        "id": "ambito_recta",
+        "name": "Vaca Muerta rompe récords y VMOS entra en la recta final",
+        "type": "press",
+        "publisher": "Ámbito",
+        "publishedAt": "2026-09-04",
+        "url": "https://www.ambito.com/vaca-muerta-rompe-records-y-vmos-entra-la-recta-final-que-oportunidades-abre-las-petroleras-n6318751"
+      },
+      {
+        "id": "parl_recta",
+        "name": "VMOS entra en la recta final",
+        "type": "press",
+        "publisher": "Parlamentario",
+        "publishedAt": "2026-07-29",
+        "url": "https://www.parlamentario.com/2026/07/29/vmos-entra-en-la-recta-final/"
+      },
+      {
+        "id": "econo_cruce",
+        "name": "Vaca Muerta Oil Sur: la obra alcanzó el 51% y comenzó el cruce del río Negro",
+        "type": "press",
+        "publisher": "EconoJournal",
+        "publishedAt": "2026-01-13",
+        "url": "https://econojournal.com.ar/2026/01/vaca-muerta-oil-sur-la-obra-alcanzo-el-51-de-avance-y-comenzo-el-cruce-estrategico-del-rio-negro/"
+      },
+      {
+        "id": "iprof_gigante",
+        "name": "Un gigante de acero bajo el río cierra otro hito del oleoducto VMOS",
+        "type": "press",
+        "publisher": "iProfesional",
+        "publishedAt": "2026-03-23",
+        "url": "https://www.iprofesional.com/energia/450786-vaca-muerta-un-gigante-de-acero-bajo-el-rio-cierra-otro-hito-del-oleoducto-vmos"
+      },
+      {
+        "id": "vmos_sitio",
+        "name": "Vaca Muerta Oil Sur · sitio oficial del proyecto",
+        "type": "official",
+        "publisher": "VMOS S.A.",
+        "publishedAt": "2026-07-10",
+        "url": "https://vmos.ar/"
+      },
+      {
+        "id": "lmn_colapso",
+        "name": "El colapso de las rutas en el Alto Valle: crisis por la llegada de camiones de arena y Vaca Muerta",
+        "type": "press",
+        "publisher": "LM Neuquén",
+        "publishedAt": "2025-12-18",
+        "url": "https://masp.lmneuquen.com/fruticultura/el-colapso-las-rutas-el-alto-valle-crisis-la-llegada-camiones-arena-y-vaca-muerta-n1221513"
+      },
+      {
+        "id": "anroca_roca",
+        "name": "Roca al ritmo del petróleo: qué lugar puede ocupar la ciudad en el crecimiento de Vaca Muerta",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-08-31",
+        "url": "https://www.anroca.com.ar/noticias/2026/08/31/220973-roca-al-ritmo-del-petroleo-que-lugar-puede-ocupar-la-ciudad-en-el-crecimiento-de-vaca-muerta"
+      },
+      {
+        "id": "dn_regalias",
+        "name": "Río Negro apuesta al GNL y Vaca Muerta, pero el impacto en regalías recién se vería hacia 2028",
+        "type": "press",
+        "publisher": "Diario Neuquino",
+        "publishedAt": "2026-08-31",
+        "url": "https://diarioneuquino.com.ar/rio-negro-apuesta-al-gnl-y-vaca-muerta-pero-el-impacto-en-regalias-recien-se-veria-hacia-2028/"
+      },
+      {
+        "id": "vmn_legislatura",
+        "name": "La Legislatura rionegrina avaló el traspaso de las rutas 22 y 151",
+        "type": "press",
+        "publisher": "Vaca Muerta News",
+        "publishedAt": "2026-09-03",
+        "url": "https://vacamuertanews.com/actualidad/la-legislatura-rionegrina-avalo-el-traspaso-de-las-rutas-22-y-151.htm"
+      },
+      {
+        "id": "rn_retenciones",
+        "name": "Proponen destinar el 50% de las retenciones al petróleo y gas para financiar las rutas de Río Negro",
+        "type": "press",
+        "publisher": "Diario Río Negro",
+        "publishedAt": "2026-09-02",
+        "url": "https://www.rionegro.com.ar/politica/proponen-destinar-el-50-de-las-retenciones-al-petroleo-y-gas-para-financiar-las-rutas-de-vaca-muerta-4706752/"
+      },
+      {
+        "id": "cenital_ganadoras",
+        "name": "Más allá de Vaca Muerta: ganadoras y perdedoras del cambio petrolero",
+        "type": "press",
+        "publisher": "Cenital",
+        "publishedAt": "2026-09-02",
+        "url": "https://cenital.com/mas-alla-de-vaca-muerta-ganadoras-y-perdedoras-del-cambio-petrolero/"
+      }
+    ]
   },
   "content/agua-roca.json": {
     "id": "agua_roca",

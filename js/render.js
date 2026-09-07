@@ -619,17 +619,11 @@
         '</button>';
     }).join('');
 
-    var yo = '<button type="button" class="persona' + (!activa ? ' is-activa' : '') +
-      '" data-persona="" aria-pressed="' + !activa + '">' +
-      '<span class="persona__nombre">Yo</span>' +
-      '<span class="persona__rol">Mi configuración</span>' +
-      '</button>';
-
     var actual = activa ? Canillita.personas.get(activa) : null;
 
     return '<div class="personas">' +
       '<p class="personas__rotulo">Ver la demo como</p>' +
-      '<div class="personas__lista">' + botones + yo + '</div>' +
+      '<div class="personas__lista">' + botones + '</div>' +
       (actual
         ? '<p class="personas__nota">' + esc(actual.descripcion) + '</p>'
         : '<p class="personas__nota">Elegí un lector y mirá cómo cambia el diario.</p>') +

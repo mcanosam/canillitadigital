@@ -18,6 +18,7 @@ import actualidad from '../content/ruta22-actualidad.json';
 import historia from '../content/ruta22-historia.json';
 import deportes from '../content/deportes.json';
 import messi from '../content/messi.json';
+import vacamuerta from '../content/vacamuerta.json';
 import agua from '../content/agua-roca.json';
 import fruta from '../content/fruticultura.json';
 import clima from '../content/clima-rutas.json';
@@ -39,7 +40,7 @@ const Canillita = globalThis.Canillita;
 let cargado = false;
 function prepararContenido() {
   if (cargado) return;
-  Canillita.content.hydrate([actualidad, historia, agua, fruta, clima, messi, deportes]);
+  Canillita.content.hydrate([actualidad, historia, vacamuerta, agua, fruta, clima, messi, deportes]);
   cargado = true;
 }
 
@@ -84,6 +85,7 @@ const BIENVENIDA =
 const OPCIONES_INICIO = [
   'Mi resumen de hoy',
   'Escuchar las noticias',
+  'Contame lo de Vaca Muerta',
   'Ver la historia de la Ruta 22',
   'Contame el hilo de Messi',
   'Ver deportes'

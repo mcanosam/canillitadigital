@@ -48,6 +48,7 @@ function leerHistoria(archivo) {
 const historias = [
   leerHistoria('ruta22-actualidad.json'),
   leerHistoria('ruta22-historia.json'),
+  leerHistoria('vacamuerta.json'),
   leerHistoria('agua-roca.json'),
   leerHistoria('fruticultura.json'),
   leerHistoria('clima-rutas.json'),

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qué es Tu Canillita · la propuesta en una página</title>
+  <meta name="description" content="Un diario local donde cada tema es un hilo que sigue, la edición se arma para cada lector y la misma noticia llega como texto, audio o conversación.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <style>
+    /* Estilos propios de la propuesta: es un documento, no una pantalla del diario */
+    .prop { max-width: 680px; margin: 0 auto; padding: 0 18px 48px; }
+
+    .prop__lead {
+      margin: 22px 0 0;
+      font-family: var(--display);
+      font-size: 1.28rem;
+      line-height: 1.5;
+    }
+    .prop__lead strong { font-weight: 400; color: var(--ocre); }
+
+    .prop h2 {
+      margin: 34px 0 4px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--tinta);
+      font-family: var(--condensada);
+      font-size: 1.05rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .prop h3 {
+      margin: 20px 0 5px;
+      font-family: var(--display);
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .prop p { font-family: var(--display); font-size: 1rem; line-height: 1.62; }
+    .prop p.chico { font-size: .9rem; color: var(--tinta-suave); }
+
+    /* Los tres pilares */
+    .pilar { padding: 16px 0; border-bottom: 1px solid var(--linea); }
+    .pilar__num {
+      font-family: var(--condensada);
+      font-size: .8rem; letter-spacing: .18em;
+      text-transform: uppercase; color: var(--ocre);
+    }
+    .pilar__contra {
+      margin: 8px 0 0; padding: 10px 13px;
+      background: var(--papel-viejo);
+      font-family: var(--display); font-style: italic;
+      font-size: .92rem; line-height: 1.5; color: var(--tinta-suave);
+    }
+
+    /* Números */
+    .cifras {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 12px; margin: 14px 0 0; padding: 0; list-style: none;
+    }
+    @media (min-width: 520px) { .cifras { grid-template-columns: repeat(4, 1fr); } }
+    .cifras li { font-family: var(--interfaz); font-size: .8rem; color: var(--tinta-suave); }
+    .cifras strong {
+      display: block; font-family: var(--display);
+      font-size: 1.7rem; font-weight: 400; color: var(--tinta);
+    }
+
+    /* Hoy / después */
+    .estado { display: grid; gap: 14px; margin-top: 14px; }
+    @media (min-width: 620px) { .estado { grid-template-columns: 1fr 1fr; } }
+    .estado__col { padding: 14px 16px; border: 1px solid var(--linea); }
+    .estado__col--hoy { border-top: 3px solid var(--tinta); background: var(--burbuja-in); }
+    .estado__col--luego { border-top: 3px solid var(--filete); border-style: dashed; }
+    .estado h3 { margin-top: 0; font-family: var(--condensada);
+      font-size: .88rem; letter-spacing: .14em; text-transform: uppercase; }
+    .estado ul { margin: 0; padding-left: 17px; }
+    .estado li {
+      margin-bottom: 7px; font-family: var(--display);
+      font-size: .92rem; line-height: 1.45;
+    }
+    .estado--luego li { color: var(--tinta-suave); }
+
+    /* Llamado final */
+    .probar {
+      margin: 34px 0 0; padding: 20px 18px;
+      background: var(--tinta); color: var(--papel);
+    }
+    .probar h2 {
+      margin: 0 0 8px; border: 0; padding: 0;
+      color: var(--papel); font-size: 1.3rem;
+      font-family: var(--display); letter-spacing: 0; text-transform: none;
+    }
+    .probar p { margin: 0 0 14px; font-size: .95rem; opacity: .9; }
+    .probar__acciones { display: flex; flex-wrap: wrap; gap: 9px; }
+    .probar .btn--primary { background: var(--ocre); border-color: var(--ocre); color: var(--papel); }
+    .probar .btn--ghost { color: var(--papel); border-color: var(--papel); }
+
+    .aclara {
+      margin-top: 26px; padding-top: 14px;
+      border-top: 1px solid var(--linea);
+      font-family: var(--display); font-style: italic;
+      font-size: .88rem; line-height: 1.55; color: var(--tinta-suave);
+    }
+  </style>
+</head>
+<body class="page">
+
+  <header class="masthead">
+    <a class="volver" href="../index.html">‹ Ir al diario</a>
+    <p class="masthead__eyebrow">La propuesta en una página</p>
+    <h1 class="masthead__title">Tu Canillita</h1>
+    <p class="masthead__line">Noticias locales, armadas para cada lector</p>
+  </header>
+
+  <main class="prop">
+
+    <p class="prop__lead">
+      Un diario donde cada tema es <strong>un hilo que no se cierra</strong>,
+      la edición se arma <strong>para cada lector</strong> y la misma noticia
+      llega <strong>como texto, como audio o conversando</strong>.
+    </p>
+
+    <h2>Qué cambia</h2>
+
+    <div class="pilar">
+      <p class="pilar__num">Uno</p>
+      <h3>Las historias no se reemplazan: se actualizan</h3>
+      <p>
+        Un tema como la Ruta 22 no son catorce notas sueltas publicadas en
+        quince años. Es una sola historia con su cronología, sus hechos
+        verificados y sus preguntas todavía sin respuesta. Cuando pasa algo
+        nuevo, la historia se mueve; no empieza de cero.
+      </p>
+      <p class="pilar__contra">
+        Al lector que vuelve se le marca qué cambió desde su última visita.
+        Ningún diario hace eso, porque ningún diario guarda esa memoria.
+      </p>
+    </div>
+
+    <div class="pilar">
+      <p class="pilar__num">Dos</p>
+      <h3>La edición se arma para cada uno</h3>
+      <p>
+        Un vecino de Roca, un productor frutícola de Cervantes y un hincha de
+        Cipolletti no necesitan el mismo diario. Cada uno elige sus temas y su
+        portada se arma con eso. Y cada nota dice por qué está ahí.
+      </p>
+      <p class="pilar__contra">
+        No es un algoritmo que adivina: es el lector diciendo qué le importa,
+        y el diario respetándolo.
+      </p>
+    </div>
+
+    <div class="pilar">
+      <p class="pilar__num">Tres</p>
+      <h3>El mismo contenido, en el formato que le sirva</h3>
+      <p>
+        Lo que se lee también se escucha: un boletín de radio armado con la
+        edición de esa persona, con la duración que eligió. Y lo que no se
+        entiende, se pregunta y se responde con la fecha del dato y la fuente.
+      </p>
+    </div>
+
+    <h2>Dónde está el trabajo</h2>
+    <p>
+      Nada de esto reemplaza a la redacción. Reconstruir la historia de una
+      obra pública, verificar cada dato con su fuente y admitir qué todavía no
+      se sabe es trabajo periodístico. Lo que cambia es cómo le llega al lector.
+    </p>
+    <p>Hoy, en la demostración, hay cargado esto:</p>
+    <ul class="cifras">
+      <li><strong>43</strong>hitos reconstruidos</li>
+      <li><strong>40</strong>hechos verificados</li>
+      <li><strong>28</strong>preguntas abiertas</li>
+      <li><strong>46</strong>fuentes citadas</li>
+    </ul>
+    <p class="chico">
+      Siete historias en cinco temas: Ruta 22, Municipio, Fruticultura, Clima y
+      rutas, y Deportes. Todas con fuente y fecha, salvo una noticia deportiva
+      marcada como ficticia en pantalla.
+    </p>
+
+    <h2>Qué funciona y qué no</h2>
+    <div class="estado">
+      <div class="estado__col estado__col--hoy">
+        <h3>Anda hoy</h3>
+        <ul>
+          <li>Portada y edición personalizada, en el navegador</li>
+          <li>Historias vivas con cronología y fuentes</li>
+          <li>Aviso de qué cambió desde la última visita</li>
+          <li>Boletín de audio generado todos los días con voz argentina</li>
+          <li>Bot de Telegram que responde y manda el boletín como nota de voz</li>
+        </ul>
+      </div>
+      <div class="estado__col estado__col--luego estado--luego">
+        <h3>Todavía no</h3>
+        <ul>
+          <li>WhatsApp: el envío por iniciativa propia exige plantillas pagas y empresa verificada</li>
+          <li>Envío automático a la hora elegida: hoy se guarda la preferencia, nada más</li>
+          <li>Carga de noticias por panel: el contenido se edita a mano</li>
+          <li>Video, podcast, mapas, correo</li>
+        </ul>
+      </div>
+    </div>
+    <p class="chico">
+      Está separado a propósito. Prometer un boletín a las siete que no llega
+      sería el peor error posible en un producto periodístico.
+    </p>
+
+    <section class="probar">
+      <h2>Probalo</h2>
+      <p>
+        Dos minutos, con un recorrido guiado. Elegí uno de los tres lectores y
+        mirá cómo se rearma el diario.
+      </p>
+      <div class="probar__acciones">
+        <a class="btn btn--primary" href="../index.html?demo=1">Hacer el recorrido</a>
+        <a class="btn btn--ghost" href="vision.html">Ver el alcance completo</a>
+      </div>
+    </section>
+
+    <p class="aclara">
+      Esto es una demostración, no un producto en marcha. El contenido salió de
+      fuentes públicas —Diario Río Negro, ANRoca, LCR, LM Neuquén, entre otras—
+      y está citado en cada historia. Las fotos todavía no tienen crédito
+      cargado y el sitio lo marca en rojo hasta que se complete.
+    </p>
+
+  </main>
+
+  <footer class="page__foot">
+    <p>Tu Canillita · demostración sin servicios pagos · <span id="version-label"></span></p>
+  </footer>
+
+  <script src="../js/version.js"></script>
+  <script>
+    var el = document.getElementById('version-label');
+    if (el && window.Canillita && Canillita.versionLabel) el.textContent = Canillita.versionLabel();
+  </script>
+</body>
+</html>

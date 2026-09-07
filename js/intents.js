@@ -31,10 +31,11 @@
   var MENU = {
     '1': 'daily_summary',
     '2': 'listen_summary',
-    '3': 'route22_history',
-    '4': 'messi',
-    '5': 'sports',
-    '6': 'preferences'
+    '3': 'vacamuerta',
+    '4': 'route22_history',
+    '5': 'messi',
+    '6': 'sports',
+    '7': 'preferences'
   };
 
   /*
@@ -89,7 +90,9 @@
     route22_province: [
       'rio negro ya se hizo cargo', 'se hizo cargo la provincia', 'traspaso',
       'provincializacion', 'quien administra la ruta', 'la provincia toma la ruta',
-      'ya firmaron', 'se firmo el convenio'
+      'ya firmaron', 'se firmo el convenio', 'ya se firmo el traspaso',
+      'cuando empiezan las obras', 'de donde sale la plata', 'el credito',
+      'la legislatura', 'emergencia vial'
     ],
     route22_neutralized: [
       'contratos neutralizados', 'neutralizados', 'neutralizada',
@@ -109,6 +112,15 @@
       'ver deportes', 'deportes', 'futbol', 'deportivo roca', 'clasico',
       'liga confluencia', 'liga deportiva', 'como salio', 'resultado', 'partido'
     ],
+    vacamuerta: [
+      'vaca muerta', 'vacamuerta', 'el petroleo', 'petroleo', 'shale',
+      'hidrocarburos', 'regalias', 'camiones de arena', 'la energia'
+    ],
+    vmos: [
+      'vmos', 'que es el vmos', 'el oleoducto', 'oleoducto', 'punta colorada',
+      'oil sur', 'exportar petroleo', 'la terminal'
+    ],
+
     agua_roca: [
       'obra de agua', 'agua potable', 'agua en roca', 'obra hidrica',
       'la obra de agua', 'agua de roca', 'planta potabilizadora'

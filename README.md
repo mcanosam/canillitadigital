@@ -9,7 +9,7 @@ claves y sin dependencias externas. Todo corre en el navegador.
 
 ---
 
-## Estado: v1.20 · Fase 3 de 4
+## Estado: v1.23 · Fase 3 de 4
 
 | Fase | Contenido | Estado |
 |---|---|---|
@@ -151,6 +151,8 @@ tu-canillita-digital/
 ├── pages/
 │   ├── chat.html               Simulador del canal
 │   ├── hilo.html               Historia viva genérica (?id=…)
+│   ├── propuesta.html          La propuesta en una página
+│   ├── vision.html             El alcance completo, con estados
 │   ├── edicion.html            Edición personalizada del día
 │   └── ruta22.html             Historia viva de la Ruta 22
 ├── bot/

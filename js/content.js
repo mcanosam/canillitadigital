@@ -22,6 +22,7 @@
   var FILES = [
     'content/ruta22-actualidad.json',
     'content/ruta22-historia.json',
+    'content/vacamuerta.json',
     'content/agua-roca.json',
     'content/fruticultura.json',
     'content/clima-rutas.json',
@@ -100,6 +101,12 @@
       topic: 'ruta22',
       stories: ['ruta22_actualidad', 'ruta22_historia'],
       page: 'pages/ruta22.html'
+    },
+    vacamuerta: {
+      label: 'Vaca Muerta',
+      topic: 'vacamuerta',
+      stories: ['vacamuerta_hilo'],
+      page: 'pages/hilo.html?id=vacamuerta_hilo'
     },
     messi: {
       label: 'Messi',

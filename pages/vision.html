@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hacia dónde va · Tu Canillita</title>
+  <meta name="description" content="Una redacción, un contenido, muchas formas de recibirlo. El alcance completo de Tu Canillita, con lo que funciona hoy y lo que viene después.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <style>
+    .vis { max-width: 700px; margin: 0 auto; padding: 0 18px 48px; }
+
+    .vis__lead {
+      margin: 22px 0 6px;
+      font-family: var(--display);
+      font-size: 1.3rem;
+      line-height: 1.45;
+    }
+    .vis__sub {
+      margin: 0;
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--tinta-suave);
+    }
+
+    .vis h2 {
+      margin: 36px 0 3px;
+      font-family: var(--condensada);
+      font-size: 1.05rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .vis h2 .num {
+      color: var(--ocre);
+      margin-right: 7px;
+    }
+    .vis__bajada {
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--tinta);
+      font-family: var(--display);
+      font-size: .95rem;
+      color: var(--tinta-suave);
+    }
+
+    /* Cada pieza, con su estado */
+    .piezas { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+    @media (min-width: 560px) { .piezas { grid-template-columns: 1fr 1fr; } }
+
+    .pieza {
+      display: flex; flex-direction: column; gap: 3px;
+      padding: 11px 13px;
+      border: 1px solid var(--linea);
+      background: var(--burbuja-in);
+    }
+    .pieza--previsto { background: transparent; border-style: dashed; }
+
+    .pieza__cab { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .pieza__nombre {
+      font-family: var(--interfaz); font-size: .95rem; font-weight: 600;
+    }
+    .pieza--previsto .pieza__nombre { color: var(--tinta-suave); }
+    .pieza__que {
+      font-family: var(--display); font-size: .86rem;
+      line-height: 1.4; color: var(--tinta-suave);
+    }
+
+    .estado {
+      flex: 0 0 auto;
+      padding: 2px 7px;
+      font-family: var(--interfaz);
+      font-size: .66rem; font-weight: 600;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .estado--anda   { background: var(--senal); color: var(--senal-papel); }
+    .estado--camino { background: var(--ocre); color: var(--papel); }
+    .estado--luego  { background: transparent; color: var(--tinta-suave); border: 1px solid var(--filete); }
+
+    /* Leyenda */
+    .leyenda {
+      display: flex; flex-wrap: wrap; gap: 14px;
+      margin: 16px 0 0; padding: 12px 14px;
+      background: var(--papel-viejo);
+    }
+    .leyenda div { display: flex; align-items: center; gap: 7px; }
+    .leyenda span:last-child {
+      font-family: var(--display); font-size: .84rem; color: var(--tinta-suave);
+    }
+
+    /* El paso del medio */
+    .motor { margin-top: 14px; }
+    .motor__item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--linea);
+    }
+    .motor__titulo {
+      margin: 0 0 3px;
+      font-family: var(--display); font-size: 1.05rem;
+    }
+    .motor__texto {
+      margin: 0; font-family: var(--display);
+      font-size: .92rem; line-height: 1.5; color: var(--tinta-suave);
+    }
+
+    .aviso {
+      margin: 18px 0 0; padding: 14px 16px;
+      background: var(--burbuja-in);
+      border-left: 4px solid var(--ocre);
+      font-family: var(--display); font-size: .95rem; line-height: 1.55;
+    }
+
+    .cierre {
+      margin: 36px 0 0; padding: 20px 18px;
+      background: var(--tinta); color: var(--papel);
+    }
+    .cierre h2 {
+      margin: 0 0 8px; font-family: var(--display);
+      font-size: 1.3rem; letter-spacing: 0; text-transform: none; color: var(--papel);
+    }
+    .cierre p { margin: 0 0 14px; font-family: var(--display); font-size: .95rem; opacity: .9; }
+    .cierre__acciones { display: flex; flex-wrap: wrap; gap: 9px; }
+    .cierre .btn--primary { background: var(--ocre); border-color: var(--ocre); color: var(--papel); }
+    .cierre .btn--ghost { color: var(--papel); border-color: var(--papel); }
+  </style>
+</head>
+<body class="page">
+
+  <header class="masthead">
+    <a class="volver" href="propuesta.html">‹ La propuesta</a>
+    <p class="masthead__eyebrow">Hacia dónde va</p>
+    <h1 class="masthead__title">Tu Canillita</h1>
+    <p class="masthead__line">El alcance completo, con lo que hay y lo que falta</p>
+  </header>
+
+  <main class="vis">
+
+    <p class="vis__lead">Una redacción. Un contenido. Muchas formas de recibirlo.</p>
+    <p class="vis__sub">
+      El lector elige por dónde le habla al diario y por dónde le responde.
+      Abajo está todo el alcance, y al lado de cada pieza, en qué estado está.
+    </p>
+
+    <div class="leyenda">
+      <div><span class="estado estado--anda">Anda</span><span>funciona hoy</span></div>
+      <div><span class="estado estado--camino">En camino</span><span>en construcción</span></div>
+      <div><span class="estado estado--luego">Previsto</span><span>parte del plan</span></div>
+    </div>
+
+    <h2><span class="num">1</span>Por dónde le hablás</h2>
+    <p class="vis__bajada">El lector entra por donde le queda cómodo. No hay que enseñarle una aplicación nueva.</p>
+    <ul class="piezas">
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Sitio web</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Elegís temas, seguís hilos y leés tu edición.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Telegram</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Bot que responde con fuente y fecha, y manda el boletín como nota de voz.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">WhatsApp</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Donde está la gente del valle. Requiere empresa verificada y plantillas pagas para el envío diario.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Nota de voz</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Preguntar hablando, sin escribir. Clave para quien maneja o tiene poca práctica con el teclado.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Correo</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Pedir el resumen diario o semanal por mail.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Foto o documento</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Mandar una imagen y preguntar sobre eso. Un vecino fotografía un bache y consulta.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Ubicación</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Qué pasa cerca tuyo: cortes, obras, alertas.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Redes y SMS</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Mensaje directo en la red que ya use, o aviso al celular sin datos.</p>
+      </li>
+    </ul>
+
+    <h2><span class="num">2</span>Qué hace el diario con eso</h2>
+    <p class="vis__bajada">Acá está la diferencia, y no es un robot que escribe noticias.</p>
+    <div class="motor">
+      <div class="motor__item">
+        <p class="motor__titulo">Recuerda</p>
+        <p class="motor__texto">Cada tema es un hilo con su cronología. La novedad de hoy se ubica sobre quince años de antecedentes en vez de empezar de cero. <strong>Anda hoy.</strong></p>
+      </div>
+      <div class="motor__item">
+        <p class="motor__titulo">Prioriza</p>
+        <p class="motor__texto">De todo lo publicado, arma la edición de cada lector según lo que dijo que le importa. Y le dice por qué le muestra cada nota. <strong>Anda hoy.</strong></p>
+      </div>
+      <div class="motor__item">
+        <p class="motor__titulo">Distingue</p>
+        <p class="motor__texto">Separa lo confirmado de lo que todavía está en discusión, con la fecha de cada dato y su fuente a la vista. <strong>Anda hoy.</strong></p>
+      </div>
+      <div class="motor__item">
+        <p class="motor__titulo">Transforma</p>
+        <p class="motor__texto">La misma información se vuelve resumen breve, nota completa, boletín hablado o respuesta a una pregunta. <strong>Anda hoy.</strong></p>
+      </div>
+      <div class="motor__item">
+        <p class="motor__titulo">Avisa</p>
+        <p class="motor__texto">Marca qué cambió desde la última visita, y a futuro avisa por el canal elegido cuando se mueve un hilo que seguís. <strong>Parcial: el aviso en pantalla anda; la notificación está en camino.</strong></p>
+      </div>
+      <div class="motor__item">
+        <p class="motor__titulo">Aprende</p>
+        <p class="motor__texto">Ajusta la edición según lo que el lector lee, escucha y pregunta. <strong>Previsto.</strong></p>
+      </div>
+    </div>
+
+    <div class="aviso">
+      El trabajo periodístico no está en esta lista, y esa es la idea. Reconstruir
+      la historia de una obra pública, verificar un dato y admitir lo que no se
+      sabe lo hace una redacción. Todo lo de arriba es la forma de entrega.
+    </div>
+
+    <h2><span class="num">3</span>De dónde sale la información</h2>
+    <p class="vis__bajada">Ninguna respuesta se inventa. Si el dato no está cargado, el diario lo dice.</p>
+    <ul class="piezas">
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Periodismo propio</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">La cobertura de la redacción, que es el centro de todo.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Documentos oficiales</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Boletín Oficial, decretos, licitaciones, organismos.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Medios de la región</span><span class="estado estado--camino">En camino</span></div>
+        <p class="pieza__que">Hoy se citan con enlace y fecha. Lo que falta son acuerdos formales.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Aportes de vecinos</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Lo que manda la gente, verificado antes de publicarse.</p>
+      </li>
+    </ul>
+
+    <h2><span class="num">4</span>Cómo lo recibís</h2>
+    <p class="vis__bajada">La misma noticia, en el formato que le sirva a cada uno y al momento del día.</p>
+    <ul class="piezas">
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Respuesta breve</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Lo puntual que preguntaste, con su fuente.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Historia viva</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">La nota completa con cronología, qué sabemos y qué falta.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Tu edición</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Tu portada del día, armada con tus temas.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Boletín hablado</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Guion de radio con tu edición, generado cada día. No es la lectura de las notas.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Nota de voz</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">El boletín y las respuestas llegan como audio al chat.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Gráficos</span><span class="estado estado--camino">En camino</span></div>
+        <p class="pieza__que">Datos difíciles, contados con una imagen. Ya hay uno en el hilo de Messi.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Alertas</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Aviso solo cuando se mueve algo que seguís. Nunca por defecto.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Newsletter y PDF</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Tu edición al correo, o para imprimir.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Mapas</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Cortes, obras y alertas ubicados en el territorio.</p>
+      </li>
+      <li class="pieza pieza--previsto">
+        <div class="pieza__cab"><span class="pieza__nombre">Video y pantallas</span><span class="estado estado--luego">Previsto</span></div>
+        <p class="pieza__que">Clips cortos, y la edición en la tele o en pantallas de comercios.</p>
+      </li>
+    </ul>
+
+    <h2><span class="num">5</span>Vos elegís qué, cuándo y cómo</h2>
+    <p class="vis__bajada">Como cuando el canillita sabía qué diario dejarte y a qué hora.</p>
+    <ul class="piezas">
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Qué</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Tus temas y los hilos que seguís.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Cuánto</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Boletín de treinta segundos o de cinco minutos, según el tiempo que tengas.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Cuándo</span><span class="estado estado--camino">En camino</span></div>
+        <p class="pieza__que">Elegís la hora y queda guardada. Falta conectar el envío automático.</p>
+      </li>
+      <li class="pieza">
+        <div class="pieza__cab"><span class="pieza__nombre">Cómo</span><span class="estado estado--anda">Anda</span></div>
+        <p class="pieza__que">Texto, audio o los dos.</p>
+      </li>
+    </ul>
+
+    <section class="cierre">
+      <h2>No es una portada nueva.</h2>
+      <p>
+        Es el mismo periodismo, con una edición distinta para cada lector.
+        Todo lo marcado como "Anda" se puede probar ahora mismo.
+      </p>
+      <div class="cierre__acciones">
+        <a class="btn btn--primary" href="../index.html?demo=1">Hacer el recorrido</a>
+        <a class="btn btn--ghost" href="propuesta.html">Volver a la propuesta</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page__foot">
+    <p>Tu Canillita · demostración sin servicios pagos · <span id="version-label"></span></p>
+  </footer>
+
+  <script src="../js/version.js"></script>
+  <script>
+    var el = document.getElementById('version-label');
+    if (el && window.Canillita && Canillita.versionLabel) el.textContent = Canillita.versionLabel();
+  </script>
+</body>
+</html>

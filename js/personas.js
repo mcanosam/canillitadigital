@@ -18,48 +18,63 @@
 
   var PERSONAS = [
     {
-      id: 'mauro',
-      nombre: 'Mauro',
-      rol: 'Vecino de Roca',
-      descripcion: 'Cruza la Ruta 22 todos los días y sigue lo que pasa en la ciudad.',
+      id: 'juancarlos',
+      nombre: 'Juan Carlos',
+      rol: 'Sigue la energía',
+      descripcion: 'Le interesa Vaca Muerta y el estado de la Ruta 22: el negocio y el camino.',
       prefs: {
-        name: 'Mauro',
+        name: 'Juan Carlos',
         locality: 'General Roca',
-        topics: ['ruta22', 'municipio', 'deportes'],
-        following: ['ruta22'],
+        topics: ['vacamuerta', 'ruta22'],
+        following: ['vacamuerta'],
         format: 'texto_audio',
-        audioSeconds: 60,
+        audioSeconds: 180,
         speechRate: 1
       }
     },
     {
-      id: 'jorge',
-      nombre: 'Jorge',
+      id: 'horacio',
+      nombre: 'Horacio',
       rol: 'Productor frutícola',
-      descripcion: 'Chacra en Cervantes. Escucha las noticias en la camioneta, temprano.',
+      descripcion: 'Chacra en el valle. La ruta por donde sale la fruta y los precios de la temporada.',
       prefs: {
-        name: 'Jorge',
+        name: 'Horacio',
         locality: 'Cervantes',
-        topics: ['fruticultura', 'clima', 'ruta22'],
-        following: ['fruticultura', 'clima'],
+        topics: ['ruta22', 'fruticultura'],
+        following: ['fruticultura', 'ruta22'],
         format: 'audio',
         audioSeconds: 180,
         speechRate: 1
       }
     },
     {
-      id: 'diego',
-      nombre: 'Diego',
-      rol: 'Hincha',
-      descripcion: 'De Cipolletti. Quiere deportes y poco más, en treinta segundos.',
+      id: 'hugo',
+      nombre: 'Hugo',
+      rol: 'Periodista',
+      descripcion: 'Cubre la región: energía, la ruta que sigue hace años, y algo de deporte.',
       prefs: {
-        name: 'Diego',
-        locality: 'Cipolletti',
-        topics: ['deportes'],
-        following: ['deportes_valle', 'messi'],
-        format: 'texto',
-        audioSeconds: 30,
-        speechRate: 1.15
+        name: 'Hugo',
+        locality: 'General Roca',
+        topics: ['vacamuerta', 'ruta22', 'deportes'],
+        following: ['ruta22', 'vacamuerta'],
+        format: 'todos',
+        audioSeconds: 300,
+        speechRate: 1
+      }
+    },
+    {
+      id: 'yo',
+      nombre: 'Yo',
+      rol: 'Mi configuración',
+      descripcion: 'Energía, lo que pasa en la ciudad y el estado del tiempo y las rutas.',
+      prefs: {
+        name: '',
+        locality: '',
+        topics: ['vacamuerta', 'municipio', 'clima'],
+        following: [],
+        format: 'texto_audio',
+        audioSeconds: 60,
+        speechRate: 1
       }
     }
   ];

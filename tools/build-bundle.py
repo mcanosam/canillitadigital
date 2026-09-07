@@ -22,6 +22,7 @@ SALIDA = CONTENIDO / "content.bundle.js"
 ARCHIVOS = [
     "content/ruta22-actualidad.json",
     "content/ruta22-historia.json",
+    "content/vacamuerta.json",
     "content/agua-roca.json",
     "content/fruticultura.json",
     "content/clima-rutas.json",
