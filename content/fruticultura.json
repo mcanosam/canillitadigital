@@ -186,5 +186,17 @@
   "beat": {
     "role": "Cobertura",
     "name": "Redacción Tu Canillita"
+  },
+  "origen": {
+    "principal": {
+      "marca": "LM Neuquén",
+      "formato": "texto"
+    },
+    "integra": [
+      {
+        "marca": "Literal",
+        "formato": "análisis"
+      }
+    ]
   }
 }

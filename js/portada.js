@@ -129,6 +129,7 @@
         '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
           R.esc(R.longDate(story.lastUpdated)) + '</p>' +
         R.firma(story) +
+        R.procedencia(story) +
         R.answerPlayer(audioId, 'Escuchar') +
         R.credencialesHilo(story) +
         porQue(story) +
@@ -148,6 +149,7 @@
           R.fictionBanner(story) +
           '<p class="nota__lectura">' + R.esc(story.readingTime) + ' min · ' +
             R.esc(R.longDate(story.lastUpdated)) + '</p>' +
+          R.procedencia(story) +
         '</div>' +
       '</div>' +
       R.answerPlayer(audioId, 'Escuchar') +
@@ -249,6 +251,26 @@
     if (Canillita.recorrido) Canillita.recorrido.bindBoton(caja);
   }
 
+  /* La chapa cambia de bajada y suma las marcas cuando el tema es 'grupo' */
+  function pintarChapa() {
+    var tema = Canillita.tema ? Canillita.tema.actual() : null;
+    if (!tema) return;
+
+    var linea = doc.getElementById('masthead-line');
+    if (linea) linea.textContent = tema.bajada;
+
+    var marcas = doc.getElementById('masthead-marcas');
+    if (marcas) marcas.innerHTML = R.marcasChapa();
+
+    var etiqueta = doc.getElementById('edicion-label');
+    if (etiqueta) etiqueta.textContent = tema.etiqueta || 'Demostración';
+  }
+
+  function pintarEmbudo() {
+    var caja = doc.getElementById('embudo');
+    if (caja) caja.innerHTML = R.embudoGrupo();
+  }
+
   function pintarCabecera() {
     doc.getElementById('secciones').innerHTML = R.seccionesNav('portada');
     R.bindConversarConDiario(doc.getElementById('secciones'));
@@ -263,6 +285,7 @@
 
   function start() {
     R = Canillita.render;
+    if (Canillita.tema) Canillita.tema.init();
     Promise.all([
       Canillita.content.load(),
       Canillita.radio.loadRecorded(),
@@ -271,7 +294,9 @@
       // marcarVisita() devuelve la visita anterior y adelanta el reloj
       resumenNovedades = R.novedades(Canillita.preferences.marcarVisita());
 
+      pintarChapa();
       pintarCabecera();
+      pintarEmbudo();
       pintarPersonas();
       pintarTemas();
       activarTemas();

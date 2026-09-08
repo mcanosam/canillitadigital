@@ -27,6 +27,20 @@
   --senal-vivo:   #37D0E8;
   --senal-suave:  #8FD8E6;
   --senal-papel:  #EAF6F8;
+  /* Tonos que estaban escritos a mano en el resto de la hoja */
+  --tinta-clara:  #B3AB98;
+  --ocre-vivo:    #C9922B;
+  --ocre-hondo:   #7C4818;
+  --ocre-papel:   #FBF0D8;
+  --rojo-papel:   #FBEDEB;
+  --rojo-hondo:   #7A2018;
+  --senal-honda:  #0A3A46;
+  --papel-tenue:  #F2F0EB;
+
+  /* Acento del ecosistema. En el tema propio no se usa. */
+  --marca:        transparent;
+  --marca-papel:  transparent;
+
   --linea:        rgba(26, 26, 24, .18);
   --filete:       rgba(26, 26, 24, .55);
 
@@ -88,7 +102,7 @@ body {
   font-size: .68rem;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: #B3AB98;
+  color: var(--tinta-clara);
 }
 
 .masthead__title {
@@ -108,7 +122,7 @@ body {
   font-family: var(--display);
   font-size: .78rem;
   font-style: italic;
-  color: #B3AB98;
+  color: var(--tinta-clara);
 }
 
 /* Fecha y edición, entre filetes: el corondel del diario */
@@ -123,6 +137,26 @@ body {
   font-family: var(--interfaz);
   font-size: .76rem;
   color: var(--tinta-suave);
+}
+
+/*
+ * Edición Grupo.
+ *
+ * No es otra hoja de estilos ni otra aplicación: solo cambian el acento y el
+ * negro exacto. El ocre sigue siendo el color de Tu Canillita; el rojo —que
+ * comparten LM Neuquén, LM Cipolletti, Literal y LU5— aparece únicamente
+ * donde habla el ecosistema: procedencia, marcas y el esquema de integración.
+ */
+:root[data-tema="grupo"] {
+  --tinta:        #181818;   /* el negro de las cuatro cabeceras */
+  --marca:        #E01F28;   /* el rojo compartido */
+  --marca-papel:  #FDECEC;
+  --senal:        #204060;   /* el azul de Literal */
+  --senal-vivo:   #4E86B8;
+  --senal-suave:  #A8C4DC;
+  --senal-papel:  #EDF3F8;
+  --linea:        rgba(24, 24, 24, .18);
+  --filete:       rgba(24, 24, 24, .55);
 }
 
 /* --------------------------------------------------------------- página */
@@ -180,7 +214,7 @@ body {
   font-family: var(--display);
   font-size: .72rem;
   font-style: italic;
-  color: #B3AB98;
+  color: var(--tinta-clara);
 }
 
 /* Nota del editor, no cartel de advertencia */
@@ -496,10 +530,10 @@ body {
   cursor: pointer;
 }
 
-.composer__send:hover { background: #7C4818; }
+.composer__send:hover { background: var(--ocre-hondo); }
 
 /* Mientras el agente escribe, el redactor se ve apagado */
-.composer__input:disabled { background: #F2F0EB; color: var(--tinta-suave); }
+.composer__input:disabled { background: var(--papel-tenue); color: var(--tinta-suave); }
 .composer__send:disabled { background: var(--tinta-suave); cursor: default; }
 
 /* --------------------------------------------------------------- notas */

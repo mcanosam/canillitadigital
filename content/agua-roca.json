@@ -106,5 +106,12 @@
   "beat": {
     "role": "Cobertura",
     "name": "Redacción Tu Canillita"
+  },
+  "origen": {
+    "principal": {
+      "marca": "LM Cipolletti",
+      "formato": "texto"
+    },
+    "integra": []
   }
 }

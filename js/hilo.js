@@ -62,7 +62,9 @@
       R.figure(story, 'principal') +
       '<p class="destacado">' + R.esc(story.shortSummary) + '</p>' +
       R.firma(story) +
+      R.procedencia(story) +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar el resumen') +
+      R.formatosGrupo(story) +
       R.credencialesHilo(story) +
       '<div class="article">' + R.articleBody(story.articleBody) + '</div>' +
       (story.whyItMatters
@@ -107,6 +109,7 @@
 
   function start() {
     R = Canillita.render;
+    if (Canillita.tema) Canillita.tema.init();
 
     Promise.all([
       Canillita.content.load(),

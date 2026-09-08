@@ -385,6 +385,31 @@ Criterio de numeración:
 - El render de la planta queda acreditado como tal, no como fotografía.
 
 ---
+## v1.26.0 · 08-09-2026
+
+**Edición Grupo**
+
+- **`js/tema.js`**: dos identidades para la misma aplicación. Se activa con
+  `?grupo=1` y se apaga con `?grupo=0`. No hay proyecto paralelo ni segunda
+  hoja de estilos: el tema es un atributo en `<html>`.
+- Se midieron los cuatro logos y comparten el mismo rojo (#E01F28) y el mismo
+  negro (#181818); Literal aporta un azul (#204060). Por eso el tema solo suma
+  dos colores en vez de conciliar cuatro paletas.
+- **El ocre no se toca.** Sigue siendo el color de Tu Canillita; el rojo del
+  Grupo aparece únicamente donde habla el ecosistema.
+- Los 16 colores que estaban escritos a mano en las hojas de estilo pasaron a
+  ser variables. Ahora el 100% de la paleta se cambia en un solo lugar.
+- **Procedencia editorial**: cada historia declara `origen` en su JSON, con la
+  marca donde se publicó y los formatos que integra. La interfaz lo renderiza
+  sola: una línea si hay una fuente, un bloque si hay varias.
+- **"Una historia, varios formatos"** en las páginas de hilo: texto, audio y
+  análisis con su marca. El audio original figura como pendiente de enlazar y
+  se aclara que el resumen hablado es voz sintética.
+- **El esquema del ecosistema** en la portada: cuatro medios, Tu Canillita, tu
+  edición personalizada.
+- No se tocó nada del motor, el chat, el recorrido, Telegram ni las personas.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

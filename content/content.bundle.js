@@ -478,6 +478,22 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "beat": {
       "role": "Periodista especializado",
       "name": "Hugo Alonso"
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Cipolletti",
+        "formato": "texto"
+      },
+      "integra": [
+        {
+          "marca": "LM Neuquén",
+          "formato": "texto"
+        },
+        {
+          "marca": "LU5",
+          "formato": "audio"
+        }
+      ]
     }
   },
   "content/ruta22-historia.json": {
@@ -876,6 +892,18 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "beat": {
       "role": "Periodista especializado",
       "name": "Hugo Alonso"
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Cipolletti",
+        "formato": "texto"
+      },
+      "integra": [
+        {
+          "marca": "Literal",
+          "formato": "análisis"
+        }
+      ]
     }
   },
   "content/vacamuerta.json": {
@@ -1179,7 +1207,23 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "publishedAt": "2026-09-02",
         "url": "https://cenital.com/mas-alla-de-vaca-muerta-ganadoras-y-perdedoras-del-cambio-petrolero/"
       }
-    ]
+    ],
+    "origen": {
+      "principal": {
+        "marca": "LM Neuquén",
+        "formato": "texto"
+      },
+      "integra": [
+        {
+          "marca": "LU5",
+          "formato": "audio"
+        },
+        {
+          "marca": "Literal",
+          "formato": "análisis"
+        }
+      ]
+    }
   },
   "content/agua-roca.json": {
     "id": "agua_roca",
@@ -1289,6 +1333,13 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "beat": {
       "role": "Cobertura",
       "name": "Redacción Tu Canillita"
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Cipolletti",
+        "formato": "texto"
+      },
+      "integra": []
     }
   },
   "content/fruticultura.json": {
@@ -1479,6 +1530,18 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "beat": {
       "role": "Cobertura",
       "name": "Redacción Tu Canillita"
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Neuquén",
+        "formato": "texto"
+      },
+      "integra": [
+        {
+          "marca": "Literal",
+          "formato": "análisis"
+        }
+      ]
     }
   },
   "content/clima-rutas.json": {
@@ -1640,6 +1703,18 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "beat": {
       "role": "Cobertura",
       "name": "Redacción Tu Canillita"
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Neuquén",
+        "formato": "texto"
+      },
+      "integra": [
+        {
+          "marca": "LU5",
+          "formato": "audio"
+        }
+      ]
     }
   },
   "content/messi.json": {
@@ -1948,6 +2023,18 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "beat": {
       "role": "Cobertura",
       "name": "Redacción Tu Canillita"
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Neuquén",
+        "formato": "texto"
+      },
+      "integra": [
+        {
+          "marca": "LU5",
+          "formato": "audio"
+        }
+      ]
     }
   },
   "content/deportes.json": {
@@ -2034,6 +2121,13 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "alt": "Partido de la Liga Deportiva Confluencia",
       "credit": "",
       "pending": "Contenido ficticio: no lleva foto real. Si se reemplaza por una nota verdadera, foto propia de la cancha."
+    },
+    "origen": {
+      "principal": {
+        "marca": "LM Cipolletti",
+        "formato": "texto"
+      },
+      "integra": []
     }
   }
 };

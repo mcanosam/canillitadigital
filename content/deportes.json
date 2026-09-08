@@ -82,5 +82,12 @@
     "alt": "Partido de la Liga Deportiva Confluencia",
     "credit": "",
     "pending": "Contenido ficticio: no lleva foto real. Si se reemplaza por una nota verdadera, foto propia de la cancha."
+  },
+  "origen": {
+    "principal": {
+      "marca": "LM Cipolletti",
+      "formato": "texto"
+    },
+    "integra": []
   }
 }

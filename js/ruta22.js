@@ -53,6 +53,8 @@
       R.figure(actualidad, 'principal') +
       '<p class="destacado">' + R.esc(actualidad.shortSummary) + '</p>' +
       R.firma(actualidad) +
+      R.procedencia(actualidad) +
+      R.formatosGrupo(actualidad) +
       R.credencialesHilo(actualidad) +
       '<div class="article">' + R.articleBody(actualidad.articleBody) + '</div>' +
       '<div class="importa"><h3>Por qué importa acá</h3><p>' +
@@ -122,6 +124,7 @@
 
   function start() {
     R = Canillita.render;
+    if (Canillita.tema) Canillita.tema.init();
     Promise.all([
       Canillita.content.load(),
       Canillita.radio.loadAnswers()

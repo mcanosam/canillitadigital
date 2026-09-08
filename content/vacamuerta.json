@@ -299,5 +299,21 @@
       "publishedAt": "2026-09-02",
       "url": "https://cenital.com/mas-alla-de-vaca-muerta-ganadoras-y-perdedoras-del-cambio-petrolero/"
     }
-  ]
+  ],
+  "origen": {
+    "principal": {
+      "marca": "LM Neuquén",
+      "formato": "texto"
+    },
+    "integra": [
+      {
+        "marca": "LU5",
+        "formato": "audio"
+      },
+      {
+        "marca": "Literal",
+        "formato": "análisis"
+      }
+    ]
+  }
 }

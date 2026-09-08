@@ -48,6 +48,7 @@
   }
 
   function start() {
+    if (Canillita.tema) Canillita.tema.init();
     Promise.all([
       Canillita.content.load(),
       Canillita.radio.loadRecorded(),

@@ -394,5 +394,17 @@
   "beat": {
     "role": "Periodista especializado",
     "name": "Hugo Alonso"
+  },
+  "origen": {
+    "principal": {
+      "marca": "LM Cipolletti",
+      "formato": "texto"
+    },
+    "integra": [
+      {
+        "marca": "Literal",
+        "formato": "análisis"
+      }
+    ]
   }
 }

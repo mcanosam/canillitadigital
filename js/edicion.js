@@ -91,6 +91,7 @@
       R.fictionBanner(story) +
       '<p class="nota__resumen">' + R.esc(story.shortSummary) + '</p>' +
       R.firma(story) +
+      R.procedencia(story) +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar esta noticia') +
 
       '<div class="nota__acciones">' +
@@ -305,6 +306,7 @@
 
   function start() {
     R = Canillita.render;
+    if (Canillita.tema) Canillita.tema.init();
     // El boletín grabado se busca en paralelo: si no está, seguimos igual.
     Promise.all([
       Canillita.content.load(),

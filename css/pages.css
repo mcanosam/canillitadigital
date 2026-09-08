@@ -437,7 +437,7 @@
 }
 
 .tramo--done    { border-left-color: var(--ocre); }
-.tramo--partial { border-left-color: #C9922B; }
+.tramo--partial { border-left-color: var(--ocre-vivo); }
 .tramo--blocked { border-left-color: var(--rojo); }
 
 .tramo__head {
@@ -465,8 +465,8 @@
 }
 
 .chip--done    { background: var(--ocre-claro); color: var(--ocre); }
-.chip--partial { background: #FBF0D8; color: #7A5A12; }
-.chip--blocked { background: #FBEDEB; color: #7A2018; }
+.chip--partial { background: var(--ocre-papel); color: var(--ocre-hondo); }
+.chip--blocked { background: var(--rojo-papel); color: var(--rojo-hondo); }
 
 .tramo__traza {
   margin: 0 0 6px;
@@ -692,7 +692,7 @@
   border-color: var(--tinta);
 }
 
-.btn--primary:hover { background: #7C4818; }
+.btn--primary:hover { background: var(--ocre-hondo); }
 
 .btn--ghost {
   background: transparent;
@@ -718,9 +718,9 @@
 
 .error {
   padding: 14px 16px;
-  background: #FBEDEB;
+  background: var(--rojo-papel);
   border-left: 4px solid var(--rojo);
-  color: #7A2018;
+  color: var(--rojo-hondo);
 }
 
 /* --------------------------------------------------------- dos columnas */
@@ -1146,7 +1146,7 @@ a.tag:hover { background: var(--tinta); }
   margin: 0 0 7px;
   font-family: var(--interfaz);
   font-size: .76rem;
-  color: #B3AB98;
+  color: var(--tinta-clara);
 }
 
 .personas__lista {
@@ -1193,7 +1193,7 @@ a.tag:hover { background: var(--tinta); }
   font-family: var(--display);
   font-style: italic;
   font-size: .84rem;
-  color: #B3AB98;
+  color: var(--tinta-clara);
 }
 
 /* ================================================ novedades desde la visita */
@@ -1435,7 +1435,7 @@ body.recorrido-activo { overflow: hidden; }
   cursor: pointer;
 }
 
-.recorrido__seguir:hover { background: #0A3A46; }
+.recorrido__seguir:hover { background: var(--senal-honda); }
 
 .recorrido__salir {
   min-height: 46px;
@@ -1736,4 +1736,174 @@ body.recorrido-activo .btn-recorrido { display: none; }
   font-size: .82rem;
   line-height: 1.45;
   color: var(--tinta-suave);
+}
+
+/* ================================================ Edición Grupo */
+
+/* Las cuatro marcas, debajo de la chapa. Secundarias a propósito: son el
+   origen del contenido, no la navegación. */
+.masthead__marcas {
+  margin: 6px 0 0;
+  padding-top: 6px;
+  border-top: 1px solid rgba(247, 244, 238, .22);
+  font-family: var(--interfaz);
+  font-size: .74rem;
+  letter-spacing: .04em;
+  color: var(--tinta-clara);
+}
+
+.masthead__marcas span { color: var(--marca); }
+
+/* ---------------------------------------------- procedencia editorial */
+
+.origen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  margin: 9px 0 0;
+  padding: 6px 0 0;
+  border-top: 1px solid var(--linea);
+}
+
+.origen__rot {
+  font-family: var(--condensada);
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.origen__marca {
+  font-family: var(--interfaz);
+  font-size: .84rem;
+  font-weight: 600;
+  color: var(--marca);
+}
+
+.origen__sep { color: var(--tinta-suave); margin: 0 5px; }
+
+.origen--varias { flex-direction: column; gap: 3px; }
+.origen__lista { display: flex; flex-wrap: wrap; align-items: baseline; }
+
+/* ------------------------------------------ una historia, varios formatos */
+
+.grupo-formatos {
+  margin: 14px 0 0;
+  padding: 13px 15px;
+  background: var(--marca-papel);
+  border-left: 4px solid var(--marca);
+}
+
+.grupo-formatos__rot {
+  margin: 0 0 9px;
+  font-family: var(--condensada);
+  font-size: .78rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--marca);
+}
+
+.grupo-formatos__lista { list-style: none; display: grid; gap: 8px; }
+
+.pieza-grupo { display: flex; align-items: flex-start; gap: 9px; }
+.pieza-grupo__icono { font-size: 1rem; line-height: 1.2; }
+.pieza-grupo__texto { display: flex; flex-direction: column; }
+
+.pieza-grupo__que {
+  font-family: var(--interfaz);
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+.pieza-grupo__marca {
+  font-family: var(--display);
+  font-size: .84rem;
+  color: var(--tinta-suave);
+}
+
+/* Lo que todavía no está enlazado se ve, pero se ve apagado */
+.pieza-grupo--pendiente { opacity: .6; }
+
+.grupo-formatos__nota {
+  margin: 10px 0 0;
+  padding-top: 9px;
+  border-top: 1px solid var(--linea);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .82rem;
+  line-height: 1.45;
+  color: var(--tinta-suave);
+}
+
+/* ------------------------------------------------------- el ecosistema */
+
+.embudo {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+  background: var(--papel-viejo);
+  border-bottom: 1px solid var(--linea);
+  text-align: center;
+}
+
+.embudo__fila--marcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.embudo__marca {
+  padding: 5px 10px;
+  border: 1px solid var(--marca);
+  font-family: var(--interfaz);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--marca);
+  background: var(--burbuja-in);
+}
+
+.embudo__flecha {
+  margin: 7px 0;
+  font-size: 1.1rem;
+  color: var(--tinta-suave);
+}
+
+.embudo__nucleo {
+  display: inline-block;
+  padding: 9px 20px;
+  background: var(--tinta);
+  color: var(--papel);
+  font-family: var(--condensada);
+  font-stretch: 87.5%;
+  font-size: 1.35rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.embudo__salida {
+  display: inline-block;
+  padding: 7px 16px;
+  border: 1px solid var(--ocre);
+  color: var(--ocre);
+  font-family: var(--interfaz);
+  font-size: .92rem;
+  font-weight: 600;
+  background: var(--burbuja-in);
+}
+
+.embudo__pie {
+  margin: 12px 0 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .92rem;
+  line-height: 1.45;
+  color: var(--tinta-suave);
+}
+
+/* En pantalla ancha el esquema se lee en una línea */
+@media (min-width: 720px) {
+  .embudo__fila--marcas { gap: 8px; }
+  .embudo__flecha { margin: 9px 0; }
 }

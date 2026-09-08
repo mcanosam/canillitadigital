@@ -436,6 +436,114 @@
     });
   }
 
+  /* ------------------------------------------------ procedencia editorial */
+
+  /*
+   * De dónde viene la historia.
+   *
+   * Solo aparece en la Edición Grupo: en el tema propio no hay ecosistema que
+   * declarar. Si la historia reúne más de un formato, lo dice, porque ahí está
+   * el argumento: Tu Canillita no agrega notas, integra piezas.
+   */
+  function procedencia(story) {
+    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
+    var origen = story.origen;
+    if (!origen || !origen.principal) return '';
+
+    var integra = origen.integra || [];
+
+    if (!integra.length) {
+      return '<p class="origen">' +
+        '<span class="origen__rot">Fuente del Grupo</span>' +
+        '<span class="origen__marca">' + esc(origen.principal.marca) + '</span>' +
+        '</p>';
+    }
+
+    var todas = [origen.principal].concat(integra).map(function (item) {
+      return '<span class="origen__marca">' + esc(item.marca) + '</span>';
+    }).join('<span class="origen__sep" aria-hidden="true">·</span>');
+
+    return '<p class="origen origen--varias">' +
+      '<span class="origen__rot">Esta historia integra contenidos de</span>' +
+      '<span class="origen__lista">' + todas + '</span>' +
+      '</p>';
+  }
+
+  /* Cómo se nombra cada formato en pantalla */
+  var FORMATOS = {
+    'texto':    { etiqueta: 'Texto periodístico', icono: '📄' },
+    'audio':    { etiqueta: 'Audio original',     icono: '🎙️' },
+    'análisis': { etiqueta: 'Análisis',           icono: '🔎' }
+  };
+
+  /*
+   * Los formatos que el Grupo tiene sobre una misma historia.
+   *
+   * El audio original de la radio todavía no está enchufado, así que el botón
+   * va desactivado y lo dice. El resumen hablado sí funciona, y se aclara que
+   * es voz sintética: prometer una radio y entregar una máquina sería el peor
+   * error posible en una demostración para un medio.
+   */
+  function formatosGrupo(story) {
+    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
+    var origen = story.origen;
+    if (!origen || !origen.principal) return '';
+
+    var piezas = [origen.principal].concat(origen.integra || []);
+    var filas = piezas.map(function (pieza) {
+      var f = FORMATOS[pieza.formato] || { etiqueta: pieza.formato, icono: '•' };
+      var esAudio = pieza.formato === 'audio';
+      return '<li class="pieza-grupo' + (esAudio ? ' pieza-grupo--pendiente' : '') + '">' +
+        '<span class="pieza-grupo__icono" aria-hidden="true">' + f.icono + '</span>' +
+        '<span class="pieza-grupo__texto">' +
+          '<span class="pieza-grupo__que">' + esc(f.etiqueta) + '</span>' +
+          '<span class="pieza-grupo__marca">' + esc(pieza.marca) +
+            (esAudio ? ' · pendiente de enlazar' : '') + '</span>' +
+        '</span>' +
+        '</li>';
+    }).join('');
+
+    return '<section class="grupo-formatos">' +
+      '<p class="grupo-formatos__rot">Una historia, varios formatos</p>' +
+      '<ul class="grupo-formatos__lista">' + filas + '</ul>' +
+      '<p class="grupo-formatos__nota">El resumen hablado lo genera Tu Canillita ' +
+      'con voz sintética. El audio original de la radio se enlaza cuando el ' +
+      'Grupo lo integre.</p>' +
+      '</section>';
+  }
+
+  /*
+   * El esquema del ecosistema: cuatro medios, una capa, una edición.
+   * Es la pieza que explica el lugar de Tu Canillita sin decir que reemplaza
+   * a nadie.
+   */
+  function embudoGrupo() {
+    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
+
+    var marcas = Canillita.tema.marcas().map(function (m) {
+      return '<span class="embudo__marca">' + esc(m.nombre) + '</span>';
+    }).join('');
+
+    return '<section class="embudo">' +
+      '<div class="embudo__fila embudo__fila--marcas">' + marcas + '</div>' +
+      '<div class="embudo__flecha" aria-hidden="true">↓</div>' +
+      '<div class="embudo__nucleo">Tu Canillita</div>' +
+      '<div class="embudo__flecha" aria-hidden="true">↓</div>' +
+      '<div class="embudo__salida">Tu edición personalizada</div>' +
+      '<p class="embudo__pie">Cuatro medios. Una memoria regional. ' +
+      'Una experiencia para cada lector.</p>' +
+      '</section>';
+  }
+
+  /** La línea de marcas que va debajo de la chapa, en la Edición Grupo. */
+  function marcasChapa() {
+    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
+    return '<p class="masthead__marcas">' +
+      Canillita.tema.marcas().map(function (m) { return esc(m.nombre); })
+        .join('<span aria-hidden="true"> · </span>') +
+      '</p>';
+  }
+
   /* ---------------------------------------------------------- la firma */
 
   /*
@@ -742,6 +850,10 @@
     selloNovedad: selloNovedad,
     bindSimularAusencia: bindSimularAusencia,
     firma: firma,
+    procedencia: procedencia,
+    formatosGrupo: formatosGrupo,
+    embudoGrupo: embudoGrupo,
+    marcasChapa: marcasChapa,
     programacion: programacion,
     bindProgramacion: bindProgramacion,
     credencialesHilo: credencialesHilo,
