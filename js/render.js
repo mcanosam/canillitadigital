@@ -288,14 +288,30 @@
     reproduciendo = null;
   }
 
+  /*
+   * Quién pone la voz.
+   *
+   * Va junto a cada reproductor, no en un bloque aparte: el lector lo lee
+   * justo cuando decide escuchar. Hoy la voz es sintética y conviene decirlo;
+   * el día que el Grupo integre a sus periodistas, esta línea cambia sola.
+   */
+  function avisoDeVoz() {
+    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
+    return '<p class="voz-aviso">Voz sintética de Tu Canillita. ' +
+      'Más adelante, con las voces de los periodistas del Grupo.</p>';
+  }
+
   /** Barra de escucha. Devuelve '' si esa respuesta no tiene clip grabado. */
   function answerPlayer(audioId, label) {
     if (!audioId || !Canillita.radio.answer(audioId)) return '';
     var clip = Canillita.radio.answer(audioId);
-    return '<div class="escuchar clip" data-clip="' + esc(audioId) + '">' +
-      '<button type="button" class="clip__play" aria-label="Escuchar">▶</button>' +
-      '<span class="clip__label">' + esc(label || 'Escuchar') + ' · ' +
-        Math.round(clip.duration) + 's</span>' +
+    return '<div class="escuchar">' +
+      '<div class="clip" data-clip="' + esc(audioId) + '">' +
+        '<button type="button" class="clip__play" aria-label="Escuchar">▶</button>' +
+        '<span class="clip__label">' + esc(label || 'Escuchar') + ' · ' +
+          Math.round(clip.duration) + 's</span>' +
+      '</div>' +
+      avisoDeVoz() +
       '</div>';
   }
 
@@ -467,72 +483,6 @@
       '<span class="origen__rot">Esta historia integra contenidos de</span>' +
       '<span class="origen__lista">' + todas + '</span>' +
       '</p>';
-  }
-
-  /* Cómo se nombra cada formato en pantalla */
-  var FORMATOS = {
-    'texto':    { etiqueta: 'Texto periodístico', icono: '📄' },
-    'audio':    { etiqueta: 'Audio original',     icono: '🎙️' },
-    'análisis': { etiqueta: 'Análisis',           icono: '🔎' }
-  };
-
-  /*
-   * Los formatos que el Grupo tiene sobre una misma historia.
-   *
-   * El audio original de la radio todavía no está enchufado, así que el botón
-   * va desactivado y lo dice. El resumen hablado sí funciona, y se aclara que
-   * es voz sintética: prometer una radio y entregar una máquina sería el peor
-   * error posible en una demostración para un medio.
-   */
-  function formatosGrupo(story) {
-    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
-    var origen = story.origen;
-    if (!origen || !origen.principal) return '';
-
-    var piezas = [origen.principal].concat(origen.integra || []);
-    var filas = piezas.map(function (pieza) {
-      var f = FORMATOS[pieza.formato] || { etiqueta: pieza.formato, icono: '•' };
-      var esAudio = pieza.formato === 'audio';
-      return '<li class="pieza-grupo' + (esAudio ? ' pieza-grupo--pendiente' : '') + '">' +
-        '<span class="pieza-grupo__icono" aria-hidden="true">' + f.icono + '</span>' +
-        '<span class="pieza-grupo__texto">' +
-          '<span class="pieza-grupo__que">' + esc(f.etiqueta) + '</span>' +
-          '<span class="pieza-grupo__marca">' + esc(pieza.marca) +
-            (esAudio ? ' · pendiente de enlazar' : '') + '</span>' +
-        '</span>' +
-        '</li>';
-    }).join('');
-
-    return '<section class="grupo-formatos">' +
-      '<p class="grupo-formatos__rot">Una historia, varios formatos</p>' +
-      '<ul class="grupo-formatos__lista">' + filas + '</ul>' +
-      '<p class="grupo-formatos__nota">El resumen hablado lo genera Tu Canillita ' +
-      'con voz sintética. El audio original de la radio se enlaza cuando el ' +
-      'Grupo lo integre.</p>' +
-      '</section>';
-  }
-
-  /*
-   * El esquema del ecosistema: cuatro medios, una capa, una edición.
-   * Es la pieza que explica el lugar de Tu Canillita sin decir que reemplaza
-   * a nadie.
-   */
-  function embudoGrupo() {
-    if (!Canillita.tema || !Canillita.tema.esGrupo()) return '';
-
-    var marcas = Canillita.tema.marcas().map(function (m) {
-      return '<span class="embudo__marca">' + esc(m.nombre) + '</span>';
-    }).join('');
-
-    return '<section class="embudo">' +
-      '<div class="embudo__fila embudo__fila--marcas">' + marcas + '</div>' +
-      '<div class="embudo__flecha" aria-hidden="true">↓</div>' +
-      '<div class="embudo__nucleo">Tu Canillita</div>' +
-      '<div class="embudo__flecha" aria-hidden="true">↓</div>' +
-      '<div class="embudo__salida">Tu edición personalizada</div>' +
-      '<p class="embudo__pie">Cuatro medios. Una memoria regional. ' +
-      'Una experiencia para cada lector.</p>' +
-      '</section>';
   }
 
   /** La línea de marcas que va debajo de la chapa, en la Edición Grupo. */
@@ -851,8 +801,7 @@
     bindSimularAusencia: bindSimularAusencia,
     firma: firma,
     procedencia: procedencia,
-    formatosGrupo: formatosGrupo,
-    embudoGrupo: embudoGrupo,
+    avisoDeVoz: avisoDeVoz,
     marcasChapa: marcasChapa,
     programacion: programacion,
     bindProgramacion: bindProgramacion,

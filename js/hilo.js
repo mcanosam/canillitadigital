@@ -64,7 +64,6 @@
       R.firma(story) +
       R.procedencia(story) +
       R.answerPlayer(R.audioIdForStory(story.id), 'Escuchar el resumen') +
-      R.formatosGrupo(story) +
       R.credencialesHilo(story) +
       '<div class="article">' + R.articleBody(story.articleBody) + '</div>' +
       (story.whyItMatters

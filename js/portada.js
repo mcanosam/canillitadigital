@@ -266,10 +266,6 @@
     if (etiqueta) etiqueta.textContent = tema.etiqueta || 'Demostración';
   }
 
-  function pintarEmbudo() {
-    var caja = doc.getElementById('embudo');
-    if (caja) caja.innerHTML = R.embudoGrupo();
-  }
 
   function pintarCabecera() {
     doc.getElementById('secciones').innerHTML = R.seccionesNav('portada');
@@ -296,7 +292,6 @@
 
       pintarChapa();
       pintarCabecera();
-      pintarEmbudo();
       pintarPersonas();
       pintarTemas();
       activarTemas();

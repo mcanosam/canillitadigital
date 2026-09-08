@@ -1786,124 +1786,87 @@ body.recorrido-activo .btn-recorrido { display: none; }
 .origen--varias { flex-direction: column; gap: 3px; }
 .origen__lista { display: flex; flex-wrap: wrap; align-items: baseline; }
 
-/* ------------------------------------------ una historia, varios formatos */
 
-.grupo-formatos {
-  margin: 14px 0 0;
-  padding: 13px 15px;
-  background: var(--marca-papel);
-  border-left: 4px solid var(--marca);
-}
-
-.grupo-formatos__rot {
-  margin: 0 0 9px;
-  font-family: var(--condensada);
+/* Quién pone la voz. Va debajo de cada reproductor, no en un bloque aparte */
+.voz-aviso {
+  margin: 5px 0 0;
+  font-family: var(--display);
+  font-style: italic;
   font-size: .78rem;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--marca);
+  line-height: 1.4;
+  color: var(--tinta-suave);
 }
 
-.grupo-formatos__lista { list-style: none; display: grid; gap: 8px; }
+.escuchar { margin: 12px 0 4px; }
+.escuchar .clip { margin: 0; }
+.tramo .escuchar { margin: 10px 0 0; }
 
-.pieza-grupo { display: flex; align-items: flex-start; gap: 9px; }
-.pieza-grupo__icono { font-size: 1rem; line-height: 1.2; }
-.pieza-grupo__texto { display: flex; flex-direction: column; }
+/* =============================== acentos propios de la Edición Grupo === */
 
-.pieza-grupo__que {
-  font-family: var(--interfaz);
-  font-size: .92rem;
+/* Filete de marca al tope de la página: la firma del ecosistema */
+:root[data-tema="grupo"] body::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: var(--marca);
+}
+
+:root[data-tema="grupo"] .masthead {
+  border-bottom: 1px solid rgba(224, 31, 40, .35);
+}
+
+/* Las marcas, con más presencia pero sin volverse navegación */
+:root[data-tema="grupo"] .masthead__marcas {
+  font-size: .78rem;
   font-weight: 600;
-}
-
-.pieza-grupo__marca {
-  font-family: var(--display);
-  font-size: .84rem;
-  color: var(--tinta-suave);
-}
-
-/* Lo que todavía no está enlazado se ve, pero se ve apagado */
-.pieza-grupo--pendiente { opacity: .6; }
-
-.grupo-formatos__nota {
-  margin: 10px 0 0;
-  padding-top: 9px;
-  border-top: 1px solid var(--linea);
-  font-family: var(--display);
-  font-style: italic;
-  font-size: .82rem;
-  line-height: 1.45;
-  color: var(--tinta-suave);
-}
-
-/* ------------------------------------------------------- el ecosistema */
-
-.embudo {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 16px;
-  background: var(--papel-viejo);
-  border-bottom: 1px solid var(--linea);
-  text-align: center;
-}
-
-.embudo__fila--marcas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
-}
-
-.embudo__marca {
-  padding: 5px 10px;
-  border: 1px solid var(--marca);
-  font-family: var(--interfaz);
-  font-size: .82rem;
-  font-weight: 600;
-  color: var(--marca);
-  background: var(--burbuja-in);
-}
-
-.embudo__flecha {
-  margin: 7px 0;
-  font-size: 1.1rem;
-  color: var(--tinta-suave);
-}
-
-.embudo__nucleo {
-  display: inline-block;
-  padding: 9px 20px;
-  background: var(--tinta);
   color: var(--papel);
-  font-family: var(--condensada);
-  font-stretch: 87.5%;
-  font-size: 1.35rem;
-  letter-spacing: .04em;
-  text-transform: uppercase;
 }
 
-.embudo__salida {
-  display: inline-block;
-  padding: 7px 16px;
-  border: 1px solid var(--ocre);
-  color: var(--ocre);
-  font-family: var(--interfaz);
-  font-size: .92rem;
+:root[data-tema="grupo"] #edicion-label {
+  color: var(--marca);
   font-weight: 600;
-  background: var(--burbuja-in);
 }
 
-.embudo__pie {
-  margin: 12px 0 0;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: .92rem;
-  line-height: 1.45;
-  color: var(--tinta-suave);
+/* El filete de la fecha toma el rojo del Grupo */
+:root[data-tema="grupo"] .dateline {
+  border-bottom-color: var(--marca);
 }
 
-/* En pantalla ancha el esquema se lee en una línea */
-@media (min-width: 720px) {
-  .embudo__fila--marcas { gap: 8px; }
-  .embudo__flecha { margin: 9px 0; }
+/* La caja de credenciales se identifica con el ecosistema */
+:root[data-tema="grupo"] .credenciales {
+  border-top-color: var(--marca);
+}
+
+:root[data-tema="grupo"] .credenciales__rotulo { color: var(--marca); }
+
+/* La barra del canal invita con el rojo del Grupo */
+:root[data-tema="grupo"] .canal .btn--primary,
+:root[data-tema="grupo"] .probar .btn--primary {
+  background: var(--marca);
+  border-color: var(--marca);
+}
+
+/* Los tramos y las historias seguidas usan el azul de Literal */
+:root[data-tema="grupo"] .btn--follow {
+  border-color: var(--senal);
+  color: var(--senal);
+}
+
+:root[data-tema="grupo"] .secciones__accion {
+  color: var(--marca) !important;
+}
+
+:root[data-tema="grupo"] .secciones a:hover {
+  border-bottom-color: var(--marca);
+  color: var(--marca);
+}
+
+:root[data-tema="grupo"] .vista.is-activa {
+  border-bottom-color: var(--marca);
+}
+
+/* El aviso de voz, en la Edición Grupo, se apoya en el rojo */
+:root[data-tema="grupo"] .voz-aviso {
+  padding-left: 9px;
+  border-left: 2px solid var(--marca);
 }

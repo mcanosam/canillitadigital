@@ -410,6 +410,21 @@ Criterio de numeración:
 - No se tocó nada del motor, el chat, el recorrido, Telegram ni las personas.
 
 ---
+## v1.27.0 · 08-09-2026
+
+- Se quitan el esquema del ecosistema y el bloque "una historia, varios
+  formatos": explicaban el producto en vez de usarlo. Eso va en la
+  presentación, no en la aplicación.
+- **El aviso de la voz se muda adonde suena**: aparece debajo de cada
+  reproductor, no en un bloque aparte, y habla de las voces de los periodistas
+  del Grupo en lugar del "audio original de la radio".
+- Más presencia del ecosistema en la Edición Grupo: filete de marca al tope de
+  la página, el rojo en el filete de la fecha, en la etiqueta de edición, en
+  las credenciales, en la acción del canal y en la vista activa. El azul de
+  Literal pasa al botón de seguir.
+- El ocre sigue siendo de Tu Canillita: volantas, capitular y recuento.
+
+---
 
 ## v1.6.0 · 07-08-2026
 
