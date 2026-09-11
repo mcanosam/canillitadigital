@@ -300,9 +300,21 @@
       pintarBoletin();
       pintarProgramacion();
 
-      /* El recorrido arranca cuando la portada ya está dibujada: si no, los
-         pasos apuntarían a elementos que todavía no existen. */
-      if (Canillita.recorrido) Canillita.recorrido.init();
+      /*
+       * El recorrido arranca cuando la portada ya está dibujada: si no, los
+       * pasos apuntarían a elementos que todavía no existen. Y como con
+       * ?demo=1 borra las preferencias, después hay que volver a pintar.
+       */
+      if (Canillita.recorrido) {
+        /* init() avisa si borró las preferencias: el parámetro ya no está en
+           la dirección para cuando podríamos consultarlo. */
+        if (Canillita.recorrido.init()) {
+          resumenNovedades = R.novedades(Canillita.preferences.marcarVisita());
+          pintarPersonas();
+          pintarTemas();
+          pintarPortada();
+        }
+      }
     }).catch(function (error) {
       doc.getElementById('portada').innerHTML =
         '<p class="error">No pude cargar las noticias. ' +

@@ -130,6 +130,23 @@
     return found.length ? found[0].label : current + '×';
   }
 
+  /**
+   * Devuelve todo a los valores iniciales.
+   *
+   * Lo usa el recorrido guiado: si alguien escanea el código en una tableta
+   * que ya se usó, tiene que empezar desde cero. Sin esto, el segundo visitante
+   * arranca con el lector, los temas y las novedades del primero.
+   *
+   * No toca el tema: ese lo decide la dirección con la que se entra.
+   */
+  function reiniciar() {
+    try {
+      global.localStorage.removeItem(STORAGE_KEY);
+    } catch (error) { /* sin almacenamiento no hay nada que borrar */ }
+    current = null;   // read() guarda una copia en memoria: también hay que soltarla
+    return read();
+  }
+
   /* ------------------------------------------------------ última visita */
 
   /* Recargar la página no debería borrar las novedades: se considera la misma
@@ -203,6 +220,7 @@
     audioLabel: audioLabel,
     rateLabel: rateLabel,
     RATE_LABELS: RATE_LABELS,
+    reiniciar: reiniciar,
     marcarVisita: marcarVisita,
     simularAusencia: simularAusencia,
     isFollowing: isFollowing,

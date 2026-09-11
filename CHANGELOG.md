@@ -425,6 +425,23 @@ Criterio de numeración:
 - El ocre sigue siendo de Tu Canillita: volantas, capitular y recuento.
 
 ---
+## v1.28.0 · 11-09-2026
+
+- **Código QR** para la presentación: `assets/qr/` trae el código en SVG, en
+  PNG y con rótulo listo para diapositiva o impresión. Apunta a
+  `?grupo=1&demo=1` y usa corrección de errores alta, que tolera reflejos y
+  manchas al proyectarlo.
+- **`?demo=1` ahora reinicia la demostración.** Quien escanea no hereda el
+  lector, los temas ni las novedades de quien usó el aparato antes: el
+  recorrido arranca siempre desde el primer paso y con el estado en blanco.
+- El parámetro `demo` se saca de la dirección apenas arranca. Sin eso, elegir
+  un lector —que recarga la página— volvía a disparar el reinicio y borraba lo
+  que la persona acababa de elegir. El parámetro `grupo` se conserva.
+- Corrección en `preferences.reiniciar()`: `read()` guarda una copia en
+  memoria, así que borrar el almacenamiento no alcanzaba. Ahora también suelta
+  la copia.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

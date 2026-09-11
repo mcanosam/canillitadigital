@@ -211,6 +211,22 @@
     pintar(indiceActual + 1);
   }
 
+  /*
+   * Saca `demo` de la dirección conservando el resto.
+   *
+   * Hace falta dos veces: al terminar, para que recargar no vuelva a arrancar
+   * el recorrido; y apenas arranca, porque elegir un lector recarga la página
+   * y el reinicio se dispararía de nuevo, borrando lo que la persona acaba de
+   * elegir. El parámetro `grupo` se conserva: define la identidad, no el
+   * recorrido.
+   */
+  function limpiarDireccion() {
+    if (!global.history || !global.history.replaceState) return;
+    var url = new URL(global.location.href);
+    url.searchParams.delete('demo');
+    global.history.replaceState({}, '', url.pathname + url.search + url.hash);
+  }
+
   function terminar() {
     limpiarFoco();
     guardarPaso(null);
@@ -219,11 +235,7 @@
       capa = null;
     }
     doc.body.classList.remove('recorrido-activo');
-
-    /* Se saca ?demo=1 para que recargar no vuelva a arrancar el recorrido */
-    if (global.history && global.history.replaceState) {
-      global.history.replaceState({}, '', global.location.pathname);
-    }
+    limpiarDireccion();
   }
 
   /* ---------------------------------------------------------- arranque */
@@ -263,15 +275,30 @@
   /**
    * Decide si el recorrido tiene que arrancar solo.
    * Se llama cuando la portada ya terminó de dibujarse.
+   *
+   * Con `?demo=1` en la dirección el recorrido empieza siempre desde el
+   * principio y con el estado en blanco. Es el caso del código QR: la persona
+   * que escanea no tiene por qué heredar el lector ni las novedades de quien
+   * usó el aparato antes.
    */
   function init() {
     seguirClicDeLector();
 
-    var pendiente = leerPaso();
     var pedido = Canillita.router && Canillita.router.param('demo') === '1';
 
+    if (pedido) {
+      if (Canillita.preferences && Canillita.preferences.reiniciar) {
+        Canillita.preferences.reiniciar();
+      }
+      guardarPaso(null);
+      limpiarDireccion();
+      arrancar(0);
+      return true;          // hubo reinicio: quien llama tiene que repintar
+    }
+
+    var pendiente = leerPaso();
     if (pendiente !== null) arrancar(pendiente);
-    else if (pedido) arrancar(0);
+    return false;
   }
 
   Canillita.recorrido = {
