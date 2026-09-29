@@ -90,6 +90,7 @@ const PREGUNTAS = [
   { id: 'messi',               pregunta: 'Contame el hilo de Messi' },
   { id: 'messi-final',         pregunta: '¿Cómo salió la final del Mundial 2026?' },
   { id: 'messi-retiro',        pregunta: '¿Messi se retira de la Selección?' },
+  { id: 'messi-despedida',     pregunta: '¿Cuándo es la despedida de Messi?' },
   { id: 'fuera-de-alcance',    pregunta: '¿Qué pasa con el dólar?' }
 ];
 
@@ -105,7 +106,9 @@ function limpiar(texto) {
   const sinAdornos = String(texto)
     // Los números en círculo (1️⃣) son enumeraciones: se dicen como tales
     .replace(/([1-5])\u{FE0F}?\u{20E3}/gu, (m, n) => ORDINALES[Number(n)])
-    .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{20E3}]/gu, '')
+    /* El rango 2300-23FF entra porque ahí viven ⏳ y ⌛, que se usan para
+       marcar lo que está sin definir y no se leen en voz alta. */
+    .replace(/[\u{1F000}-\u{1FAFF}\u{2300}-\u{23FF}\u{2600}-\u{27BF}\u{FE0F}\u{20E3}]/gu, '')
     .replace(/[*_]/g, '')
     .replace(/^\s*[•·]\s*/gm, '');
 

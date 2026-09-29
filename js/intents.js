@@ -146,7 +146,16 @@
     ],
     messi_retiro: [
       'messi se retira', 'se retira messi', 'deja la seleccion',
-      'sigue en la seleccion', 'ultimo partido de messi', 'retiro de messi'
+      'sigue en la seleccion', 'retiro de messi', 'se retiro messi',
+      'anuncio el retiro', 'nuevo capitan', 'cuti romero', 'sigue scaloni',
+      'continuidad de scaloni'
+    ],
+    /* La despedida es agenda, no historia: lleva intención propia para no
+       terminar contestándola en pasado desde el bloque del retiro. */
+    messi_despedida: [
+      'despedida de messi', 'partido despedida', 'cuando es la despedida',
+      'ultimo partido de messi', 'cuando juega messi', 'messi contra benin',
+      'partido en el monumental', 'la despedida'
     ],
     messi_premios: [
       'balones de oro', 'balon de oro', 'cuantos balones', 'premios de messi'

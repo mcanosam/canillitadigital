@@ -537,6 +537,33 @@
   color: var(--tinta-suave);
 }
 
+/* Un capítulo con fecha que todavía no ocurrió. El punto va hueco y el texto
+   más tenue: tiene que leerse como agenda, nunca como hecho consumado.
+   No se usa --senal acá: ese color significa "esto cambió" y nada más. */
+
+.hito--proximo::before {
+  background: var(--papel);
+  border-color: var(--ocre);
+}
+
+.hito--proximo .hito__title,
+.hito--proximo .hito__text {
+  color: var(--tinta-suave);
+}
+
+.hito__pendiente {
+  display: inline-block;
+  margin: 2px 0 0;
+  padding: 1px 6px;
+  border: 1px dashed var(--tinta-clara);
+  font-family: var(--interfaz);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
 /* -------------------------------------------------------------- fuentes */
 
 .fuentes {
@@ -1623,6 +1650,15 @@ body.recorrido-activo .btn-recorrido { display: none; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+
+  /*
+   * La lista se desliza, pero sin scrollbar el corte se leía como un error:
+   * "Vaca Muer" parecía texto roto y no una sección que sigue más allá del
+   * borde. El degradado de los últimos píxeles lo convierte en lo que es.
+   * Si la lista entra entera no hay nada ahí para desvanecer.
+   */
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 26px), transparent);
+          mask-image: linear-gradient(to right, #000 calc(100% - 26px), transparent);
 }
 
 .secciones__lista::-webkit-scrollbar { display: none; }
@@ -1870,3 +1906,4 @@ body.recorrido-activo .btn-recorrido { display: none; }
   padding-left: 9px;
   border-left: 2px solid var(--marca);
 }
+

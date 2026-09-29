@@ -10,6 +10,21 @@
  *
  * Existen para responder en veinte segundos la pregunta más difícil de la
  * demo: "¿en qué se diferencia de un diario común?".
+ *
+ * Criterio para armar la lista: cada lector tiene que diferenciarse del
+ * anterior en algo que se vea apenas cambia la pantalla. No alcanza con que
+ * tengan temas distintos, porque la Ruta 22 y Vaca Muerta le interesan a casi
+ * todo el valle y entonces tres portadas salen parecidas. Por eso cada uno
+ * varía además en el formato, en cuánto tiempo tiene y en qué hilo sigue:
+ *
+ *   Juan Carlos  energía + ruta      texto y audio   3 min
+ *   Horacio      ruta + fruticultura solo audio      3 min   (manos ocupadas)
+ *   Hugo         todo el valle       todos           5 min   (periodista)
+ *   Nicolás      deporte + camino    solo audio      1 min   (ágil, en viaje)
+ *   Yo           configuración vacía texto y audio   1 min
+ *
+ * Y cada uno sigue al menos un hilo distinto, así el cartel de "esto cambió
+ * desde tu última visita" aparece en un lugar diferente según quién entre.
  */
 (function (global) {
   'use strict';
@@ -60,6 +75,22 @@
         format: 'todos',
         audioSeconds: 300,
         speechRate: 1
+      }
+    },
+    {
+      id: 'nicolas',
+      nombre: 'Nicolás',
+      rol: 'Cruza el puente cada día',
+      descripcion: 'Viaja a Neuquén todas las mañanas. Cómo está el camino, qué tiempo va a ' +
+                   'hacer, y el hilo de Messi.',
+      prefs: {
+        name: 'Nicolás',
+        locality: 'Cipolletti',
+        topics: ['deportes', 'clima', 'ruta22'],
+        following: ['messi', 'clima'],
+        format: 'audio',
+        audioSeconds: 60,
+        speechRate: 1.15
       }
     },
     {

@@ -356,11 +356,16 @@
         '✔️ *3 de septiembre:* la Legislatura lo ratificó con 38 votos a favor y 3 en contra. ' +
         'Son 518 kilómetros de las rutas 22 y 151, por 20 años.\n' +
         '✔️ Se declaró la *emergencia vial* por un año y se autorizó un crédito de hasta ' +
-        '*60 millones de dólares* con el Fonplata, garantizado con regalías.\n\n' +
-        '⏳ Ahora la parte lenta: las obras arrancan 60 días después de publicada la ley, ' +
-        'los tramos se entregan de a uno con actas propias, y Nación no aporta plata.',
+        '*60 millones de dólares* con el Fonplata, garantizado con regalías.\n' +
+        '✔️ *29 de septiembre:* se promulgó la *Ley 5895* (Decreto 901/26), que destina ' +
+        '*7.000 millones de pesos* al inicio de las obras. La plata sale del aporte territorial ' +
+        'de Oldelval por el Duplicar Norte, no de rentas generales.\n\n' +
+        '⏳ Ahora la letra chica. Las primeras obras son en *noviembre* sobre 305 kilómetros, y ' +
+        'el propio Weretilneck aclaró de qué se trata: "Bacheo, tapar pozos, sacar huellones. ' +
+        'Estamos hablando de cosas muy preliminares". La reparación de fondo depende del crédito ' +
+        'de 60 millones, que recién se analiza en octubre. Nación no aporta plata.',
         {
-          dataDate: '2026-09-03',
+          dataDate: '2026-09-29',
           links: [{
             label: 'Ver el hilo completo',
             href: Canillita.render.hiloUrl('ruta22')
@@ -482,13 +487,21 @@
         'Un oleoducto de 437 kilómetros que va de la cuenca neuquina a la Terminal de Punta Colorada, ' +
         'en la costa rionegrina cerca de Sierra Grande. Inversión estimada: 3.000 millones de dólares.\n\n' +
         'Lo hacen siete petroleras juntas: YPF, Vista, PAE, Pampa, Chevron, Pluspetrol y Shell.\n\n' +
-        '✔️ Hacia fines de julio rondaba el 80% de avance.\n' +
-        '✔️ Arranca con 180.000 barriles por día y escala a 550.000 en 2027.\n' +
-        '✔️ Los primeros despachos se esperan a principios de 2027.\n\n' +
-        '⏳ Lo que falta definir: cuánto de todo esto se traduce en empleo y regalías para Río Negro. ' +
-        'Weretilneck dijo que el crecimiento fuerte llegaría hacia 2028 o 2029.',
+        '✔️ *La obra del caño terminó en agosto:* Techint y Sacde obtuvieron el "apto para ' +
+        'funcionar" tras quince meses y un pico de 2.500 trabajadores.\n' +
+        '✔️ En Punta Colorada ya está terminado el *tanque 404*, el primero: 120.000 metros ' +
+        'cúbicos, 82 metros de diámetro. El primer llenado lo opera Martín Gómez, de San ' +
+        'Antonio Oeste.\n' +
+        '✔️ El 23 de septiembre colocó un bono por *233,65 millones de dólares* al 6,25% a ' +
+        'cuatro años. Salía a buscar 100.\n' +
+        '✔️ Arranca con 180.000 barriles por día y escala a 550.000 hacia el tercer trimestre ' +
+        'de 2027, un año antes de lo proyectado.\n\n' +
+        '⏳ Lo que falta: la terminal. La conexión de la estación de Allen está prevista para el ' +
+        '15 de diciembre y las primeras exportaciones, para las primeras semanas de 2027. Y lo ' +
+        'de siempre: cuánto de esto se traduce en empleo y regalías para Río Negro. Weretilneck ' +
+        'dijo que el crecimiento fuerte llegaría hacia 2028 o 2029.',
         {
-          dataDate: '2026-09-04',
+          dataDate: '2026-09-29',
           links: [{
             label: 'Ver el hilo completo',
             href: Canillita.render.hiloUrl('vacamuerta')
@@ -515,19 +528,47 @@
 
   /* ------------------------------------------------------------- Messi */
 
+  /* Nombre completo y no abreviatura: este mismo texto lo lee Piper en voz
+     alta, y "31 ago" se pronuncia tal cual está escrito. */
+  var MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+               'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+  /*
+   * Rótulo de un hito en el chat. Cuando varios hitos caen en el mismo año
+   * —que es lo normal cuando el hilo se mueve— mostrar solo "2026" cuatro
+   * veces no dice nada: ahí conviene el día y el mes.
+   *
+   * Y si el hito todavía no pasó, se dice. Un hilo vivo tiene agenda, y
+   * confundir agenda con hecho consumado es el error que no se perdona.
+   */
+  function rotuloHito(item, mismoAnio) {
+    var partes = item.date.split('-');
+    var cuando = mismoAnio
+      ? Number(partes[2]) + ' de ' + MESES[Number(partes[1]) - 1]
+      : partes[0];
+    return '• *' + cuando + '* · ' + item.title +
+      (item.upcoming ? ' _(todavía no pasó)_' : '');
+  }
+
+  function ultimosHitos(story, cuantos) {
+    var ultimos = story.timeline.slice(-cuantos);
+    var anios = ultimos.map(function (item) { return item.date.slice(0, 4); });
+    var mismoAnio = anios.every(function (a) { return a === anios[0]; });
+    return ultimos.map(function (item) {
+      return rotuloHito(item, mismoAnio);
+    }).join('\n');
+  }
+
   function messi() {
     var story = content.get('messi_hilo');
-    var hitos = story.timeline.slice(-4).map(function (item) {
-      return '• *' + item.date.slice(0, 4) + '* · ' + item.title;
-    }).join('\n');
 
     return reply([
       message('⚽ *' + story.title + '*\n_' + story.subtitle + '_\n\n' + story.shortSummary),
-      message('*Lo último del hilo*\n' + hitos, {
+      message('*Lo último del hilo*\n' + ultimosHitos(story, 4), {
         dataDate: story.eventDate,
         links: [{ label: 'Ver el hilo completo', href: Canillita.router.editionUrl() }]
       })
-    ], ['¿Messi se retira de la Selección?', '¿Cómo salió la final del Mundial 2026?', 'Ver deportes'], 'messi');
+    ], ['¿Messi se retira de la Selección?', '¿Cuándo es la despedida de Messi?', 'Ver deportes'], 'messi');
   }
 
   function messiFinal() {
@@ -547,18 +588,48 @@
   }
 
   function messiRetiro() {
-    var story = content.get('messi_hilo');
     return reply([
       message(
-        'No lo dijo, y esa es la respuesta honesta.\n\n' +
-        '✔️ *Confirmado:* después de la final se quebró al saludar a la hinchada, y al día siguiente escribió que el dolor era muy grande. No anunció nada sobre la Selección y volvió a Rosario con su familia.\n\n' +
-        '✔️ *Confirmado:* tiene contrato con Inter Miami hasta fines de 2028, así que jugar va a seguir jugando.\n\n' +
-        '⏳ *Sin definir:* si vuelve a jugar en la Selección. Scaloni, consultado después del partido, dijo que no tenía idea y que la pregunta era para Messi. La continuidad del propio entrenador también quedó en duda.',
-        {
-          dataDate: '2026-07-21'
-        }
+        'Sí. Lo anunció el 31 de agosto.\n\n' +
+        '✔️ *Confirmado:* publicó en Instagram un mensaje escrito a mano y un video. "Fue una ' +
+        'decisión que dolió y duele en el alma, pero entiendo que es el momento". En el video ' +
+        'quedó la frase que se repitió toda la semana: "Me vacié, ya no tengo más para dar".\n\n' +
+        '✔️ *Confirmado:* el texto estaba fechado el 21 de julio, dos días después de la final. ' +
+        'Lo guardó cuarenta y tres días antes de publicarlo. En el medio murió su padre, Jorge, ' +
+        'el 8 de agosto.\n\n' +
+        '✔️ *Confirmado:* cierra su ciclo con 207 partidos, 125 goles y seis títulos. Jugar ' +
+        'sigue jugando: tiene contrato con Inter Miami hasta fines de 2028.',
+        { dataDate: '2026-08-31' }
+      ),
+      message(
+        '⏳ *Lo que sigue abierto:* la continuidad de Scaloni. Su contrato vence en diciembre de ' +
+        '2026 y la renovación no está definida. El capitán, eso sí, ya tiene nombre: el 24 de ' +
+        'septiembre Scaloni confirmó que la cinta pasa a Cuti Romero.',
+        { dataDate: '2026-09-24' }
       )
-    ], ['¿Cómo salió la final del Mundial 2026?', 'Contame el hilo de Messi', 'Menú'], 'messi-retiro');
+    ], ['¿Cuándo es la despedida de Messi?', 'Contame el hilo de Messi', 'Menú'], 'messi-retiro');
+  }
+
+  /*
+   * La despedida todavía no pasó. Se responde en futuro a propósito: en una
+   * demo que se muestra en vivo, confundir una fecha de agenda con un hecho
+   * consumado sería el peor error posible.
+   */
+  function messiDespedida() {
+    return reply([
+      message(
+        '📅 *Martes 6 de octubre, 20 horas, Monumental. Argentina - Benín.*\n\n' +
+        'Va a ser su partido número 208 con la Selección, y el último. La AFA lo anunció el 15 ' +
+        'de septiembre: Claudio Tapia dijo por video que lo invitaban a tener "la despedida que ' +
+        'realmente se merece".\n\n' +
+        'No juega los dos amistosos previos de la misma fecha FIFA: el 30 de septiembre ante ' +
+        'Bolivia en Córdoba y el 3 de octubre ante Burkina Faso, también en el Monumental. ' +
+        '"Estos dos partidos sirven para que los chicos aporten lo suyo", explicó Scaloni.\n\n' +
+        'Esa noche la Selección estrena una camiseta conmemorativa, con detalles dorados en el ' +
+        'escudo y los números, el logo de Messi y un 10 rodeado de laureles y el Sol de Mayo.',
+        { dataDate: '2026-09-28' }
+      )
+    ], ['¿Messi se retira de la Selección?', 'Contame el hilo de Messi', 'Menú'], 'messi-despedida');
   }
 
   function messiPremios() {
@@ -723,6 +794,7 @@
     messi: messi,
     messi_final: messiFinal,
     messi_retiro: messiRetiro,
+    messi_despedida: messiDespedida,
     messi_premios: messiPremios,
     preferences: startPreferences,
     thanks: thanks,

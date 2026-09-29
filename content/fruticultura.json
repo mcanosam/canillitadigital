@@ -4,15 +4,15 @@
   "category": "Fruticultura",
   "topic": "fruticultura",
   "title": "Menos fruta, mejores precios: la cuenta que no cierra",
-  "subtitle": "La cosecha cayó 14% en Río Negro y Neuquén, los precios subieron hasta 87% y el margen del productor sigue en duda",
+  "subtitle": "La cosecha cayó 14% y los precios subieron hasta 87%. Ahora arrancó la temporada nueva, y arrancó con heladas",
   "status": "active",
   "isFiction": false,
-  "lastUpdated": "2026-08-14T07:00:00-03:00",
-  "eventDate": "2026-06-02",
+  "lastUpdated": "2026-09-29T07:00:00-03:00",
+  "eventDate": "2026-09-28",
   "readingTime": 5,
-  "shortSummary": "La campaña 2026 dejó 140.000 toneladas menos de peras y manzanas que el año pasado. Los precios subieron muy por encima de la inflación, pero producir un kilo cuesta 0,34 dólares y la mejora tiene que atravesar frío, empaque, flete y comercialización antes de llegar al productor.",
+  "shortSummary": "La campaña 2026 dejó 140.000 toneladas menos de peras y manzanas que el año pasado, con precios que subieron muy por encima de la inflación y un margen que sigue en duda. La temporada siguiente ya está en marcha: las chacras están en plena floración, pero septiembre trajo tres alertas por heladas tardías y el INTA advierte que la floración viene atrasada.",
   "whatsappSummary": "🍎 *Menos fruta, mejores precios*\nLa cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén: 140.000 toneladas menos, sobre todo en manzana.\nLos precios treparon hasta 87% interanual en el Mercado Central. Pero producir un kilo cuesta USD 0,34 y el margen se define después de la cosecha: frío, empaque, flete y venta.",
-  "radioHeadline": "Y ahora la fruta, que este año dejó una cuenta rara.",
+  "radioHeadline": "La fruta, que cerró una temporada rara y ya arrancó la que viene.",
   "radioSummary": "Hubo menos fruta y valió más. Los números: al treinta de abril, la cosecha conjunta de peras y manzanas fue de poco más de ochocientas cincuenta y seis mil toneladas. Catorce por ciento menos que el año pasado. Ciento cuarenta mil toneladas que no están. La mayor parte de esa caída es manzana. ¿Y los precios? Subieron fuerte. En el Mercado Central, la Red Delicious aumentó cerca del ochenta y siete por ciento interanual, muy por encima de la inflación. Ahora, la pregunta del productor es otra. Producir un kilo cuesta treinta y cuatro centavos de dólar. Y ese precio bueno tiene que atravesar el frío, el empaque, el flete y la venta antes de convertirse en margen. Como dijo un productor del valle: el precio es bueno, pero es mucha la merma que hay en manzana.",
   "articleBody": [
     {
@@ -58,6 +58,22 @@
     {
       "type": "paragraph",
       "text": "Ahí está la cuenta que sigue abierta: el precio mejora, pero tiene que atravesar frío, empaque, materiales, energía, flete, mercado interno y competencia importada antes de convertirse en margen."
+    },
+    {
+      "type": "heading",
+      "text": "Y arrancó la temporada que viene"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mientras se terminaba de acomodar la cuenta de la campaña pasada, empezó la siguiente. Al 28 de septiembre el Alto Valle está en plena floración: primero las peras y detrás las manzanas, con las colmenas ya puestas para la polinización."
+    },
+    {
+      "type": "paragraph",
+      "text": "No fue un arranque tranquilo. Septiembre dejó tres alertas por heladas tardías, con pronósticos de hasta -7 °C en la madrugada del 12 y peligro alto declarado para los frutales. En varias chacras hubo que activar el riego por aspersión; la temperatura tocó los -3,5 °C."
+    },
+    {
+      "type": "paragraph",
+      "text": "Según el INTA, la floración de esta temporada viene atrasada, y la causa es ese frío. Si eso se traduce en menos fruta o solamente en una cosecha más tardía es algo que no se sabe todavía: el número recién aparece sobre el final de la primavera. Para un productor que viene de una campaña con 14% menos de volumen, la diferencia entre una cosa y la otra es el año entero."
     }
   ],
   "confirmedFacts": [
@@ -85,9 +101,26 @@
       "fact": "El informe del INTA Alto Valle 2025/2026 ubicó el costo en 540,20 pesos por kilo en manzana y 453,70 en pera.",
       "date": "2026-04-01",
       "sourceId": "rn_costos"
+    },
+    {
+      "fact": "En septiembre de 2026 hubo tres alertas por heladas tardías en el Alto Valle, con pronósticos de hasta -7 °C y peligro alto declarado para los frutales.",
+      "date": "2026-09-12",
+      "sourceId": "fr_helada12"
+    },
+    {
+      "fact": "Al 28 de septiembre las chacras del valle están en plena floración, con las colmenas para polinización ya instaladas.",
+      "date": "2026-09-28",
+      "sourceId": "fr_primavera"
+    },
+    {
+      "fact": "El INTA informó que la floración de esta temporada viene atrasada a causa de las heladas de las últimas semanas.",
+      "date": "2026-09-28",
+      "sourceId": "fr_primavera"
     }
   ],
   "pendingQuestions": [
+    "Cuánto daño dejaron las heladas de septiembre en la fruta de pepita y de carozo.",
+    "Si la floración atrasada significa menos volumen o solo una cosecha más tardía.",
     "Si los precios altos se sostienen durante el segundo semestre.",
     "Cuánto de esa mejora llega efectivamente al productor y cuánto queda en la cadena.",
     "Qué pasa con la barrera sanitaria del río Colorado y su efecto sobre las certificaciones de exportación.",
@@ -118,6 +151,18 @@
       "title": "Los números confirman la caída",
       "text": "SENASA y la Secretaría de Fruticultura confirman 856.000 toneladas al 30 de abril: 14% menos que en 2025.",
       "sourceId": "lmn_cosecha"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Heladas en plena floración",
+      "text": "Alerta por hasta -7 °C con duraznos y ciruelas en flor. Se activan los sistemas de defensa en las chacras.",
+      "sourceId": "fr_helada12"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "El valle en flor, con atraso",
+      "text": "Peras y manzanas florecen con las colmenas puestas. El INTA advierte que la floración viene demorada por el frío.",
+      "sourceId": "fr_primavera"
     }
   ],
   "sections": [],
@@ -134,6 +179,22 @@
     "pending": ""
   },
   "sources": [
+    {
+      "id": "fr_primavera",
+      "name": "Las chacras del Alto Valle se visten de primavera",
+      "type": "press",
+      "publisher": "LM Neuquén",
+      "publishedAt": "2026-09-28",
+      "url": "https://masp.lmneuquen.com/fruticultura/las-chacras-del-alto-valle-se-visten-primavera-n1254800"
+    },
+    {
+      "id": "fr_helada12",
+      "name": "Alerta por heladas tardías: esta noche podrían registrarse hasta -7 °C y hay peligro alto para los frutales",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-09-12",
+      "url": "https://www.anroca.com.ar/noticias/2026/09/12/222865-alerta-por-heladas-tardias-esta-noche-podrian-registrarse-hasta-7-c-y-hay-peligro-alto-para-los-frutales"
+    },
     {
       "id": "lmn_cosecha",
       "name": "La cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén",

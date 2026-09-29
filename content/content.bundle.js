@@ -5,16 +5,16 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "type": "living_story",
     "category": "Región",
     "topic": "ruta22",
-    "title": "Ruta 22: la Provincia ya tiene la ruta, ahora faltan las obras",
-    "subtitle": "Se firmó el traspaso y la Legislatura lo ratificó, con emergencia vial y un crédito de 60 millones de dólares",
+    "title": "Ruta 22: ya hay plata y hay fecha, pero arranca con bacheo",
+    "subtitle": "Weretilneck promulgó la ley que destina 7.000 millones de pesos a las rutas 22 y 151. Las primeras obras son en noviembre y él mismo avisa que son \"cosas muy preliminares\"",
     "status": "active",
     "isFiction": false,
-    "lastUpdated": "2026-09-07T07:00:00-03:00",
-    "eventDate": "2026-09-03",
+    "lastUpdated": "2026-09-29T07:00:00-03:00",
+    "eventDate": "2026-09-29",
     "readingTime": 6,
-    "shortSummary": "Después de años de reclamos, Río Negro se quedó con la gestión de las rutas 22 y 151 por veinte años. La Legislatura ratificó el convenio con 38 votos contra 3, declaró la emergencia vial y autorizó un crédito de hasta 60 millones de dólares. Los trabajos arrancan recién sesenta días después de publicada la ley, y Nación no aporta un peso.",
-    "whatsappSummary": "🛣️ *Ruta 22: la Provincia ya tiene la ruta*\nLa Legislatura ratificó el traspaso el 3 de septiembre: 38 votos a favor y 3 en contra. Son 518 km de las rutas 22 y 151 por 20 años, con emergencia vial por un año y un crédito de hasta US$60 millones del Fonplata.\nLas obras arrancan 60 días después de publicada la ley. Nación no manda plata.",
-    "radioSummary": "Pasó algo que se venía reclamando hace años. Río Negro ya tiene la Ruta 22. El 25 de agosto se firmó el convenio en Casa Rosada, y el 3 de septiembre la Legislatura lo ratificó. Treinta y ocho votos a favor, tres en contra. Son quinientos dieciocho kilómetros, entre la 22 y la 151, por veinte años. Se declaró la emergencia vial por un año, que permite contratar de urgencia. Y se autorizó un crédito de hasta sesenta millones de dólares con el Fonplata. Ahora, la letra chica. Primero: Nación no manda plata. La provincia paga. Segundo: las obras arrancan recién sesenta días después de que la ley se publique. Y tercero: los kilómetros no llegan todos juntos. Cada tramo se entrega con un acta propia. Un dato para dimensionar por qué había apuro. Entre 2018 y este año murieron doscientas doce personas en esas dos rutas.",
+    "shortSummary": "Hoy se promulgó la Ley 5895: 7.000 millones de pesos para empezar a reparar las rutas 22 y 151, con plata que llega del aporte territorial de Oldelval por el Duplicar Norte. Las primeras obras son en noviembre sobre 305 kilómetros, y el propio gobernador aclaró de qué se trata: \"Bacheo, tapar pozos, sacar huellones. Estamos hablando de cosas muy preliminares\". La reconstrucción de fondo depende del crédito de 60 millones de dólares, que recién se analiza en octubre.",
+    "whatsappSummary": "🛣️ *Ruta 22: ya hay plata y hay fecha*\nSe promulgó la Ley 5895: $7.000 millones para las rutas 22 y 151, del aporte de Oldelval por el Duplicar Norte.\nPrimeras obras en noviembre, sobre 305 km. Weretilneck: \"Bacheo, tapar pozos, sacar huellones. Cosas muy preliminares\".\nLa reconstrucción de fondo depende del crédito de US$60 millones, que se analiza en octubre.",
+    "radioSummary": "Vamos con lo de hoy. El gobernador promulgó la Ley 5895, por el Decreto 901 del 26. Destina siete mil millones de pesos al inicio de las obras en las rutas 22 y 151. La plata no sale de rentas generales: viene del aporte al desarrollo territorial que le corresponde a la provincia por el Duplicar Norte, el oleoducto de Oldelval, que tiene doscientos siete kilómetros, de los cuales ciento cuarenta y seis pasan por Río Negro. Ahora, conviene escuchar lo que dijo el propio Weretilneck, porque baja bastante las expectativas. Textual: bacheo, tapar pozos, sacar huellones. Estamos hablando de cosas muy preliminares. Es decir, no es la reconstrucción de la ruta. Es que deje de ser peligrosa. Y hay motivos: en los relevamientos aparecieron huellones de más de diecisiete centímetros. Las obras arrancan en noviembre, sobre trescientos cinco kilómetros. Los puntos críticos son el Puente 83 en Cipolletti, la rotonda de Choele Choel, el tramo hacia Catriel y unas deformaciones cerca de Chimpay. La obra grande, la de verdad, sigue dependiendo del crédito de sesenta millones de dólares del Fonplata, que recién se analiza en octubre. Y las actas de toma de posesión se están firmando de a tramos: primero los que no tienen contratos pendientes con privados.",
     "articleBody": [
       {
         "type": "paragraph",
@@ -54,7 +54,7 @@ window.CANILLITA_CONTENT_BUNDLE = {
       },
       {
         "type": "paragraph",
-        "text": "No de inmediato. Desde la publicación de la ley corre un plazo de 60 días durante el cual Vialidad Nacional sigue siendo responsable de los 518 kilómetros. En ese período la Provincia prepara pliegos, documentación y acuerdos con las empresas."
+        "text": "No de inmediato. Desde la publicación de la ley corrió un plazo de 60 días durante el cual Vialidad Nacional siguió siendo responsable de los 518 kilómetros. Ese plazo se cumplió, y las primeras obras provinciales quedaron anunciadas para noviembre. En ese período la Provincia prepara pliegos, documentación y acuerdos con las empresas."
       },
       {
         "type": "paragraph",
@@ -95,9 +95,98 @@ window.CANILLITA_CONTENT_BUNDLE = {
       {
         "type": "paragraph",
         "text": "También se prevé un sistema permanente de control de peso con balanzas móviles, para proteger lo que se construya del tránsito pesado con sobrecarga. Las multas estimadas rondarían entre tres y cinco millones de pesos. Y el peaje sigue sobre la mesa como alternativa de financiamiento, aunque su implementación depende del modelo de gestión que adopte la Provincia."
+      },
+      {
+        "type": "heading",
+        "text": "29 de septiembre: la ley, promulgada"
+      },
+      {
+        "type": "paragraph",
+        "text": "Weretilneck promulgó este lunes, por el Decreto 901/26, la Ley 5895. Destina 7.000 millones de pesos al inicio de las obras de reparación y mantenimiento de las rutas nacionales 22 y 151."
+      },
+      {
+        "type": "paragraph",
+        "text": "La plata no sale de rentas generales ni del crédito del Fonplata. Viene del Aporte al Desarrollo Territorial que le corresponde a la provincia por el Proyecto Duplicar Norte de Oldelval: un oleoducto de unos 207 kilómetros, de los cuales 146 atraviesan territorio rionegrino. Es petróleo pagando por las rutas que el petróleo rompe."
+      },
+      {
+        "type": "heading",
+        "text": "Qué se hace con 7.000 millones"
+      },
+      {
+        "type": "paragraph",
+        "text": "Acá conviene citar al gobernador antes que interpretarlo. Consultado sobre en qué se gasta ese dinero, respondió: \"Bacheo, tapar pozos, sacar huellones. Estamos hablando de cosas muy preliminares\"."
+      },
+      {
+        "type": "paragraph",
+        "text": "No es la reconstrucción de la ruta. Es que deje de ser peligrosa mientras se consigue el financiamiento para lo otro. Los relevamientos técnicos que se hicieron para armar el plan encontraron banquinas deterioradas, calzada dañada y huellones que en algunos sectores pasan los 17 centímetros de profundidad."
+      },
+      {
+        "type": "paragraph",
+        "text": "Las intervenciones arrancan en noviembre y abarcan 305 kilómetros entre ambas rutas —los mismos 305 que ya estaban catalogados como liberados, sin contratos ni proyectos pendientes—. Los puntos críticos identificados son el Puente 83, en Cipolletti; la rotonda de Choele Choel; el tramo hacia Catriel; y unas deformaciones de calzada cerca de Chimpay."
+      },
+      {
+        "type": "heading",
+        "text": "Lo que todavía no está"
+      },
+      {
+        "type": "paragraph",
+        "text": "El crédito de hasta 60 millones de dólares —el que financiaría la reparación de fondo— sigue en gestión ante el Fonplata u otro organismo multilateral, y se analiza en octubre. Hasta que no esté, la diferencia entre bachear y reconstruir sigue abierta."
+      },
+      {
+        "type": "paragraph",
+        "text": "Las actas de toma de posesión también van de a poco: Vialidad Nacional y la provincia están cerrando primero los tramos sin conflictos contractuales. Los que tienen contratos vigentes con empresas privadas requieren resolverlos antes, y eso lleva más tiempo."
+      },
+      {
+        "type": "paragraph",
+        "text": "En paralelo, y por fuera de todo esto, Vialidad Nacional mantiene a su cargo la conversión en autopista de la Ruta 22 entre General Godoy y Cipolletti."
       }
     ],
     "confirmedFacts": [
+      {
+        "fact": "El 29 de septiembre de 2026 Weretilneck promulgó, por Decreto 901/26, la Ley 5895, que destina 7.000 millones de pesos al inicio de las obras en las rutas 22 y 151.",
+        "date": "2026-09-29",
+        "sourceId": "anroca_promulgacion"
+      },
+      {
+        "fact": "Los fondos provienen del Aporte al Desarrollo Territorial que recibe la provincia por el Proyecto Duplicar Norte de Oldelval, un oleoducto de unos 207 kilómetros, 146 de ellos en territorio rionegrino.",
+        "date": "2026-09-29",
+        "sourceId": "anroca_promulgacion"
+      },
+      {
+        "fact": "Weretilneck describió así los primeros trabajos: \"Bacheo, tapar pozos, sacar huellones. Estamos hablando de cosas muy preliminares\".",
+        "date": "2026-09-16",
+        "sourceId": "anroca_primeros"
+      },
+      {
+        "fact": "Las primeras obras comienzan en noviembre de 2026 y abarcan 305 kilómetros entre ambas rutas.",
+        "date": "2026-09-15",
+        "sourceId": "lmneuquen_obras"
+      },
+      {
+        "fact": "Los puntos críticos identificados son el Puente 83 en Cipolletti, la rotonda de Choele Choel, el tramo hacia Catriel y deformaciones de calzada cerca de Chimpay.",
+        "date": "2026-09-15",
+        "sourceId": "lmneuquen_obras"
+      },
+      {
+        "fact": "Los relevamientos técnicos encontraron banquinas deterioradas, calzada dañada y huellones que en algunos sectores superan los 17 centímetros.",
+        "date": "2026-09-16",
+        "sourceId": "anroca_primeros"
+      },
+      {
+        "fact": "El crédito de hasta 60 millones de dólares sigue en gestión ante el Fonplata u otro organismo multilateral y se analiza en octubre de 2026.",
+        "date": "2026-09-16",
+        "sourceId": "anroca_primeros"
+      },
+      {
+        "fact": "El traspaso se instrumentó por el Decreto 253/2026 y rige por 20 años. Las actas de toma de posesión se firman primero sobre los tramos sin conflictos contractuales.",
+        "date": "2026-09-15",
+        "sourceId": "lmneuquen_obras"
+      },
+      {
+        "fact": "Vialidad Nacional mantiene a su cargo la conversión en autopista de la Ruta 22 entre General Godoy y Cipolletti.",
+        "date": "2026-09-15",
+        "sourceId": "lmneuquen_obras"
+      },
       {
         "fact": "El 3 de septiembre de 2026 la Legislatura ratificó el traspaso con 38 votos a favor y 3 en contra, en única vuelta.",
         "date": "2026-09-03",
@@ -150,10 +239,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
       }
     ],
     "pendingQuestions": [
-      "Cuándo se firma cada acta de toma de posesión y en qué orden llegan los tramos.",
-      "Si el crédito del Fonplata se concreta y con qué tasa y plazos finales.",
-      "Si el tramo General Roca–Allen queda como prioridad en el plan de obras.",
+      "Si el crédito del Fonplata se concreta en octubre, y con qué tasa y plazos finales.",
+      "Cuándo se firma cada acta de toma de posesión y en qué orden llegan los tramos restantes.",
+      "Si el tramo General Roca–Allen entra en el plan de noviembre o queda para la etapa siguiente.",
       "Qué pasa con las secciones 3 y 4, las que nunca se ejecutaron.",
+      "Si el bacheo de noviembre aguanta la temporada o hay que rehacerlo después del verano.",
       "Si finalmente habrá peaje, dónde y con qué tarifa.",
       "Cuándo empiezan a funcionar las balanzas móviles de control de peso."
     ],
@@ -248,16 +338,65 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "title": "Es ley: 38 votos contra 3",
         "text": "La Legislatura ratifica el traspaso por 20 años, declara la emergencia vial por un año y autoriza el crédito de hasta 60 millones de dólares.",
         "sourceId": "dn_legislatura"
+      },
+      {
+        "date": "2026-09-15",
+        "title": "El plan de obras tiene fecha",
+        "text": "La provincia detalla que las primeras intervenciones arrancan en noviembre sobre 305 kilómetros, con cuatro puntos críticos identificados.",
+        "sourceId": "lmneuquen_obras"
+      },
+      {
+        "date": "2026-09-16",
+        "title": "\"Cosas muy preliminares\"",
+        "text": "Weretilneck baja las expectativas sobre los 7.000 millones: bacheo, tapar pozos y sacar huellones, algunos de más de 17 centímetros.",
+        "sourceId": "anroca_primeros"
+      },
+      {
+        "date": "2026-09-29",
+        "title": "Promulgada la Ley 5895",
+        "text": "Por Decreto 901/26 se promulga la ley que destina 7.000 millones de pesos del aporte territorial de Oldelval al inicio de las obras.",
+        "sourceId": "anroca_promulgacion"
+      },
+      {
+        "date": "2026-11-01",
+        "title": "Arrancan las primeras obras",
+        "upcoming": true,
+        "text": "Es el mes anunciado para el inicio del bacheo y la corrección de huellones sobre los 305 kilómetros liberados. Sin día confirmado todavía.",
+        "sourceId": "lmneuquen_obras"
       }
     ],
     "sections": [],
     "suggestedQuestions": [
-      "¿Ya se firmó el traspaso de la Ruta 22?",
-      "¿Cuándo empiezan las obras?",
-      "¿De dónde sale la plata?",
-      "¿Qué pasa con el tramo Roca-Allen?"
+      "¿Cuándo empiezan las obras en la Ruta 22?",
+      "¿De dónde salen los 7.000 millones?",
+      "¿Qué se va a hacer exactamente?",
+      "¿Qué pasó con el crédito de 60 millones de dólares?"
     ],
     "sources": [
+      {
+        "id": "anroca_promulgacion",
+        "name": "Weretilneck promulgó la ley que destina $7.000 millones a las rutas 22 y 151",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-29",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/29/225418-weretilneck-promulgo-la-ley-que-destina-7000-millones-a-las-rutas-22-y-151"
+      },
+      {
+        "id": "anroca_primeros",
+        "name": "Rutas 22 y 151: Weretilneck detalló cuáles serán los primeros trabajos con los $7.000 millones",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-16",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/16/223450-rutas-22-y-151-weretilneck-detallo-cuales-seran-los-primeros-trabajos-con-los-7000-millones"
+      },
+      {
+        "id": "lmneuquen_obras",
+        "name": "Ruta 22 y 151: cuándo comienzan las obras de reparación y cuánto dinero se invertirá",
+        "type": "press",
+        "publisher": "LM Neuquén",
+        "publishedAt": "2026-09-15",
+        "url": "https://mase.lmneuquen.com/vaca-muerta/ruta-22-y-151-cuando-comienzan-las-obras-reparacion-y-cuanto-dinero-se-invertira-n1253769"
+      },
       {
         "id": "dn_legislatura",
         "name": "Río Negro asumirá la gestión de las rutas 22 y 151 tras un amplio respaldo de la Legislatura",
@@ -467,7 +606,7 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "url": "https://www.letrap.com.ar/politica/las-deudas-pendientes-las-rutas-rio-negro-n5423718"
       }
     ],
-    "radioHeadline": "Arrancamos con la Ruta 22, que por fin cambió de manos.",
+    "radioHeadline": "Ruta 22, y hoy hay novedad: se promulgó la ley de los 7.000 millones.",
     "image": {
       "src": "assets/images/ruta22-pozos.jpg",
       "alt": "Pozos con agua acumulada sobre la calzada de la Ruta 22 después de las lluvias",
@@ -912,16 +1051,16 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "category": "Vaca Muerta",
     "topic": "vacamuerta",
     "title": "Vaca Muerta: el caño que cruza Río Negro y termina en el mar",
-    "subtitle": "El VMOS entra en la recta final y la provincia queda en el medio: pasa el petróleo, pasan los camiones, y las regalías llegan después",
+    "subtitle": "El caño ya está terminado: ahora la carrera es contra diciembre en la terminal de Punta Colorada, y la provincia queda en el medio",
     "status": "active",
     "isFiction": false,
-    "lastUpdated": "2026-09-07T07:00:00-03:00",
-    "eventDate": "2026-09-04",
+    "lastUpdated": "2026-09-29T07:00:00-03:00",
+    "eventDate": "2026-09-27",
     "readingTime": 7,
-    "shortSummary": "El oleoducto Vaca Muerta Oil Sur va del yacimiento neuquino a Punta Colorada: 437 kilómetros, tres mil millones de dólares y una terminal en la costa rionegrina. Supera el 80% de avance y las primeras exportaciones se esperan para principios de 2027. Mientras tanto, por el Alto Valle pasan más de dos mil camiones de arena por día y las regalías fuertes recién se verían hacia 2028.",
-    "whatsappSummary": "🛢️ *Vaca Muerta: el caño que cruza Río Negro*\nEl oleoducto VMOS une Allen con Punta Colorada: 437 km y US$3.000 millones. Ya superó el 80% de avance y las primeras exportaciones se esperan a principios de 2027.\nEmpieza con 180.000 barriles por día y escala a 550.000 en 2027.\nEl costado local: más de 2.000 camiones de arena por día castigan las rutas 22 y 151, y las regalías fuertes llegarían recién en 2028.",
-    "radioHeadline": "Y vamos con Vaca Muerta, que nos cruza por el medio.",
-    "radioSummary": "Hay una obra enorme atravesando la provincia y conviene entender qué es. Se llama Vaca Muerta Oil Sur, o VMOS. Es un oleoducto de cuatrocientos treinta y siete kilómetros que sale de Allen y termina en Punta Colorada, cerca de Sierra Grande, sobre el Atlántico. Tres mil millones de dólares. Lo hacen siete petroleras juntas, con YPF a la cabeza. Ya superó el ochenta por ciento. Las primeras exportaciones se esperan para principios del año que viene. Arranca moviendo ciento ochenta mil barriles por día y sube a quinientos cincuenta mil durante 2027. Ahora, lo que nos toca de cerca. Por el valle pasan más de dos mil camiones de arena por día, que vienen desde Entre Ríos, a mil trescientos kilómetros. Esa arena es la que rompe las rutas. Y la plata, las regalías, según el propio gobernador recién se van a sentir fuerte hacia 2028 o 2029. Río Negro está en el medio del negocio, pero todavía no en el reparto.",
+    "shortSummary": "El oleoducto Vaca Muerta Oil Sur va del yacimiento neuquino a Punta Colorada: 437 kilómetros, tres mil millones de dólares y una terminal en la costa rionegrina. La obra del caño terminó en agosto; lo que falta ahora es la terminal, y todo apunta a diciembre. El primer tanque, de 120.000 metros cúbicos, ya está listo y lo va a operar un vecino de San Antonio Oeste. Las primeras exportaciones se esperan para las primeras semanas de 2027. Mientras tanto, por el Alto Valle pasan más de dos mil camiones de arena por día y las regalías fuertes recién se verían hacia 2028.",
+    "whatsappSummary": "🛢️ *Vaca Muerta: el caño hasta el mar*\nLa obra del oleoducto terminó en agosto: 437 kilómetros entre Allen y Punta Colorada. Ahora la carrera es por la terminal, con fecha en diciembre.\nEl primer tanque, de 120.000 m³, ya está listo y lo opera un vecino de San Antonio Oeste.\nPrimeras exportaciones: primeras semanas de 2027. Las regalías fuertes, recién hacia 2028.",
+    "radioHeadline": "Vaca Muerta, y una novedad grande: el caño ya está terminado.",
+    "radioSummary": "Arranquemos por lo nuevo, que cambia bastante el panorama. La obra del oleoducto terminó. Cuatrocientos treinta y siete kilómetros de caño entre Allen y Punta Colorada, quince meses de trabajo, dos mil quinientas personas en el pico. Techint y Sacde lo dieron por apto para funcionar en agosto. Así que el cuello de botella ya no es el caño: ahora es la terminal, y ahí la fecha es diciembre. En Punta Colorada quedó terminado el primer tanque, el 404. Ciento veinte mil metros cúbicos, ochenta y dos metros de diámetro, treinta y cinco de alto. Mil quinientas toneladas de acero. Y un dato que nos toca de cerca: el primer llenado lo va a operar Martín Gómez, de San Antonio Oeste. En plata, el consorcio salió a buscar financiamiento al mercado local y colocó doscientos treinta y tres millones de dólares, cuando esperaba cien. Al seis coma veinticinco por ciento, a cuatro años. Las primeras exportaciones, primeras semanas de 2027. Y lo de siempre, que no cambió: por el valle siguen pasando más de dos mil camiones de arena por día, y las regalías fuertes para Río Negro recién se verían hacia 2028.",
     "articleBody": [
       {
         "type": "paragraph",
@@ -949,11 +1088,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
       },
       {
         "type": "paragraph",
-        "text": "Hacia fines de julio el proyecto rondaba el 80% de avance. Uno de los hitos técnicos fue el cruce del río Negro, resuelto con perforación horizontal dirigida, es decir por debajo del lecho. También se completó la soldadura del ducto costero de 38 pulgadas y avanzan en paralelo las estaciones de bombeo y la terminal."
+        "text": "Hacia fines de julio el proyecto rondaba el 80% de avance; el caño se terminó semanas después, en agosto. Uno de los hitos técnicos fue el cruce del río Negro, resuelto con perforación horizontal dirigida, es decir por debajo del lecho. También se completó la soldadura del ducto costero de 38 pulgadas y avanzan en paralelo las estaciones de bombeo y la terminal."
       },
       {
         "type": "paragraph",
-        "text": "La puesta en marcha arranca con una capacidad de 180.000 barriles diarios. El esquema prevé escalar a 550.000 durante 2027, con un techo técnico que podría llegar a 700.000 si el mercado internacional lo demanda. Los primeros despachos se esperan para principios de 2027."
+        "text": "La puesta en marcha arranca con una capacidad de 180.000 barriles diarios. El esquema prevé escalar a 390.000 hacia mediados de 2027 y a 550.000 entre julio y septiembre de ese año, con un techo técnico que podría llegar a 700.000 si el mercado internacional lo demanda. Los primeros despachos se esperan para las primeras semanas de 2027."
       },
       {
         "type": "heading",
@@ -998,9 +1137,100 @@ window.CANILLITA_CONTENT_BUNDLE = {
       {
         "type": "paragraph",
         "text": "Esa asimetría explica dos discusiones que hoy están abiertas. Una: un proyecto en el Congreso propone destinar el 50% de las retenciones al petróleo y el gas a un fondo para las rutas de las provincias productoras. Otra: durante el debate del traspaso, la legisladora Martina Lacour sostuvo que la Ruta 151 debería haber quedado bajo concesión de las propias empresas petroleras, que son las que la deterioran."
+      },
+      {
+        "type": "heading",
+        "text": "Agosto: se terminó el caño"
+      },
+      {
+        "type": "paragraph",
+        "text": "Después de quince meses de obra, Techint y Sacde dieron el oleoducto por \"apto para funcionar\". Son 437 kilómetros de caño de 30 pulgadas entre Allen y Punta Colorada. En el pico trabajaron más de 2.500 personas, y hubo un día récord de 175 soldaduras automáticas, cuatro kilómetros de avance en una jornada."
+      },
+      {
+        "type": "paragraph",
+        "text": "El dato importante no es el récord: es que el cuello de botella se corrió. Durante dos años la pregunta fue si el caño llegaba. Ahora la pregunta es si llega la terminal. Falta la prueba hidráulica, el purgado, el llenado progresivo de los 437 kilómetros, las monoboyas y los simulacros de maniobra de los buques."
+      },
+      {
+        "type": "heading",
+        "text": "El tanque 404, y un operador de San Antonio"
+      },
+      {
+        "type": "paragraph",
+        "text": "En Punta Colorada quedó terminado el primer tanque de almacenaje. Se llama 404 y tiene 120.000 metros cúbicos: 82 metros de diámetro por 35 de alto. Llevó 1.500 toneladas de acero, unos 30.000 bulones y más de un millón de pulgadas de soldadura. El techo es una cúpula geodésica de aluminio de 57 toneladas que montaron más de sesenta operarios."
+      },
+      {
+        "type": "paragraph",
+        "text": "El primer llenado lo va a operar Martín Gómez, de San Antonio Oeste. \"Un rubro completamente distinto, pero tenía formación previa que me sirvió y la empresa me dio una gran oportunidad\", contó. Es el tipo de dato que suele perderse cuando se habla de estas obras en millones de dólares: quién aprieta el botón."
+      },
+      {
+        "type": "paragraph",
+        "text": "En total son cinco tanques de 120.000 metros cúbicos en la terminal costera, más uno en Allen. El techo del tercero ya está montado y el cuarto está en construcción. Desde ahí el crudo sale por dos monoboyas mar adentro, que cargan buques VLCC, los petroleros más grandes que hay."
+      },
+      {
+        "type": "heading",
+        "text": "Doscientos treinta y tres millones en el mercado local"
+      },
+      {
+        "type": "paragraph",
+        "text": "El 23 de septiembre se liquidó la primera emisión de deuda de VMOS en el mercado argentino. Salió a buscar 100 millones de dólares y colocó 233,65: al 6,25% anual, a 48 meses, en dólares y pagadera en el país. Complementa el préstamo sindicado de 2.000 millones que había armado en julio de 2025 con Citi, Deutsche Bank, Itaú, JP Morgan y Santander."
+      },
+      {
+        "type": "paragraph",
+        "text": "Que la demanda haya duplicado con creces la oferta dice algo sobre las expectativas del mercado con la fecha de salida del crudo. Y explica por qué el consorcio tiene apuro: cada mes de atraso es un mes sin ingresos por exportación."
+      },
+      {
+        "type": "heading",
+        "text": "Qué significa diciembre"
+      },
+      {
+        "type": "paragraph",
+        "text": "La estación de Allen funciona como centro de control de todo el ducto y emplea a unas 500 personas. Su conexión con la infraestructura de YPF está prevista para el 15 de diciembre. En paralelo, en el golfo San Matías las pruebas de hermeticidad tienen que estar cerradas para fin de año."
+      },
+      {
+        "type": "paragraph",
+        "text": "Si las dos cosas llegan, las primeras exportaciones salen en las primeras semanas de 2027. El arranque es con unos 180.000 barriles diarios, sube a 390.000 hacia mediados de 2027 y llega a los 550.000 de capacidad plena entre julio y septiembre de ese año: un año antes de lo que se proyectaba."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para Río Negro, nada de esto cambia todavía el cuadro fiscal. Weretilneck viene diciendo que el crecimiento fuerte de las regalías se vería hacia 2028 o 2029. Lo que sí cambia, y ya se nota, es el tránsito: más de dos mil camiones de arena por día por las rutas del valle, con la arena viniendo desde Entre Ríos, a 1.300 kilómetros."
       }
     ],
     "confirmedFacts": [
+      {
+        "fact": "La obra del oleoducto terminó en agosto de 2026: Techint y Sacde obtuvieron el \"apto para funcionar\" tras quince meses de trabajo, con más de 2.500 personas en el pico de obra.",
+        "date": "2026-08-31",
+        "sourceId": "iprofesional_obra"
+      },
+      {
+        "fact": "En Punta Colorada quedó terminado el tanque 404, el primero de la terminal: 120.000 metros cúbicos, 82 metros de diámetro y 35 de alto, con 1.500 toneladas de acero y una cúpula geodésica de aluminio de 57 toneladas.",
+        "date": "2026-09-27",
+        "sourceId": "lmcipolletti_tanque"
+      },
+      {
+        "fact": "El primer llenado del tanque 404 lo opera Martín Gómez, vecino de San Antonio Oeste.",
+        "date": "2026-09-27",
+        "sourceId": "lmcipolletti_tanque"
+      },
+      {
+        "fact": "La terminal costera tiene cinco tanques de 120.000 metros cúbicos más uno en Allen. El crudo sale por dos monoboyas mar adentro que cargan buques VLCC.",
+        "date": "2026-09-29",
+        "sourceId": "minutoneuquen_tanque"
+      },
+      {
+        "fact": "El 23 de septiembre de 2026 VMOS liquidó su primera emisión de deuda en el mercado argentino: colocó 233,65 millones de dólares al 6,25% anual a 48 meses, sobre un objetivo inicial de 100 millones.",
+        "date": "2026-09-18",
+        "sourceId": "patagonia_bono"
+      },
+      {
+        "fact": "La emisión complementa un préstamo sindicado de 2.000 millones de dólares armado en julio de 2025 con Citi, Deutsche Bank, Itaú, JP Morgan y Santander.",
+        "date": "2026-09-18",
+        "sourceId": "patagonia_bono"
+      },
+      {
+        "fact": "YPF confirmó que el primer buque parte entre fines de 2026 y comienzos de 2027. El arranque es con 180.000 barriles diarios y escala a 550.000 hacia el tercer trimestre de 2027.",
+        "date": "2026-07-28",
+        "sourceId": "argenports_ypf"
+      },
       {
         "fact": "El VMOS es un oleoducto de 437 kilómetros entre la cuenca neuquina y Punta Colorada, con una inversión estimada de 3.000 millones de dólares.",
         "date": "2026-09-04",
@@ -1010,16 +1240,6 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "fact": "Lo ejecuta un consorcio de siete operadoras: YPF, Vista, PAE, Pampa Energía, Chevron, Pluspetrol y Shell.",
         "date": "2026-03-23",
         "sourceId": "iprof_gigante"
-      },
-      {
-        "fact": "Hacia fines de julio de 2026 el proyecto presentaba cerca de un 80% de avance.",
-        "date": "2026-09-04",
-        "sourceId": "ambito_recta"
-      },
-      {
-        "fact": "Arranca con 180.000 barriles diarios y escalaría a 550.000 durante 2027, con un techo técnico de 700.000.",
-        "date": "2026-07-29",
-        "sourceId": "parl_recta"
       },
       {
         "fact": "El promedio de producción de 2026 llegó a 894.900 barriles diarios, superando el récord anual de 846.900 de 1998.",
@@ -1048,11 +1268,11 @@ window.CANILLITA_CONTENT_BUNDLE = {
       }
     ],
     "pendingQuestions": [
-      "Si las primeras exportaciones salen efectivamente a principios de 2027.",
-      "Cuánto del empleo generado queda en la región una vez terminada la obra.",
+      "Si la terminal de Punta Colorada llega a diciembre y el primer buque sale en las primeras semanas de 2027.",
+      "Si la conexión de la estación de Allen con la infraestructura de YPF se concreta el 15 de diciembre.",
+      "Cuánto del empleo generado queda en la región una vez terminada la obra del caño.",
       "Si prospera el proyecto para destinar retenciones a las rutas de las provincias productoras.",
-      "Cuándo empiezan a funcionar las balanzas móviles y si frenan el sobrepeso.",
-      "Cuánto crece la producción rionegrina en áreas como Campo Grande.",
+      "Cuándo empiezan a funcionar las balanzas móviles y si frenan el sobrepeso de los camiones.",
       "Si el puerto de San Antonio Este consolida el movimiento que ganó este año."
     ],
     "whyItMatters": "Por el valle pasa un negocio de miles de millones de dólares y lo que más se nota son los pozos que dejan los camiones. Entender el VMOS es entender por qué la Ruta 22 se rompe, por qué la provincia se endeudó para arreglarla y por qué la discusión de fondo es quién paga la infraestructura que hace posible la exportación.",
@@ -1098,14 +1318,45 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "title": "Récord de producción y recta final del caño",
         "text": "El promedio de 2026 supera el récord de 1998. El VMOS ronda el 80% y apunta a los primeros despachos a principios de 2027.",
         "sourceId": "ambito_recta"
+      },
+      {
+        "date": "2026-08-21",
+        "title": "Las monoboyas cruzan Ormuz",
+        "text": "Los dos sistemas de carga mar adentro pasan el estrecho de Ormuz rumbo a Punta Colorada. Sin ellos no hay forma de cargar un buque.",
+        "sourceId": "mejorenergia_monoboyas"
+      },
+      {
+        "date": "2026-08-31",
+        "title": "Terminó la obra del caño",
+        "text": "Techint y Sacde obtienen el \"apto para funcionar\" de los 437 kilómetros, tras quince meses y un pico de 2.500 trabajadores. El cuello de botella pasa a ser la terminal.",
+        "sourceId": "iprofesional_obra"
+      },
+      {
+        "date": "2026-09-23",
+        "title": "Colocó 233 millones en el mercado local",
+        "text": "La primera emisión de deuda de VMOS en la Argentina buscaba 100 millones de dólares y consiguió 233,65, al 6,25% a cuatro años.",
+        "sourceId": "patagonia_bono"
+      },
+      {
+        "date": "2026-09-27",
+        "title": "El primer tanque, y quien lo opera",
+        "text": "Queda terminado el tanque 404 en Punta Colorada. El primer llenado lo opera Martín Gómez, de San Antonio Oeste.",
+        "sourceId": "lmcipolletti_tanque"
+      },
+      {
+        "date": "2026-12-15",
+        "title": "La fecha de Allen",
+        "upcoming": true,
+        "text": "Está prevista la conexión de la estación de Allen, centro de control del ducto, con la infraestructura de YPF. Es la fecha que ordena todo el cronograma.",
+        "sourceId": "globalports_cronograma"
       }
     ],
     "sections": [],
     "suggestedQuestions": [
-      "¿Qué es el VMOS?",
-      "¿Cuándo empieza a exportar Vaca Muerta?",
-      "¿Cuánta plata le queda a Río Negro?",
-      "¿Por qué rompen las rutas los camiones?"
+      "¿Cuándo empieza a exportar el VMOS?",
+      "¿Terminó la obra del oleoducto?",
+      "¿Qué es el tanque 404?",
+      "¿Cuándo llegan las regalías a Río Negro?"
     ],
     "image": {
       "src": "assets/images/vacamuerta-oleoducto.jpg",
@@ -1119,6 +1370,64 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "name": "Redacción Tu Canillita"
     },
     "sources": [
+      {
+        "id": "lmcipolletti_tanque",
+        "name": "De San Antonio al hito petrolero: un rionegrino operará el primer tanque del VMOS",
+        "type": "press",
+        "publisher": "LM Cipolletti",
+        "publishedAt": "2026-09-27",
+        "url": "https://www.lmcipolletti.com/provincia/de-san-antonio-al-hito-petrolero-un-rionegrino-operara-el-primer-tanque-del-vmos-n1255214"
+      },
+      {
+        "id": "minutoneuquen_tanque",
+        "name": "Vaca Muerta da un paso clave con el primer tanque de petróleo del VMOS en Punta Colorada",
+        "type": "press",
+        "publisher": "Minuto Neuquén",
+        "publishedAt": "2026-09-29",
+        "url": "https://www.minutoneuquen.com/energia/2026/9/29/vaca-muerta-da-un-paso-clave-con-el-primer-tanque-de-petroleo-del-vmos-en-punta-colorada-411696.html"
+      },
+      {
+        "id": "patagonia_bono",
+        "name": "VMOS cerró su primer bono: colocó más de US$233 millones para su oleoducto",
+        "type": "press",
+        "publisher": "Patagonia Press",
+        "publishedAt": "2026-09-18",
+        "url": "https://www.patagonia.press/vaca-muerta/2026/9/18/vmos-cerro-su-primer-bono-coloco-mas-de-us233-millones-para-su-oleoducto-24030.html"
+      },
+      {
+        "id": "argenports_ypf",
+        "name": "YPF confirmó que el primer buque de VMOS partirá entre fines de 2026 y comienzos de 2027",
+        "type": "press",
+        "publisher": "ArgenPorts",
+        "publishedAt": "2026-07-28",
+        "url": "https://argenports.com/nota/ypf-confirmo-que-el-primer-buque-de-vmos-partira-entre-fines-de-2026-y-comienzos-de-2027/"
+      },
+      {
+        "id": "mejorenergia_monoboyas",
+        "name": "VMOS superó un paso crítico: las monoboyas cruzaron Ormuz y avanzan hacia Punta Colorada",
+        "type": "press",
+        "publisher": "Mejor Energía",
+        "publishedAt": "2026-08-21",
+        "url": "https://www.mejorenergia.com.ar/noticias/2026/08/21/6577-vmos-supero-un-paso-critico-las-monoboyas-cruzaron-ormuz-y-avanzan-hacia-punta-colorada"
+      },
+      {
+        "id": "iprofesional_obra",
+        "name": "Terminó la obra del oleoducto VMOS, el megaproyecto que triplicará la exportación de petróleo",
+        "type": "press",
+        "publisher": "iProfesional",
+        "publishedAt": "",
+        "dateNote": "La nota informa la finalización de la obra en agosto de 2026 pero no publica fecha propia. Confirmar la fecha exacta con la fuente antes de publicar fuera de la demo.",
+        "url": "https://www.iprofesional.com/energia/462629-termino-la-obra-del-oleoducto-vmos-el-megaproyecto-que-triplicara-la-exportacion-de-crudo"
+      },
+      {
+        "id": "globalports_cronograma",
+        "name": "VMOS: Allen y Punta Colorada, la misma carrera contra diciembre",
+        "type": "press",
+        "publisher": "GlobalPorts",
+        "publishedAt": "",
+        "dateNote": "La nota no publica fecha. Confirmar la fecha del 15 de diciembre con el consorcio antes de publicar fuera de la demo.",
+        "url": "https://www.globalports.com.ar/vmos-cronograma-exportacion/"
+      },
       {
         "id": "ambito_recta",
         "name": "Vaca Muerta rompe récords y VMOS entra en la recta final",
@@ -1348,15 +1657,15 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "category": "Fruticultura",
     "topic": "fruticultura",
     "title": "Menos fruta, mejores precios: la cuenta que no cierra",
-    "subtitle": "La cosecha cayó 14% en Río Negro y Neuquén, los precios subieron hasta 87% y el margen del productor sigue en duda",
+    "subtitle": "La cosecha cayó 14% y los precios subieron hasta 87%. Ahora arrancó la temporada nueva, y arrancó con heladas",
     "status": "active",
     "isFiction": false,
-    "lastUpdated": "2026-08-14T07:00:00-03:00",
-    "eventDate": "2026-06-02",
+    "lastUpdated": "2026-09-29T07:00:00-03:00",
+    "eventDate": "2026-09-28",
     "readingTime": 5,
-    "shortSummary": "La campaña 2026 dejó 140.000 toneladas menos de peras y manzanas que el año pasado. Los precios subieron muy por encima de la inflación, pero producir un kilo cuesta 0,34 dólares y la mejora tiene que atravesar frío, empaque, flete y comercialización antes de llegar al productor.",
+    "shortSummary": "La campaña 2026 dejó 140.000 toneladas menos de peras y manzanas que el año pasado, con precios que subieron muy por encima de la inflación y un margen que sigue en duda. La temporada siguiente ya está en marcha: las chacras están en plena floración, pero septiembre trajo tres alertas por heladas tardías y el INTA advierte que la floración viene atrasada.",
     "whatsappSummary": "🍎 *Menos fruta, mejores precios*\nLa cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén: 140.000 toneladas menos, sobre todo en manzana.\nLos precios treparon hasta 87% interanual en el Mercado Central. Pero producir un kilo cuesta USD 0,34 y el margen se define después de la cosecha: frío, empaque, flete y venta.",
-    "radioHeadline": "Y ahora la fruta, que este año dejó una cuenta rara.",
+    "radioHeadline": "La fruta, que cerró una temporada rara y ya arrancó la que viene.",
     "radioSummary": "Hubo menos fruta y valió más. Los números: al treinta de abril, la cosecha conjunta de peras y manzanas fue de poco más de ochocientas cincuenta y seis mil toneladas. Catorce por ciento menos que el año pasado. Ciento cuarenta mil toneladas que no están. La mayor parte de esa caída es manzana. ¿Y los precios? Subieron fuerte. En el Mercado Central, la Red Delicious aumentó cerca del ochenta y siete por ciento interanual, muy por encima de la inflación. Ahora, la pregunta del productor es otra. Producir un kilo cuesta treinta y cuatro centavos de dólar. Y ese precio bueno tiene que atravesar el frío, el empaque, el flete y la venta antes de convertirse en margen. Como dijo un productor del valle: el precio es bueno, pero es mucha la merma que hay en manzana.",
     "articleBody": [
       {
@@ -1402,6 +1711,22 @@ window.CANILLITA_CONTENT_BUNDLE = {
       {
         "type": "paragraph",
         "text": "Ahí está la cuenta que sigue abierta: el precio mejora, pero tiene que atravesar frío, empaque, materiales, energía, flete, mercado interno y competencia importada antes de convertirse en margen."
+      },
+      {
+        "type": "heading",
+        "text": "Y arrancó la temporada que viene"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mientras se terminaba de acomodar la cuenta de la campaña pasada, empezó la siguiente. Al 28 de septiembre el Alto Valle está en plena floración: primero las peras y detrás las manzanas, con las colmenas ya puestas para la polinización."
+      },
+      {
+        "type": "paragraph",
+        "text": "No fue un arranque tranquilo. Septiembre dejó tres alertas por heladas tardías, con pronósticos de hasta -7 °C en la madrugada del 12 y peligro alto declarado para los frutales. En varias chacras hubo que activar el riego por aspersión; la temperatura tocó los -3,5 °C."
+      },
+      {
+        "type": "paragraph",
+        "text": "Según el INTA, la floración de esta temporada viene atrasada, y la causa es ese frío. Si eso se traduce en menos fruta o solamente en una cosecha más tardía es algo que no se sabe todavía: el número recién aparece sobre el final de la primavera. Para un productor que viene de una campaña con 14% menos de volumen, la diferencia entre una cosa y la otra es el año entero."
       }
     ],
     "confirmedFacts": [
@@ -1429,9 +1754,26 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "fact": "El informe del INTA Alto Valle 2025/2026 ubicó el costo en 540,20 pesos por kilo en manzana y 453,70 en pera.",
         "date": "2026-04-01",
         "sourceId": "rn_costos"
+      },
+      {
+        "fact": "En septiembre de 2026 hubo tres alertas por heladas tardías en el Alto Valle, con pronósticos de hasta -7 °C y peligro alto declarado para los frutales.",
+        "date": "2026-09-12",
+        "sourceId": "fr_helada12"
+      },
+      {
+        "fact": "Al 28 de septiembre las chacras del valle están en plena floración, con las colmenas para polinización ya instaladas.",
+        "date": "2026-09-28",
+        "sourceId": "fr_primavera"
+      },
+      {
+        "fact": "El INTA informó que la floración de esta temporada viene atrasada a causa de las heladas de las últimas semanas.",
+        "date": "2026-09-28",
+        "sourceId": "fr_primavera"
       }
     ],
     "pendingQuestions": [
+      "Cuánto daño dejaron las heladas de septiembre en la fruta de pepita y de carozo.",
+      "Si la floración atrasada significa menos volumen o solo una cosecha más tardía.",
       "Si los precios altos se sostienen durante el segundo semestre.",
       "Cuánto de esa mejora llega efectivamente al productor y cuánto queda en la cadena.",
       "Qué pasa con la barrera sanitaria del río Colorado y su efecto sobre las certificaciones de exportación.",
@@ -1462,6 +1804,18 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "title": "Los números confirman la caída",
         "text": "SENASA y la Secretaría de Fruticultura confirman 856.000 toneladas al 30 de abril: 14% menos que en 2025.",
         "sourceId": "lmn_cosecha"
+      },
+      {
+        "date": "2026-09-12",
+        "title": "Heladas en plena floración",
+        "text": "Alerta por hasta -7 °C con duraznos y ciruelas en flor. Se activan los sistemas de defensa en las chacras.",
+        "sourceId": "fr_helada12"
+      },
+      {
+        "date": "2026-09-28",
+        "title": "El valle en flor, con atraso",
+        "text": "Peras y manzanas florecen con las colmenas puestas. El INTA advierte que la floración viene demorada por el frío.",
+        "sourceId": "fr_primavera"
       }
     ],
     "sections": [],
@@ -1478,6 +1832,22 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "pending": ""
     },
     "sources": [
+      {
+        "id": "fr_primavera",
+        "name": "Las chacras del Alto Valle se visten de primavera",
+        "type": "press",
+        "publisher": "LM Neuquén",
+        "publishedAt": "2026-09-28",
+        "url": "https://masp.lmneuquen.com/fruticultura/las-chacras-del-alto-valle-se-visten-primavera-n1254800"
+      },
+      {
+        "id": "fr_helada12",
+        "name": "Alerta por heladas tardías: esta noche podrían registrarse hasta -7 °C y hay peligro alto para los frutales",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-12",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/12/222865-alerta-por-heladas-tardias-esta-noche-podrian-registrarse-hasta-7-c-y-hay-peligro-alto-para-los-frutales"
+      },
       {
         "id": "lmn_cosecha",
         "name": "La cosecha de peras y manzanas cayó 14% en Río Negro y Neuquén",
@@ -1549,18 +1919,26 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "type": "living_story",
     "category": "Clima y rutas",
     "topic": "clima",
-    "title": "Frío polar, viento y hielo: cómo circular esta semana",
-    "subtitle": "Alertas por nevadas y temperaturas extremas, con ráfagas de hasta 80 km/h en el valle",
+    "title": "Heladas tardías: las noches que deciden la temporada",
+    "subtitle": "Alertas de hasta -7 °C en plena floración, defensa activa en las chacras y una temporada que ya arranca atrasada",
     "status": "active",
     "isFiction": false,
-    "lastUpdated": "2026-08-14T07:00:00-03:00",
-    "eventDate": "2026-08-10",
+    "lastUpdated": "2026-09-29T07:00:00-03:00",
+    "eventDate": "2026-09-28",
     "readingTime": 3,
-    "shortSummary": "El ingreso de aire polar dejó alertas por nevadas en la cordillera y por frío extremo en buena parte de Río Negro y Neuquén. En el Alto Valle el protagonista es el viento, con ráfagas que llegaron a 78 km/h, y el riesgo principal es la formación de hielo sobre la calzada.",
-    "whatsappSummary": "🌡️ *Frío polar, viento y hielo*\nAlertas del SMN por nevadas en la cordillera y temperaturas extremas en Río Negro y Neuquén. En el Alto Valle, ráfagas de hasta 78 km/h.\nOjo en las rutas 22, 23, 40 y 237: riesgo de hielo sobre la calzada y visibilidad reducida. En zonas de montaña, cadenas obligatorias.",
-    "radioHeadline": "Atención con el tiempo y con las rutas.",
-    "radioSummary": "Entró aire polar y se nota. El Servicio Meteorológico Nacional emitió alertas por nevadas en la cordillera y por temperaturas extremas en buena parte de Neuquén y Río Negro. En el Alto Valle, en Roca y en Cipolletti, el protagonista es el viento: hubo ráfagas de setenta y ocho kilómetros por hora. Lo importante es la ruta. Hay riesgo de hielo sobre la calzada en las rutas veintidós, veintitrés, cuarenta y doscientos treinta y siete. Menos visibilidad por nieve acumulada, y viento blanco en zonas altas. En montaña, las cadenas son obligatorias. Y en la Ruta 22, con los pozos llenos de agua, el hielo agrega un problema arriba de otro.",
+    "shortSummary": "Terminó el invierno y empezó la parte brava. En septiembre hubo tres alertas por heladas tardías en el Alto Valle, con pronósticos de hasta -7 °C justo cuando duraznos y ciruelas estaban en floración abierta. En varias chacras se activó el riego por aspersión y la temperatura tocó -3,5 °C. Las peras y manzanas florecen ahora, y el INTA ya avisa que la floración viene atrasada por el frío de las últimas semanas.",
+    "whatsappSummary": "🌡️ *Heladas tardías en el valle*\nTres alertas en septiembre, con pronósticos de hasta -7 °C en plena floración. En varias chacras se activó el riego por aspersión y se tocaron los -3,5 °C.\nSegún el INTA, la floración de peras y manzanas viene atrasada por el frío.\nEl período crítico sigue abierto hasta que pase la primavera.",
+    "radioHeadline": "El tiempo, que este mes no es un tema de charla: es la temporada.",
+    "radioSummary": "Ya no hablamos del frío polar de agosto. Ahora el tema son las heladas tardías, que es otra cosa y es más seria. En septiembre hubo tres alertas. La del 3, con pronósticos de seis grados bajo cero. La del 7, cuando en algunas chacras se llegó a tres coma cinco bajo cero y hubo que activar la defensa. Y la del 12, la más fuerte, con hasta siete bajo cero previstos para esa madrugada y peligro alto declarado para los frutales. Por qué importa tanto una helada en septiembre y no en julio. Porque en julio el árbol está dormido y aguanta. Ahora está en flor, y la flor se quema. Los duraznos y las ciruelas ya estaban en floración abierta: en la ciruela, la temperatura crítica es entre uno y dos grados bajo cero. Nada más que eso. La defensa principal es el riego por aspersión: se moja el frutal y el hielo que se forma encima lo protege. Suena al revés, pero funciona. Y lo último, del 28: las peras y las manzanas están floreciendo ahora, con las colmenas ya puestas. El INTA avisa que la floración viene atrasada por las heladas de estas semanas. Todavía falta para saber cómo termina.",
     "articleBody": [
+      {
+        "type": "paragraph",
+        "text": "Cambió la estación y cambió el riesgo. El invierno en el valle se mide en hielo sobre la calzada; la primavera, en grados bajo cero a las cinco de la mañana con el frutal en flor. Septiembre dejó tres alertas por heladas tardías y una floración que, según el INTA, viene atrasada."
+      },
+      {
+        "type": "heading",
+        "text": "Cómo veníamos: el invierno"
+      },
       {
         "type": "paragraph",
         "text": "El invierno se endureció en el norte patagónico. El Servicio Meteorológico Nacional emitió durante los últimos días alertas combinadas: por nevadas persistentes en la franja cordillerana de Neuquén y Río Negro, y por temperaturas extremas por frío en buena parte de las dos provincias."
@@ -1592,9 +1970,88 @@ window.CANILLITA_CONTENT_BUNDLE = {
       {
         "type": "paragraph",
         "text": "Sobre la Ruta 22 hay un agravante local: los pozos llenos de agua que dejaron las lluvias de comienzos de mes se congelan de noche y suman un riesgo sobre otro que ya existía."
+      },
+      {
+        "type": "heading",
+        "text": "Septiembre: cambió el problema"
+      },
+      {
+        "type": "paragraph",
+        "text": "El frío de agosto era un problema de circulación: hielo en la calzada, viento, visibilidad. El de septiembre es otra cosa. Con la primavera llegaron las heladas tardías, que es el riesgo que ordena todo el año productivo del valle."
+      },
+      {
+        "type": "paragraph",
+        "text": "La diferencia es el estado del árbol. En julio el frutal está dormido y una helada fuerte no lo toca. En septiembre está en flor, y la flor se quema. Lo que se pierde en una noche no se recupera en toda la temporada."
+      },
+      {
+        "type": "heading",
+        "text": "Tres alertas en once días"
+      },
+      {
+        "type": "paragraph",
+        "text": "La primera fue el 3 de septiembre, con pronósticos de hasta -6 °C. La segunda, el 7: en algunas chacras la temperatura tocó los -3,5 °C y se activaron los sistemas de defensa. La tercera, el 12, fue la más seria: el INTA y la Autoridad Interjurisdiccional de Cuencas anticiparon hasta -7 °C para esa madrugada y declararon peligro alto para los frutales, con un período crítico que se extendía hasta el 18."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para entonces los duraznos —O’Henry, Fairtime, Elegant Lady, Royal Glory— y las ciruelas —Larry Ann, Angeleno— ya estaban en floración abierta, el estado más sensible. En la ciruela en flor la temperatura crítica está entre -1 °C y -2 °C; en el durazno, por debajo de -3 °C. El margen es de un par de grados."
+      },
+      {
+        "type": "heading",
+        "text": "Cómo se defiende una chacra"
+      },
+      {
+        "type": "paragraph",
+        "text": "El método más usado en el valle es el riego por aspersión. Se moja el frutal durante la noche de helada: al congelarse, el agua libera calor y forma una capa de hielo que mantiene la flor en torno a los cero grados. Parece contradictorio —cubrir de hielo lo que se quiere salvar del hielo— pero es lo que funciona."
+      },
+      {
+        "type": "heading",
+        "text": "Y ahora florecen las peras"
+      },
+      {
+        "type": "paragraph",
+        "text": "Al 28 de septiembre las chacras del Alto Valle están en plena floración. Primero las peras, de flor blanca —Williams, Packham’s, Abate Fetel, Golden Russet Bosc—, y detrás las manzanas, con la flor blanca teñida de rosa. Las colmenas para la polinización ya están puestas; en muchos casos llegan desde Buenos Aires."
+      },
+      {
+        "type": "paragraph",
+        "text": "Según el INTA, esta floración viene atrasada respecto de lo habitual, y la causa son justamente las heladas de las últimas semanas. Qué significa eso para el volumen de la cosecha todavía no se sabe: se sabrá recién sobre el final de la primavera."
       }
     ],
     "confirmedFacts": [
+      {
+        "fact": "El 3 de septiembre de 2026 se emitió una alerta por heladas tardías en el Alto Valle con pronósticos de hasta -6 °C.",
+        "date": "2026-09-03",
+        "sourceId": "anroca_helada3"
+      },
+      {
+        "fact": "El 7 de septiembre la temperatura llegó a -3,5 °C en algunas chacras y se activaron los sistemas de defensa contra heladas.",
+        "date": "2026-09-07",
+        "sourceId": "anroca_helada7"
+      },
+      {
+        "fact": "El 12 de septiembre el INTA y la AIC anticiparon mínimas de hasta -7 °C y declararon peligro alto para los frutales, con período crítico hasta el 18.",
+        "date": "2026-09-12",
+        "sourceId": "anroca_helada12"
+      },
+      {
+        "fact": "Duraznos y ciruelas estaban en floración abierta, el estado más sensible al frío. En la ciruela la temperatura crítica va de -1 °C a -2 °C; en el durazno, por debajo de -3 °C.",
+        "date": "2026-09-12",
+        "sourceId": "anroca_helada12"
+      },
+      {
+        "fact": "El principal sistema de defensa en el valle es el riego por aspersión: la capa de hielo que se forma sobre el frutal lo protege de temperaturas más bajas.",
+        "date": "2026-09-12",
+        "sourceId": "anroca_helada12"
+      },
+      {
+        "fact": "Al 28 de septiembre las chacras están en plena floración: primero las peras (Williams, Packham’s, Abate Fetel, Golden Russet Bosc) y después las manzanas.",
+        "date": "2026-09-28",
+        "sourceId": "lmneuquen_primavera"
+      },
+      {
+        "fact": "Según el INTA, la floración de esta temporada viene atrasada a causa de las heladas de las últimas semanas.",
+        "date": "2026-09-28",
+        "sourceId": "lmneuquen_primavera"
+      },
       {
         "fact": "El SMN emitió para el lunes 10 de agosto alertas por vientos intensos en todo Neuquén y por nevadas persistentes en la cordillera de Neuquén y Río Negro.",
         "date": "2026-08-10",
@@ -1622,9 +2079,10 @@ window.CANILLITA_CONTENT_BUNDLE = {
       }
     ],
     "pendingQuestions": [
-      "Cuánto se extiende el período de heladas intensas.",
-      "Si se registran daños por helada en la fruticultura del valle.",
-      "Si Vialidad interviene los sectores de la Ruta 22 donde el agua acumulada se congela."
+      "Cuánto daño dejaron efectivamente las heladas de septiembre: el número recién se conoce sobre el final de la primavera.",
+      "Si el período crítico se extiende más allá de septiembre y hay que volver a activar la defensa.",
+      "Cuántas chacras del valle tienen hoy sistema de defensa activa y cuántas quedan expuestas.",
+      "Si la floración atrasada se traduce en menos fruta o solo en una cosecha más tardía."
     ],
     "whyItMatters": "En el valle el clima no es conversación de ascensor: define si se puede salir a la ruta, si la chacra pierde producción y si el camión llega a tiempo. Y con la Ruta 22 como está, una helada convierte un pozo con agua en una trampa.",
     "timeline": [
@@ -1651,13 +2109,38 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "title": "Viento fuerte en el valle",
         "text": "Ráfagas de 78 km/h en el cordón valletano y advertencia por hielo en las rutas 22, 23, 40 y 237.",
         "sourceId": "rn_lunes"
+      },
+      {
+        "date": "2026-09-03",
+        "title": "Primera alerta de la primavera",
+        "text": "Pronósticos de hasta -6 °C. Es momento de defender la producción.",
+        "sourceId": "anroca_helada3"
+      },
+      {
+        "date": "2026-09-07",
+        "title": "Se activa la defensa",
+        "text": "En algunas chacras la temperatura toca los -3,5 °C y se prenden los sistemas de riego por aspersión.",
+        "sourceId": "anroca_helada7"
+      },
+      {
+        "date": "2026-09-12",
+        "title": "Peligro alto: hasta -7 °C",
+        "text": "La alerta más fuerte del mes, con duraznos y ciruelas en floración abierta y un período crítico declarado hasta el 18.",
+        "sourceId": "anroca_helada12"
+      },
+      {
+        "date": "2026-09-28",
+        "title": "Florecen las peras, con atraso",
+        "text": "El valle entra en plena floración con las colmenas puestas. El INTA advierte que viene atrasada por el frío de las últimas semanas.",
+        "sourceId": "lmneuquen_primavera"
       }
     ],
     "sections": [],
     "suggestedQuestions": [
-      "¿Cómo están las rutas?",
-      "¿Hasta cuándo sigue el frío?",
-      "¿Hay alerta por nieve?"
+      "¿Qué es una helada tardía?",
+      "¿Cuánto frío hizo en septiembre?",
+      "¿Cómo se defiende una chacra de la helada?",
+      "¿Cómo viene la floración este año?"
     ],
     "image": {
       "src": "assets/images/clima-ruta.jpg",
@@ -1667,6 +2150,38 @@ window.CANILLITA_CONTENT_BUNDLE = {
       "pending": ""
     },
     "sources": [
+      {
+        "id": "lmneuquen_primavera",
+        "name": "Las chacras del Alto Valle se visten de primavera",
+        "type": "press",
+        "publisher": "LM Neuquén",
+        "publishedAt": "2026-09-28",
+        "url": "https://masp.lmneuquen.com/fruticultura/las-chacras-del-alto-valle-se-visten-primavera-n1254800"
+      },
+      {
+        "id": "anroca_helada12",
+        "name": "Alerta por heladas tardías: esta noche podrían registrarse hasta -7 °C y hay peligro alto para los frutales",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-12",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/12/222865-alerta-por-heladas-tardias-esta-noche-podrian-registrarse-hasta-7-c-y-hay-peligro-alto-para-los-frutales"
+      },
+      {
+        "id": "anroca_helada7",
+        "name": "Heladas tardías: en algunas chacras la temperatura llegó a -3,5° y se activaron los sistemas de defensa",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-07",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/07/222050-heladas-tardias-en-algunas-chacras-la-temperatura-llego-a-3_5-y-se-activaron-los-sistemas-de-defensa"
+      },
+      {
+        "id": "anroca_helada3",
+        "name": "Alerta por heladas tardías: es momento de defender la producción con pronósticos de -6 °C",
+        "type": "press",
+        "publisher": "ANRoca",
+        "publishedAt": "2026-09-03",
+        "url": "https://www.anroca.com.ar/noticias/2026/09/03/221405-alerta-por-heladas-tardias-es-momento-de-defender-la-produccion-con-pronosticos-de-6-c"
+      },
       {
         "id": "rn_lunes",
         "name": "Temperaturas bajo cero, nieve y viento: lunes complicado en Neuquén y Río Negro",
@@ -1722,17 +2237,17 @@ window.CANILLITA_CONTENT_BUNDLE = {
     "type": "living_story",
     "category": "Deportes",
     "topic": "deportes",
-    "title": "Messi: el hilo completo, de Rosario a Nueva Jersey",
-    "subtitle": "Veintidós años de carrera, tres finales del mundo y una pregunta abierta: ¿sigue en la Selección?",
+    "title": "Messi: el hilo completo, de Rosario al Monumental",
+    "subtitle": "Veintidós años de carrera, tres finales del mundo y un final con fecha: el 6 de octubre se despide de la Selección",
     "status": "active",
     "isFiction": false,
-    "lastUpdated": "2026-08-12T07:00:00-03:00",
-    "eventDate": "2026-07-19",
-    "readingTime": 7,
-    "shortSummary": "El 19 de julio de 2026, con 39 años, Messi jugó su tercera final del mundo y la perdió: España se impuso 1 a 0 en el alargue. Fue su sexto Mundial. No anunció el retiro de la Selección y tiene contrato con Inter Miami hasta 2028.",
-    "whatsappSummary": "⚽ *Messi: el hilo completo*\nEl 19 de julio España le ganó 1 a 0 a Argentina en la final del Mundial, con gol de Ferran Torres en el alargue. Fue el sexto Mundial de Messi y su tercera final.\nNo anunció el retiro de la Selección. Tiene contrato con Inter Miami hasta 2028.",
-    "radioHeadline": "Y vamos al hilo de Messi, que sigue abierto.",
-    "radioSummary": "Empecemos por el final, que es lo más fresco. El 19 de julio, en Nueva Jersey, Argentina perdió la final del Mundial con España. Uno a cero, gol de Ferran Torres a los 106 minutos, ya en el alargue. Messi tenía 39 años. Era su sexto Mundial y su tercera final. Ganó una, en Qatar, y perdió dos. Ahora, la pregunta que quedó dando vueltas. ¿Se retira de la Selección? No lo dijo. Escribió que el dolor era muy grande, volvió a Rosario con su familia, y no habló más. Contrato con Inter Miami tiene hasta 2028. Así que jugar, va a seguir jugando. La duda es si vuelve a ponerse la celeste y blanca.",
+    "lastUpdated": "2026-09-29T07:00:00-03:00",
+    "eventDate": "2026-08-31",
+    "readingTime": 8,
+    "shortSummary": "El 31 de agosto Messi anunció por Instagram que deja la Selección: \"Me vacié, ya no tengo más para dar\". Cierra con 207 partidos, 125 goles y seis títulos. La despedida es el martes 6 de octubre a las 20, ante Benín en el Monumental: será su partido número 208 y el último con la celeste y blanca. Sigue jugando en Inter Miami, donde tiene contrato hasta 2028.",
+    "whatsappSummary": "⚽ *Messi: el hilo completo*\nEl 31 de agosto anunció que deja la Selección. Cierra con 207 partidos, 125 goles y seis títulos.\nLa despedida es el martes 6 de octubre a las 20, ante Benín en el Monumental.\nCuti Romero será el nuevo capitán. Messi sigue en Inter Miami hasta 2028.",
+    "radioHeadline": "Y vamos al hilo de Messi, que esta vez sí tuvo respuesta.",
+    "radioSummary": "La pregunta que quedó abierta en julio ya tiene respuesta. El 31 de agosto, con un mensaje escrito a mano en Instagram, Messi anunció que se retira de la Selección. Dijo una frase que quedó dando vueltas: me vacié, ya no tengo más para dar. Después se supo que ese texto lo había escrito el 21 de julio, dos días después de la final perdida con España, y que lo guardó más de un mes antes de publicarlo. En el medio había muerto su papá, Jorge, el 8 de agosto. Cierra el ciclo con 207 partidos, 125 goles y seis títulos. Y va a tener despedida: el martes 6 de octubre, a las veinte, en el Monumental, ante Benín. Va a ser su partido número 208 y el último con la camiseta. La Selección va a usar una edición conmemorativa con detalles dorados. Scaloni ya confirmó que el capitán, de ahora en más, va a ser Cuti Romero. Lo que no se sabe todavía es qué pasa con el propio Scaloni: tiene contrato hasta diciembre y no hay definición. Jugar, Messi va a seguir jugando: tiene contrato con Inter Miami hasta 2028.",
     "articleBody": [
       {
         "type": "paragraph",
@@ -1796,29 +2311,116 @@ window.CANILLITA_CONTENT_BUNDLE = {
       },
       {
         "type": "heading",
-        "text": "Lo que no se dijo"
+        "text": "El silencio de julio"
       },
       {
         "type": "paragraph",
-        "text": "Después de recibir la medalla de subcampeón, Messi se acercó a la hinchada argentina y se quebró. Al día siguiente escribió que el dolor era muy grande. No anunció nada sobre su continuidad en la Selección, y volvió a Rosario con su familia."
+        "text": "Después de recibir la medalla de subcampeón, Messi se acercó a la hinchada argentina y se quebró. Al día siguiente escribió que el dolor era muy grande. No anunció nada sobre su continuidad en la Selección, y volvió a Rosario con su familia. Ese silencio iba a durar seis semanas más."
       },
       {
         "type": "paragraph",
-        "text": "Lionel Scaloni, consultado en la conferencia posterior, dijo que no tenía idea de qué iba a hacer y que la pregunta era para Messi, no para él. La continuidad del propio entrenador también quedó en duda."
+        "text": "Lionel Scaloni, consultado en la conferencia posterior, dijo que no tenía idea de qué iba a hacer y que la pregunta era para Messi, no para él. El silencio duró seis semanas."
+      },
+      {
+        "type": "heading",
+        "text": "Rosario, 8 de agosto"
       },
       {
         "type": "paragraph",
-        "text": "El contrato con Inter Miami se extiende hasta fines de 2028. Por las vacaciones que la FIFA garantiza después de un Mundial, se esperaba su regreso al club recién a mediados de agosto."
+        "text": "Veinte días después de la final murió Jorge Messi, su padre y representante durante toda la carrera, a los 68 años. El velatorio fue privado, en Rosario. Fue el hombre que en 2000 lo acompañó a la prueba en Barcelona y el que manejó cada contrato desde entonces."
+      },
+      {
+        "type": "heading",
+        "text": "31 de agosto: el anuncio"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ese domingo Messi publicó en Instagram un mensaje escrito a mano, acompañado de un video. Anunciaba que dejaba la Selección. \"Fue una decisión que dolió y duele en el alma, pero entiendo que es el momento\", escribió. Y en el video quedó la frase que se repitió toda la semana: \"Me vacié, ya no tengo más para dar\"."
+      },
+      {
+        "type": "paragraph",
+        "text": "El detalle que más llamó la atención apareció después: el texto estaba fechado el 21 de julio, dos días después de la derrota en Nueva Jersey. Lo había escrito casi en caliente y lo guardó cuarenta y tres días antes de publicarlo."
+      },
+      {
+        "type": "paragraph",
+        "text": "Entre las razones que se le atribuyen aparecen el desgaste físico, la muerte de su padre, el recambio natural de un plantel que envejeció con él y un calendario sin competencias importantes hasta la Copa América de 2028, cuando tendría 41 años. \"Me voy con la tranquilidad y el orgullo de haberles dado momentos inolvidables\", cerró el mensaje."
+      },
+      {
+        "type": "paragraph",
+        "text": "Los números del ciclo: 207 partidos, 125 goles, 68 asistencias y seis títulos con la mayor —el Mundial de 2022, las Copas América de 2021 y 2024, la Finalissima de 2022, el oro olímpico de 2008 y el Mundial Sub 20 de 2005—."
+      },
+      {
+        "type": "heading",
+        "text": "6 de octubre: la despedida"
+      },
+      {
+        "type": "paragraph",
+        "text": "El 15 de septiembre, Claudio Tapia anunció por video que la AFA invitaba a Messi a tener \"la despedida que realmente se merece\". El partido es el martes 6 de octubre a las 20, en el Monumental, ante Benín. Será el número 208 y el último."
+      },
+      {
+        "type": "paragraph",
+        "text": "No juega los dos amistosos previos de la misma fecha FIFA —el 30 de septiembre ante Bolivia en Córdoba y el 3 de octubre ante Burkina Faso, también en el Monumental—. \"Estos dos partidos sirven para que los chicos aporten lo suyo\", explicó Scaloni. Se suma solo para el último."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para esa noche la Selección estrenará una camiseta conmemorativa, con detalles dorados en el escudo, los números y los vivos, el logo de Messi y un 10 rodeado de laureles y el Sol de Mayo."
+      },
+      {
+        "type": "heading",
+        "text": "Lo que queda abierto"
+      },
+      {
+        "type": "paragraph",
+        "text": "El 24 de septiembre, en Pujato, Scaloni confirmó que la cinta de capitán pasa a Cristian \"Cuti\" Romero. Sobre sí mismo no hay definición: su contrato vence en diciembre de 2026 y la negociación por la renovación sigue abierta."
+      },
+      {
+        "type": "paragraph",
+        "text": "Jugar, va a seguir jugando. El contrato con Inter Miami corre hasta fines de 2028 y ya había dicho en 2024 que ese sería su último club."
       }
     ],
     "confirmedFacts": [
       {
-        "fact": "España venció a Argentina 1 a 0 en la final del Mundial 2026, disputada el 19 de julio en el MetLife Stadium de Nueva Jersey.",
-        "date": "2026-07-19",
-        "sourceId": "lanacion_final"
+        "fact": "El 31 de agosto de 2026 Messi anunció por Instagram su retiro de la Selección argentina, con un mensaje escrito a mano y un video.",
+        "date": "2026-08-31",
+        "sourceId": "lanacion_retiro"
       },
       {
-        "fact": "El gol fue de Ferran Torres a los 106 minutos, en el segundo tiempo suplementario. Enzo Fernández había sido expulsado a los 93.",
+        "fact": "El mensaje estaba fechado el 21 de julio, dos días después de la final perdida con España: lo guardó cuarenta y tres días antes de publicarlo.",
+        "date": "2026-08-31",
+        "sourceId": "lanacion_retiro"
+      },
+      {
+        "fact": "Cierra su ciclo en la Selección con 207 partidos, 125 goles, 68 asistencias y seis títulos.",
+        "date": "2026-09-28",
+        "sourceId": "infobae_horario"
+      },
+      {
+        "fact": "Jorge Messi, su padre y representante, murió el 8 de agosto de 2026 a los 68 años, veinte días después de la final del Mundial.",
+        "date": "2026-08-08",
+        "sourceId": "lanacion_jorge"
+      },
+      {
+        "fact": "La despedida es el martes 6 de octubre de 2026 a las 20, ante Benín, en el estadio Monumental. Será su partido número 208 con la Selección.",
+        "date": "2026-09-28",
+        "sourceId": "infobae_horario"
+      },
+      {
+        "fact": "No juega los dos amistosos previos de la fecha FIFA: el 30 de septiembre ante Bolivia en Córdoba y el 3 de octubre ante Burkina Faso en el Monumental.",
+        "date": "2026-09-28",
+        "sourceId": "infobae_horario"
+      },
+      {
+        "fact": "El 24 de septiembre Scaloni confirmó que Cristian \"Cuti\" Romero será el nuevo capitán de la Selección.",
+        "date": "2026-09-24",
+        "sourceId": "infobae_capitan"
+      },
+      {
+        "fact": "El contrato de Scaloni como entrenador vence en diciembre de 2026 y la renovación sigue sin definirse.",
+        "date": "2026-09-15",
+        "sourceId": "infobae_despedida"
+      },
+      {
+        "fact": "España venció a Argentina 1 a 0 en la final del Mundial 2026, el 19 de julio en el MetLife Stadium de Nueva Jersey, con gol de Ferran Torres a los 106 minutos.",
         "date": "2026-07-19",
         "sourceId": "lanacion_final"
       },
@@ -1826,16 +2428,6 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "fact": "Fue el sexto Mundial de Messi y su tercera final: ganó la de 2022 y perdió las de 2014 y 2026.",
         "date": "2026-07-19",
         "sourceId": "lanacion_final"
-      },
-      {
-        "fact": "Messi cerró el torneo con ocho goles y cuatro asistencias, sin premios individuales. Rodri fue el mejor jugador y Mbappé se llevó la Bota de Oro.",
-        "date": "2026-07-19",
-        "sourceId": "telemundo_final"
-      },
-      {
-        "fact": "Mbappé llegó a 22 goles en Mundiales y superó por uno el récord histórico que tenía Messi.",
-        "date": "2026-07-19",
-        "sourceId": "telemundo_final"
       },
       {
         "fact": "Messi tiene ocho Balones de Oro: 2009, 2010, 2011, 2012, 2015, 2019, 2021 y 2023. Es el máximo ganador histórico del premio.",
@@ -1846,20 +2438,15 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "fact": "Su contrato con Inter Miami se extiende hasta fines de 2028.",
         "date": "2026-07-20",
         "sourceId": "prensalibre_futuro"
-      },
-      {
-        "fact": "Tras la final, Messi no hizo ningún anuncio sobre su continuidad en la Selección y regresó a Rosario con su familia.",
-        "date": "2026-07-20",
-        "sourceId": "si_regreso"
       }
     ],
     "pendingQuestions": [
-      "Si Messi sigue jugando en la Selección o si la final de Nueva Jersey fue su último partido con la camiseta.",
-      "Si Lionel Scaloni continúa como entrenador del seleccionado.",
-      "Cuándo vuelve a jugar en Inter Miami tras las vacaciones posteriores al Mundial.",
-      "Si llega en actividad a la Copa América de 2028, la próxima gran competencia del calendario."
+      "Si Lionel Scaloni renueva como entrenador: su contrato vence en diciembre de 2026.",
+      "Cómo queda conformado el equipo de cara a la Copa América de 2028, la próxima competencia grande.",
+      "Si Messi llega en actividad a esa Copa América, ya con 41 años y fuera de la Selección.",
+      "Hasta cuándo juega efectivamente en Inter Miami: el contrato corre hasta fines de 2028."
     ],
-    "whyItMatters": "No es una noticia del valle, pero es la que se conversa en el valle. La final se vio en las casas, en los bares y en las plazas de Roca, Cipolletti y Allen, igual que en todo el país. Y la pregunta que quedó abierta —si lo vamos a ver otra vez con la celeste y blanca— es de las pocas que no depende de ningún organismo: depende de él.",
+    "whyItMatters": "No es una noticia del valle, pero es la que se conversa en el valle. La final se vio en las casas, en los bares y en las plazas de Roca, Cipolletti y Allen, igual que en todo el país. La pregunta que había quedado abierta en julio —si lo íbamos a ver otra vez con la celeste y blanca— ya tiene respuesta, y tiene fecha: el 6 de octubre. Es la última vez.",
     "timeline": [
       {
         "date": "1987-06-24",
@@ -1938,16 +2525,87 @@ window.CANILLITA_CONTENT_BUNDLE = {
         "title": "\"El dolor es muy grande\"",
         "text": "Messi publica un mensaje tras la derrota. No anuncia nada sobre su futuro en la Selección y vuelve a Rosario.",
         "sourceId": "si_regreso"
+      },
+      {
+        "date": "2026-08-08",
+        "title": "Muere Jorge Messi",
+        "text": "Su padre y representante muere en Rosario a los 68 años. El velatorio es privado.",
+        "sourceId": "lanacion_jorge"
+      },
+      {
+        "date": "2026-08-31",
+        "title": "\"Me vacié, ya no tengo más para dar\"",
+        "text": "Anuncia por Instagram su retiro de la Selección, con un mensaje escrito a mano fechado el 21 de julio. Cierra con 207 partidos, 125 goles y seis títulos.",
+        "sourceId": "lanacion_retiro"
+      },
+      {
+        "date": "2026-09-15",
+        "title": "La AFA le organiza la despedida",
+        "text": "Claudio Tapia anuncia por video que Messi es citado para un partido despedida el 6 de octubre en el Monumental, ante Benín.",
+        "sourceId": "infobae_despedida"
+      },
+      {
+        "date": "2026-09-24",
+        "title": "Cuti Romero, nuevo capitán",
+        "text": "Scaloni confirma en Pujato quién se queda con la cinta. Sobre su propia continuidad, sigue sin haber definición.",
+        "sourceId": "infobae_capitan"
+      },
+      {
+        "date": "2026-10-06",
+        "title": "El último partido",
+        "upcoming": true,
+        "text": "Martes, 20 horas, Monumental, ante Benín: el número 208 y el último con la camiseta. La Selección estrena una edición conmemorativa con detalles dorados.",
+        "sourceId": "infobae_horario"
       }
     ],
     "sections": [],
     "suggestedQuestions": [
       "¿Messi se retira de la Selección?",
-      "¿Cómo salió la final del Mundial 2026?",
-      "¿Cuántos Balones de Oro tiene Messi?",
-      "¿Hasta cuándo tiene contrato con Inter Miami?"
+      "¿Cuándo es el partido despedida de Messi?",
+      "¿Quién es el nuevo capitán de la Selección?",
+      "¿Cuántos partidos y goles tuvo Messi en la Selección?"
     ],
     "sources": [
+      {
+        "id": "lanacion_retiro",
+        "name": "Lionel Messi anunció su retiro de la selección argentina: las razones detrás de una decisión que maduró durante meses",
+        "type": "press",
+        "publisher": "La Nación",
+        "publishedAt": "2026-08-31",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/el-final-de-una-era-lionel-messi-renuncio-a-la-seleccion-argentina-nid31082026/"
+      },
+      {
+        "id": "lanacion_jorge",
+        "name": "Murió Jorge Messi, el padre de Lionel, a los 68 años",
+        "type": "press",
+        "publisher": "La Nación",
+        "publishedAt": "2026-08-08",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/murio-jorge-messi-el-padre-de-lionel-a-los-68-anos-nid08082026/"
+      },
+      {
+        "id": "infobae_despedida",
+        "name": "Impacto en la selección argentina: Lionel Messi fue citado y tendrá su despedida el 6 de octubre en el Monumental",
+        "type": "press",
+        "publisher": "Infobae",
+        "publishedAt": "2026-09-15",
+        "url": "https://www.infobae.com/deportes/2026/09/15/impacto-en-la-seleccion-argentina-lionel-messi-fue-citado-y-tendra-su-despedida-el-6-de-octubre-en-el-monumental/"
+      },
+      {
+        "id": "infobae_capitan",
+        "name": "Scaloni confirmó quién será el capitán de Argentina tras la despedida de Messi",
+        "type": "press",
+        "publisher": "Infobae",
+        "publishedAt": "2026-09-24",
+        "url": "https://www.infobae.com/deportes/2026/09/24/scaloni-confirmo-quien-sera-el-capitan-de-argentina-tras-la-despedida-de-messi-y-bromeo-sobre-los-regalos-que-recibio-en-pujato/"
+      },
+      {
+        "id": "infobae_horario",
+        "name": "Se confirmó el horario de los amistosos de la selección argentina y del partido despedida de Lionel Messi",
+        "type": "press",
+        "publisher": "Infobae",
+        "publishedAt": "2026-09-28",
+        "url": "https://www.infobae.com/deportes/2026/09/28/se-confirmo-el-horario-de-los-amistosos-de-la-seleccion-argentina-y-del-partido-despedida-de-lionel-messi/"
+      },
       {
         "id": "lanacion_final",
         "name": "Resultado de Argentina vs. España: quién ganó el Mundial 2026",

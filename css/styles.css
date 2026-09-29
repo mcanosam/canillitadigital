@@ -159,6 +159,20 @@ body {
   --filete:       rgba(24, 24, 24, .55);
 }
 
+/*
+ * El ocre sigue siendo el acento y acá no se cambia de raíz: teñir --ocre de
+ * rojo se llevaría puestas la cronología, los números y las pestañas, que ya
+ * funcionan como están.
+ *
+ * La excepción es el lector elegido. Es lo único de esa pantalla que queda
+ * pintado con el color de la otra identidad, y se nota: la cabecera dice rojo
+ * y el botón activo contesta marrón.
+ */
+:root[data-tema="grupo"] .persona.is-activa {
+  background: var(--marca);
+  border-color: var(--marca);
+}
+
 /* --------------------------------------------------------------- página */
 
 .stage {

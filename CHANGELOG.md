@@ -442,6 +442,89 @@ Criterio de numeración:
   la copia.
 
 ---
+## v1.29.0 · 29-09-2026
+
+Tres semanas sin tocar el contenido y el valle se movió bastante. Esta versión
+pone los hilos al día y suma un quinto lector.
+
+Se arma sobre la v1.28. El trabajo de identidad de marca —logotipo, isotipo,
+íconos y favicons— queda afuera a propósito: estaba sin aprobar, la variante
+de isotipo seguía en discusión y nunca se desplegó.
+
+**Contenido: cinco hilos actualizados**
+
+- **Messi.** La pregunta que el hilo tenía abierta desde julio —si seguía en la
+  Selección— tiene respuesta: el 31 de agosto anunció el retiro por Instagram,
+  con un mensaje que había escrito el 21 de julio y guardó cuarenta y tres
+  días. Cierra con 207 partidos, 125 goles y seis títulos. Se suman la muerte
+  de Jorge Messi el 8 de agosto, la despedida del 6 de octubre ante Benín en el
+  Monumental y la confirmación de Cuti Romero como capitán. La continuidad de
+  Scaloni pasa a ser la pregunta abierta del hilo.
+- **Vaca Muerta.** Cambió el eje: la obra del caño terminó en agosto, con el
+  "apto para funcionar" de Techint y Sacde, así que el cuello de botella ahora
+  es la terminal. Entran el tanque 404 de Punta Colorada —y Martín Gómez, de
+  San Antonio Oeste, que opera el primer llenado—, el bono de 233,65 millones
+  de dólares colocado el 23 de septiembre y la fecha del 15 de diciembre para
+  la conexión de Allen.
+- **Ruta 22.** Hoy se promulgó la Ley 5895 (Decreto 901/26): 7.000 millones de
+  pesos del aporte territorial de Oldelval. Se incluye la aclaración del propio
+  Weretilneck sobre el alcance —"bacheo, tapar pozos, sacar huellones, cosas
+  muy preliminares"—, los cuatro puntos críticos y el estado del crédito del
+  Fonplata.
+- **Clima y rutas.** El hilo dejó de hablar del frío polar de agosto, que en
+  septiembre ya no existe, y pasó a las heladas tardías: tres alertas en once
+  días, hasta -7 °C con los frutales en flor, el riego por aspersión como
+  defensa y una floración que el INTA da por atrasada.
+- **Fruticultura.** Se enlaza con lo anterior: cerró la campaña 2026 y empezó
+  la siguiente, con la floración en marcha y el daño de las heladas todavía sin
+  contabilizar.
+
+**Personalización: cinco lectores**
+
+- Se suma **Nicolás**, de Cipolletti, que cruza el puente a Neuquén todas las
+  mañanas: deportes, clima y ruta, solo audio, un minuto, velocidad ágil. Sigue
+  el hilo de Messi y el del clima.
+- El criterio quedó escrito en `js/personas.js`: cada lector se tiene que
+  diferenciar en algo que se vea apenas cambia la pantalla. Como la Ruta 22 y
+  Vaca Muerta le interesan a casi todo el valle, la diferencia no puede
+  apoyarse solo en los temas, y por eso cada uno varía además en formato,
+  tiempo disponible e hilos seguidos. Los cinco reciben novedades distintas.
+
+**Hilos con agenda**
+
+- Un hito de la cronología puede marcarse `upcoming`: es un capítulo con fecha
+  que todavía no ocurrió. Se dibuja con el punto hueco y el rótulo "todavía no
+  pasó", y el chat lo aclara al enumerarlo. Un hilo vivo tiene próxima entrega;
+  confundirla con un hecho consumado, en una demo que se muestra en vivo, sería
+  el peor error posible. Hoy lo usan Messi (6 de octubre), Vaca Muerta (15 de
+  diciembre) y la Ruta 22 (noviembre).
+
+**Chat**
+
+- La respuesta "¿Messi se retira de la Selección?" decía que no lo había dicho.
+  Reescrita.
+- Nueva respuesta: "¿Cuándo es la despedida de Messi?", con intención propia
+  para no contestar en pasado algo que todavía no pasó.
+- Actualizadas las respuestas del traspaso de la Ruta 22 y del VMOS.
+- Al listar los últimos hitos de un hilo, cuando todos caen en el mismo año se
+  muestra el día y el mes: cuatro veces "2026" no informaba nada.
+
+**Correcciones**
+
+- El paso del recorrido guiado decía "Tres lectores" cuando ya eran cuatro. La
+  cifra ahora se calcula sobre la lista real.
+- En la Edición Grupo, el lector elegido quedaba pintado de ocre mientras el
+  resto de la pantalla era rojo de marca. Ahora toma el rojo.
+- La barra de secciones se desliza, pero sin scrollbar el corte se leía como
+  texto roto ("Vaca Muer"). Los últimos píxeles se desvanecen.
+- El generador de audio no limpiaba el rango Unicode 2300-23FF, así que el
+  reloj de arena ⏳ se colaba en el texto que lee Piper.
+- El workflow del boletín ahora también se dispara cuando cambian
+  `js/responses.js`, `js/intents.js` o los generadores. Cada respuesta del chat
+  tiene su clip grabado: al reescribir una sin regenerar el audio, la voz
+  quedaba diciendo lo viejo mientras el texto ya decía lo nuevo.
+
+---
 
 ## v1.6.0 · 07-08-2026
 

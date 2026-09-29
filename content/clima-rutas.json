@@ -3,18 +3,26 @@
   "type": "living_story",
   "category": "Clima y rutas",
   "topic": "clima",
-  "title": "Frío polar, viento y hielo: cómo circular esta semana",
-  "subtitle": "Alertas por nevadas y temperaturas extremas, con ráfagas de hasta 80 km/h en el valle",
+  "title": "Heladas tardías: las noches que deciden la temporada",
+  "subtitle": "Alertas de hasta -7 °C en plena floración, defensa activa en las chacras y una temporada que ya arranca atrasada",
   "status": "active",
   "isFiction": false,
-  "lastUpdated": "2026-08-14T07:00:00-03:00",
-  "eventDate": "2026-08-10",
+  "lastUpdated": "2026-09-29T07:00:00-03:00",
+  "eventDate": "2026-09-28",
   "readingTime": 3,
-  "shortSummary": "El ingreso de aire polar dejó alertas por nevadas en la cordillera y por frío extremo en buena parte de Río Negro y Neuquén. En el Alto Valle el protagonista es el viento, con ráfagas que llegaron a 78 km/h, y el riesgo principal es la formación de hielo sobre la calzada.",
-  "whatsappSummary": "🌡️ *Frío polar, viento y hielo*\nAlertas del SMN por nevadas en la cordillera y temperaturas extremas en Río Negro y Neuquén. En el Alto Valle, ráfagas de hasta 78 km/h.\nOjo en las rutas 22, 23, 40 y 237: riesgo de hielo sobre la calzada y visibilidad reducida. En zonas de montaña, cadenas obligatorias.",
-  "radioHeadline": "Atención con el tiempo y con las rutas.",
-  "radioSummary": "Entró aire polar y se nota. El Servicio Meteorológico Nacional emitió alertas por nevadas en la cordillera y por temperaturas extremas en buena parte de Neuquén y Río Negro. En el Alto Valle, en Roca y en Cipolletti, el protagonista es el viento: hubo ráfagas de setenta y ocho kilómetros por hora. Lo importante es la ruta. Hay riesgo de hielo sobre la calzada en las rutas veintidós, veintitrés, cuarenta y doscientos treinta y siete. Menos visibilidad por nieve acumulada, y viento blanco en zonas altas. En montaña, las cadenas son obligatorias. Y en la Ruta 22, con los pozos llenos de agua, el hielo agrega un problema arriba de otro.",
+  "shortSummary": "Terminó el invierno y empezó la parte brava. En septiembre hubo tres alertas por heladas tardías en el Alto Valle, con pronósticos de hasta -7 °C justo cuando duraznos y ciruelas estaban en floración abierta. En varias chacras se activó el riego por aspersión y la temperatura tocó -3,5 °C. Las peras y manzanas florecen ahora, y el INTA ya avisa que la floración viene atrasada por el frío de las últimas semanas.",
+  "whatsappSummary": "🌡️ *Heladas tardías en el valle*\nTres alertas en septiembre, con pronósticos de hasta -7 °C en plena floración. En varias chacras se activó el riego por aspersión y se tocaron los -3,5 °C.\nSegún el INTA, la floración de peras y manzanas viene atrasada por el frío.\nEl período crítico sigue abierto hasta que pase la primavera.",
+  "radioHeadline": "El tiempo, que este mes no es un tema de charla: es la temporada.",
+  "radioSummary": "Ya no hablamos del frío polar de agosto. Ahora el tema son las heladas tardías, que es otra cosa y es más seria. En septiembre hubo tres alertas. La del 3, con pronósticos de seis grados bajo cero. La del 7, cuando en algunas chacras se llegó a tres coma cinco bajo cero y hubo que activar la defensa. Y la del 12, la más fuerte, con hasta siete bajo cero previstos para esa madrugada y peligro alto declarado para los frutales. Por qué importa tanto una helada en septiembre y no en julio. Porque en julio el árbol está dormido y aguanta. Ahora está en flor, y la flor se quema. Los duraznos y las ciruelas ya estaban en floración abierta: en la ciruela, la temperatura crítica es entre uno y dos grados bajo cero. Nada más que eso. La defensa principal es el riego por aspersión: se moja el frutal y el hielo que se forma encima lo protege. Suena al revés, pero funciona. Y lo último, del 28: las peras y las manzanas están floreciendo ahora, con las colmenas ya puestas. El INTA avisa que la floración viene atrasada por las heladas de estas semanas. Todavía falta para saber cómo termina.",
   "articleBody": [
+    {
+      "type": "paragraph",
+      "text": "Cambió la estación y cambió el riesgo. El invierno en el valle se mide en hielo sobre la calzada; la primavera, en grados bajo cero a las cinco de la mañana con el frutal en flor. Septiembre dejó tres alertas por heladas tardías y una floración que, según el INTA, viene atrasada."
+    },
+    {
+      "type": "heading",
+      "text": "Cómo veníamos: el invierno"
+    },
     {
       "type": "paragraph",
       "text": "El invierno se endureció en el norte patagónico. El Servicio Meteorológico Nacional emitió durante los últimos días alertas combinadas: por nevadas persistentes en la franja cordillerana de Neuquén y Río Negro, y por temperaturas extremas por frío en buena parte de las dos provincias."
@@ -46,9 +54,88 @@
     {
       "type": "paragraph",
       "text": "Sobre la Ruta 22 hay un agravante local: los pozos llenos de agua que dejaron las lluvias de comienzos de mes se congelan de noche y suman un riesgo sobre otro que ya existía."
+    },
+    {
+      "type": "heading",
+      "text": "Septiembre: cambió el problema"
+    },
+    {
+      "type": "paragraph",
+      "text": "El frío de agosto era un problema de circulación: hielo en la calzada, viento, visibilidad. El de septiembre es otra cosa. Con la primavera llegaron las heladas tardías, que es el riesgo que ordena todo el año productivo del valle."
+    },
+    {
+      "type": "paragraph",
+      "text": "La diferencia es el estado del árbol. En julio el frutal está dormido y una helada fuerte no lo toca. En septiembre está en flor, y la flor se quema. Lo que se pierde en una noche no se recupera en toda la temporada."
+    },
+    {
+      "type": "heading",
+      "text": "Tres alertas en once días"
+    },
+    {
+      "type": "paragraph",
+      "text": "La primera fue el 3 de septiembre, con pronósticos de hasta -6 °C. La segunda, el 7: en algunas chacras la temperatura tocó los -3,5 °C y se activaron los sistemas de defensa. La tercera, el 12, fue la más seria: el INTA y la Autoridad Interjurisdiccional de Cuencas anticiparon hasta -7 °C para esa madrugada y declararon peligro alto para los frutales, con un período crítico que se extendía hasta el 18."
+    },
+    {
+      "type": "paragraph",
+      "text": "Para entonces los duraznos —O’Henry, Fairtime, Elegant Lady, Royal Glory— y las ciruelas —Larry Ann, Angeleno— ya estaban en floración abierta, el estado más sensible. En la ciruela en flor la temperatura crítica está entre -1 °C y -2 °C; en el durazno, por debajo de -3 °C. El margen es de un par de grados."
+    },
+    {
+      "type": "heading",
+      "text": "Cómo se defiende una chacra"
+    },
+    {
+      "type": "paragraph",
+      "text": "El método más usado en el valle es el riego por aspersión. Se moja el frutal durante la noche de helada: al congelarse, el agua libera calor y forma una capa de hielo que mantiene la flor en torno a los cero grados. Parece contradictorio —cubrir de hielo lo que se quiere salvar del hielo— pero es lo que funciona."
+    },
+    {
+      "type": "heading",
+      "text": "Y ahora florecen las peras"
+    },
+    {
+      "type": "paragraph",
+      "text": "Al 28 de septiembre las chacras del Alto Valle están en plena floración. Primero las peras, de flor blanca —Williams, Packham’s, Abate Fetel, Golden Russet Bosc—, y detrás las manzanas, con la flor blanca teñida de rosa. Las colmenas para la polinización ya están puestas; en muchos casos llegan desde Buenos Aires."
+    },
+    {
+      "type": "paragraph",
+      "text": "Según el INTA, esta floración viene atrasada respecto de lo habitual, y la causa son justamente las heladas de las últimas semanas. Qué significa eso para el volumen de la cosecha todavía no se sabe: se sabrá recién sobre el final de la primavera."
     }
   ],
   "confirmedFacts": [
+    {
+      "fact": "El 3 de septiembre de 2026 se emitió una alerta por heladas tardías en el Alto Valle con pronósticos de hasta -6 °C.",
+      "date": "2026-09-03",
+      "sourceId": "anroca_helada3"
+    },
+    {
+      "fact": "El 7 de septiembre la temperatura llegó a -3,5 °C en algunas chacras y se activaron los sistemas de defensa contra heladas.",
+      "date": "2026-09-07",
+      "sourceId": "anroca_helada7"
+    },
+    {
+      "fact": "El 12 de septiembre el INTA y la AIC anticiparon mínimas de hasta -7 °C y declararon peligro alto para los frutales, con período crítico hasta el 18.",
+      "date": "2026-09-12",
+      "sourceId": "anroca_helada12"
+    },
+    {
+      "fact": "Duraznos y ciruelas estaban en floración abierta, el estado más sensible al frío. En la ciruela la temperatura crítica va de -1 °C a -2 °C; en el durazno, por debajo de -3 °C.",
+      "date": "2026-09-12",
+      "sourceId": "anroca_helada12"
+    },
+    {
+      "fact": "El principal sistema de defensa en el valle es el riego por aspersión: la capa de hielo que se forma sobre el frutal lo protege de temperaturas más bajas.",
+      "date": "2026-09-12",
+      "sourceId": "anroca_helada12"
+    },
+    {
+      "fact": "Al 28 de septiembre las chacras están en plena floración: primero las peras (Williams, Packham’s, Abate Fetel, Golden Russet Bosc) y después las manzanas.",
+      "date": "2026-09-28",
+      "sourceId": "lmneuquen_primavera"
+    },
+    {
+      "fact": "Según el INTA, la floración de esta temporada viene atrasada a causa de las heladas de las últimas semanas.",
+      "date": "2026-09-28",
+      "sourceId": "lmneuquen_primavera"
+    },
     {
       "fact": "El SMN emitió para el lunes 10 de agosto alertas por vientos intensos en todo Neuquén y por nevadas persistentes en la cordillera de Neuquén y Río Negro.",
       "date": "2026-08-10",
@@ -76,9 +163,10 @@
     }
   ],
   "pendingQuestions": [
-    "Cuánto se extiende el período de heladas intensas.",
-    "Si se registran daños por helada en la fruticultura del valle.",
-    "Si Vialidad interviene los sectores de la Ruta 22 donde el agua acumulada se congela."
+    "Cuánto daño dejaron efectivamente las heladas de septiembre: el número recién se conoce sobre el final de la primavera.",
+    "Si el período crítico se extiende más allá de septiembre y hay que volver a activar la defensa.",
+    "Cuántas chacras del valle tienen hoy sistema de defensa activa y cuántas quedan expuestas.",
+    "Si la floración atrasada se traduce en menos fruta o solo en una cosecha más tardía."
   ],
   "whyItMatters": "En el valle el clima no es conversación de ascensor: define si se puede salir a la ruta, si la chacra pierde producción y si el camión llega a tiempo. Y con la Ruta 22 como está, una helada convierte un pozo con agua en una trampa.",
   "timeline": [
@@ -105,13 +193,38 @@
       "title": "Viento fuerte en el valle",
       "text": "Ráfagas de 78 km/h en el cordón valletano y advertencia por hielo en las rutas 22, 23, 40 y 237.",
       "sourceId": "rn_lunes"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Primera alerta de la primavera",
+      "text": "Pronósticos de hasta -6 °C. Es momento de defender la producción.",
+      "sourceId": "anroca_helada3"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Se activa la defensa",
+      "text": "En algunas chacras la temperatura toca los -3,5 °C y se prenden los sistemas de riego por aspersión.",
+      "sourceId": "anroca_helada7"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Peligro alto: hasta -7 °C",
+      "text": "La alerta más fuerte del mes, con duraznos y ciruelas en floración abierta y un período crítico declarado hasta el 18.",
+      "sourceId": "anroca_helada12"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Florecen las peras, con atraso",
+      "text": "El valle entra en plena floración con las colmenas puestas. El INTA advierte que viene atrasada por el frío de las últimas semanas.",
+      "sourceId": "lmneuquen_primavera"
     }
   ],
   "sections": [],
   "suggestedQuestions": [
-    "¿Cómo están las rutas?",
-    "¿Hasta cuándo sigue el frío?",
-    "¿Hay alerta por nieve?"
+    "¿Qué es una helada tardía?",
+    "¿Cuánto frío hizo en septiembre?",
+    "¿Cómo se defiende una chacra de la helada?",
+    "¿Cómo viene la floración este año?"
   ],
   "image": {
     "src": "assets/images/clima-ruta.jpg",
@@ -121,6 +234,38 @@
     "pending": ""
   },
   "sources": [
+    {
+      "id": "lmneuquen_primavera",
+      "name": "Las chacras del Alto Valle se visten de primavera",
+      "type": "press",
+      "publisher": "LM Neuquén",
+      "publishedAt": "2026-09-28",
+      "url": "https://masp.lmneuquen.com/fruticultura/las-chacras-del-alto-valle-se-visten-primavera-n1254800"
+    },
+    {
+      "id": "anroca_helada12",
+      "name": "Alerta por heladas tardías: esta noche podrían registrarse hasta -7 °C y hay peligro alto para los frutales",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-09-12",
+      "url": "https://www.anroca.com.ar/noticias/2026/09/12/222865-alerta-por-heladas-tardias-esta-noche-podrian-registrarse-hasta-7-c-y-hay-peligro-alto-para-los-frutales"
+    },
+    {
+      "id": "anroca_helada7",
+      "name": "Heladas tardías: en algunas chacras la temperatura llegó a -3,5° y se activaron los sistemas de defensa",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-09-07",
+      "url": "https://www.anroca.com.ar/noticias/2026/09/07/222050-heladas-tardias-en-algunas-chacras-la-temperatura-llego-a-3_5-y-se-activaron-los-sistemas-de-defensa"
+    },
+    {
+      "id": "anroca_helada3",
+      "name": "Alerta por heladas tardías: es momento de defender la producción con pronósticos de -6 °C",
+      "type": "press",
+      "publisher": "ANRoca",
+      "publishedAt": "2026-09-03",
+      "url": "https://www.anroca.com.ar/noticias/2026/09/03/221405-alerta-por-heladas-tardias-es-momento-de-defender-la-produccion-con-pronosticos-de-6-c"
+    },
     {
       "id": "rn_lunes",
       "name": "Temperaturas bajo cero, nieve y viento: lunes complicado en Neuquén y Río Negro",

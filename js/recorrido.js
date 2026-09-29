@@ -40,7 +40,7 @@
       id: 'lector',
       objetivo: '.personas',
       titulo: 'Elegí quién sos',
-      texto: 'Tres lectores con intereses distintos. Tocá uno y mirá cómo se ' +
+      texto: '{lectores} lectores con intereses distintos. Tocá uno y mirá cómo se ' +
              'rearma el diario. No es una simulación: cambia de verdad.',
       boton: 'Ya elegí',
       esperaClic: '[data-persona]'
@@ -116,6 +116,23 @@
     if (paso.volanta) return paso.volanta;
     var n = NUMERADOS.indexOf(paso) + 1;
     return 'Paso ' + n + ' de ' + NUMERADOS.length;
+  }
+
+  var EN_LETRAS = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis',
+                   'siete', 'ocho', 'nueve', 'diez'];
+
+  /*
+   * Las cifras que el texto del recorrido menciona se calculan, no se
+   * escriben. El paso de los lectores decía "Tres lectores" cuando ya eran
+   * cuatro: un número a mano en un texto de demo se desactualiza solo, y se
+   * nota justo cuando alguien lo está mirando.
+   */
+  function conCifras(texto) {
+    return String(texto).replace(/\{lectores\}/g, function () {
+      var cuantos = Canillita.personas ? Canillita.personas.todas().length : 0;
+      var palabra = EN_LETRAS[cuantos] || String(cuantos);
+      return palabra.charAt(0).toUpperCase() + palabra.slice(1);
+    });
   }
 
   /* ------------------------------------------------------------- estado */
@@ -194,7 +211,7 @@
 
     capa.querySelector('.recorrido__volanta').textContent = volantaDe(paso);
     capa.querySelector('.recorrido__titulo').textContent = paso.titulo;
-    capa.querySelector('.recorrido__texto').textContent = paso.texto;
+    capa.querySelector('.recorrido__texto').textContent = conCifras(paso.texto);
     capa.querySelector('.recorrido__seguir').textContent = paso.boton;
     capa.classList.toggle('recorrido--centrado', Boolean(paso.centrado));
 

@@ -137,11 +137,20 @@
     return items ? '<ul class="facts facts--pending">' + items + '</ul>' : '';
   }
 
-  /** Cronología vertical. */
+  /*
+   * Cronología vertical.
+   *
+   * Un hito marcado `upcoming` es un capítulo con fecha que todavía no pasó.
+   * Ahí está la diferencia entre un archivo y un hilo vivo: el lector ve que
+   * la historia que sigue tiene próxima entrega y cuándo. Se dibuja distinto
+   * para que nadie lo lea como un hecho ya ocurrido.
+   */
   function timeline(story) {
     var items = (story.timeline || []).map(function (item) {
-      return '<li class="hito">' +
+      var futuro = item.upcoming === true;
+      return '<li class="hito' + (futuro ? ' hito--proximo' : '') + '">' +
         '<span class="hito__date">' + esc(timelineDate(item.date)) + '</span>' +
+        (futuro ? '<span class="hito__pendiente">Todavía no pasó</span>' : '') +
         '<h4 class="hito__title">' + esc(item.title) + '</h4>' +
         '<p class="hito__text">' + esc(item.text) + '</p>' +
         '</li>';

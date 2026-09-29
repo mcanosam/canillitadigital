@@ -15,10 +15,18 @@ on:
 
   # Publicar una noticia ES el disparador: al editar el contenido, el audio se
   # regenera solo. Entre el commit y el audio nuevo pasan unos minutos.
+  #
+  # También entran los archivos del chat: cada respuesta se graba por separado,
+  # así que reescribir una respuesta sin regenerar su clip deja el audio
+  # diciendo lo viejo mientras el texto ya dice lo nuevo.
   push:
     paths:
       - 'content/**.json'
       - 'js/radio.js'
+      - 'js/responses.js'
+      - 'js/intents.js'
+      - 'tools/build-boletin.js'
+      - 'tools/build-respuestas.js'
 
   workflow_dispatch:
     inputs:
