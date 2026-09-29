@@ -3,10 +3,10 @@
   "urlOpus": "assets/audio/boletin.ogg",
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
-  "version": "1.28.0",
-  "generatedAt": "2026-09-29T16:14:13.358Z",
+  "version": "1.29.0",
+  "generatedAt": "2026-09-29T21:11:28.832Z",
   "baseRate": 1,
-  "duration": 215.77,
+  "duration": 172.41,
   "segments": [
     {
       "kind": "identificacion",
@@ -14,15 +14,15 @@
     },
     {
       "kind": "saludo",
-      "text": "Es la una y catorce de la tarde. Buenas tardes."
+      "text": "Son las seis y once de la tarde. Buenas tardes."
     },
     {
       "kind": "titular",
-      "text": "Arrancamos con la Ruta 22, que por fin cambió de manos."
+      "text": "Ruta 22, y hoy hay novedad: se promulgó la ley de los 7.000 millones."
     },
     {
       "kind": "desarrollo",
-      "text": "Pasó algo que se venía reclamando hace años. Río Negro ya tiene la Ruta 22. El 25 de agosto se firmó el convenio en Casa Rosada, y el 3 de septiembre la Legislatura lo ratificó. Treinta y ocho votos a favor, tres en contra. Son quinientos dieciocho kilómetros, entre la 22 y la 151, por veinte años. Se declaró la emergencia vial por un año, que permite contratar de urgencia. Y se autorizó un crédito de hasta sesenta millones de dólares con el Fonplata. Ahora, la letra chica. Primero: Nación no manda plata. La provincia paga. Segundo: las obras arrancan recién sesenta días después de que la ley se publique. Y tercero: los kilómetros no llegan todos juntos. Cada tramo se entrega con un acta propia. Un dato para dimensionar por qué había apuro. Entre 2018 y este año murieron doscientas doce personas en esas dos rutas."
+      "text": "Vamos con lo de hoy. El gobernador promulgó la Ley 5895, por el Decreto 901 del 26. Destina siete mil millones de pesos al inicio de las obras en las rutas 22 y 151. La plata no sale de rentas generales: viene del aporte al desarrollo territorial que le corresponde a la provincia por el Duplicar Norte, el oleoducto de Oldelval, que tiene doscientos siete kilómetros, de los cuales ciento cuarenta y seis pasan por Río Negro. Ahora, conviene escuchar lo que dijo el propio Weretilneck, porque baja bastante las expectativas. Textual: bacheo, tapar pozos, sacar huellones. Estamos hablando de cosas muy preliminares. Es decir, no es la reconstrucción de la ruta. Es que deje de ser peligrosa. Y hay motivos: en los relevamientos aparecieron huellones de más de diecisiete centímetros. Las obras arrancan en noviembre, sobre trescientos cinco kilómetros. Los puntos críticos son el Puente 83 en Cipolletti, la rotonda de Choele Choel, el tramo hacia Catriel y unas deformaciones cerca de Chimpay. La obra grande, la de verdad, sigue dependiendo del crédito de sesenta millones de dólares del Fonplata, que recién se analiza en octubre. Y las actas de toma de posesión se están firmando de a tramos: primero los que no tienen contratos pendientes con privados."
     },
     {
       "kind": "separador",
@@ -33,20 +33,12 @@
       "text": "Vamos ahora a la pregunta de fondo. Por qué la ruta sigue sin terminarse."
     },
     {
-      "kind": "desarrollo",
-      "text": "El proyecto se dividió en cinco secciones. Ahí está la clave de todo. Las del este avanzaron. Chichinales a Godoy quedó habilitada en 2011. Godoy a Cervantes se completó en 2021, con siete puentes. También avanzó buena parte del tramo de Fernández Oro a Cipolletti. Pero en el medio, justo en el medio, están los dos tramos que cruzan Roca y Allen. Ahí la obra nunca arrancó. El proyecto original planteaba una autopista elevada. Roca dijo que no. Que eso era una muralla, y que iba a partir la ciudad en dos. Hubo audiencia pública. Hubo amparo judicial, en 2016. Y la obra se frenó. En 2021 se firmaron actas para hacerla a nivel, como una avenida urbana, con semáforos. El acuerdo existe. La obra, no."
-    },
-    {
       "kind": "separador",
       "text": "Vamos con la que sigue."
     },
     {
       "kind": "titular",
-      "text": "Y vamos con Vaca Muerta, que nos cruza por el medio."
-    },
-    {
-      "kind": "desarrollo",
-      "text": "Hay una obra enorme atravesando la provincia y conviene entender qué es. Se llama Vaca Muerta Oil Sur, o VMOS. Es un oleoducto de cuatrocientos treinta y siete kilómetros que sale de Allen y termina en Punta Colorada, cerca de Sierra Grande, sobre el Atlántico. Tres mil millones de dólares. Lo hacen siete petroleras juntas, con YPF a la cabeza. Ya superó el ochenta por ciento. Las primeras exportaciones se esperan para principios del año que viene. Arranca moviendo ciento ochenta mil barriles por día y sube a quinientos cincuenta mil durante 2027. Ahora, lo que nos toca de cerca. Por el valle pasan más de dos mil camiones de arena por día, que vienen desde Entre Ríos, a mil trescientos kilómetros. Esa arena es la que rompe las rutas. Y la plata, las regalías, según el propio gobernador recién se van a sentir fuerte hacia 2028 o 2029. Río Negro está en el medio del negocio, pero todavía no en el reparto."
+      "text": "Vaca Muerta, y una novedad grande: el caño ya está terminado."
     },
     {
       "kind": "separador",
@@ -62,11 +54,7 @@
     },
     {
       "kind": "titular",
-      "text": "Y ahora la fruta, que este año dejó una cuenta rara."
-    },
-    {
-      "kind": "desarrollo",
-      "text": "Hubo menos fruta y valió más. Los números: al treinta de abril, la cosecha conjunta de peras y manzanas fue de poco más de ochocientas cincuenta y seis mil toneladas. Catorce por ciento menos que el año pasado. Ciento cuarenta mil toneladas que no están. La mayor parte de esa caída es manzana. ¿Y los precios? Subieron fuerte. En el Mercado Central, la Red Delicious aumentó cerca del ochenta y siete por ciento interanual, muy por encima de la inflación. Ahora, la pregunta del productor es otra. Producir un kilo cuesta treinta y cuatro centavos de dólar. Y ese precio bueno tiene que atravesar el frío, el empaque, el flete y la venta antes de convertirse en margen. Como dijo un productor del valle: el precio es bueno, pero es mucha la merma que hay en manzana."
+      "text": "La fruta, que cerró una temporada rara y ya arrancó la que viene."
     },
     {
       "kind": "separador",
@@ -74,7 +62,11 @@
     },
     {
       "kind": "titular",
-      "text": "Atención con el tiempo y con las rutas."
+      "text": "El tiempo, que este mes no es un tema de charla: es la temporada."
+    },
+    {
+      "kind": "desarrollo",
+      "text": "Ya no hablamos del frío polar de agosto. Ahora el tema son las heladas tardías, que es otra cosa y es más seria. En septiembre hubo tres alertas. La del 3, con pronósticos de seis grados bajo cero. La del 7, cuando en algunas chacras se llegó a tres coma cinco bajo cero y hubo que activar la defensa. Y la del 12, la más fuerte, con hasta siete bajo cero previstos para esa madrugada y peligro alto declarado para los frutales. Por qué importa tanto una helada en septiembre y no en julio. Porque en julio el árbol está dormido y aguanta. Ahora está en flor, y la flor se quema. Los duraznos y las ciruelas ya estaban en floración abierta: en la ciruela, la temperatura crítica es entre uno y dos grados bajo cero. Nada más que eso. La defensa principal es el riego por aspersión: se moja el frutal y el hielo que se forma encima lo protege. Suena al revés, pero funciona. Y lo último, del 28: las peras y las manzanas están floreciendo ahora, con las colmenas ya puestas. El INTA avisa que la floración viene atrasada por las heladas de estas semanas. Todavía falta para saber cómo termina."
     },
     {
       "kind": "separador",
@@ -82,7 +74,7 @@
     },
     {
       "kind": "deportes",
-      "text": "Y vamos al hilo de Messi, que sigue abierto."
+      "text": "Y vamos al hilo de Messi, que esta vez sí tuvo respuesta."
     },
     {
       "kind": "separador",
@@ -104,87 +96,79 @@
     },
     {
       "segment": 1,
-      "start": 2.546
+      "start": 2.471
     },
     {
       "segment": 2,
-      "start": 5.429
+      "start": 5.296
     },
     {
       "segment": 3,
-      "start": 9.07
+      "start": 9.902
     },
     {
       "segment": 4,
-      "start": 52.877
+      "start": 74.03
     },
     {
       "segment": 5,
-      "start": 54.125
+      "start": 75.277
     },
     {
       "segment": 6,
-      "start": 58.421
+      "start": 79.628
     },
     {
       "segment": 7,
-      "start": 95.785
+      "start": 81.442
     },
     {
       "segment": 8,
-      "start": 97.564
+      "start": 85.491
     },
     {
       "segment": 9,
-      "start": 100.625
+      "start": 87.28
     },
     {
       "segment": 10,
-      "start": 147.658
+      "start": 91.85
     },
     {
       "segment": 11,
-      "start": 149.484
+      "start": 93.149
     },
     {
       "segment": 12,
-      "start": 153.97
+      "start": 96.926
     },
     {
       "segment": 13,
-      "start": 155.246
+      "start": 98.671
     },
     {
       "segment": 14,
-      "start": 158.62
+      "start": 102.765
     },
     {
       "segment": 15,
-      "start": 196.846
+      "start": 157.633
     },
     {
       "segment": 16,
-      "start": 198.659
+      "start": 159.563
     },
     {
       "segment": 17,
-      "start": 201.287
+      "start": 162.726
     },
     {
       "segment": 18,
-      "start": 203.17
+      "start": 164.628
     },
     {
       "segment": 19,
-      "start": 205.899
-    },
-    {
-      "segment": 20,
-      "start": 207.901
-    },
-    {
-      "segment": 21,
-      "start": 212.617
+      "start": 169.289
     }
   ]
 }
