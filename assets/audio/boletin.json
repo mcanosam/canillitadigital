@@ -4,7 +4,7 @@
   "voice": "es_AR-daniela-high",
   "engine": "Piper TTS",
   "version": "1.29.0",
-  "generatedAt": "2026-10-23T14:32:18.268Z",
+  "generatedAt": "2026-10-24T13:43:32.496Z",
   "baseRate": 1,
   "duration": 174.0,
   "segments": [
@@ -14,7 +14,7 @@
     },
     {
       "kind": "saludo",
-      "text": "Son las once y treinta y dos de la mañana. Buen día."
+      "text": "Son las diez y cuarenta y tres de la mañana. Buen día."
     },
     {
       "kind": "titular",
@@ -96,39 +96,39 @@
     },
     {
       "segment": 1,
-      "start": 2.547
+      "start": 2.502
     },
     {
       "segment": 2,
-      "start": 5.58
+      "start": 5.715
     },
     {
       "segment": 3,
-      "start": 10.174
+      "start": 10.346
     },
     {
       "segment": 4,
-      "start": 74.771
+      "start": 74.67
     },
     {
       "segment": 5,
-      "start": 76.015
+      "start": 75.938
     },
     {
       "segment": 6,
-      "start": 80.229
+      "start": 80.305
     },
     {
       "segment": 7,
-      "start": 81.994
+      "start": 82.035
     },
     {
       "segment": 8,
-      "start": 85.994
+      "start": 86.009
     },
     {
       "segment": 9,
-      "start": 87.772
+      "start": 87.829
     },
     {
       "segment": 10,
@@ -136,39 +136,39 @@
     },
     {
       "segment": 11,
-      "start": 93.552
+      "start": 93.56
     },
     {
       "segment": 12,
-      "start": 97.476
+      "start": 97.422
     },
     {
       "segment": 13,
-      "start": 99.266
+      "start": 99.194
     },
     {
       "segment": 14,
-      "start": 103.427
+      "start": 103.305
     },
     {
       "segment": 15,
-      "start": 158.969
+      "start": 159.065
     },
     {
       "segment": 16,
-      "start": 160.902
+      "start": 160.98
     },
     {
       "segment": 17,
-      "start": 164.184
+      "start": 164.196
     },
     {
       "segment": 18,
-      "start": 166.108
+      "start": 166.124
     },
     {
       "segment": 19,
-      "start": 170.821
+      "start": 170.823
     }
   ]
 }
